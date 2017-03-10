@@ -1,3 +1,5 @@
+# TEST CHANGE
+
 codons = ['TTT', 'TTC', 'TTA', 'TTG',
           'CTT', 'CTC', 'CTA', 'CTG',
           'ATT', 'ATC', 'ATA', 'ATG',
