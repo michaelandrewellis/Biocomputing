@@ -1,0 +1,88 @@
+from config import codons, codonTable, AA, enzymeDict
+import accessdata as ad
+import scipy.stats as stats
+
+
+# returns coding sequence from coding locations and DNA
+def getCDSsequence(DNA, CDSloc):
+    CDS = ""
+    for tuple in CDSloc:
+        CDS += DNA[tuple[0]-1:tuple[1]]
+    return CDS
+
+# returns list of codon counts
+def countCodonUsage(CDS):
+    codonCount = [0]*64
+    for i in range(0,len(CDS)-3,3):
+        codon = CDS[i:i+3]
+    codonCount[codons.index(codon)] += 1
+    return codonCount
+
+# returns frequency of each codon as a percentage of the total number of codons
+def codonPercent(CDS):
+    count = countCodonUsage(CDS)
+    total = sum(count)
+    percent = [c/total for c in count]
+    return percent
+
+def codonSignificance(CDSlength, genePercent, chrPercent):
+    pvalues = []
+    for i in range(0,64):
+        x = genePercent[i]*CDSlength
+        n = CDSlength
+        p = chrPercent[i]
+        cdf = stats.binom.cdf(x,n,p)
+        p = 1-abs(0.5-cdf)*2
+        if p<0.05/64: # Bonferroni correction
+            p = str(p)+'*'
+        pvalues.append(p)
+    return pvalues
+
+# returns table of codons, their frequencies and their relative frequences
+def getCodonTable(CDS):
+    genePercent = codonPercent(CDS)
+    chrPercent = codonTable[1]
+    relFreq = [g/c for g,c in zip(genePercent, chrPercent)]
+    sig = codonSignificance(len(CDS),genePercent,chrPercent)
+    return [codons, AA, genePercent, chrPercent, relFreq, sig]
+
+
+# returns table with enyzmes and cutting locations
+def getCuttingLocs(enzymeDict, DNA):
+    cuttingLocs = []
+    enzymes = []
+    for enzyme in enzymeDict:
+        seq = enzymeDict[enzyme]
+        i = 0
+        enzymeCuts = []     # Cutting locations for a single enzyme
+        while DNA.find(seq,i) != -1:
+            i = DNA.find(seq,i) + 1
+            enzymeCuts.append(i-1) # Cutting location given by index
+        cuttingLocs.append(enzymeCuts)
+        enzymes.append(enzyme)
+    return [enzymes,cuttingLocs]
+
+def goodOrBadEnzyme(cuts, CDSlocs): # enzymeTable = [enzymes, cuttingLocs]
+    CDSstart = CDSlocs[0][0]
+    CDSend = CDSlocs[len(CDSlocs)-1][1]
+    if any(CDSstart>c for c in cuts) and any(CDSend<c for c in cuts) and all(CDSend<c or c<CDSstart for c in cuts):
+        return 'Good'
+    else:
+        return 'Bad'
+
+def getEnzymeTable(DNA,CDSloc):
+    enzymeTable = getCuttingLocs(enzymeDict, DNA)
+    enzymeQual = [goodOrBadEnzyme(x, CDSloc) for x in enzymeTable[1]]
+    enzymeTable.append(enzymeQual)
+    return enzymeTable
+
+# gets data for web page from database
+def getData(input, type):
+    [DNA, CDSloc] = ad.getDNAandCDSfromSQL(input, type) #From accessdata module
+    CDS = getCDSsequence(DNA, CDSloc)
+    codonTable = getCodonTable(CDS)
+    enzymeTable = getEnzymeTable(DNA, CDSloc)
+    return [DNA,CDSloc,codonTable,enzymeTable]
+
+
+
