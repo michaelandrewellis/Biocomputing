@@ -15,7 +15,7 @@ def countCodonUsage(CDS):
     codonCount = [0]*64
     for i in range(0,len(CDS)-3,3):
         codon = CDS[i:i+3]
-    codonCount[codons.index(codon)] += 1
+        codonCount[codons.index(codon)] += 1
     return codonCount
 
 # returns frequency of each codon as a percentage of the total number of codons
@@ -28,8 +28,8 @@ def codonPercent(CDS):
 def codonSignificance(CDSlength, genePercent, chrPercent):
     pvalues = []
     for i in range(0,64):
-        x = genePercent[i]*CDSlength
-        n = CDSlength
+        n = CDSlength / 3
+        x = genePercent[i]*n
         p = chrPercent[i]
         cdf = stats.binom.cdf(x,n,p)
         p = 1-abs(0.5-cdf)*2
@@ -62,6 +62,8 @@ def getCuttingLocs(enzymeDict, DNA):
         enzymes.append(enzyme)
     return [enzymes,cuttingLocs]
 
+
+# GOOD IF CUTS ANYWHERE OUTSIDE CODING REGION -  CHANGE THIS
 def goodOrBadEnzyme(cuts, CDSlocs): # enzymeTable = [enzymes, cuttingLocs]
     CDSstart = CDSlocs[0][0]
     CDSend = CDSlocs[len(CDSlocs)-1][1]
@@ -85,4 +87,5 @@ def getData(input, type):
     return [DNA,CDSloc,codonTable,enzymeTable]
 
 
+print(getCodonTable('TTTTTTTTTAGAGAGAATCC'))
 
