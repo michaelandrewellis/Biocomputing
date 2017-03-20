@@ -19,7 +19,7 @@ def overallCodonUse():
         cursor.execute(SQL)
         CDSloc = cursor.fetchall()
         CDS = functions.get_CDS_seq(DNA, CDSloc)
-        codonUse += functions.countCodonUsage(CDS)
+        codonUse += functions.count_codon_usage(CDS)
     return codonUse
 
 def overallCodonPercent():

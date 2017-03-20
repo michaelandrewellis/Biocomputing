@@ -1,26 +1,42 @@
+#! /usr/bin/env python3
+
 from config import codons, codonTable, AA, enzymeDict
 import accessdata as ad
 import scipy.stats as stats
 import pandas as pd
 
 
-# returns coding sequence from coding locations and DNA
 def get_CDS_seq(DNA: str, CDS_loc: list):
     '''
-    Return coding sequence for DNA sequence
+    Return coding sequence from DNA and coding locations
     :param DNA: DNA sequence
     :type DNA: str
-    :param CDS_loc: Locations of coding regions
+    :param CDS_loc: locations of starts and ends of coding regions
     :type CDS_loc: list of (int, int)
-    :return:
+    :return: coding sequence
+    :rtype: str
+
+    >>> get_CDS_seq('TTTAAA',[(3,5)])
+    'TAA'
     '''
     CDS = ""
     for tuple in CDS_loc:
         CDS += DNA[tuple[0]-1:tuple[1]]         # Add each coding region
     return CDS
 
-# returns list of codon counts
-def countCodonUsage(CDS):
+
+def count_codon_usage(CDS):
+    '''
+    Return codon frequency of a coding sequence.
+
+    :param CDS: coding sequence
+    :type CDS: str
+    :return: codon frequencies
+    :rtype: list
+
+    >>> count_codon_usage('TTT')[0]
+    1
+    '''
     codonCount = [0]*64
     for i in range(0,len(CDS),3):
         codon = CDS[i:i+3]
@@ -29,7 +45,7 @@ def countCodonUsage(CDS):
 
 # returns frequency of each codon as a percentage of the total number of codons
 def codonPercent(CDS):
-    count = countCodonUsage(CDS)
+    count = count_codon_usage(CDS)
     total = sum(count)
     percent = [c/total for c in count]
     return percent
@@ -50,7 +66,7 @@ def codonSignificance(CDSlength, genePercent, chrPercent):
     return pvalues
 
 # returns table of codons, their frequencies and their relative frequences
-def getCodonTable(CDS):
+def getCodonTable(CDS):   # TURN INTO DATAFRAME?
     genePercent = codonPercent(CDS)
     chrPercent = codonTable[1]
     relFreq = [g/c for g,c in zip(genePercent, chrPercent)]
@@ -111,5 +127,8 @@ def getData(input, type):
 
 testCDS = 'TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGC' \
           'GATAGCGCATAGCGCTAGCTATCAGCGGGGCGCCCGCGCCTCCTATATATATTCATTCTAGGAGGCTTCTTAAAGCT'
-print(pd.DataFrame(getCodonTable(testCDS)).T)
+codon_table = pd.DataFrame(getCodonTable(testCDS)).T
 
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
