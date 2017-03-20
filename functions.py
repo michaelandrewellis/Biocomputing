@@ -1,13 +1,22 @@
 from config import codons, codonTable, AA, enzymeDict
 import accessdata as ad
 import scipy.stats as stats
+import pandas as pd
 
 
 # returns coding sequence from coding locations and DNA
-def getCDSsequence(DNA, CDSloc):
+def get_CDS_seq(DNA: str, CDS_loc: list):
+    '''
+    Return coding sequence for DNA sequence
+    :param DNA: DNA sequence
+    :type DNA: str
+    :param CDS_loc: Locations of coding regions
+    :type CDS_loc: list of (int, int)
+    :return:
+    '''
     CDS = ""
-    for tuple in CDSloc:
-        CDS += DNA[tuple[0]-1:tuple[1]]
+    for tuple in CDS_loc:
+        CDS += DNA[tuple[0]-1:tuple[1]]         # Add each coding region
     return CDS
 
 # returns list of codon counts
@@ -75,6 +84,12 @@ def goodOrBadEnzyme(cuts, CDSlocs): # enzymeTable = [enzymes, cuttingLocs]
         return 'Bad'
 
 def getEnzymeTable(DNA,CDSloc):
+    '''
+
+    :param DNA:
+    :param CDSloc:
+    :return:
+    '''
     enzymeTable = getCuttingLocs(enzymeDict, DNA)
     enzymeQual = [goodOrBadEnzyme(x, CDSloc) for x in enzymeTable[1]]
     enzymeTable.append(enzymeQual)
@@ -82,12 +97,19 @@ def getEnzymeTable(DNA,CDSloc):
 
 # gets data for web page from database
 def getData(input, type):
-    [DNA, CDSloc] = ad.getDNAandCDSfromSQL(input, type) #From accessdata module
-    CDS = getCDSsequence(DNA, CDSloc)
+    '''
+
+    :param input:
+    :param type:
+    :return:
+    '''
+    [DNA, CDSloc] = ad.get_DNA_and_CDS_from_SQL(input, type) #From accessdata module
+    CDS = get_CDS_seq(DNA, CDSloc)
     codonTable = getCodonTable(CDS)
     enzymeTable = getEnzymeTable(DNA, CDSloc)
     return [DNA,CDSloc,codonTable,enzymeTable]
 
-
-print(getCodonTable('TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGCGATAGCGCATAGCGCTAGCTATCAGCGGGGCGCCCGCGCCTCCTATATATATTCATTCTAGGAGGCTTCTTAAAGCT'))
+testCDS = 'TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGC' \
+          'GATAGCGCATAGCGCTAGCTATCAGCGGGGCGCCCGCGCCTCCTATATATATTCATTCTAGGAGGCTTCTTAAAGCT'
+print(pd.DataFrame(getCodonTable(testCDS)).T)
 

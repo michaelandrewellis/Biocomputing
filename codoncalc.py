@@ -18,7 +18,7 @@ def overallCodonUse():
         SQL = "SELECT start_loc, end_loc FROM coding_region cr WHERE cr.gene_id = '" + gene[0] + "';"
         cursor.execute(SQL)
         CDSloc = cursor.fetchall()
-        CDS = functions.getCDSsequence(DNA, CDSloc)
+        CDS = functions.get_CDS_seq(DNA, CDSloc)
         codonUse += functions.countCodonUsage(CDS)
     return codonUse
 

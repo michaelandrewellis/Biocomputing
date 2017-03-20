@@ -20,7 +20,7 @@ def getCDSfromSQL(input, type, cursor):
     return CDSloc
 
 
-def getDNAandCDSfromSQL(input, type):
+def get_DNA_and_CDS_from_SQL(input, type):
     conn = connectdb()
     cursor = conn.cursor()
     DNA = getDNAfromSQL(input, type, cursor)
