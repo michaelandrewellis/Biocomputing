@@ -1,5 +1,6 @@
 import functions
 import accessdata
+import pandas as pd
 
 ''' Script to calculate codon usage in the whole of Chromosome 15'''
 
@@ -29,3 +30,16 @@ def overallCodonPercent():
     return percent
 
 ############################################################
+
+
+# CREATE SUMMARY TABLE FOR HOME PAGE
+def summary_html_table():
+    conn = accessdata.connectdb()
+    cursor = conn.cursor()
+    SQL = "SELECT * FROM gene"
+    cursor.execute(SQL)
+    rows = cursor.fetchall()
+    cursor.close()
+    df = pd.DataFrame(rows)
+    df.columns = ['A','B','C','D']
+    return(df.to_html)
