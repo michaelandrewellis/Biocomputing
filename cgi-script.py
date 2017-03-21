@@ -1,11 +1,14 @@
-from functions import get_data, getCodonTable
+#! /usr/bin/env python3
+
+from functions import get_data
 import cgi
+import cgitb; cgitb.enable()
 import pandas as pd
 
 ''' PERHAPS ADD DEBUGGING '''
 
 print ("Content-Type: text/html\n")
-
+"""
 form = cgi.FieldStorage()
 
 input = form['input'].value
@@ -25,3 +28,14 @@ codon_table_html = codon_table_df.to_html
 print(DNA)
 print(pd.DataFrame(CDS_loc,columns=['Start of coding region','End of coding region']).to_html(index=False))
 print(codon_table_html())
+"""
+print('''
+<html>
+<head>
+ <title>Hello World!</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+</body>
+</html>
+''')
