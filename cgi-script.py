@@ -1,4 +1,4 @@
-from functions import getData, getCodonTable
+from functions import get_data, getCodonTable
 import cgi
 import pandas as pd
 
@@ -11,17 +11,17 @@ form = cgi.FieldStorage()
 input = form['input'].value
 type = form['type'].value
 
-[DNA,CDS_loc,codon_table,enzyme_table] = getData('geneid',geneid)
+[DNA,CDS_loc,codon_table,enzyme_table] = get_data('geneid', geneid)
 
 
-testCDS = 'TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGC' \
-          'GATAGCGCATAGCGCTAGCTATCAGCGGGGCGCCCGCGCCTCCTATATATATTCATTCTAGGAGGCTTCTTAAAGCT'
-
-codon_table = pd.DataFrame(getCodonTable(testCDS)).T
-codon_table.columns = ['Triplet', 'Amino Acid', 'Gene %', 'Chr %', 'Relative Frequency', 'P-value']
-'''codon_table['First']= codon_table['Triplet'].astype(str).str[0]
-codon_table['Second']= codon_table['Triplet'].astype(str).str[1]
-codon_table['Third']= codon_table['Triplet'].astype(str).str[2]'''
+codon_table_df = pd.DataFrame(codon_table).T
+codon_table_df.columns = ['Triplet', 'Amino Acid', 'Gene %', 'Chr %', 'Relative Frequency', 'P-value']
 index = pd.MultiIndex.from_product([['T','C','A','G'],['T','C','A','G'],['T','C','A','G']])
-df = codon_table.set_index(index)
-print(df.stack().unstack(level=-4).unstack())
+codon_table_df = codon_table_df.set_index(index)
+codon_table_df = codon_table_df.stack().unstack(level=-4).unstack()
+codon_table_html = codon_table_df.to_html
+
+
+print(DNA)
+print(pd.DataFrame(CDS_loc,columns=['Start of coding region','End of coding region']).to_html(index=False))
+print(codon_table_html())

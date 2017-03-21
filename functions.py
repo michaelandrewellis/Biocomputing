@@ -111,14 +111,17 @@ def getEnzymeTable(DNA,CDSloc):
     enzymeTable.append(enzymeQual)
     return enzymeTable
 
-# gets data for web page from database
-def getData(input, type):
-    '''
 
+def get_data(input, type):
+    """
     :param input:
     :param type:
-    :return:
-    '''
+    :return: list containing:
+        - DNA
+        - locations of exon boundaries
+        - codon table
+        - enzyme table
+    """
     [DNA, CDSloc] = ad.get_DNA_and_CDS_from_SQL(input, type) #From accessdata module
     CDS = get_CDS_seq(DNA, CDSloc)
     codonTable = getCodonTable(CDS)
