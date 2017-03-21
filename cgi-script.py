@@ -4,17 +4,14 @@ import pandas as pd
 
 ''' PERHAPS ADD DEBUGGING '''
 
-'''
 print ("Content-Type: text/html\n")
 
 form = cgi.FieldStorage()
 
 input = form['input'].value
 type = form['type'].value
-'''
 
-# data = getData('geneid',geneid)
-# [DNA,CDS_loc,codon_table,enzyme_table] = data
+[DNA,CDS_loc,codon_table,enzyme_table] = getData('geneid',geneid)
 
 
 testCDS = 'TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGC' \
