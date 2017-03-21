@@ -22,12 +22,9 @@ testCDS = 'TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGC' \
 
 codon_table = pd.DataFrame(getCodonTable(testCDS)).T
 codon_table.columns = ['Triplet', 'Amino Acid', 'Gene %', 'Chr %', 'Relative Frequency', 'P-value']
-codon_table['First']= codon_table['Triplet'].astype(str).str[0]
+'''codon_table['First']= codon_table['Triplet'].astype(str).str[0]
 codon_table['Second']= codon_table['Triplet'].astype(str).str[1]
-codon_table['Third']= codon_table['Triplet'].astype(str).str[2]
+codon_table['Third']= codon_table['Triplet'].astype(str).str[2]'''
 index = pd.MultiIndex.from_product([['T','C','A','G'],['T','C','A','G'],['T','C','A','G']])
-index1 = pd.MultiIndex.from_product([['T','C','A','G'],['T','C','A','G']])
-index2 = pd.MultiIndex.from_product([['T','C','A','G'],['Triplet', 'Amino Acid', 'Gene %', 'Chr %', 'Relative Frequency', 'P-value']])
-index3 = pd.MultiIndex.from_product([['T','C','A','G'],['T','C','A','G'],['T','C','A','G'],['Triplet', 'Amino Acid', 'Gene %', 'Chr %', 'Relative Frequency', 'P-value']])
 df = codon_table.set_index(index)
-print(df.unstack())
+print(df.stack().unstack(level=-4).unstack())
