@@ -1,0 +1,105 @@
+LOCUS       HSZFPBG3                2668 bp    DNA     linear   PRI 26-APR-1997
+DEFINITION  Human zinc finger protein basonuclin gene, exon 5 and complete cds.
+ACCESSION   U59694
+VERSION     U59694.1  GI:1488273
+KEYWORDS    .
+SEGMENT     3 of 3
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2668)
+  AUTHORS   Teumer,J., Tseng,H. and Green,H.
+  TITLE     The human basonuclin gene
+  JOURNAL   Gene 188 (1), 1-7 (1997)
+   PUBMED   9099851
+REFERENCE   2  (bases 1 to 2668)
+  AUTHORS   Green,H., Teumer,J. and Tseng,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAY-1996) Cell Biology, Harvard Medical School, 240
+            Longwood Avenue, Boston, MA 02115, USA
+FEATURES             Location/Qualifiers
+     source          1..2668
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     mRNA            join(U59692.1:2001..2187,U59693.1:710..809,
+                     U59693.1:1858..2093,U59693.1:2465..4329,344..2565)
+                     /product="zinc finger protein basonuclin"
+     CDS             join(U59692.1:2089..2187,U59693.1:710..809,
+                     U59693.1:1858..2093,U59693.1:2465..4329,344..1028)
+                     /codon_start=1
+                     /product="zinc finger protein basonuclin"
+                     /protein_id="AAB53028.1"
+                     /db_xref="GI:1488275"
+                     /translation="MRRRPPSRGGRGAARARETRRQPRHRSGRRMAEAISCTLNCSCQ
+                     SFKPGKINHRQCDQCKHGWVAHALSKLRIPPMYPTSQVEIVQSNVVFDISSLMLYGTQ
+                     AIPVRLKILLDRLFSVLKQDEVLQILHALDWTLQDYIRGYVLQDASGKVLDHWSIMTS
+                     EEEVATLQQFLRFGETKSIVELMAIQEKEEQSIIIPPSTANVDIRAFIESCSHRSSSL
+                     PTPVDKGNPSSIHPFENLISNMTFMLPFQFFNPLPPALIGSLPEQYMLEQGHDQSQDP
+                     KQEVHGPFPDSSFLTSSSTPFQVEKDQCLNCPDAITKKEDSTHLSDSSSYNIVTKFER
+                     TQLSPEAKVKPERNSLGTKKGRVFCTACEKTFYDKGTLKIHYNAVHLKIKHKCTIEGC
+                     NMVFSSLRSRNRHSANPNPRLHMPMNRNNRDKDLRNSLNLASSENYKCPGFTVTSPDC
+                     RPPPSYPGSGEDSKGQPAFPNIGQNGVLFPNLKTVQPVLPFYRSPATPAEVANTPGIL
+                     PSLPLLSSSIPEQLISNEMPFDALPKKKSRKSSMPIKIEKEAVEIANEKRHNLSSDED
+                     MPLQVVSEDEQEACSPQSHRVSEEQHVQSGGLGKPFPEGERPCHRESVIESSGAISQT
+                     PEQATHNSERETEQTPALIMVPREVEDGGHEHYFTPGMEPQVPFSDYMELQQRLLAGG
+                     LFSALSNRGMAFPCLEDSKELEHVGQHALARQIEENRFQCDICKKTFKNACSVKIHHK
+                     NMHVKEMHTCTVEGCNATFPSRRSRDRHSSNLNLHQKALSQEALESSEDHFRAAYLLK
+                     DVAKEAYQDVAFTQQASQTSVIFKGTSRMGSLVYPITQVHSASLESYNSGPLSEGTIL
+                     DLSTTSSMKSESSSHSSWDSDGVSEEGTVLMEDSDGNCEGSSLVPGEDEYPICVLMEK
+                     ADQSLASLPSGLPITCHLCQKTYSNKGTFRAHYKTVHLRQLHKCKVPGCNTMFSSVRS
+                     RNRHSQNPNLHKSLASSPSHLQ"
+     exon            344..2565
+                     /product="zinc finger protein basonuclin"
+                     /number=5
+     polyA_signal    2547..2552
+ORIGIN      
+        1 ggggtatgtc taaaccagta gctctgaaac agtgagctca atttacagaa aggacatgag
+       61 gtacagaaag tacatcaaac agacactgga aatcaaagaa gactacatat tctcagtatc
+      121 cagactgtcg gctttcctgg tgaacactaa cttctggcaa gcaatgaaca acagtgggtc
+      181 tgtatcccca gacaggtgtt acatcccatg ggggcctacc cccttatcat cggtgctccc
+      241 ataccacatg tttttcctgg tatctaccaa gtctctccac tcagaatgat gactgtttct
+      301 aaaacagccc aacccattac taaccatctt ttcactcttg tagacacagc tcaaacctaa
+      361 acctccacca aaaagcattg agccaggaag cattggagag tagtgaagat catttccgtg
+      421 cagcttacct tctgaaagat gtggctaagg aagcctatca ggatgtggct tttacacagc
+      481 aagcctccca gacatctgtc atcttcaaag gaacaagtcg aatgggcagt ctggtttacc
+      541 caataacgca agtccacagt gccagcctgg agagctacaa ctctggcccc ttgagcgagg
+      601 gcaccatcct ggatttgagc actacctcga gcatgaagtc agagagtagc agccattctt
+      661 cctgggactc tgacggggtg agtgaggaag gcactgtgct tatggaggac agtgatggga
+      721 actgtgaagg gtcgagcctt gtccctgggg aagatgagta ccccatctgt gtcctgatgg
+      781 agaaggctga ccagagcctt gctagcctgc cttctgggtt gcccataacc tgtcatctct
+      841 gccaaaagac atacagtaac aaagggacct ttagggccca ctacaaaact gtgcacctcc
+      901 ggcagctcca caaatgcaaa gtaccaggct gcaacaccat gttttcgtct gttcgcagtc
+      961 gaaacagaca cagccagaat cccaacctgc acaaaagcct ggcctcatct ccaagtcacc
+     1021 tccagtaaca agatggcaaa ccaagtatgc tcagataagc ttttttcata attcaggaat
+     1081 aaagtagtcc atagaaatgt ttctgtttca tatcatttgg ggcgagtcag gcaaaagtat
+     1141 ttgatttgac tttatagttt tccacagcac aatgagcaaa agacaaacct cgtgggaaga
+     1201 tgacactggg gcagcccttc ctattatttt tcttagccca agaggtcttt cactgataca
+     1261 aggaaaactt gcagaaatgt gatttttccc agatttgttt acatgttccc tgggacagat
+     1321 ccaggtctgc agatcgacac cagtgggccc aggacctggg ggtggcttta aatgaggctt
+     1381 gcagtgttaa aggtcttgga taagaagggt cctggggaag aagactctgt ggacaagata
+     1441 ccagtcccca aaacagcatt ttcagttcct tcttcaatta gtttgaaatc cagacctgag
+     1501 tttggaagac tgattttttg agaccatccc tgtgtttgga gtggataatt gtccctcccc
+     1561 tcagccctgc accagaggtc tcatatgtta ccccagggag ttctcagagg attgggttgg
+     1621 cctctaacat gttccttgtt aattcttgtt ctgtaacatg cattcaagaa gctaggggaa
+     1681 aaatatctca tgcacttaaa taatggtctt caatttaatt taaaaatatt ttgacaatat
+     1741 ttaatttgtg cttatgtggt gtttggtgtg agtgcagata ttgcactgtg tcacctctgg
+     1801 atctctgctc agaagcagaa caagtgatga cctaaatgtc aaaatcactg ctcgttttca
+     1861 tttggtgaac ttcaaactct gttctttttg gtcacctgtg gaatgaatgc aagcatgatt
+     1921 ttggcaggaa catttgtaca tattctgccg tagataatgt ggttctgatg gttgttgtgt
+     1981 attttcagta tcactggatc cctcagtctt caccgtttta taaacgtata agattaggat
+     2041 gaacttttga atttacttgg taggaaaaaa agtaggacat tattgccata ttgtatgtct
+     2101 taatatttaa cttattcgga aatatattcc acactgttac atacattttc catggtagaa
+     2161 aggaagttca gtcagtcctg tggaatgaaa ccatctccta aaattcagca tttgcagcat
+     2221 tctaaaagcc tgtgtaggta caaggacatt gattttgtat tcagaattca agttaactat
+     2281 cttttaaatt cgtggttgat gtaagtaata aaaaacattc ttaaagttga gggttataag
+     2341 agagattatt tctgtggtct aaaggttaaa aagccaacaa cctgttacca attatttcag
+     2401 ctttttttgt tttaataagt gtgacaactt aaaacttgtt tctatttaaa gtgaaatgta
+     2461 tctttcaact gtttagttac ccagctgttt aatattccag tcttcccaaa gtgaaaagat
+     2521 ttgtatacaa atgttttcta tgatttaata aaaatatatg gcacaccttt tgtttaaaaa
+     2581 ggcaaacatt tgtaaaaatg gttttgtcat atgggctgcg ttttgtacaa gtgtatatcc
+     2641 ttatgcacac acacagagat gcattatg
+//

@@ -1,0 +1,106 @@
+LOCUS       AB065604                2869 bp    DNA     linear   PRI 23-JUL-2002
+DEFINITION  Homo sapiens gene for seven transmembrane helix receptor, complete
+            cds, isolate:CBRC7TM_167.
+ACCESSION   AB065604
+VERSION     AB065604.1  GI:21928484
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Suwa,M., Sato,T., Okouchi,I., Arita,M., Futami,K., Matsumoto,S.,
+            Tsutsumi,S., Aburatani,H., Asai,K. and Akiyama,Y.
+  TITLE     Genome-wide discovery and analysis of human seven transmembrane
+            helix receptor genes
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2869)
+  AUTHORS   Suwa,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-JUL-2001) Makiko Suwa, Computational Biology Research
+            Center (CBRC), National Institute of Advanced Industrial Science
+            and Technology (AIST); 2-41-6 Aomi Koto-ku, Tokyo 135-0064, Japan
+            (E-mail:m-suwa@aist.go.jp, URL:http://www.cbrc.jp/,
+            Tel:81-3-3599-8080, Fax:81-3-3599-8081)
+COMMENT     This sequence is a seven transmembrane helix receptor candidate
+            predicted from the whole human genome sequences using our automated
+            system that contains programs of gene
+            finding(GeneDecoder), sequence search, motif-domain assignment and
+            transmembrane helix prediction.
+            And the sequence is submitted by the collaborative project between
+            [Computational Biology Research Center (CBRC), National Institute
+            of Advanced Industrial Science and Technology (AIST)] and [Genome
+            Science Division, Research Center for Advanced Science and
+            Technology (RCAST), University of Tokyo].
+FEATURES             Location/Qualifiers
+     source          1..2869
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="CBRC7TM_167"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     CDS             join(201..1088,2478..2669)
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /codon_start=1
+                     /product="seven transmembrane helix receptor"
+                     /protein_id="BAC05832.1"
+                     /db_xref="GI:21928485"
+                     /translation="MALGNHSTITEFLLLGLSADPNIRALLFVLFLGIYLLTIMENLM
+                     LLLVIRADSCLHKPMYFFLSHLSFVDLCFSSVIVPKMLENLLSQRKTISVEGCLAQVF
+                     FVFVTAGTEACLLSGMAYDRHAAIRRPLLYGQIMGKQLYMHLVWGSWGLGFLDALINV
+                     LLAVNMVFCEAKIIHHYSYEMPSLLPLSCSDISRSLIVLLCSTLLHGLGNFLLVFLSY
+                     TRIISTILSISSTSGRSKAFSTCSAHLTAVTLYYGSGLLRHLMPNSGSPIELIFSVQY
+                     TVVTPMLNSLIYSLKNKEVKGERSLRDSSHLPQLHKGQARWKRPAFTEGRREPGHPEL
+                     SIPVTPQPQGACACSALRAAPTALP"
+ORIGIN      
+        1 attacactgt tacaatttct tgttttcaca tccatgttct tcagtggacc atttaaagag
+       61 caaagactac acctcaatca cctttatgtt ccatgtgacc gatatgaaaa gagaatcagt
+      121 accatgagaa aactgtctgg agtaatcttg acttggctgc tatgatttta cgagttattt
+      181 ctagggagta gcctttgtaa atggccttgg ggaatcacag caccatcacc gagttcctcc
+      241 tccttgggct gtctgccgac cccaacatcc gggctctgct ctttgtgctg ttcctgggga
+      301 tttacctcct gaccataatg gaaaacctga tgctgctgct cgtgatcagg gctgattctt
+      361 gtctccataa gcccatgtat ttcttcctga gtcacctctc ttttgttgat ctctgcttct
+      421 cttcagtcat tgtgcccaag atgctggaga acctcctgtc acagaggaaa accatttcag
+      481 tagagggctg cctggctcag gtcttctttg tgtttgtcac tgcagggact gaagcctgcc
+      541 ttctctcagg gatggcctat gaccgccatg ctgccatccg ccgcccacta ctttatggac
+      601 agatcatggg taaacagctg tatatgcacc ttgtgtgggg ctcatgggga ctgggctttc
+      661 tggacgcact catcaatgtc ctcctagctg taaacatggt cttttgtgaa gccaaaatca
+      721 ttcaccacta cagctatgag atgccatccc tcctccctct gtcctgctct gatatctcca
+      781 gaagcctcat cgttttgctc tgctccactc tcctacatgg gctgggaaac ttccttttgg
+      841 tcttcttatc ctacacccgt ataatctcta ccatcctaag catcagctct acctcgggca
+      901 gaagcaaggc cttctccacc tgctctgccc acctcactgc agtgacactt tactatggct
+      961 caggtttgct ccgccatctc atgccaaact caggttcccc catagagttg atcttctctg
+     1021 tgcagtatac tgtagtcact cccatgctga attccctcat ctatagcctg aaaaataagg
+     1081 aagtgaaggt agctctgaaa agaactttgg aaaaatattt gcaatatacc agacgttgag
+     1141 ttaaaaaaca aacattgttg gccgagcact gtggctcatg cctgcagcag gaggattgct
+     1201 tgagctcagg agttcgagat tagcttggcc aacatggtga aaccctgtct ccaaaaaaaa
+     1261 aaaaaaatag gccgggcatg gtggtgtgca cctgtaattc cagttacttg gaaggctgag
+     1321 ggaggaggat cacttgagcg tgggaggtca aggctgcagt gagctgagat tgcaccactg
+     1381 cactccagcc tgggcaacag agcaagaccc tgtctcaaaa aaaaaagatt ttggaaaatt
+     1441 taggtcaagc tgcatacaac atgacactgg ataagtttat agtagtaagt attcctggct
+     1501 accctcagtg tctgatactg caagctgtaa attagaagtg catgagagaa tggtacaaag
+     1561 ttattacaag taggaaggtt aactttaatc cctcttagtg acaaagcaaa ttattaaatt
+     1621 attacctcaa taaagttttg ttatgaacat attgattcat ttttctcatt ctaaaacatt
+     1681 catcttgggc tttgcattta gtaaaatcat tagcgtcgca aatctatcat ttttaattta
+     1741 ctttggtgaa cacactaaaa gtcatggcat ttaataagaa cacagtgtca tggatgcgtg
+     1801 ggagagaaaa gtcactagat aagacttgat gggaagaaag agaaagattt ccaaccgtgt
+     1861 ggccatagaa gacataaaca cctaagagaa cttcagagag ggaatcaaca tactgaggca
+     1921 gaacttggac tcagataaaa ttcccaagaa cttcactgtg tgtgcagctt ggtggccagc
+     1981 tctccggtgc aaaagattgc aaggaggctc tgtggctcta gaaacttcat tcctcacatg
+     2041 gtcttcattc actgtatacg ggatttatat tttttccaat tagctgatct tatcagtgtg
+     2101 tcttttcctt gtagagtgca ggctatgtac cctagacaaa taatcttgtt ttgacctcat
+     2161 ctcaagtgaa tcctgaaact atctttgtct catctttcat tgtttagtgt caggtggttt
+     2221 gccggttcta agggcactga aaaactctca cgtaataaac attttttcct ataaaacaaa
+     2281 tgcttctgat ttgtttaagc tatattttac aattgcctaa cttactgtag ttaactgaaa
+     2341 aggtgcaaaa actatctaca aattattgaa tttattgaat attaacttgc acttttctca
+     2401 agcttctttc acaaactctc ttcgttctaa ttgtcagttt taaaagcttt tcatgaaaaa
+     2461 aacgtatctg ttacaagggg gaaagaagcc tccgggacag cagtcatttg cctcagctgc
+     2521 acaaaggcca ggccagatgg aagagaccag ccttcaccga aggccgcagg gagcccggac
+     2581 acccggagct gagcattccg gtcacgcctc aaccccaagg ggcctgcgca tgctccgcgc
+     2641 tgcgcgcggc gcccacggcc ctgccctgat acgcaggagc cccgggatag agaaacccag
+     2701 atgaaaacac aagcccagtg agatgttggc ctcctcatct gctaccctcg ccgtcacctc
+     2761 tgcgcaccaa gccttctgtc ccggagaaga agccgtattt ggtctccctc gatgggcgag
+     2821 accggggcca cgcgggcacc gtgatcccgc cactgcatcc cggggaccc
+//

@@ -1,0 +1,106 @@
+LOCUS       AF219981S6              1885 bp    DNA     linear   PRI 28-AUG-2000
+DEFINITION  Homo sapiens Rh type C glycoprotein (RHCG) gene, exons 10, 11, and
+            complete cds.
+ACCESSION   AF219986
+VERSION     AF219986.1  GI:9931381
+KEYWORDS    .
+SEGMENT     6 of 6
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1885)
+  AUTHORS   Liu,Z., Chen,Y., Mo,R., Hui,C., Cheng,J.F., Mohandas,N. and
+            Huang,C.H.
+  TITLE     Characterization of human RhCG and mouse Rhcg as novel nonerythroid
+            Rh glycoprotein homologues predominantly expressed in kidney and
+            testis
+  JOURNAL   J. Biol. Chem. 275 (33), 25641-25651 (2000)
+   PUBMED   10852913
+REFERENCE   2  (bases 1 to 1885)
+  AUTHORS   Liu,Z. and Huang,C.-H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-DEC-1999) Biochemistry & Molecular Genetics, New York
+            Blood Center, 310 East 67th Street, New York, NY 10021, USA
+FEATURES             Location/Qualifiers
+     source          1..1885
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q25"
+     gene            order(AF219981.1:1..1116,AF219982.1:1..777,
+                     AF219983.1:1..784,AF219984.1:1..1866,AF219985.1:1..2066,
+                     1..1885)
+                     /gene="RHCG"
+     mRNA            join(AF219981.1:483..704,AF219982.1:335..521,
+                     AF219983.1:247..397,AF219984.1:384..531,
+                     AF219984.1:1303..1469,AF219985.1:444..581,
+                     AF219985.1:767..903,AF219985.1:1215..1339,
+                     AF219985.1:1593..1666,433..585,1441..1885)
+                     /gene="RHCG"
+                     /product="Rh type C glycoprotein"
+                     /note="mRNA sequence deposited in GenBank Accession Number
+                     AF193809"
+     CDS             join(AF219981.1:521..704,AF219982.1:335..521,
+                     AF219983.1:247..397,AF219984.1:384..531,
+                     AF219984.1:1303..1469,AF219985.1:444..581,
+                     AF219985.1:767..903,AF219985.1:1215..1339,
+                     AF219985.1:1593..1666,433..561)
+                     /gene="RHCG"
+                     /codon_start=1
+                     /product="Rh type C glycoprotein"
+                     /protein_id="AAG02171.1"
+                     /db_xref="GI:9931382"
+                     /translation="MAWNTNLRWRLPLTCLLLQVIMVILFGVFVRYDFEADAHWWSER
+                     THKNLSDMENEFYYRYPSFQDVHVMVFVGFGFLMTFLQRYGFSAVGFNFLLAAFGIQW
+                     ALLMQGWFHFLQDRYIVVGVENLINADFCVASVCVAFGAVLGKVSPIQLLIMTFFQVT
+                     LFAVNEFILLNLLKVKDAGGSMTIHTFGAYFGLTVTRILYRRNLEQSKERQNSVYQSD
+                     LFAMIGTLFLWMYWPSFNSAISYHGDSQHRAAINTYCSLAACVLTSVAISSALHKKGK
+                     LDMVHIQNATLAGGVAVGTAAEMMLMPYGALIIGFVCGIISTLGFVYLTPFLESRLHI
+                     QDTCGINNLHGIPGIIGGIVGAVTAASASLEVYGKEGLVHSFDFQGFNGDWTARTQGK
+                     FQIYGLLVTLAMALMGGIIVGLILRLPFWGQPSDENCFEDAVYWEMPEGNSTVYIPED
+                     PTFKPSGPSVPSVPMVSPLPMASSVPLVP"
+     exon            433..585
+                     /gene="RHCG"
+                     /number=10
+     3'UTR           join(562..585,1441..1885)
+                     /gene="RHCG"
+     exon            1441..1885
+                     /gene="RHCG"
+                     /number=11
+ORIGIN      
+        1 cggacctgtc tgcagtttac agagcttgcc atactacctt ttaccgcctc tgccccttac
+       61 tccaattcat cttttaaaag tgggttcagc acaacttctc agcatccccc aggctgggtt
+      121 ataagcctgt tgtgtgcatt tgcaactctt actgtcactg ggtatttcac tgcaatgcct
+      181 caccattgct ctcatggggc aaggacactg tctcctcctt gccatgcctc agcacccagg
+      241 acagtgccta atatagggta ggggcaggac tcctgtgttg aaggaccacc ccgctctccg
+      301 tggcatgtga tccgcacggc gatcacaagg tggcgctcgc cacacaccat ttgcagctcc
+      361 aggttctagt caccagggac acccttgcct ggactgggac agggccctca gagttgcatc
+      421 ctctctctgt agatgcctga agggaacagc actgtctaca tccctgagga ccccaccttc
+      481 aagccctcag gaccctcagt accctcagta cccatggtgt ccccactacc catggcttcc
+      541 tcggtaccct tggtacccta ggctcccagg gcaggtgagg agcaggtgag catgggcttg
+      601 gcttggggga tgacagggag gttctcccag tgggggccca gctctcagaa tcagatgtta
+      661 ctagcaaaga ggcaaaaagc aaacatcaag aaatgagggc ttccacccct cctgcctgag
+      721 gtgcagtggg cacatggggt tggcagggga gcttcttaga gtcagacaac gtgcatccag
+      781 gacagacaca ggaacaggtg aaggcacaag ggcctggaag gaatatggaa ggagacctgg
+      841 gggcacactt ggctttgtga ctgtgcctgc tggtgtgtga ctttgagaat ctcttcaccc
+      901 cagagactgg gcctcgattt cctcatctat aaaaatgaag ctgacacgtc tggttgtatt
+      961 cagttgctca gctcagatga gacccaccct cccctctttc tttccgtcaa ctaacactgt
+     1021 gcctcctctg tggaatgcac caagcccttg ctcatggctt tcacatctaa ccttcccaag
+     1081 atctctacaa ggcaagtaga attactgccc tcattttaat agatgagcaa actaaggctc
+     1141 ggagaagttc aggttcttca agatcacaca actagcaagt ggagaaactg gggtccttgc
+     1201 tggtcattgt tactgttttt attattgtta tttaacttcc ttggaggcca gagcttggca
+     1261 atagctgggt ctggggcctg agtgatgtgg caagagagga tgttagggtg ccaggaaaga
+     1321 ggaaggtgag gctatgccca gttgccttta atgtccaccc catccagaaa agaaaatggt
+     1381 gcctgagagg ctacagcagg acccggcagt gacccgctgc tcttggctgt ctccctgcag
+     1441 gctccacaga ctctcctggg gcccagagga gctggtgctg acctagctag ggatgcaaga
+     1501 gtgagcaagc agcaccccca cctgctggct tggcctcaag gtgcctccac ccctgccctc
+     1561 cccttcatcc cagggggtct gcctgagaat ggagaaggag aagctacaaa gtgggcatcc
+     1621 aagccgggtt ctggctgcag aagttctgcc tctgcctggg gtcttggcca cattggagaa
+     1681 aaacaggctc aaagtggggc tgggacctgg tgggtgaacc tgagctctcc caggagacaa
+     1741 cttagctgcc agtcaccacc tatgaggctc ttctaccccg tgcctgcacc tcggccagca
+     1801 tctcctatgc tccctgggtc ccccagacct ctctgtgttg tgtgcgtggc agcctccagg
+     1861 aataaacatt cttgttgtcc tttgt
+//

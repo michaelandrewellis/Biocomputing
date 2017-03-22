@@ -1,0 +1,52 @@
+LOCUS       AF271609S4               230 bp    DNA     linear   PRI 01-AUG-2000
+DEFINITION  Homo sapiens transcription factor 12 (TCF12) gene, exon 11 and
+            partial cds.
+ACCESSION   AF271612
+VERSION     AF271612.1  GI:9049971
+KEYWORDS    .
+SEGMENT     4 of 9
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 230)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Organization of the HTF4 Gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 230)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-MAY-2000) Chemistry, Purdue University, 1393 Brown
+            Bldg., W. Lafayette, IN 47907, USA
+FEATURES             Location/Qualifiers
+     source          1..230
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21"
+     mRNA            <51..>195
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /product="transcription factor 12"
+     CDS             <51..>195
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /note="helix-loop-helix transcription factor 4"
+                     /codon_start=1
+                     /product="transcription factor 12"
+                     /protein_id="AAF82572.1"
+                     /db_xref="GI:9049979"
+                     /translation="SYPPHSVSPTDINTSLPPMSSFHRGSTSSSPYVAASHTPPINGS
+                     DSIL"
+     exon            51..195
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /number=11
+ORIGIN      
+        1 gaatattatt cagaaaatat atttaataga tcatatctct ttccatctag agttatcctc
+       61 cacactcagt ttcaccaaca gacataaaca cgagtcttcc accaatgtcc agctttcatc
+      121 gcggcagtac cagcagttca ccttacgttg ctgcctcaca cactcctccc atcaatggat
+      181 cagacagcat tctaggtgag ctttttgagt tggcaaaact tcctaaaagt
+//

@@ -1,0 +1,58 @@
+LOCUS       AF225400S05              199 bp    DNA     linear   PRI 28-JAN-2003
+DEFINITION  Homo sapiens HERC2 (HERC2) gene, exon 80 and partial cds.
+ACCESSION   AF225404
+VERSION     AF225404.1  GI:27923084
+KEYWORDS    .
+SEGMENT     5 of 10
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 199)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Structure of the highly conserved HERC2 gene and of multiple
+            partially duplicated paralogs in human
+  JOURNAL   Genome Res. 10 (3), 319-329 (2000)
+   PUBMED   10720573
+REFERENCE   2  (bases 1 to 199)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-JAN-2000) Genetics, Case Western Reserve University,
+            10900 Euclid Ave., Cleveland, OH 44106-4955, USA
+FEATURES             Location/Qualifiers
+     source          1..199
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13"
+     mRNA            join(AF225402.1:<1..71,AF225402.1:505..660,
+                     AF225402.1:1052..1167,AF225402.1:1268..1466,
+                     AF225403.1:232..446,176..>199)
+                     /gene="HERC2"
+                     /product="HERC2"
+     CDS             join(AF225402.1:<1..71,AF225402.1:505..660,
+                     AF225402.1:1052..1167,AF225402.1:1268..1466,
+                     AF225403.1:232..446,176..>199)
+                     /gene="HERC2"
+                     /codon_start=3
+                     /product="HERC2"
+                     /protein_id="AAO27482.1"
+                     /db_xref="GI:27923091"
+                     /translation="RQFEYEDPIVRGGKQLLHSPFFKVLVALACDLELDTLPCCAETH
+                     KWAWFRRYCMASRVAVALDKRTPLPRLFLDEVAKKIRELMADSENMDVLHESHDIFKR
+                     EQDEQLVQWMNRRPDDWTLSAGGSGTIYGWGHNHRGQLGGIEGAKVKVPTPCEALATL
+                     RPVQLIGGEQTLFAVTADGKLYATGYGAGGRLGIGGTESVSTPTLLESIQHVFIKKVA
+                     VNSGGKHCLALSSEGEVYSWGEAEDGKLGHGNRSPCDRPRV"
+     exon            176..>199
+                     /gene="HERC2"
+                     /number=80
+ORIGIN      
+        1 ttgtacagga aggagatagg aagtggtgaa cttttgagtt taggtctgaa tgattcttct
+       61 tgattgattt aacaattaac tgattaggaa ggtgtagatt gagaggtatt ttatacactg
+      121 aaaaaatgtt taacaataaa aatgtgtttc cattatattg gtgacttttt tgcagtccgt
+      181 gtgaccgccc tcgtgtcat
+//

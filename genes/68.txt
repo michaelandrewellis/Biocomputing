@@ -1,0 +1,50 @@
+LOCUS       AF271609S1               153 bp    DNA     linear   PRI 01-AUG-2000
+DEFINITION  Homo sapiens transcription factor 12 (TCF12) gene, exon 5 and
+            partial cds.
+ACCESSION   AF271609
+VERSION     AF271609.1  GI:9049968
+KEYWORDS    .
+SEGMENT     1 of 9
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 153)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Organization of the HTF4 Gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 153)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-MAY-2000) Chemistry, Purdue University, 1393 Brown
+            Bldg., W. Lafayette, IN 47907, USA
+FEATURES             Location/Qualifiers
+     source          1..153
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21"
+     mRNA            <23..>125
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /product="transcription factor 12"
+     CDS             <23..>125
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /note="helix-loop-helix transcription factor 4"
+                     /codon_start=1
+                     /product="transcription factor 12"
+                     /protein_id="AAF82570.1"
+                     /db_xref="GI:9049977"
+                     /translation="GFTDSPHYSDHLNDSRLGAHEGLSPTPFMNSNLM"
+     exon            23..125
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /number=5
+ORIGIN      
+        1 tctgatcttt ttctccccct agggttttac agacagccct cattacagtg atcacttgaa
+       61 tgacagtcga ttaggagccc atgaaggctt gtccccgaca cctttcatga actcaaatct
+      121 gatgggtaag ttggtaattc tctgcaagta gtc
+//

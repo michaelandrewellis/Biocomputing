@@ -1,0 +1,86 @@
+LOCUS       AJ426050                1265 bp    DNA     linear   PRI 14-NOV-2006
+DEFINITION  Homo sapiens partial CD13 gene for aminopeptidase N, P 150, exon
+            1-2.
+ACCESSION   AJ426050
+VERSION     AJ426050.1  GI:25136917
+KEYWORDS    aminopeptidase N, P 150; CD13 gene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Eiz-Vesper,B., Fuchs,N., Gottschalk,D., Mueller,K., Reuter,S. and
+            Blasczyk,R.
+  TITLE     Genomic organisation of Aminopeptidase N
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1265)
+  AUTHORS   Blasczyk,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-NOV-2001) Blasczyk R., Department of Transfusion
+            Medicine, Hannover Medical School, Carl-Neuberg-Str. 1, Hannover,
+            30625, GERMANY
+FEATURES             Location/Qualifiers
+     source          1..1265
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="011386"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q25-q26"
+                     /sex="female"
+                     /tissue_type="peripheral"
+                     /country="Germany"
+     gene            <1..>1265
+                     /gene="CD13"
+     CDS             join(1..614,1121..>1265)
+                     /gene="CD13"
+                     /function="immune response"
+                     /codon_start=1
+                     /product="aminopeptidase N, P 150"
+                     /protein_id="CAD19802.1"
+                     /db_xref="GI:25136918"
+                     /db_xref="GDB:118728"
+                     /db_xref="GOA:P15144"
+                     /db_xref="HGNC:500"
+                     /db_xref="InterPro:IPR001930"
+                     /db_xref="InterPro:IPR014782"
+                     /db_xref="UniProtKB/Swiss-Prot:P15144"
+                     /translation="MAKGFYISKSLGILGILLGVAAVCTIIALSVVYSQEKNKNANSS
+                     PVASTTPSASATTNPASATTLDQSKAWNRYRLPNTLKPDSYQVTLRPYLTPNDRGLYV
+                     FKGSSTVRFTCKEATDVIIIHSKKLNYTLSQGHRVVLRGVGGSQPPDIDKTELVEPTE
+                     YLVVHLKGSLVKDSQYEMDSEFEGELADDLAGFYRSEYMEGNVRKVVATTQMQAADAR
+                     KSFPCFDEPAMKAEFNITLIHPKDLTALSNMLPKG"
+     exon            <1..614
+                     /gene="CD13"
+                     /number=1
+     intron          615..1120
+                     /gene="CD13"
+                     /number=1
+     exon            1121..1265
+                     /gene="CD13"
+                     /number=2
+ORIGIN      
+        1 atggccaagg gcttctatat ttccaagtcc ctgggcatcc tggggatcct cctgggcgtg
+       61 gcagccgtgt gcacaatcat cgcactgtca gtggtgtact cccaggagaa gaacaagaac
+      121 gccaacagct cccccgtggc ctccaccacc ccgtccgcct cagccaccac caaccccgcc
+      181 tcggccacca ccttggacca aagtaaagcg tggaatcgtt accgcctccc caacacgctg
+      241 aaacccgatt cctaccaggt gacgctgaga ccgtacctca cccccaatga caggggcctg
+      301 tacgttttta agggctccag caccgtccgt ttcacctgca aggaggccac tgacgtcatc
+      361 atcatccaca gcaagaagct caactacacc ctcagccagg ggcacagggt ggtcctgcgt
+      421 ggtgtgggag gctcccagcc ccccgacatt gacaagactg agctggtgga gcccaccgag
+      481 tacctggtgg tgcacctcaa gggctccctg gtgaaggaca gccagtatga gatggacagc
+      541 gagttcgagg gggagttggc agatgacctg gcgggcttct accgcagcga gtacatggag
+      601 ggcaatgtca gaaagtgagt tccggctggg ctgcccggtg gggtggatcc gaggtgctga
+      661 ggcaaggctg gattctgagg gccaaggaag gacttagctt gcaggccttt gaaccctgtg
+      721 gagcccgaga ctggcccatt gcttcacctc cagctgctgg caaagcagct gcaaatgcac
+      781 cgaactggga gggcttcccc acccctcacc agggagctgg ggatgaggga cagagcgtcc
+      841 cttggacaga caggaaaacc gaggctcaga ggagagaaac tcacccgagg tccctgagag
+      901 cctgctggca ccccgaatcc agaaggagcc ccaaccccca cgagtcagct ggcctggcag
+      961 ggctccggag gctcccggcg aggcgggggt gggagcagga gcaggggtta ggctggggca
+     1021 gccttccatg tacccctttc cctgcatgcc tggtagcatc ctcagagccc ctcccacacc
+     1081 cccagctctg gcacaccctc taaccttcct gttggggcag ggtggtggcc actacacaga
+     1141 tgcaggctgc agatgcccgg aagtccttcc catgcttcga tgagccggcc atgaaggccg
+     1201 agttcaacat cacgcttatc caccccaagg acctgacagc cctgtccaac atgcttccca
+     1261 aaggt
+//

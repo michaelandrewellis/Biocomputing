@@ -1,0 +1,109 @@
+LOCUS       HSPPROT25                887 bp    DNA     linear   PRI 02-FEB-1996
+DEFINITION  Human P protein (P) gene, exon 25 and complete cds.
+ACCESSION   U19176
+VERSION     U19176.1  GI:773325
+KEYWORDS    tyrosinase-positive oculocutaneous albinism; OCA2.
+SEGMENT     25 of 25
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 887)
+  AUTHORS   Lee,S.T., Nicholls,R.D., Jong,M.T., Fukai,K. and Spritz,R.A.
+  TITLE     Organization and sequence of the human P gene and identification of
+            a new family of transport proteins
+  JOURNAL   Genomics 26 (2), 354-363 (1995)
+   PUBMED   7601462
+REFERENCE   2  (sites)
+  AUTHORS   Rinchik,E.M., Bultman,S.J., Horsthemke,B., Lee,S.T., Strunk,K.M.,
+            Spritz,R.A., Avidano,K.M., Jong,M.T. and Nicholls,R.D.
+  TITLE     A gene for the mouse pink-eyed dilution locus and for human type II
+            oculocutaneous albinism
+  JOURNAL   Nature 361 (6407), 72-76 (1993)
+   PUBMED   8421497
+REFERENCE   3  (bases 1 to 887)
+  AUTHORS   Spritz,R.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-DEC-1994) Richard A. Spritz, Medical Genetics,
+            University of Wisconsin, 445 Henry Mall, Madison, WI 53706, USA
+FEATURES             Location/Qualifiers
+     source          1..887
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11.2-q12"
+     gene            join(U19152.1:189..489,U19153.1:1..893,U19154.1:1..439,
+                     U19155.1:1..475,U19156.1:1..682,U19157.1:1..408,
+                     U19158.1:1..570,U19159.1:1..657,U19160.1:1..512,
+                     U19161.1:1..453,U19162.1:1..719,U19163.1:1..452,
+                     U19164.1:1..627,U19165.1:1..434,U19166.1:1..435,
+                     U19167.1:1..612,U19168.1:1..513,U19169.1:1..464,
+                     U19170.1:1..463,U19171.1:1..659,U19172.1:1..780,
+                     U19173.1:1..592,U19174.1:1..622,U19175.1:1..684,1..710)
+                     /gene="P"
+     mRNA            join(U19153.1:(189.198)..592,U19154.1:131..229,
+                     U19155.1:179..367,U19156.1:282..339,U19157.1:167..239,
+                     U19158.1:278..438,U19159.1:228..310,U19160.1:167..320,
+                     U19161.1:205..276,U19162.1:334..399,U19163.1:84..140,
+                     U19164.1:310..434,U19165.1:92..230,U19166.1:88..220,
+                     U19167.1:240..387,U19168.1:330..387,U19169.1:163..271,
+                     U19171.1:322..449,U19172.1:373..432,U19173.1:194..298,
+                     U19174.1:260..353,U19175.1:309..402,125..710)
+                     /gene="P"
+     CDS             join(U19153.1:366..592,U19154.1:131..229,
+                     U19155.1:179..367,U19156.1:282..339,U19157.1:167..239,
+                     U19158.1:278..438,U19159.1:228..310,U19160.1:167..320,
+                     U19161.1:205..276,U19162.1:334..399,U19163.1:84..140,
+                     U19164.1:310..434,U19165.1:92..230,U19166.1:88..220,
+                     U19167.1:240..387,U19168.1:330..387,U19169.1:163..271,
+                     U19171.1:322..449,U19172.1:373..432,U19173.1:194..298,
+                     U19174.1:260..353,U19175.1:309..402,125..209)
+                     /gene="P"
+                     /function="melanocyte-specific transporter protein"
+                     /codon_start=1
+                     /product="P protein"
+                     /protein_id="AAC13784.1"
+                     /db_xref="GI:773328"
+                     /translation="MHLEGRDGRRYPGAPAVELLQTSVPSGLAELVAGKRRLPRGAGG
+                     ADPSHSCPRGAAGQSSWAPAGQEFASFLTKGRSHSSLPQMSSSRSKDSCFTENTPLLR
+                     NSLQEKGSRCIPVYHPEFITAEESWEDSSADWERRYLLSREVSGLSASASSEKGDLLD
+                     SPHIRLRLSKLRRCVQWLKVMGLFAFVVLCSILFSLYPDQGKLWQLLALSPLENYSVN
+                     LSSHVDSTLLQVDLAGALVASGPSRPGREEHIVVELTQADALGSRWRRPQQVTHNWTV
+                     YLNPRRSEHSVMSRTFEVLTRETVSISIRASLQQTQAVPLLMAHQYLRGSVETQVTIA
+                     TAILAGVYALIIFEIVHRTLAAMLGSLAALAALAVIGDRPSLTHVVEWIDFETLALLF
+                     GMMILVAIFSETGFFDYCAVKAYRLSRGRVWAMIIMLCLIAAVLSAFLDNVTTMLLFT
+                     PVTIRLCEVLNLDPRQVLIAEVIFTNIGGAATAIGDPPNVIIVSNQELRKMGLDFAGF
+                     TAHMFIGICLVLLVCFPLLRLLYWNRKLYNKEPSEIVELKHEIHVWRLTAQRISPASR
+                     EETAVRRLLLGKVLALEHLLARRLHTFHRQISQEDKNWETNIQELQKKHRISDGILLA
+                     KCLTVLGFVIFMFFLNSFVPGIHLDLGWIAILGAIWLLILADIHDFEIILHRVEWATL
+                     LFFAALFVLMEALAHLHLIEYVGEQTALLIKMVPEEQRLIAAIVLVVWVSALASSLID
+                     NIPFTATMIPVLLNLSHDPEVGLPAPPLMYALAFGACLGGNGTLIGASANVVCAGIAE
+                     QHGYGFSFMEFFRLGFPMMVVSCTVGMCYLLVAHVVVGWN"
+     exon            125..710
+                     /gene="P"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /number=25
+     3'UTR           210..710
+                     /gene="P"
+     polyA_site      710
+                     /gene="P"
+ORIGIN      
+        1 aaaaggtagt ggccattgtg aaaatgcaaa ggtgctaagg ccatgttctc atgagctatg
+       61 agtccgtatc tcatgagctt atccagattt cagatgccat aactcatttc tctttgtatt
+      121 tcaggctggg cttcccaatg atggttgtgt cctgcactgt tgggatgtgt tatctccttg
+      181 tggctcatgt ggtggtggga tggaattaat agacatccat ctattgctcg aagactaaag
+      241 gaaacttcat ccatcacaac ccattagtca taaaactacc ctgaccccac tgtttgaaga
+      301 agaaaaggtg cttaccctgg agatgctaca gagacacagt ggaatagacc ttgacactaa
+      361 cactctaatt caagcgaatg ttggaacacc atgacctcct ctgtgtgtcc tttctcccca
+      421 aggacaaaat gtagaaagat gtgagataac ttactcaaga ttcccctcca gaaaaatacg
+      481 tatgtttaaa aacccttcct gctatacata ggaaaagaca cacatccacc taaaattgac
+      541 tgtactgttt aactgtcaat tctcctgagg ctaaacacag tttgtttttc ttgtaatcac
+      601 ttttcatgtt aaaataatca gcattcaaat tgtatgcttt ctgaatatag actttctggg
+      661 aaaaggttta ctgctcgtaa ggaaacattt tatgtattaa aataaactgt tccttgataa
+      721 aaggctttgg agtagtttac attatgtaaa attgcatttt atccatttat atttttctct
+      781 gcagttttaa agttattaat taaaagtcca gaaatttgac ttgcagaaga tcataggtat
+      841 cttttaagga tatcttacat atttaacagc ttagagtaat gattttt
+//

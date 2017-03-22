@@ -1,0 +1,54 @@
+LOCUS       DQ358147                 105 bp    DNA     linear   PRI 04-FEB-2006
+DEFINITION  Homo sapiens cytochrome P450 family 11 subfamily A polypeptide 1
+            (CYP11A1) gene, exon 5 and partial cds; nuclear gene for
+            mitochondrial product.
+ACCESSION   DQ358147
+VERSION     DQ358147.1  GI:86160851
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 105)
+  AUTHORS   Maitra,A., Pusalkar,M.K., Gokral,J.S. and Meherji,P.
+  TITLE     A novel G>A polymorphism in exon 5 of CYP11A1
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 105)
+  AUTHORS   Maitra,A., Pusalkar,M.K., Gokral,J.S. and Meherji,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-JAN-2006) Molecular Endocrinology, National Institute
+            for Research in Reproductive Health, J.M. Street, Mumbai,
+            Maharashtra 400 012, India
+FEATURES             Location/Qualifiers
+     source          1..105
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q23-q24"
+     gene            <1..>105
+                     /gene="CYP11A1"
+     mRNA            <1..>105
+                     /gene="CYP11A1"
+                     /product="cytochrome P450 family 11 subfamily A
+                     polypeptide 1"
+     CDS             <1..>105
+                     /gene="CYP11A1"
+                     /codon_start=1
+                     /product="cytochrome P450 family 11 subfamily A
+                     polypeptide 1"
+                     /protein_id="ABC86898.1"
+                     /db_xref="GI:86160852"
+                     /translation="RQKGSVHHDYRGILYRLLGDSKMSFEDIKANVTEM"
+     exon            <1..>105
+                     /gene="CYP11A1"
+                     /number=5
+     variation       66
+                     /gene="CYP11A1"
+                     /note="SNP"
+                     /replace="g"
+ORIGIN      
+        1 agacagaaag gaagtgttca ccacgattac cgtggcatcc tctacagact cctgggagac
+       61 agcaaaatgt ccttcgagga catcaaggcc aacgtcacag agatg
+//

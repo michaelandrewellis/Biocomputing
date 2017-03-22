@@ -1,0 +1,78 @@
+LOCUS       HSERP60S11               603 bp    DNA     linear   PRI 09-JUL-1997
+DEFINITION  Human ER-60 protein (ERp60) gene, exon 13, and complete cds.
+ACCESSION   U75885
+VERSION     U75885.1  GI:2245363
+KEYWORDS    .
+SEGMENT     11 of 11
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 603)
+  AUTHORS   Koivunen,P., Horelli-Kuitunen,N., Helaakoski,T., Karvonen,P.,
+            Jaakkola,M., Palotie,A. and Kivirikko,K.I.
+  TITLE     Structures of the human gene for the protein disulfide
+            isomerase-related polypeptide ERp60 and a processed gene and
+            assignment of these genes to 15q15 and 1q21
+  JOURNAL   Genomics 42 (3), 397-404 (1997)
+   PUBMED   9205111
+REFERENCE   2  (bases 1 to 603)
+  AUTHORS   Koivunen,P., Horelli-Kuitunen,N., Helaakoski,T., Jaakkola,M.,
+            Palotie,A. and Kivirikko,K.I.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-OCT-1996) Medical Biochemistry, University of Oulu,
+            Kajaanintie 52 A, Oulu 90220, Finland
+FEATURES             Location/Qualifiers
+     source          1..603
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15"
+     gene            join(U75875.1:1198..1524,U75876.1:1..490,U75877.1:1..412,
+                     U75878.1:1..641,U75879.1:1..616,U75880.1:1..822,
+                     U75881.1:1..340,U75882.1:1..371,U75883.1:1..422,
+                     U75884.1:1..534,1..284)
+                     /gene="ERp60"
+     mRNA            join(U75875.1:<1198..1364,U75876.1:187..265,
+                     U75877.1:105..222,U75878.1:383..490,U75879.1:165..294,
+                     U75880.1:138..254,U75880.1:575..700,U75881.1:75..257,
+                     U75882.1:110..218,U75883.1:165..293,U75884.1:88..167,
+                     U75884.1:366..423,171..>284)
+                     /gene="ERp60"
+     CDS             join(U75875.1:1198..1364,U75876.1:187..265,
+                     U75877.1:105..222,U75878.1:383..490,U75879.1:165..294,
+                     U75880.1:138..254,U75880.1:575..700,U75881.1:75..257,
+                     U75882.1:110..218,U75883.1:165..293,U75884.1:88..167,
+                     U75884.1:366..423,171..284)
+                     /gene="ERp60"
+                     /codon_start=1
+                     /product="ER-60 protein"
+                     /protein_id="AAC51518.1"
+                     /db_xref="GI:2245365"
+                     /translation="MRLRRLALFPGVALLLAAARLAAASDVLELTDDNFESRISDTGS
+                     AGLMLVEFFAPWCGHCKRLAPEYEAAATRLKGIVPLAKVDCTANTNTCNKYGVSGYPT
+                     LKIFRDGEEAGAYDGPRTADGIVSHLKKQAGPASVPLRTEEEFKKFISDKDASIVGFF
+                     DDSFSEAHSEFLKAASNLRDNYRFAHTNVESLVNEYDDNGEGIILFRPSHLTNKFEDK
+                     TVAYTEQKMTSGKIKKFIQENIFGICPHMTEDNKDLIQGKDLLIAYYDVDYEKDAKGS
+                     NYWRNRVMMVAKKFLDAGHKLNFAVASRKTFSHELSDFGLESTAGEIPVVAIRTAKGE
+                     KFVMQEEFSRDGKALERFLQDYFDGNLKRYLKSEPIPESNDGPVKVVVAENFDEIVNN
+                     ENKDVLIEFYAPWCGHCKNLEPKYKELGEKLSKDPNIVIAKMDATANDVPSPYEVRGF
+                     PTIYFSPANKKLNPKKYEGGRELSDFISYLQREATNPPVIQEEKPKKKKKAQEDL"
+     exon            171..>284
+                     /gene="ERp60"
+                     /number=13
+ORIGIN      
+        1 ccaccgtgct aggctaattg ggtttattta actaaaatct ctttaaactc tcatgggcag
+       61 tatatgtggc tgctaatatg cttttacaaa ctcagaagtc ttcctgtttg ggtggggcag
+      121 atcaggttct ttaaaaagtt acacttttaa gctgatcttt ctgttttcag ggtggccgtg
+      181 aattaagtga ttttattagc tatctacaaa gagaagctac aaacccccct gtaattcaag
+      241 aagaaaaacc caagaagaag aagaaggcac aggaggatct ctaaagcagt agccaaacac
+      301 cactttgtaa aaggactctt ccatcagaga tgggaaaacc attggggagg actaggaccc
+      361 atatgggaat tattacctct cagggccgag aggacagaat ggatataatc tgaatcctgt
+      421 taaattttct ctaaactgtt tcttagctgc actgtttatg gaaataccag gaccagttta
+      481 tgtttgtggt tttgggaaaa attatttgtg ttgggggaaa tgttgtgggg gtggggttga
+      541 gttgggggta ttttctaatt ttttttgtac atttggaaca gtgacaataa atgagacccc
+      601 ttt
+//

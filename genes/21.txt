@@ -1,0 +1,48 @@
+LOCUS       AF026868                 273 bp    DNA     linear   PRI 16-NOV-1998
+DEFINITION  Homo sapiens putative mitochondrial short-chain L-3-hydroxyacyl-CoA
+            dehydrogenase (HADHSC) pseudogene, nuclear pseudogene for
+            mitochondrial protein, partial sequence.
+ACCESSION   AF026868
+VERSION     AF026868.1  GI:3882452
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 273)
+  AUTHORS   Vredendaal,P.J., van den Berg,I.E., Stroobants,A.K., van der
+            A,D.L., Malingre,H.E. and Berger,R.
+  TITLE     Structural organization of the human short-chain
+            L-3-hydroxyacyl-CoA dehydrogenase gene
+  JOURNAL   Mamm. Genome 9 (9), 763-768 (1998)
+   PUBMED   9716664
+REFERENCE   2  (bases 1 to 273)
+  AUTHORS   Vredendaal,P.J.C.M., van den Berg,I.E.T., Stroobants,A.K., van der
+            A,D.L., Malingre,H.E.M. and Berger,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-SEP-1997) Department of Metabolic Diseases,
+            Wilhelmina Children's Hospital, Nieuwe Gracht 137, Utrecht 3512 LK,
+            The Netherlands
+FEATURES             Location/Qualifiers
+     source          1..273
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q17-21"
+     gene            <1..>273
+                     /gene="HADHSC"
+     CDS             <1..>273
+                     /gene="HADHSC"
+                     /note="putative mitochondrial short-chain
+                     L-3-hydroxyacyl-CoA dehydrogenase"
+                     /pseudo
+                     /codon_start=1
+ORIGIN      
+        1 cgctccacac catggccttc gtcaccaggc agttcatgca ctctttgtct tccttgtcca
+       61 caaccttggg caagaaaaat catcatcaag cacatgatgg tcatcagcat cacacaggtt
+      121 gctgcagtga ccggccacac agtagtgttg ctagaccaga cagaggacat cttggcaaaa
+      181 tataaagagg aattgagaaa agccttagga aagtgacaaa gaagttgttt gtagaaaacc
+      241 ctaaggccgg cgatgaattt gtggagaaga ccc
+//

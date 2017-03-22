@@ -1,0 +1,116 @@
+LOCUS       HSSORD08                2613 bp    DNA     linear   PRI 01-JUL-1997
+DEFINITION  Homo sapiens sorbitol dehydrogenase (SORD) gene, exons 8 and 9, and
+            complete cds.
+ACCESSION   U67243
+VERSION     U67243.1  GI:2228516
+KEYWORDS    .
+SEGMENT     8 of 8
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2613)
+  AUTHORS   Carr,I.M., Markham,A.F. and Coletta,P.L.
+  TITLE     Identification and characterisation of a sequence related to human
+            sorbitol dehydrogenase
+  JOURNAL   Eur. J. Biochem. 245 (3), 760-767 (1997)
+   PUBMED   9183016
+REFERENCE   2  (bases 1 to 2613)
+  AUTHORS   Carr,I.M., Coletta,P.L. and Markham,A.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-AUG-1996) Molecular Medicine, Leeds University,
+            Beecket Street, Leeds, West Yorkshire, UK
+REFERENCE   3  (bases 1 to 2613)
+  AUTHORS   Carr,I.M., Coletta,P.L. and Markham,A.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-JUN-1997) Molecular Medicine, Leeds University,
+            Beecket Street, Leeds, West Yorkshire, UK
+  REMARK    Sequence update by submitter
+COMMENT     On Jul 1, 1997 this sequence version replaced gi:1755136.
+FEATURES             Location/Qualifiers
+     source          1..2613
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15.3"
+     gene            join(U67236.1:<486..1012,U67237.1:1..992,U67238.1:1..276,
+                     U67239.1:1..278,U67240.1:1..194,U67241.1:1..171,
+                     U67242.1:1..275,1..1377)
+                     /gene="SORD"
+     mRNA            join(U67236.1:<486..551,U67237.1:901..934,
+                     U67238.1:48..212,U67239.1:66..225,U67240.1:41..159,
+                     U67241.1:63..128,U67242.1:66..241,85..206,1135..>1357)
+                     /gene="SORD"
+                     /product="sorbitol dehydrogenase"
+     CDS             join(U67236.1:486..551,U67237.1:901..934,U67238.1:48..212,
+                     U67239.1:66..225,U67240.1:41..159,U67241.1:63..128,
+                     U67242.1:66..241,85..206,1135..1300)
+                     /gene="SORD"
+                     /note="similar to ADH"
+                     /codon_start=1
+                     /product="sorbitol dehydrogenase"
+                     /protein_id="AAB61898.1"
+                     /db_xref="GI:1755138"
+                     /translation="MAAAAKPNNLSLVVHGPGDLRLENYPIPEPGPNEVLLRMHSVGI
+                     CGSDVHYWEYGRIGNFIVKKPMVLGHEASGTVEKVGSSVKHLKPGDRVAIEPGAPREN
+                     DEFCKMGRYNLSPSIFFCATPPDDGNLCRFYKHNAAFCYKLPDNVTFEEGALIEPLSV
+                     GIHACRRGGVTLGHKVLVCGAGPIGMVTLLVAKAMGAAQVVVTDLSATRLSKAKEIGA
+                     DLVLQISKESPQEIARKVEGQLGCKPEVTIECTGAEASIQAGIYATRSGGTLVLVGLG
+                     SEMTTVPLLHAAIREVDIKGVFRYCNTWPVAISMLASKSVNVKPLVTHRFPLEKALEA
+                     FETFKKGLGLKIMLKCDPSDQNP"
+     exon            85..206
+                     /gene="SORD"
+                     /product="sorbitol dehydrogenase"
+                     /number=8
+     exon            1135..>1357
+                     /gene="SORD"
+                     /product="sorbitol dehydrogenase"
+                     /number=9
+ORIGIN      
+        1 cttgtgtgat gacaatatgt tattgtaagt gggaagtcag tatttcttat cttctgagct
+       61 ttcttgtttt tacctccttt acaggccact cgctctggtg ggaccctcgt gcttgtgggg
+      121 ctgggctctg agatgaccac cgtaccccta ctgcatgcag ccatccggga ggtggatatc
+      181 aagggcgtgt ttcgatactg caacacgtga gtatgctgtg ggtgaagccg ggatgcccag
+      241 cctccagcaa gaccatggca ggccccactc agcctctggc ccatgatctc tgcctagttg
+      301 ttcatggggg gcactccctg gccacactga tagctgtatg atataacagg gatccaaaga
+      361 gagaacactc actgccagtt aaagaatggg aggaacagaa ggatggatgg agggagggaa
+      421 aaaggggatt ttgaagcata gtcttactga gtgtctgctg cttatccccc ccaggcccct
+      481 tttttccccc tattttctta agttgccagg tctccatttt ctccctttaa agggaagaag
+      541 gagagaaagg aagacaaaag gaagaaatca agtcctgtgg cttccgttcc ttagccctag
+      601 ggcccaccct ggggagcgaa agggtcttag tttgccccac ccatgttctg cagctccacc
+      661 ctctcccctg ctggggccct ctggctggga cccctctccc cagcagtgtc ccttactcct
+      721 ggctttagag gcgtgaactc catgccctca tcagggcgcc agttttccag taagctgagc
+      781 tgttagtggg tgtgactgga ttgtcccggg ctgcctcccc acggcttctc tgccttttcc
+      841 cagtggcctc caccatgtgc cttgtacctt catgccacag gaattctagg ctccatggca
+      901 gacgtggcgg cagagtgagc gggtgggtga ggggtggggg caattgcaaa taggctctgt
+      961 acccctgaat cataagccat aaggtccttt cctgggttgt tggcctgtaa aattggcttt
+     1021 gcagaaccac agtgctatca ataaatacgg ccaagctgat ctagtgcttg gtagtttggg
+     1081 gcacctggct ctttcctctt gaaggttgaa tataatgctc gtgctctttt acaggtggcc
+     1141 agtggcgatt tcgatgcttg cgtccaagtc tgtgaatgta aaacccctcg tcacccatag
+     1201 gtttcctctg gagaaagctc tggaggcctt tgaaacattt aaaaagggat tggggttgaa
+     1261 aatcatgctc aagtgtgacc ccagtgacca gaatccctga tgttaatggg ctctgccctc
+     1321 atccccacag tcttgggatc tcagggcaca atggctggac atgggtgggc tctgatgcag
+     1381 aactttctct tttgaatgtt aagaataact aatacaattc attgtgaaca gaagtcctta
+     1441 agcagaggaa ttggtgtgcc ttaaagatac aatctgggat agtttggggg aacttgtagc
+     1501 cagaatgccc tgttcatgct gagcaaagtt cagcaagtag agcagagttt ggcaggcagg
+     1561 tgccaggaac tccccttctt cctggagtgc cttcattgag gaaggaaatc tggcccttgg
+     1621 gtttcctggt tccactgcta ctgacccaga ggggaatgag ggctgagtta tgaaaagata
+     1681 acttcatgaa gacttaactg gcccagaagc tgattttcat gaaaatctgc cactcagggt
+     1741 ctgggatgaa ggcttgtcag cacttccagt ttagaacgca atgtttctag agacatattg
+     1801 gcttgtttgt tttgatgata aaaggagaat aagaaaaggc atcactttcc tggatccagg
+     1861 ataattttta aaccaatcaa atgaaaaaaa caaacaaaca aaaaaggaaa tgtcatgtga
+     1921 ggttaaacca gtttgcattc ccctaatgtg gaaaaagtaa gaggactact cagcactgtt
+     1981 tgaagattgc ctcttctaca gcttctgaga attgtgttat ttcacttgcc aagtgaagga
+     2041 ccccctcccc aacatgcccc agcccacccc taagtacggt cccttgttca ccagggcaac
+     2101 caggaaactg ctacttgtgg acctcaccag agaccaggag ggtttggtta gctcacagga
+     2161 cttcccccac cccagaagat tagcatccca tactagactc atactcaact caactaggct
+     2221 catactcaat tgatggttat tagacaattc catttctttc tggttattat aaacagaaaa
+     2281 tctttcctct tctcattacc agtaaaggct cttggtatct ttctgttgga atgatttcta
+     2341 tgaacttgtc ttattttaat ggtgggtttt ttttctggta agatttagac ctaaatcgca
+     2401 tcatgccaac ttgtgacttt gagactattc atcaagaatg aggatatagt agccatgaca
+     2461 tagcttgagc tatagccttt aattccttac tttggctatg ggtggagggt gagtttgaag
+     2521 aggttctgat tttcttgtaa cctgggaaag ccatgacctt gtgcccgatt ctttcagatt
+     2581 gctttgggta ataaatattg gtggtggtat ctg
+//

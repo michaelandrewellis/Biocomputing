@@ -1,0 +1,136 @@
+LOCUS       HSCILP6                 3452 bp    DNA     linear   PRI 07-APR-2000
+DEFINITION  Homo sapiens cartilage intermediate layer protein (CILP) gene, exon
+            9 and complete cds.
+ACCESSION   AF035455
+VERSION     AF035455.1  GI:6513585
+KEYWORDS    .
+SEGMENT     6 of 6
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 3452)
+  AUTHORS   Lorenzo,P., Aman,P., Sommarin,Y. and Heinegard,D.
+  TITLE     The human CILP gene: exon/intron organization and chromosomal
+            mapping
+  JOURNAL   Matrix Biol. 18 (5), 445-454 (1999)
+   PUBMED   10601732
+REFERENCE   2  (bases 1 to 3452)
+  AUTHORS   Lorenzo,P., Aman,P., Sommarin,Y. and Heinegard,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-NOV-1997) Cell and Molecular Biology, Lund
+            University, Soelvegatan 39, Lund 22100, Sweden
+FEATURES             Location/Qualifiers
+     source          1..3452
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22"
+     gene            order(AF035447.1:1..945,AF035448.1:1..1004,
+                     AF035449.1:1..1870,AF035451.1:1..2041,AF035453.1:1..2131,
+                     1..>2930)
+                     /gene="CILP"
+     mRNA            join(AF035447.1:425..468,AF035448.1:412..578,
+                     AF035449.1:460..552,AF035449.1:1174..1443,
+                     AF035451.1:368..547,AF035451.1:1255..1569,
+                     AF035453.1:369..477,AF035453.1:1810..1963,558..>2930)
+                     /gene="CILP"
+                     /product="cartilage intermediate layer protein"
+     CDS             join(AF035448.1:518..578,AF035449.1:460..552,
+                     AF035449.1:1174..1443,AF035451.1:368..547,
+                     AF035451.1:1255..1569,AF035453.1:369..477,
+                     AF035453.1:1810..1963,558..2930)
+                     /gene="CILP"
+                     /codon_start=1
+                     /product="cartilage intermediate layer protein"
+                     /protein_id="AAF14689.1"
+                     /db_xref="GI:6513587"
+                     /translation="MVGTKAWVFSFLVLEVTSVLGRQTMLTQSVRRVQPGKKNPSIFA
+                     KPADTLESPGEWTTLFNIDYPGGKGDYERLDAIRFYYGDRVCARPLRLEARTTDWTPA
+                     GSTGQVVHGSPREGFWCLNREQRPGQNCSNYTVRFLCPPGSLRRDTERIWSPWSPWSK
+                     CSAACGQTGVQTRTRICLAEMVSLCSEASEEGQHCMGQDCTACDLTCPMGQVNADCDA
+                     CMCQDFMLHGAVSLPGGAPASGAAIYLLTKTPKLLTQTDSDGRFRIPGLCPDGKSILK
+                     ITKVKFAPIVLTMPKTSLKAATIKAEFVRAETPYMVMNPETKARRAGQSVSLCCKATG
+                     KPRPDKYFWYHNDTLLDPSLYKHESKLVLRKLQQHQAGEYFCKAQSDAGAVKSKVAQL
+                     IVTASDETPCNPVPESYLIRLPHDCFQNATNSFYYDVGRCPVKTCAGQQDNGIRCRDA
+                     VQNCCGISKTEEREIQCSGYTLPTKVAKECSCQRCTETRSIVRGRVSAADNGEPMRFG
+                     HVYMGNSRVSMTGYKGTFTLHVPQDTERLVLTFVDRLQKFVNTTKVLPFNKKGSAVFH
+                     EIKMLRRKEPITLEAMETNIIPLGEVVGEDPMAELEIPSRSFYRQNGEPYIGKVKASV
+                     TFLDPRNISTATAAQTDLNFINDEGDTFPLRTYGMFSVDFRDEVTSEPLNAGKVKVHL
+                     DSTQVKMPEHISTVKLWSLNPDTGLWEEEGDFKFENQRRNKREDRTFLVGNLEIRERR
+                     LFNLDVPESRRCFVKVRAYRSERFLPSEQIQGVVISVINLEPRTGFLSNPRAWGRFDS
+                     VITGPNGACVPAFCDDQSPDAYSAYVLASLAGEELQAVESSPKFNPNAIGVPQPYLNK
+                     LNYRRTDHEDPRVKKTAFQISMAKPRPNSAEESNGPIYAFENLRACEEAPPSAAHFRF
+                     YQIEGDRYDYNTVPFNEDDPMSWTEDYLAWWPKPMEFRACYIKVKIVGPLEVNVRSRN
+                     MGGTHRRTVGKLYGIRDVRSTRDRDQPNVSAACLEFKCSGMLYDQDRVDRTLVKVIPQ
+                     GSCRRASVNPMLHEYLVNHLPLAVNNDTSEYTMLAPLDPLGHNYGIYTVTDQDPRTAK
+                     EIALGRCFDGTSDGSSRIMKSNVGVALTFNCVERQVGRQSAFQYLQSTPAQSPAAGTV
+                     QGRVPSRRQQRASRGGQRQSGVVASLRFPRVAQQPLIN"
+     intron          <1..557
+                     /gene="CILP"
+                     /number=8
+     exon            558..2930
+                     /gene="CILP"
+                     /number=9
+ORIGIN      
+        1 gtttttgtgg gacaggttca tcagtgcccg ggtgttttgg aatcctgggt taaggaaaac
+       61 ccacccacct ggcttcccaa ttgtgggata acaggtgtga gcccatgcat ccagcccaaa
+      121 gttcggatca ctttaaacag gtttttctaa cctaacagga tgagtggtgg gatatgtgga
+      181 aagttgtttc agaacacaga gatctttatg cagaacagtg ccaggcattg caggacatag
+      241 aacatcaatg gcccttaccc acaatatgcc agtagcatcc ccaattttgg agataaccca
+      301 aaacaccttc ataaattttc aagacccctc cattgagaca aacaaccact gtagtggtcc
+      361 catcaaccaa ctctgtttcc cggtatataa aatgggatca gtaatagctg ttctatcctc
+      421 tcagagagtt ctgtgagaat gagaatcatg gatatacaag tcctttgaaa accatagaat
+      481 actgtagaga ggtgaggttg aggtactctt tgtgtaggat gtaaacttac atcttaattt
+      541 ccacaccatt tccctacaca gcatctgatg agactccttg caacccagtt cctgagagct
+      601 atcttatccg gctgccccat gattgctttc agaatgccac caactccttc tactatgacg
+      661 tgggacgctg ccctgttaag acttgtgcag ggcagcagga taatgggatc aggtgccgtg
+      721 atgctgtgca gaactgctgt ggcatctcca agacagagga aagggagatc cagtgcagtg
+      781 gctacacgct acccaccaag gtggccaagg agtgcagctg ccagcggtgt acggaaactc
+      841 ggagcatcgt gcggggccgt gtcagtgctg ctgacaatgg ggagcccatg cgctttggcc
+      901 atgtgtacat ggggaacagc cgtgtaagca tgactggcta caagggcact ttcaccctcc
+      961 atgtccccca ggacactgag aggctggtgc tcacatttgt ggacaggctg cagaagtttg
+     1021 tcaacaccac caaagtgcta cctttcaaca agaaggggag tgccgtgttc catgaaatca
+     1081 agatgcttcg tcggaaagag cccatcactt tggaagccat ggagaccaac atcatccccc
+     1141 tgggggaagt ggttggtgaa gaccccatgg ctgaactgga gattccatcc aggagtttct
+     1201 acaggcagaa tggggagccc tacataggaa aagtgaaggc cagtgtgacc ttcctggatc
+     1261 cccggaatat ttccacagcc acagctgccc agactgacct gaacttcatc aatgacgaag
+     1321 gagacacttt cccccttcgg acgtatggca tgttctctgt ggacttcaga gatgaggtca
+     1381 cctcagagcc acttaatgct ggcaaagtga aggtccacct tgactcgacc caggtcaaga
+     1441 tgccagagca catatccaca gtgaaactct ggtcactcaa tccagacaca gggctgtggg
+     1501 aggaggaagg tgatttcaaa tttgaaaatc aaaggaggaa caaaagagaa gacagaacct
+     1561 tcctggtggg caacctggag attcgtgaga ggaggctctt taacctggat gttcctgaaa
+     1621 gcaggcggtg ctttgttaag gtgagggcct accggagtga gaggttcttg cctagtgagc
+     1681 agatccaggg ggttgtgatc tccgtgatta acctggagcc tagaactggc ttcttgtcca
+     1741 accctagggc ctggggccgc tttgacagtg tcatcacagg ccccaacggg gcctgtgtgc
+     1801 ctgccttctg tgatgaccag tcccctgatg cctactctgc ctatgtcttg gcaagcctgg
+     1861 ctggggagga actgcaagca gtggagtctt ctcctaaatt caacccaaat gcaattggcg
+     1921 tccctcagcc ctatctcaac aagctcaact accgtcggac ggaccatgag gatccacggg
+     1981 ttaaaaagac agctttccag attagcatgg ccaagccaag gcccaactca gctgaggaga
+     2041 gcaatgggcc catctatgcc tttgagaacc tccgggcatg tgaagaggca ccacccagtg
+     2101 cagcccactt ccggttctac cagattgagg gggatcgata tgactacaac acagtcccct
+     2161 tcaacgaaga tgaccctatg agctggactg aagactatct ggcatggtgg ccaaagccga
+     2221 tggaattcag ggcctgctat atcaaggtga agattgtggg gccactggaa gtgaatgtgc
+     2281 gatcccgcaa catggggggc actcatcggc ggacagtggg gaagctgtat ggaatccgag
+     2341 atgtgaggag cactcgggac agggaccagc ccaatgtctc agctgcctgt ctggagttca
+     2401 agtgcagtgg gatgctctat gatcaggacc gtgtggaccg caccctggtg aaggtcatcc
+     2461 cccagggcag ctgccgtcga gccagtgtga accccatgct gcatgagtac ctggtcaacc
+     2521 acttgccact tgcagtcaac aacgacacca gtgagtacac catgctggca cccttggacc
+     2581 cactgggcca caactatggc atctacactg tcactgacca ggaccctcgc acggccaagg
+     2641 agatcgcgct cggccggtgc tttgatggca catccgatgg ctcctccaga atcatgaaga
+     2701 gcaatgtggg agtagccctc accttcaact gtgtagagag gcaagtaggc cgccagagtg
+     2761 ccttccagta cctccaaagc accccagccc agtcccctgc tgcaggcact gtccaaggaa
+     2821 gagtgccctc gaggaggcag cagcgagcga gcaggggtgg ccagcgccag agtggagtgg
+     2881 tggcctctct gagatttcct agagttgctc aacagcccct gatcaactaa gttttgtggt
+     2941 acttcaccct cttctgccct catttcatgt gacagccatt gtgagactga tgcacaaact
+     3001 gtcacttggt taatttaagc acttctgttt tcgtgaattt gcttgtttgt ttcttcatgc
+     3061 ctttacttac tttgtcccat gctactgatt ggcacgtggc ccccacaatg gcacaataaa
+     3121 gcccctttgt gaaactgttc tttaaatgaa acacaagaaa ttggccactg gtaaaactct
+     3181 gcagcttcaa ctgtacttca tttaatgcca ttaatgcaaa tatacttcct cttctttttg
+     3241 catggttttg cccacctctg caatagtgat aatctgatgc tgaagatcaa ataaccaata
+     3301 taaagcatat ttcttggcct tgctccacag gacataggca agccttgatc atagttcata
+     3361 catataaatg gtggtgaaat aaagaaataa aacacaatac ttttacttga aatgtaaata
+     3421 acttatttat ttctttgcta aatttggaat tc
+//

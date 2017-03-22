@@ -1,0 +1,59 @@
+LOCUS       AF224242S10              705 bp    DNA     linear   PRI 28-JAN-2003
+DEFINITION  Homo sapiens HERC2 (HERC2) gene, exon 66 and partial cds.
+ACCESSION   AF224251
+VERSION     AF224251.1  GI:27923064
+KEYWORDS    .
+SEGMENT     10 of 16
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 705)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Structure of the highly conserved HERC2 gene and of multiple
+            partially duplicated paralogs in human
+  JOURNAL   Genome Res. 10 (3), 319-329 (2000)
+   PUBMED   10720573
+REFERENCE   2  (bases 1 to 705)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JAN-2000) Genetics, Case Western Reserve University,
+            10900 Euclid Ave, Cleveland, OH 44106-4955, USA
+FEATURES             Location/Qualifiers
+     source          1..705
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13"
+     mRNA            join(AF224250.1:<1..109,675..>705)
+                     /gene="HERC2"
+                     /product="HERC2"
+     CDS             join(AF224250.1:<1..109,675..>705)
+                     /gene="HERC2"
+                     /codon_start=1
+                     /product="HERC2"
+                     /protein_id="AAO27476.1"
+                     /db_xref="GI:27923074"
+                     /translation="GSSHSVAWTTVDVATPSVHEPVLFQTARDRLGASYLGVPSDADS
+                     SAA"
+     exon            675..>705
+                     /gene="HERC2"
+                     /number=66
+ORIGIN      
+        1 gattccttat gccagaccac ncagttttgg ttatggtatt acaacttttg aaattgggta
+       61 gactccattc ntcctcctta tttttctatt tctattcttg ctcctttgcc tttccatgac
+      121 atttcagaat aatcttgtct gttgacaaaa actcttgctg gaattctggt gggaattgca
+      181 ttaaatctgt gtatcaattt ggatgagttg acatagacac atgtcccagc tctacttggc
+      241 tccctccttc tgctgagacc tgggagttca caacgaagtg agcctgatga gactttattg
+      301 gtgaacatct tttctctttg ttgttttgta ttcttttttg tcttgtctta ccggggtaag
+      361 aaaatacagg tagttattgt agcattttca tagtttatat gtatataaca taaactgttg
+      421 taagtgcatt ttataaaagc acctacatct ttttgcagtt acagtggaac tatgctgaaa
+      481 atagcttctt tatcgaagta tggataagtg gttttcttat tttgaaggcc tattaatgag
+      541 cctgataggt gctttgtgaa atagcaaaat gcagattgca gtgtgttttg gaactaacct
+      601 gtaaggtcag attttataga aatagatcaa actgtgattt taaaaacaat gcaaatttta
+      661 ttttcctctt ataggcgtgc cttcagatgc tgattcttct gctgc
+//

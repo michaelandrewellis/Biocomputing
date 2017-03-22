@@ -1,0 +1,110 @@
+LOCUS       HSUBE3AL6               1726 bp    DNA     linear   PRI 06-SEP-1997
+DEFINITION  Homo sapiens E6-AP ubiquitin-protein ligase (UBE3A) gene, exons 9
+            and 10, and complete cds.
+ACCESSION   AF016708
+VERSION     AF016708.1  GI:2361029
+KEYWORDS    .
+SEGMENT     6 of 6
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1726)
+  AUTHORS   Matsuura,T., Sutcliffe,J.S., Fang,P., Galjaard,R.J., Jiang,Y.H.,
+            Benton,C.S., Rommens,J.M. and Beaudet,A.L.
+  TITLE     De novo truncating mutations in E6-AP ubiquitin-protein ligase gene
+            (UBE3A) in Angelman syndrome
+  JOURNAL   Nat. Genet. 15 (1), 74-77 (1997)
+   PUBMED   8988172
+REFERENCE   2  (bases 1 to 1726)
+  AUTHORS   Matsuura,T., Sutcliffe,J.S. and Beaudet,A.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-AUG-1997) Molecular and Human Genetics, Baylor
+            College of Medicine, One Baylor Plaza, Houston, TX 77030, USA
+FEATURES             Location/Qualifiers
+     source          1..1726
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11-q13"
+     gene            join(AF016703.1:428..1051,AF016704.1:1..1062,
+                     AF016705.1:1..2147,AF016706.1:1..1202,AF016707.1:1..3705,
+                     1..>1635)
+                     /gene="UBE3A"
+     mRNA            join(AF016703.1:428..469,AF016704.1:476..774,
+                     AF016705.1:370..1616,AF016706.1:520..664,
+                     AF016707.1:587..792,AF016707.1:1427..1591,
+                     AF016707.1:2800..2955,AF016707.1:3057..3130,544..687,
+                     1515..>1635)
+                     /gene="UBE3A"
+                     /product="E6-AP ubiquitin-protein ligase"
+     CDS             join(AF016703.1:468..469,AF016704.1:476..774,
+                     AF016705.1:370..1616,AF016706.1:520..664,
+                     AF016707.1:587..792,AF016707.1:1427..1591,
+                     AF016707.1:2800..2955,AF016707.1:3057..3130,544..687,
+                     1515..1635)
+                     /gene="UBE3A"
+                     /codon_start=1
+                     /product="E6-AP ubiquitin-protein ligase"
+                     /protein_id="AAB69154.1"
+                     /db_xref="GI:2361031"
+                     /translation="MKRAAAKHLIERYYHQLTEGCGNEACTNEFCASCPTFLRMDNNA
+                     AAIKALELYKINAKLCDPHPSKKGASSAYLENSKGAPNNSCSEIKMNKKGARIDFKDV
+                     TYLTEEKVYEILELCREREDYSPLIRVIGRVFSSAEALVQSFRKVKQHTKEELKSLQA
+                     KDEDKDEDEKEKAACSAAAMEEDSEASSSRIGDSSQGDNNLQKLGPDDVSVDIDAIRR
+                     VYTRLLSNEKIETAFLNALVYLSPNVECDLTYHNVYSRDPNYLNLFIIVMENRNLHSP
+                     EYLEMALPLFCKAMSKLPLAAQGKLIRLWSKYNADQIRRMMETFQQLITYKVISNEFN
+                     SRNLVNDDDAIVAASKCLKMVYYANVVGGEVDTNHNEEDDEEPIPESSELTLQELLGE
+                     ERRNKKGPRVDPLETELGVKTLDCRKPLIPFEEFINEPLNEVLEMDKDYTFFKVETEN
+                     KFSFMTCPFILNAVTKNLGLYYDNRIRMYSERRITVLYSLVQGQQLNPYLRLKVRRDH
+                     IIDDALVRLEMIAMENPADLKKQLYVEFEGEQGVDEGGVSKEFFQLVVEEIFNPDIGM
+                     FTYDESTKLFWFNPSSFETEGQFTLIGIVLGLAIYNNCILDVHFPMVVYRKLMGKKGT
+                     FRDLGDSHPVLYQSLKDLLEYEGNVEDDMMITFQISQTDLFGNPMMYDLKENGDKIPI
+                     TNENRKEFVNLYSDYILNKSVEKQFKAFRRGFHMVTNESPLKYLFRPEEIELLICGSR
+                     NLDFQALEETTEYDGGYTRDSVLIREFWEIVHSFTDEQKRLFLQFTTGTDRAPVGGLG
+                     KLKMIIAKNGPDTERLPTSHTCFNVLLLPEYSSKEKLKERLLKAITYAKGFGML"
+     intron          <1..543
+                     /gene="UBE3A"
+                     /number=8
+     exon            544..687
+                     /gene="UBE3A"
+                     /number=9
+     intron          688..1514
+                     /gene="UBE3A"
+                     /number=9
+     exon            1515..>1635
+                     /gene="UBE3A"
+                     /number=10
+ORIGIN      
+        1 gtatgtagtt gtttgcattt gggccagttg gttggggcag gggtcttttt ttcttttgtc
+       61 ccttaatctg tatcactttt tcctcccaaa gttgagttaa aggatgagta gaccaggaga
+      121 ataaaggaga aaggataaat aaaatatata cccaaaggca cctggagtta atttttccaa
+      181 atattcattt cagtcttttt caattcatag gattttgtct tttgctcatt actgactgca
+      241 taatgtgatt ataccatagt ttaaatagtc acttcctgtt actacacact tgggttttct
+      301 caatttttta ctattgtagt actaatattt tactatattg taatctaatc caaattttta
+      361 cgtattcaga gctgttcagg ataaatttgc ttggaaattt ttaaatcacc agaagtgata
+      421 ctatcctgat aattaacttc caagttgtct cttaatatag ttttaatgca aatcataagc
+      481 ttatgttagt accagtcata atgaatgcca aactgaaacc agtattgtat tttttctcat
+      541 tagggagttc tgggaaatcg ttcattcatt tacagatgaa cagaaaagac tcttcttgca
+      601 gtttacaacg ggcacagaca gagcacctgt gggaggacta ggaaaattaa agatgattat
+      661 agccaaaaat ggcccagaca cagaaaggta ggtaattatt aacttgtgac tgtataccta
+      721 ccgaaaacct tgcattcctc gtcacataca tatgaactgt ctttatagtt tctgagcaca
+      781 ttcgtgattt tatatacaaa tccccaaatc atattagaca attgagaaaa tactttgctg
+      841 tcattgtgtg aggaaacttt taagaaattg ccctagttaa aaattattat ggggctcaca
+      901 ttggtttgga atcaaattag tgtgattcat ttactttttt gattcccagc ttgttaattg
+      961 aaagccatat aacatgatca tctatttaga atggttacat tgaggctcgg aagattatca
+     1021 tttgattgtg ctagaatcct gttatcaaat cattttctta gtcatattgc cagcagtgtt
+     1081 tctaataagc atttaagagc acacactttg cagtcttgta aaacaggttt gagtattttc
+     1141 tccaccttag aggaagttac ttgacttctc agtgacctaa cctctaaagt gcatttactg
+     1201 atgtcctctc tgtggttttg ttgtggaaag atttagttaa atgaactgta agaattcagt
+     1261 acctaaaatg gtatctgtta tgtagtaaaa actcaatgga tacagtatct tatcatcgtc
+     1321 actagctttg agtaatttat aggataaagg caacttggta gttacacaac aaaaagttta
+     1381 tgatttgcat taatgtatag tttgcattgc agaccgtctc aactatatac aatctaaaaa
+     1441 taggagcatt taattctaag tgtatttccc atgacttaca gttttcctgt ttttttcccc
+     1501 ttttctctat ttaggttacc tacatctcat acttgcttta atgtgctttt acttccggaa
+     1561 tactcaagca aagaaaaact taaagagaga ttgttgaagg ccatcacgta tgccaaagga
+     1621 tttggcatgc tgtaaaacaa aacaaaacaa aataaaacaa aaaaaaggaa ggaaaaaaaa
+     1681 agaaaaaatt taaaaaattt taaaaatata acgagggata aatttt
+//

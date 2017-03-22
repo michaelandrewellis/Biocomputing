@@ -1,0 +1,52 @@
+LOCUS       AF121130                 428 bp    DNA     linear   PRI 30-APR-1999
+DEFINITION  Homo sapiens photoreceptor-specific nuclear receptor (PNR) gene,
+            partial cds.
+ACCESSION   AF121130
+VERSION     AF121130.1  GI:4726076
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 428)
+  AUTHORS   Kobayashi,M., Takezawa,S., Hara,K., Yu,R.T., Umesono,Y., Agata,K.,
+            Taniwaki,M., Yasuda,K. and Umesono,K.
+  TITLE     Identification of a photoreceptor cell-specific nuclear receptor
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 96 (9), 4814-4819 (1999)
+   PUBMED   10220376
+REFERENCE   2  (bases 1 to 428)
+  AUTHORS   Kobayashi,M., Takezawa,S., Hara,K., Yu,R.T., Umesono,Y., Agata,K.,
+            Taniwaki,M., Yasuda,K. and Umesono,K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-JAN-1999) Institute for Virus Research, Kyoto Univ.,
+            Kawahara-cho, Shogoin, Sakyo, Kyoto 606-8507, Japan
+FEATURES             Location/Qualifiers
+     source          1..428
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q24"
+     gene            <311..>428
+                     /gene="PNR"
+     mRNA            <311..>428
+                     /gene="PNR"
+                     /product="photoreceptor-specific nuclear receptor"
+     CDS             311..>428
+                     /gene="PNR"
+                     /codon_start=1
+                     /product="photoreceptor-specific nuclear receptor"
+                     /protein_id="AAD28302.1"
+                     /db_xref="GI:4726077"
+                     /translation="METRPTALMSSTVAAAAPAAGAASRKESPGRWGLGEDPT"
+ORIGIN      
+        1 gtagcaggac tgaccggctc ccggggcacc ttggtaatgc tgcaggtgtg gccagttgat
+       61 cccctgtgga gacagtaaag attaagagga tcataaactg cgtccagcgg ctgccccggg
+      121 agaaatctcc taaagccaga gcctgtgctg tgaggggctt cgggaccttg gggcagctcc
+      181 tgagttcaga cagagttcag gaagggagac aggggcacag agagacagag gttcatggac
+      241 tgaggcaaag gctgggccag gctcagcaac ccaggcctcc cgcaggcagg cagaggctgc
+      301 cctgtaaccc atggagacca gaccaacagc tctgatgagc tccacagtgg ctgcagctgc
+      361 gcctgcagct ggggctgcct ccaggaagga gtctccaggc agatggggcc tgggggagga
+      421 tcccacag
+//

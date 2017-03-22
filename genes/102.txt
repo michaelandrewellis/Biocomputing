@@ -1,0 +1,81 @@
+LOCUS       AJ276980                 187 bp    DNA     linear   PRI 14-NOV-2006
+DEFINITION  Homo sapiens partial CLPX gene, exon 1 and joined cds (exons 1-14).
+ACCESSION   AJ276980
+VERSION     AJ276980.1  GI:9665217
+KEYWORDS    ClpX gene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Corydon,T.J., Wilsbech,M., Jespersgaard,C., Andresen,B.S.,
+            Borglum,A.D., Pedersen,S., Bolund,L., Gregersen,N. and Bross,P.
+  TITLE     Human and mouse mitochondrial orthologs of bacterial ClpX
+  JOURNAL   Mamm. Genome 11 (10), 899-905 (2000)
+   PUBMED   11003706
+REFERENCE   2  (bases 1 to 187)
+  AUTHORS   Bross,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-MAR-2000) Bross P., Research Unit for Molecular
+            Medicine, Aarhus University Hospital, Brendstrupgaardsvej, 8200,
+            DENMARK
+FEATURES             Location/Qualifiers
+     source          1..187
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22.31"
+     gene            order(<1..172,AJ276981.1:16..176,AJ276966.1:16..133,
+                     AJ276967.1:16..170,AJ276968.1:16..175,AJ276969.1:16..57,
+                     AJ276970.1:16..192,AJ276971.1:16..180,AJ276972.1:16..104,
+                     AJ276973.1:16..180,AJ276974.1:16..315,AJ276975.1:16..108,
+                     AJ276976.1:16..122,AJ276977.1:16..483)
+                     /gene="CLPX"
+     mRNA            join(<1..172,AJ276981.1:16..176,AJ276966.1:16..133,
+                     AJ276967.1:16..170,AJ276968.1:16..175,AJ276969.1:16..57,
+                     AJ276970.1:16..192,AJ276971.1:16..180,AJ276972.1:16..104,
+                     AJ276973.1:16..180,AJ276974.1:16..315,AJ276975.1:16..108,
+                     AJ276976.1:16..122,AJ276977.1:16..483)
+                     /gene="CLPX"
+     exon            <1..172
+                     /gene="CLPX"
+                     /number=1
+     CDS             join(94..172,AJ276981.1:16..176,AJ276966.1:16..133,
+                     AJ276967.1:16..170,AJ276968.1:16..175,AJ276969.1:16..57,
+                     AJ276970.1:16..192,AJ276971.1:16..180,AJ276972.1:16..104,
+                     AJ276973.1:16..180,AJ276974.1:16..315,AJ276975.1:16..108,
+                     AJ276976.1:16..122,AJ276977.1:16..106)
+                     /gene="CLPX"
+                     /function="chaperone, protease subunit"
+                     /codon_start=1
+                     /product="ClpX protein"
+                     /protein_id="CAC01291.1"
+                     /db_xref="GI:9665218"
+                     /db_xref="GDB:9958405"
+                     /db_xref="GOA:O76031"
+                     /db_xref="HGNC:2088"
+                     /db_xref="InterPro:IPR003593"
+                     /db_xref="InterPro:IPR004487"
+                     /db_xref="InterPro:IPR013093"
+                     /db_xref="InterPro:IPR019489"
+                     /db_xref="UniProtKB/Swiss-Prot:O76031"
+                     /translation="MPSCGACTCGAAAVRLITSSLASAQRGISGGRIHMSVLGRLGTF
+                     ETQILQRAPLRSFTETPAYFASKDGISKDGSGDGNKKSASEGSSKKSGSGNSGKGGNQ
+                     LRCPKCGDLCTHVETFVSSTRFVKCEKCHHFFVVLSEADSKKSIIKEPESAAEAVKLA
+                     FQQKPPPPPKKIYNYLDKYVVGQSFAKKVLSVAVYNHYKRIYNNIPANLRQQAEVEKQ
+                     TSLTPRELEIRRREDEYRFTKLLQIAGISPHGNALGASMQQQVNQQIPQEKRGGEVLD
+                     SSHDDIKLEKSNILLLGPTGSGKTLLAQTLAKCLDVPFAICDCTTLTQAGYVGEDIES
+                     VIAKLLQDANYNVEKAQQGIVFLDEVDKIGSVPGIHQLRDVGGEGVQQGLLKLLEGTI
+                     VNVPEKNSRKLRGETVQVDTTNILFVASGAFNGLDRIISRRKNEKYLGFGTPSNLGKG
+                     RRAAAAADLANRSGESNTHQDIEEKDRLLRHVEARDLIEFGMIPEFVGRLPVVVPLHS
+                     LDEKTLVQILTEPRNAVIPQYQALFSMDKCELNVTEDALKAIARLALERKTGARGLRS
+                     IMEKLLLEPMFEVPNSDIVCVEVDKEVVEGKKEPGYIRAPTKESSEEEYDSGVEEEGW
+                     PRQADAANS"
+ORIGIN      
+        1 cggaaccgag tcagcgcgcc ttgcgggcag gattcacgcc gctgtgaccc ggaggtcctc
+       61 agggggcgaa gccccggcct aggcctcgcg gagatgccca gctgcggtgc ttgtacttgc
+      121 ggcgcggcgg ccgtccggct catcacctcc tcactcgcct ccgcgcagag aggtaacgaa
+      181 atagtgc
+//

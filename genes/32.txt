@@ -1,0 +1,48 @@
+LOCUS       AF101474                 395 bp    DNA     linear   PRI 10-NOV-1999
+DEFINITION  Homo sapiens SMAD6 gene, exon 1 and partial cds.
+ACCESSION   AF101474
+VERSION     AF101474.1  GI:6318327
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 395)
+  AUTHORS   Hagiwara,K., Freeman,A.A.H., McMenamin,M.G., Bennett,W.P., Yang,K.,
+            Takenoshita,S. and Harris,C.C.
+  TITLE     Determination of the genomic structure of human Smad3, Smad6 and
+            Smad7 and the cloning of the human Smad3 promoter
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 395)
+  AUTHORS   Hagiwara,K., Freeman,A.A.H., McMenamin,M.G., Bennett,W.P., Yang,K.,
+            Takenoshita,S. and Harris,C.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-OCT-1998) LHC/NCI, National Institutes of Health,
+            Bldg. 37, Rm. 2C22, 37 Convent Drive, Bethesda, MD 20892, USA
+FEATURES             Location/Qualifiers
+     source          1..395
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21-q22"
+     mRNA            1..>146
+                     /product="SMAD6"
+     exon            1..146
+                     /number=1
+     CDS             113..>146
+                     /codon_start=1
+                     /product="SMAD6"
+                     /protein_id="AAF06841.1"
+                     /db_xref="GI:6318328"
+                     /translation="MSRMGKPIETQ"
+ORIGIN      
+        1 aaaagaacga atccagcacc aaaacgtgct acaacatgga tgaacttcga tgactttgtg
+       61 ccacatgaaa gaagaagcca gccacaaaag gccatatatt gtatgaaatg aaatgtccag
+      121 aatgggcaaa cccatagaga cacaaagtaa gttagtggtt gcccagggtt ttggggttgg
+      181 ggtctagaaa gtgactgcca atggggatgg tgtttctttt tgcgataaaa aaaatgtctt
+      241 gtgtntagat ggtggttgat ggttgcacaa nactgtgaat atactcaaaa accacngaat
+      301 ggtatatttt taaaaaggat gaatcttagg gtatgtgaat tatatctcaa tttttggaaa
+      361 gggtnacctg atattggtct gtaactggcc tcccc
+//

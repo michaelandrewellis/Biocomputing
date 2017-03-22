@@ -1,0 +1,62 @@
+LOCUS       DQ285413                 337 bp    DNA     linear   PRI 03-DEC-2005
+DEFINITION  Homo sapiens mitochondrial DNA polymerase gamma (POLG) gene,
+            POLG-1085G allele, exon 3 and partial cds; nuclear gene for
+            mitochondrial product.
+ACCESSION   DQ285413
+VERSION     DQ285413.1  GI:82698796
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 337)
+  AUTHORS   Malyarchuk,B.A., Derenko,M.V., Grzybowski,T. and Miscicka-Sliwka,D.
+  TITLE     The POLG1 exon 3 variability in humans: a case of pathogenic
+            mutation in Russian population
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 337)
+  AUTHORS   Malyarchuk,B.A., Derenko,M.V., Grzybowski,T. and Miscicka-Sliwka,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-NOV-2005) Genetics Department, Institute of
+            Biological Problems of the North, Portvaya Str., 18, Magadan
+            685000, Russia
+FEATURES             Location/Qualifiers
+     source          1..337
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="Buryat #301"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     gene            <1..>337
+                     /gene="POLG"
+                     /allele="1085G"
+     mRNA            <76..>270
+                     /gene="POLG"
+                     /allele="1085G"
+                     /product="mitochondrial DNA polymerase gamma"
+     CDS             <76..>270
+                     /gene="POLG"
+                     /allele="1085G"
+                     /codon_start=1
+                     /product="mitochondrial DNA polymerase gamma"
+                     /protein_id="ABB89207.1"
+                     /db_xref="GI:82698797"
+                     /translation="YSWCSQRLVEERYSWTSQLSPADLIPLEVPTGASSPTQRDWQEQ
+                     LVVGHNVSFDRAHIREQYLIQ"
+     exon            76..270
+                     /gene="POLG"
+                     /allele="1085G"
+                     /number=3
+     variation       218
+                     /gene="POLG"
+                     /note="results in glycine to alanine substitution"
+                     /replace="c"
+ORIGIN      
+        1 ggtgtgcagt ggttgttgtg gagtggaagt ttaatgtctc catggtgaac ctgcctgcct
+       61 ctcacctccc tcaggtattc ctggtgcagc cagcggctgg tggaagagcg ttactcttgg
+      121 accagccagc tgtcgccggc tgacctcatc cccctggagg tccctactgg tgccagcagc
+      181 cccacccaga gagactggca ggagcagtta gtggtggggc acaatgtttc ctttgaccga
+      241 gctcatatca gggagcagta cctgatccag gtaaggttcc tggggccaac tgcaggttct
+      301 ggcatgggat gggccaggag ccctaatctc agtggtt
+//

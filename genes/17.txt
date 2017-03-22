@@ -1,0 +1,76 @@
+LOCUS       AB065939                1195 bp    DNA     linear   PRI 23-JUL-2002
+DEFINITION  Homo sapiens gene for seven transmembrane helix receptor, complete
+            cds, isolate:CBRC7TM_502.
+ACCESSION   AB065939
+VERSION     AB065939.1  GI:21929159
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Suwa,M., Sato,T., Okouchi,I., Arita,M., Futami,K., Matsumoto,S.,
+            Tsutsumi,S., Aburatani,H., Asai,K. and Akiyama,Y.
+  TITLE     Genome-wide discovery and analysis of human seven transmembrane
+            helix receptor genes
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1195)
+  AUTHORS   Suwa,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-JUL-2001) Makiko Suwa, Computational Biology Research
+            Center (CBRC), National Institute of Advanced Industrial Science
+            and Technology (AIST); 2-41-6 Aomi Koto-ku, Tokyo 135-0064, Japan
+            (E-mail:m-suwa@aist.go.jp, URL:http://www.cbrc.jp/,
+            Tel:81-3-3599-8080, Fax:81-3-3599-8081)
+COMMENT     This sequence is a seven transmembrane helix receptor candidate
+            predicted from the whole human genome sequences using our automated
+            system that contains programs of gene
+            finding(GeneDecoder), sequence search, motif-domain assignment and
+            transmembrane helix prediction.
+            And the sequence is submitted by the collaborative project between
+            [Computational Biology Research Center (CBRC), National Institute
+            of Advanced Industrial Science and Technology (AIST)] and [Genome
+            Science Division, Research Center for Advanced Science and
+            Technology (RCAST), University of Tokyo].
+FEATURES             Location/Qualifiers
+     source          1..1195
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="CBRC7TM_502"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     CDS             201..995
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /codon_start=1
+                     /product="seven transmembrane helix receptor"
+                     /protein_id="BAC06154.1"
+                     /db_xref="GI:21929160"
+                     /translation="MAMYSSSQCXXSWTSCCLPHCAQGXSIFWLQAHNIAFDACVTQG
+                     FFVHMMFVGESAILLAMAFDRFVAICAPLRYTTVLTWPVVGRIALAVITRSFCIIFPV
+                     IFLLKRLPFCLTNIVPHSYCEHIGVARLACADITVNIWYGFSVPIVMVILDVILIAVS
+                     YSLILRAVFRLPSQDARHKALSTCGSHLCVILMFYVPSFFTLLTHHFGRNIPQHVHIL
+                     LANLYVAVPPMLNPIVYGVKTKQIREGVAHRFFDIKTWCCTSPLGS"
+ORIGIN      
+        1 cctccttcga tggactgccc tgtccagtga gagcaatagt ttagacgggg ggctttagag
+       61 tcgccagaag gcgtttagcc aagatgtnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      121 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      181 nnnnnnngaa gtaaccttca atggccatgt attcttcctc tcaatgctgn cngtcatgga
+      241 catcntgctg tctaccacac tgtgcccaag gccntagcat cttttggctt caagcacata
+      301 acattgcttt tgatgcctgt gtcacccaag gcttctttgt ccatatgatg tttgtggggg
+      361 agtcagctat cctgttagcc atggcctttg atcgctttgt ggccatttgt gccccactga
+      421 gatatacaac agtgctaaca tggcctgttg tggggaggat tgctctggcc gtcatcaccc
+      481 gaagcttctg catcatcttc ccagtcatat tcttgctgaa gcggctgccc ttctgcctaa
+      541 ccaacattgt tcctcactcc tactgtgagc atattggagt ggctcgttta gcctgtgctg
+      601 acatcactgt taacatttgg tatggcttct cagtgcccat tgtcatggtc atcttggatg
+      661 ttatcctcat cgctgtgtct tactcactga tcctccgagc agtgtttcgt ttgccctccc
+      721 aggatgctcg gcacaaggcc ctcagcactt gtggctccca cctctgtgtc atccttatgt
+      781 tttatgttcc atccttcttt accttattga cccatcattt tgggcgtaat attcctcaac
+      841 atgtccatat cttgctggcc aatctttatg tggcagtgcc accaatgctg aaccccattg
+      901 tctatggtgt gaagactaag cagatacgtg agggtgtagc ccaccggttc tttgacatca
+      961 agacttggtg ctgtacctcc cctctgggct catgaatcgg gggtcttcta gagtcgacca
+     1021 gataggggtg tcaagcccaa gtatnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     1081 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     1141 nnnnaaaata gccgggtgtg gtggcaccca cctgtaatcc cagtacttgg gaagg
+//

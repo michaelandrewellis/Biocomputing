@@ -1,0 +1,101 @@
+LOCUS       AF332758                3051 bp    DNA     linear   PRI 12-FEB-2002
+DEFINITION  Homo sapiens alpha-7 nicotinic cholinergic receptor subunit
+            (CHRNA7) gene, partial intron 4 and partial cds.
+ACCESSION   AF332758
+VERSION     AF332758.1  GI:13345790
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 3051)
+  AUTHORS   Riley,B., Williamson,M., Collier,D., Wilkie,H. and Makoff,A.
+  TITLE     A 3-Mb map of a large Segmental duplication overlapping the
+            alpha7-nicotinic acetylcholine receptor gene (CHRNA7) at human
+            15q13-q14
+  JOURNAL   Genomics 79 (2), 197-209 (2002)
+   PUBMED   11829490
+REFERENCE   2  (bases 1 to 3051)
+  AUTHORS   Riley,B.P. and Makoff,A.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-DEC-2000) Psychological Medicine, Inst. of
+            Psychiatry, De Crespigny Park, London NW6 3EE, UK
+FEATURES             Location/Qualifiers
+     source          1..3051
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13-q14"
+     gene            <1..>3051
+                     /gene="CHRNA7"
+     intron          <1..3013
+                     /gene="CHRNA7"
+                     /number=4
+     mRNA            <3014..>3051
+                     /gene="CHRNA7"
+                     /product="alpha-7 nicotinic cholinergic receptor subunit"
+     CDS             <3014..>3051
+                     /gene="CHRNA7"
+                     /codon_start=2
+                     /product="alpha-7 nicotinic cholinergic receptor subunit"
+                     /protein_id="AAK19515.1"
+                     /db_xref="GI:13345791"
+                     /translation="ADERFDATFHTN"
+     exon            3014..>3051
+                     /gene="CHRNA7"
+                     /number=5
+ORIGIN      
+        1 atttacatct tgatcctacc tcctcctctc tctttcccta tgtgtttttg gaagtaaggg
+       61 ggggggatgt gtcctttcat gacaacttgg ctctcgcctt ctctccctct ctcctttctc
+      121 tcagtctccc cctttttccc ccttatcccc ctttcttcct tcccttaaac ttcatcacgt
+      181 ttttgcttgt ttcatattca aatcacggct ttctcataca attactactt ttttcctaga
+      241 gtttctggtt gccttttctt attataagaa tgtttaaaac tgtgtcctta atcaagtcca
+      301 tgatgttttc agctcattat atctcccctt tcttgctctg aacccatttg gtctgtcctc
+      361 agtactttaa cgtcttgctg ggatttggac ccaccttttt ctaggcctcc tgctcaagtc
+      421 atcctctaaa tctcttttat cgatctccag gtttaatcta aaagtgtatt ctttctcagg
+      481 tttcactctc attgttccaa agctgaccaa ggaaatatat gttgggaaca agctcttcaa
+      541 ggctttaatg ttcttgaaaa cccctttttt tttgccttca tgcttgggtg gtttttctgc
+      601 tgtgagaagt gtcttcgtgt tatttcttaa ttttttccct cccactctcc ctgatggagc
+      661 ttctgtgagt gaggcgagtt cccccagcct tgtcctctac gctgtcttct ttctgtgtta
+      721 cgtttgatct ctgtgatttc tatcagccaa acctcccacc tactcataaa aagttatttc
+      781 ataaatcata cctttaattt ccatttttct ctcttttttc taattgctat atcctcttga
+      841 atgttgtgag gacattactt ttttaagaag tgatttttcc ttcttttcat tgactcattc
+      901 tttttggatc ttttttggtg tgtatcctcc actgtgtgtc gcatgctgaa gactgtcctc
+      961 cggtatctgt gattctaagt ttccccttga gaaatctcag acatgggaga ggctgcctga
+     1021 ggctctgtag tcatgggcag ctcctgcagg ggccatagtg gccaaaatga ggggagcttt
+     1081 actctggggt gctggtactt tgactggctg cctgtgtttt tttgaggtgg tttatttttc
+     1141 tttaccagta gggctgtgtt ttaagggtac ccagggttgg ttttaatcag gcatggtgag
+     1201 acacttagac acagaagtga ctgtcctgaa ggaaagcagt tttactcact gttcttagaa
+     1261 gcagaaggac aggctaggcg cggtggctca gcctgtaatc ctagcacttt gagaggctaa
+     1321 gtgggggtgg atcacgaggc caggagttca agaccagcct aaccaacatg gtgaaacccc
+     1381 atctctacta aaaatataac aattagccgg gagtggtggc acgcacctgt aatcccagct
+     1441 actcaggagg ctgaggcagg agaattgctt gaatccagga ggcagaggtt gcagtgagcc
+     1501 gagatcgtgc ccctgcactc cagcctgggc aacagagcta gactccattt caaaaaaaaa
+     1561 gggaagcgta gcacatgcag ggacacaggg aggcaccagg gccacgcggg aggccgagag
+     1621 agtgcgggaa acctgagcaa gggccgtcct tcattgtggc ttctgcagga aggaagggag
+     1681 gagcagggca cgcaggctta ggtttaggat tagctcctta gaataattgc agtaggccct
+     1741 ggggcatagg gactcttcct ggttgacttt tacctggtcc tgcagtgatg agagcaggac
+     1801 tggtgtcaac cccagtgtga cagcctgata aaggatgtgt ttgggtgggg gtatgggttc
+     1861 tggattgatt gatttgtgtt tgaaaggcca gagttgttta ctatctctcc aaggggcctc
+     1921 cagagtcagc aaagccccag atgtcaacac atcagaatcc agaaaataaa agccaaggct
+     1981 agtacaggct gttggtgtaa ttgctgttgg gcctgtgtgt gtgtgggtgt gtgtccttta
+     2041 tcccagttgt taactcctgg ctgcagaagg ctggaacagg ggacggagag gggcagaggt
+     2101 gcatccgtct aaaactcgca cttacttctg ttgtcttccc tcactctcct tcttttcatc
+     2161 gctaactgtg gagctggaag ccctctgggg ttgtggtgtc cagctccctc ctgcacctgc
+     2221 agttcagtca ttcaagatat atatgtgggc cgggcacggt ggctcacgcc tataatccca
+     2281 gcactttggg aggctgaggc gggtggatca caaggtcagg agatcgagac catcccggct
+     2341 aacatagtga aacccccgtc tctactaaaa atacaaaaaa attaaccagg tgtggtggtg
+     2401 tgcacctgta gtcccagcta ctcgggaagc tgaggcagga ggatgacatg aacccaggag
+     2461 gtggagcttg cagtgagccg agatcatgcc actgcactct agcctgggca acacagcaag
+     2521 actctgtctc aaaaaaaaaa aaaaagatat atatgtgaag cacaaaccaa gtgtgggtcc
+     2581 gcttcaagag gctggaacta gagctttgga cacagcgagt gaaaaccctg ccccatgagg
+     2641 ctcacagggt ggcagcgtgc ctcacccacc ctctgttctt ctagacacca tgaaaatgtc
+     2701 acatctgccg atgtcctcca gagttgttta caggtttcat ttggttaaga gcttggtttt
+     2761 atatacattg tgagaaaaat caccagttcg gtgtgaaaat tgaaatgggg gtagacactg
+     2821 gcccttccaa gctgtgcccg gggaagacct cccaggccag ccccagtggt gctctcaggc
+     2881 agggtgtggg gttgtgagga cagacagggg cccctctcaa ggtctttgct gctccatcaa
+     2941 agacagaccc cagggcttcg ggaaatccac agcctggtgg cactggctca tgcagtcctt
+     3001 ttcctgtttc tagtgctgat gagcgctttg acgccacatt ccacactaac a
+//

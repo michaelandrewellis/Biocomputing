@@ -1,0 +1,64 @@
+LOCUS       JN245952                 355 bp    DNA     linear   PRI 28-DEC-2011
+DEFINITION  Homo sapiens isolate N74 KIAA0101 (KIAA0101) gene, exon 4 and
+            partial cds.
+ACCESSION   JN245952
+VERSION     JN245952.1  GI:365753530
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 355)
+  AUTHORS   Jain,M., Zhang,L., Patterson,E.E. and Kebebew,E.
+  TITLE     KIAA0101 Is Overexpressed, and Promotes Growth and Invasion in
+            Adrenal Cancer
+  JOURNAL   PLoS ONE 6 (11), E26866 (2011)
+   PUBMED   22096502
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 355)
+  AUTHORS   Jain,M., Zhang,L., Patterson,E. and Kebebew,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JUL-2011) Endocrine Oncology Section, Surgery Branch,
+            National Institute of Health, 10-CRC - Hatfield Clinical Research
+            Center, 4-5952, Bethesda, MD 20892, USA
+FEATURES             Location/Qualifiers
+     source          1..355
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="N74"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q23"
+                     /tissue_type="adrenal gland"
+     gene            <1..>355
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+     exon            256..355
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /number=4
+     mRNA            <256..>301
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /product="KIAA0101"
+     CDS             <256..301
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /codon_start=2
+                     /product="KIAA0101"
+                     /protein_id="AEW89581.1"
+                     /db_xref="GI:365753531"
+                     /translation="ACPLQPDHTNDEKE"
+ORIGIN      
+        1 tacaacgtag tctaaaggag aaacactgat tctgcaaatt aacaggcaaa taaattgtta
+       61 aaaattttgt tgcattaata cttgaaattt gtaggtgttt gttaattaat gaagtttaat
+      121 tttctttcat ttctagtcat tagaccagat ctactgcact gttaattaat gttcctgatt
+      181 tatataggtt tgtaactatt tttttcaaac agttgatact tggatggcta ttgatgttct
+      241 ctcttctttt cacagagcat gtcctttgca acctgatcac acaaatgatg aaaaagaata
+      301 gaactttctc attcatcttt gaataacgtc tccttgttta ccctggtatt ctaga
+//

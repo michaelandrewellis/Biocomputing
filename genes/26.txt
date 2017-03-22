@@ -1,0 +1,53 @@
+LOCUS       AF037404                 267 bp    DNA     linear   PRI 03-SEP-1998
+DEFINITION  Homo sapiens hepatic lipase gene, exon 3 and partial cds.
+ACCESSION   AF037404
+VERSION     AF037404.1  GI:2708814
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 267)
+  AUTHORS   Tiebel,O., Gehrisch,S., Pietzsch,J., Gromeier,S. and Jaross,W.
+  TITLE     18 bp insertion/duplication with internal missense mutation in
+            human hepatic lipase gene exon 3. Mutations in brief no. 181.
+            Online
+  JOURNAL   Hum. Mutat. 12 (3), 216 (1998)
+   PUBMED   10660332
+  REMARK    http://journals.wiley.com/1059-7794/mutbr1.html
+REFERENCE   2  (bases 1 to 267)
+  AUTHORS   Tiebel,O., Gehrisch,S., Weissflog,G., Hanefeld,M. and Jaross,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-DEC-1997) Institute of Clinical Chemistry, Medical
+            Faculty Carl Gustav Carus, Technical University Dresden,
+            Fetscherstr. 74, Dresden 01307, Germany
+FEATURES             Location/Qualifiers
+     source          1..267
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21-q23"
+                     /cell_type="leukocytes"
+     mRNA            <28..>228
+                     /product="hepatic lipase"
+     CDS             <28..>228
+                     /codon_start=1
+                     /product="hepatic lipase"
+                     /protein_id="AAC34206.1"
+                     /db_xref="GI:2708815"
+                     /translation="VDGVLENWIWQMVAALKSQPAQPVNVGLVDWITLAHDHYTIAVH
+                     YTVAVRNTRLVGKEVAALLRWLE"
+     exon            28..228
+                     /number=3
+     misc_feature    140..175
+                     /note="insertion mutation; 18 base pair duplication with
+                     internal point mutation"
+ORIGIN      
+        1 gcgaccctcc ctctgtcccc tcctcaggtg gacggcgtgc tagaaaactg gatctggcag
+       61 atggtggccg cgctgaagtc tcagccggcc cagccagtga acgtggggct ggtggactgg
+      121 atcaccctgg cccacgacca ctacaccatc gccgtccact acaccgtcgc cgtccgcaac
+      181 acccgccttg tgggcaagga ggtcgcggct cttctccggt ggctggaggt accgacctgc
+      241 cccatccttc cttcacctcc cttccct
+//

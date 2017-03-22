@@ -1,0 +1,77 @@
+LOCUS       AF306325S5               738 bp    DNA     linear   PRI 12-SEP-2001
+DEFINITION  Homo sapiens neuronal nicotinic acetylcholine receptor beta 4
+            subunit (CHRNB4) gene, exon 6 and complete cds.
+ACCESSION   AF306329
+VERSION     AF306329.1  GI:15558964
+KEYWORDS    .
+SEGMENT     5 of 5
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 738)
+  AUTHORS   Lev-Lehman,E., Bercovich,D., Xu,W., Stockton,D.W. and Beaudet,A.L.
+  TITLE     Characterization of the human beta4 nAChR gene and polymorphisms in
+            CHRNA3 and CHRNB4
+  JOURNAL   J. Hum. Genet. 46 (7), 362-366 (2001)
+   PUBMED   11450844
+REFERENCE   2  (bases 1 to 738)
+  AUTHORS   Lev-Lehman,E., Bercovich,D., Xu,W. and Beaudet,A.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-SEP-2000) Human Molecular Genetics, Baylor College of
+            Medicine, One Baylor Plaza, Houston, TX 77030, USA
+FEATURES             Location/Qualifiers
+     source          1..738
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q25.1 between WI-7183 and WI-6335"
+     gene            order(AF306325.1:<1..747,AF306326.1:1..1024,
+                     AF306327.1:1..620,AF306328.1:1..1151,1..>738)
+                     /gene="CHRNB4"
+     mRNA            join(AF306325.1:188..330,AF306326.1:585..733,
+                     AF306327.1:147..191,AF306327.1:294..403,
+                     AF306328.1:61..1039,248..>738)
+                     /gene="CHRNB4"
+                     /product="neuronal nicotinic acetylcholine receptor beta 4
+                     subunit"
+     CDS             join(AF306325.1:276..330,AF306326.1:585..733,
+                     AF306327.1:147..191,AF306327.1:294..403,
+                     AF306328.1:61..1039,248..406)
+                     /gene="CHRNB4"
+                     /codon_start=1
+                     /product="neuronal nicotinic acetylcholine receptor beta 4
+                     subunit"
+                     /protein_id="AAL02062.1"
+                     /db_xref="GI:15558965"
+                     /translation="MRRAPSLVLFFLVALCGRGNCRVANAEEKLMDDLLNKTRYNNLI
+                     RPATSSSQLISIKLQLSLAQLISVNEREQIMTTNVWLKQEWTDYRLTWNSSRYEGVNI
+                     LRIPAKRIWLPDIVLYNNADGTYEVSVYTNLIVRSNGSVLWLPPAIYKSACKIEVKYF
+                     PFDQQNCTLKFRSWTYDHTEIDMVLMTPTASMDDFTPSGEWDIVALPGRRTVNPQDPS
+                     YVDVTYDFIIKRKPLFYTINLIIPCVLTTLLAILVFYLPSDCGEKMTLCISVLLALTF
+                     FLLLISKIVPPTSLDVPLIGKYLMFTMVLVTFSIVTSVCVLNVHHRSPSTHTMAPWVK
+                     RCFLHKLPTFLFMKRPGPDSSPARAFPPSKSCVTKPEATATSTSPSNFYGNSMYFVNP
+                     ASAASKSPAGSTPVAIPRDFWLRSSGRFRQDVQEALEGVSFIAQHMKNDDEDQSVVED
+                     WKYVAMVVDRLFLWVFMFVCVLGTVGLFLPPLFQTHAASEGPYAAQRD"
+     exon            248..>738
+                     /gene="CHRNB4"
+                     /number=6
+     3'UTR           407..>738
+                     /gene="CHRNB4"
+ORIGIN      
+        1 acagcccaag ttcccagtgc ccctccaacg ctgtggggga caggcagggg tggaggtgga
+       61 gaacagccag agaggctcag agctgcccag ctgggaggcc agcctgggac tcagaacttg
+      121 cccccctagt atgcagttcc acgcctgtgg cctgtggagt ccctggccag agagtaaggg
+      181 cctgactcgg ggaaaggagg gaccccagta cttggcacct gtgaccaact cctctgtctg
+      241 cctgcaggtc gttgaggact ggaagtacgt ggctatggtg gtggaccggc tgttcctgtg
+      301 ggtgttcatg tttgtgtgcg tcctgggcac tgtggggctc ttcctaccgc ccctcttcca
+      361 gacccatgca gcttctgagg ggccctacgc tgcccagcgt gactgagggc cccctgggtt
+      421 gtggggtgag aggatgtgag tggccgggtg ggcactttgc tgcttctttc tgggttgtgg
+      481 ccgatgaggc cctaagtaaa tatgtgagca ttggccatca accccatcaa accagccaca
+      541 gccgtggaac aggcaaggat gggggcctgg gctgtcctct ctgaatgcct tggagggatc
+      601 ccaggaagcc ccagtaggag ggagcttcag acagttcaat tctggcctgt cttccttccc
+      661 tgcaccgggc aatggggata aagatgactt cgtagcagca cctactatgc ttcaggcatg
+      721 gtgccggcct gcctctcc
+//

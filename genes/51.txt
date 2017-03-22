@@ -1,0 +1,58 @@
+LOCUS       AF224242S04              645 bp    DNA     linear   PRI 28-JAN-2003
+DEFINITION  Homo sapiens HERC2 (HERC2) gene, exon 57 and partial cds.
+ACCESSION   AF224245
+VERSION     AF224245.1  GI:27923058
+KEYWORDS    .
+SEGMENT     4 of 16
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 645)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Structure of the highly conserved HERC2 gene and of multiple
+            partially duplicated paralogs in human
+  JOURNAL   Genome Res. 10 (3), 319-329 (2000)
+   PUBMED   10720573
+REFERENCE   2  (bases 1 to 645)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JAN-2000) Genetics, Case Western Reserve University,
+            10900 Euclid Ave, Cleveland, OH 44106-4955, USA
+FEATURES             Location/Qualifiers
+     source          1..645
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13"
+     mRNA            join(AF224244.1:<1..103,599..>645)
+                     /gene="HERC2"
+                     /product="HERC2"
+     CDS             join(AF224244.1:<1..103,599..>645)
+                     /gene="HERC2"
+                     /codon_start=3
+                     /product="HERC2"
+                     /protein_id="AAO27474.1"
+                     /db_xref="GI:27923072"
+                     /translation="LLGRIRAEEEDLAAVPFLASDNEEEEDEKGNSGSLIRKKAAGLE
+                     SAATI"
+     exon            599..>645
+                     /gene="HERC2"
+                     /number=57
+ORIGIN      
+        1 gctggccgat gatcaggttc ctctggccgg tgtcctgggc agagggtata aaggaagaga
+       61 gaagcatttt acattgggac atgtgtctgt gttaaagtaa ctccatggtc atgtggccac
+      121 atccgtttta ttctttctgt gggaaaataa ttggccaaac agctgtctag atttggggat
+      181 agtgctgcaa ggccagaccc agcgtggctc ctgggcaggt ttcctcagtg tctctacagt
+      241 gccatttgta gcagctgtgc gtctgtttcc atggcttgga atgattccca cccatgttca
+      301 cgttggtatt taagatgaaa gagaaggcct ggtgtatcat cgttttccac caaaaataaa
+      361 ggctgaaatt aagtgctagt attaaaaggt ggcatggttg tatctagaaa atttgaccct
+      421 ccagaggact tactcctgta catgcttgag gtttttttct attaaagcaa aattttaaga
+      481 gtttctgaaa gtaaccataa aactttgagt gcttgaggtt gcttttcttt ttatttttta
+      541 aatgttttat gctgaataac ctctcttttc tttttctttt ttttttccgt ttggttagcc
+      601 tcattagaaa gaaggctgct gggctggaat cagcagctac gataa
+//

@@ -1,0 +1,60 @@
+LOCUS       AJ001110                 349 bp    DNA     linear   PRI 14-NOV-2006
+DEFINITION  Homo sapiens UBE3A gene, exon 11.
+ACCESSION   AJ001110
+VERSION     AJ001110.1  GI:3421129
+KEYWORDS    E6-AP gene; UBE3A gene; ubiquitin-protein ligase.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Hennies,H.C., Buerger,J., Sperling,K. and Reis,A.
+  TITLE     Mutations in the E6-AP gene (UBE3A) in patients with Angelman
+            syndrome
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 349)
+  AUTHORS   Hennies,H.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-1997) Hennies H.C., Institute of Human Genetics,
+            Charite, Humboldt University, Augustenburger Platz 1, Berlin,
+            D-13353, GERMANY
+FEATURES             Location/Qualifiers
+     source          1..349
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="q11-q13"
+                     /clone="PAC 14I12"
+     gene            <1..>206
+                     /gene="UBE3A"
+     CDS             <1..>206
+                     /gene="UBE3A"
+                     /codon_start=3
+                     /product="E6-AP ubiquitin-protein ligase"
+                     /protein_id="CAA04537.1"
+                     /db_xref="GI:3421130"
+                     /db_xref="GDB:228487"
+                     /db_xref="GOA:Q05086"
+                     /db_xref="HGNC:12496"
+                     /db_xref="InterPro:IPR000569"
+                     /db_xref="InterPro:IPR017134"
+                     /db_xref="PDB:1C4Z"
+                     /db_xref="PDB:1D5F"
+                     /db_xref="PDB:1EQX"
+                     /db_xref="PDB:2KR1"
+                     /db_xref="UniProtKB/Swiss-Prot:Q05086"
+                     /translation="MFTYDESTKLFWFNPSSFETEGQFTLIGIVLGLAIYNNCILDVH
+                     FPMVVYRKLMGKKGTFRDLGDSHP"
+     exon            1..206
+                     /gene="UBE3A"
+                     /number=11
+ORIGIN      
+        1 gtatgttcac atacgatgaa tctacaaaat tgttttggtt taatccatct tcttttgaaa
+       61 ctgagggtca gtttactctg attggcatag tactgggtct ggctatttac aataactgta
+      121 tactggatgt acattttccc atggttgtct acaggaagct aatggggaaa aaaggaactt
+      181 ttcgtgactt gggagactct cacccagtaa gttctttgtm atttttttaa ttcagtctct
+      241 tagattttat ttaaatgcaa aaatttaatt tatgtcaaaa ttttaaagtt tttgtttaga
+      301 atctttgttg atactcttat caataagata aaaatgtttt aatctgacc
+//

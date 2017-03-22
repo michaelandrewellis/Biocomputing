@@ -1,0 +1,103 @@
+LOCUS       JN245941                1446 bp    DNA     linear   PRI 28-DEC-2011
+DEFINITION  Homo sapiens isolate N16 KIAA0101 (KIAA0101) gene, complete cds.
+ACCESSION   JN245941
+VERSION     JN245941.1  GI:365753503
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1446)
+  AUTHORS   Jain,M., Zhang,L., Patterson,E.E. and Kebebew,E.
+  TITLE     KIAA0101 Is Overexpressed, and Promotes Growth and Invasion in
+            Adrenal Cancer
+  JOURNAL   PLoS ONE 6 (11), E26866 (2011)
+   PUBMED   22096502
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 1446)
+  AUTHORS   Jain,M., Zhang,L., Hei,M., Patterson,E. and Kebebew,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JUL-2011) Endocrine Oncology Section, Surgery Branch,
+            National Institute of Health, 10-CRC - Hatfield Clinical Research
+            Center, 4-5952, Bethesda, MD 20892, USA
+FEATURES             Location/Qualifiers
+     source          1..1446
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="N16"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q23"
+                     /tissue_type="adrenal gland"
+     gene            1..1446
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+     mRNA            join(1..149,437..517,732..894,1347..1446)
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /product="KIAA0101"
+     exon            1..149
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /number=1
+     CDS             join(104..149,437..517,732..894,1347..1392)
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /codon_start=1
+                     /product="KIAA0101"
+                     /protein_id="AEW89565.1"
+                     /db_xref="GI:365753504"
+                     /translation="MVRTKADSVPGTYRKVVAARAPRKVLGSSTSATNSTSVSSRKAE
+                     NKYAGGNPVCVRPTPKWQKGIGEFFRLSPKDSEKENQIPEEAGSSGLGKAKRKACPLQ
+                     PDHTNDEKE"
+     exon            437..517
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /number=2
+     gap             571..670
+                     /estimated_length=unknown
+     exon            732..894
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /number=3
+     gap             992..1091
+                     /estimated_length=unknown
+     exon            1347..1446
+                     /gene="KIAA0101"
+                     /gene_synonym="OEATC"
+                     /gene_synonym="p15/PAF"
+                     /number=4
+ORIGIN      
+        1 ccaatataaa ctgtggcggg atagttttcg ggtccttgtc cagtgaaaca ccctcggctg
+       61 ggaagtcagt tcgttctctc ctctcctctc ttcttgtttg aacatggtgc ggactaaagc
+      121 agacagtgtt ccaggcactt acagaaaagg tgaggcgatc gagtgtggta ctggagggcg
+      181 ggggggtcct cccggcagcc tggccacggg cgacagacgc cagaggtccc cctgggccct
+      241 gtgcgccaaa ctcatctagc tagccaggga gtagccgcct ggccccttta cctagaagag
+      301 gaagtcgcag gggcagggta aggttatcct gctgttctgg atcgccaggc tctcctctcc
+      361 aagctgctgg ggtccaggac tcggtgtcgg aaccctcctg ccccttctga acaccctttt
+      421 ttgcctctct tcacagtggt ggctgctcga gcccccagaa aggtgcttgg ttcttccacc
+      481 tctgccacta attcgacatc agtttcatcg aggaaaggta agaagagccc tcctaaagtt
+      541 aggggatcag tcctggcacc tgcaagcccc nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      601 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      661 nnnnnnnnnn tgtattatta gagtgctgta ttattagcac ttatctagtt ccatctgttt
+      721 atattttaca gctgaaaata aatatgcagg agggaacccc gtttgcgtgc gcccaactcc
+      781 caagtggcaa aaaggaattg gagaattctt taggttgtcc cctaaagatt ctgaaaaaga
+      841 gaatcagatt cctgaagagg caggaagcag tggcttagga aaagcaaaga gaaagtaagt
+      901 ttttatattc tggaatataa agaaaatatt tatctcacgc ctgtaatccc agcactttgg
+      961 gaggccgagg cgggaggatc acttgaggcc annnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     1021 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     1081 nnnnnnnnnn ntacaacgta gtctaaagga gaaacactga ttctgcaaat taacaggcaa
+     1141 ataaattgtt aaaaattttg ttgcattaat acttgaaatt tgtaggtgtt tgttaattaa
+     1201 tgaagtttaa ttttctttca tttctagtca ttagaccaga tctactgcac tgttaattaa
+     1261 tgttcctgat ttatataggt ttgtaactat ttttttcaaa cagttgatac ttggatggct
+     1321 attgatgttc tctcttcttt tcacagagca tgtcctttgc aacctgatca cacaaatgat
+     1381 gaaaaagaat agaactttct cattcatctt tgaataacgt ctccttgttt accctggtat
+     1441 tctaga
+//

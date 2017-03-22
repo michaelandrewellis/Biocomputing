@@ -1,0 +1,97 @@
+LOCUS       AF153047                2011 bp    DNA     linear   PRI 13-SEP-1999
+DEFINITION  Homo sapiens gap junction protein connexin-36 (CX36) gene, complete
+            cds.
+ACCESSION   AF153047
+VERSION     AF153047.2  GI:5870872
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2011)
+  AUTHORS   Belluardo,N., Trovato-Salinaro,A., Mudo,G., Hurd,Y.L. and
+            Condorelli,D.F.
+  TITLE     Structure, chromosomal localization, and brain expression of human
+            Cx36 gene
+  JOURNAL   J. Neurosci. Res. 57 (5), 740-752 (1999)
+   PUBMED   10462698
+REFERENCE   2  (bases 1 to 2011)
+  AUTHORS   Condorelli,D.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-MAY-1999) Chemical Sciences, University of Catania,
+            Viale A. Doria 6, Catania, IT 95125, Italy
+REFERENCE   3  (bases 1 to 2011)
+  AUTHORS   Condorelli,D.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-1999) Chemical Sciences, University of Catania,
+            Viale A. Doria 6, Catania, IT 95125, Italy
+  REMARK    Sequence update by submitter
+COMMENT     On Sep 13, 1999 this sequence version replaced gi:5852847.
+FEATURES             Location/Qualifiers
+     source          1..2011
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q14"
+     gene            <1..>2011
+                     /gene="CX36"
+     mRNA            join(<1..71,1117..>2011)
+                     /gene="CX36"
+                     /product="gap junction protein connexin-36"
+     CDS             join(1..71,1117..2011)
+                     /gene="CX36"
+                     /note="subunit of neuronal gap junctions"
+                     /codon_start=1
+                     /product="gap junction protein connexin-36"
+                     /protein_id="AAD54234.1"
+                     /db_xref="GI:5852848"
+                     /translation="MGEWTILERLLEAAVQQHSTMIGRILLTVVVIFRILIVAIVGET
+                     VYDDEQTMFVCNTLQPGCNQACYDRAFPISHIRYWVFQIIMVCTPSLCFITYSVHQSA
+                     KQRERRYSTVFLALDRDPPESIGGPGGTGGGGSGGGKREDKKLQNAIVNGVLQNTENT
+                     SKETEPDCLEVKELTPHPSGLRTASKSKLRRQEGISRFYIIQVVFRNALEIGFLVGQY
+                     FLYGFSVPGLYECNRYPCIKEVECYVSRPTEKTVFLVFMFAVSGICVVLNLAELNHLG
+                     WRKIKLAVRGAQAKRKSIYEIRNKDLPRVSVPNFGRTQSSDSAYV"
+     exon            <1..71
+                     /gene="CX36"
+                     /number=1
+     exon            1117..>2011
+                     /gene="CX36"
+                     /number=2
+ORIGIN      
+        1 atgggggaat ggaccatctt ggagaggctg ctagaagccg cggtgcagca gcactccact
+       61 atgatcggaa ggtaagggcg ccaagccggc ggtcaggggg ccccgtcggg cggcccccgg
+      121 gagtcccttc tcacacctgg actgagtctc ccgctccaat ccccagtccg tcctctgcct
+      181 cctccccatc gtcctaggtc aaggctccgg tgttcccggc gatgagggat tacccgacgc
+      241 cccgcgatgc ccccctcctc tagctactcc taaccagctg cccatccctt ccccatcaag
+      301 caccactggg gcttcactct tcccacatca gaaaaggagc cgctggctca gtcttggtcc
+      361 ctccactctc cagagtcaga gccaatctcc atttggttcc ctaaatagaa tctacaaaga
+      421 aggcaggatt gcatttggac agaaaagggc aaatggggag atggatttgc tcttcagagc
+      481 agatgcctct tttctcaaca aataattact aaaccaaact tatttggcgg tgtaaactta
+      541 ccgagcctac acacccaatt gccatttttg ggtctgtatc tatatctatg tctctatcta
+      601 cctagcttta tatatatata tgagttcaat atatatgaat atatattcat agccatctgc
+      661 ttatataaag cattaaattt aatattcatg ttgagaataa actaaatata cacatggagt
+      721 agttatttac acaccctgtg tgtagacctc gaagcatgca ccatctgtaa aggtattctg
+      781 tgtgcatttg ccatatccag agtgaaggtg tgttttgtgt ttctatacat tctatataga
+      841 gagatgaaat ctatctgttg caagtagact atgtccagtg tatgagatgt gtgtacctgg
+      901 gatctctata atatgaaata ttcccagcct accagcactc agcagaaaag gaagagacaa
+      961 aaagctttcc cagattccta gttcagtacc agcccgggat ggacagctcc ccagtcaaaa
+     1021 gactggtaaa caccagcaaa gggaaggagg agcaggggtt tcctgtcagt gacgcagccc
+     1081 gtgagaacct ctctccctcc ctcttcctcc gttcaggatc ctgttgactg tggtggtgat
+     1141 cttccggatc ctcattgtgg ccattgtggg ggagacggtg tacgatgatg agcagaccat
+     1201 gtttgtgtgc aacaccctgc agcccggctg taaccaggcc tgctatgacc gggccttccc
+     1261 catctcccac atacgttact gggtcttcca gatcataatg gtgtgtaccc ccagtctttg
+     1321 cttcatcacc tactctgtgc accagtccgc caagcagcga gaacgccgct actctacagt
+     1381 cttcctagcc ctggacagag acccccctga gtccatagga ggtcctggag gaactggggg
+     1441 tgggggcagt ggtgggggca aacgagaaga taagaagttg caaaatgcta ttgtgaatgg
+     1501 ggtgctgcag aacacagaga acaccagtaa ggagacagag ccagattgtt tagaggttaa
+     1561 ggagctgact ccacacccat caggtctacg cactgcatca aaatccaagc tcagaaggca
+     1621 ggaaggcatc tcccgcttct acattatcca agtggtgttc cgaaatgccc tggaaattgg
+     1681 gttcctggtt ggccaatatt ttctctatgg ctttagtgtc ccagggttgt atgagtgtaa
+     1741 ccgctacccc tgcatcaagg aggtggaatg ttatgtgtcc cggccaactg agaagactgt
+     1801 ctttctagtg ttcatgtttg ctgtaagtgg catctgtgtt gtgctcaacc tggctgaact
+     1861 caaccacctg ggatggcgca agatcaagct ggctgtgcga ggggctcagg ccaagagaaa
+     1921 gtcaatctat gagattcgta acaaggacct gccaagggtc agtgttccca attttggcag
+     1981 gactcagtcc agtgactctg cctatgtgtg a
+//

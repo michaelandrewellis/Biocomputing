@@ -1,0 +1,60 @@
+LOCUS       AJ458330                 585 bp    DNA     linear   PRI 25-APR-2002
+DEFINITION  Homo sapiens NRH gene for anti-apoptotic protein.
+ACCESSION   AJ458330
+VERSION     AJ458330.1  GI:20338765
+KEYWORDS    anti-apoptotic protein; NRH gene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Aouacheria,A., Arnaud,E., Venet,S., Lalle,P., Gouy,M., Rigal,D. and
+            Gillet,G.
+  TITLE     Nrh, a human homologue of Nr-13 associates with Bcl-Xs and is an
+            inhibitor of apoptosis
+  JOURNAL   Oncogene 20 (41), 5846-5855 (2001)
+   PUBMED   11593390
+REFERENCE   2  (bases 1 to 585)
+  AUTHORS   Gillet,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-APR-2002) Gillet G., Ibcp, CNRS UMR 5086, 7 PASSAGE
+            DU VERCORS, 69367, FRANCE
+FEATURES             Location/Qualifiers
+     source          1..585
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     gene            1..585
+                     /gene="NRH"
+     CDS             1..585
+                     /gene="NRH"
+                     /function="apoptosis inhibitor"
+                     /codon_start=1
+                     /product="anti-apoptotic protein"
+                     /protein_id="CAD30221.1"
+                     /db_xref="GI:20338766"
+                     /db_xref="GOA:Q9HD36"
+                     /db_xref="HGNC:993"
+                     /db_xref="InterPro:IPR000712"
+                     /db_xref="InterPro:IPR002475"
+                     /db_xref="InterPro:IPR020717"
+                     /db_xref="InterPro:IPR020726"
+                     /db_xref="UniProtKB/Swiss-Prot:Q9HD36"
+                     /translation="MADPLRERTELLLADYLGYCAREPGTPEPAPSTPEAAVLRSAAA
+                     RLRQIHRSFFSAYLGYPGNRFELVALMADSVLSDSPGPTWGRVVTLVTFAGTLLERGP
+                     LVTARWKKWGFQPRLKEQEGDVARDCQRLVALLSSRLMGQHRAWLQAQGGWDGFCHFF
+                     RTPFPLAFWRKQLVQAFLSCLLTTAFIYLWTRLL"
+ORIGIN      
+        1 atggccgacc cgctgcggga gcgcaccgag ctgttgctgg ccgactacct ggggtactgc
+       61 gcccgggaac ccggcacccc cgagccggcg ccatccacgc ccgaggccgc cgtgctgcgc
+      121 tccgcggccg ccaggttacg gcagattcac cggtcctttt tctccgccta cctcggctac
+      181 cccgggaacc gcttcgagct ggtggcgctg atggcggatt ccgtgctctc cgacagcccc
+      241 ggccccacct ggggcagagt ggtgacgctc gtgaccttcg cagggacgct gctggagaga
+      301 gggccgctgg tgaccgcccg gtggaagaag tggggcttcc agccgcggct aaaggagcag
+      361 gagggcgacg tcgcccggga ctgccagcgc ctggtggcct tgctgagctc gcggctcatg
+      421 gggcagcacc gcgcctggct gcaggctcag ggcggctggg atggcttttg tcacttcttc
+      481 aggaccccct ttccactggc tttttggaga aaacagctgg tccaggcttt tctgtcatgc
+      541 ttgttaacaa cagccttcat ttatctctgg acacgattat tatga
+//

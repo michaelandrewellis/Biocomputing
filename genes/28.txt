@@ -1,0 +1,77 @@
+LOCUS       AF055080                2078 bp    DNA     linear   PRI 02-APR-1998
+DEFINITION  Homo sapiens winged-helix transcription factor forkhead 5 gene,
+            complete cds.
+ACCESSION   AF055080
+VERSION     AF055080.1  GI:3005681
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2078)
+  AUTHORS   Cascio,S.M., Dodd,K.A., Hicks,J., Chow,S. and Brown,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-MAR-1998) Neurosurgery, Rhode Island Hospital and
+            Brown University, 593 Eddy Street, Providence, RI 02903, USA
+FEATURES             Location/Qualifiers
+     source          1..2078
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21-q26"
+                     /sex="male"
+                     /tissue_type="placenta"
+                     /clone_lib="Stratagene lambda library, Cat number 946207"
+                     /note="Caucasian"
+     mRNA            <964..>1938
+                     /product="winged-helix transcription factor forkhead 5"
+     CDS             964..1938
+                     /codon_start=1
+                     /product="winged-helix transcription factor forkhead 5"
+                     /protein_id="AAC09344.1"
+                     /db_xref="GI:3005682"
+                     /translation="MPRPGRNTYSDQKPPYSYISLTAMAIQSSPEKMLPLSEIYKFIM
+                     DRFPYYRENTQRWQNSLRHNFSFNDCFIKIPRRPDQPGKGSFWALHPSCGDMFENGSF
+                     LRRRKRFKVLKSDHLAPSKPADAQYLQQQAKLRLSALAASGTHLPQMPAAAYNLGGVA
+                     QPSGFKHPFAIENIIAREYKMPGGLAFSAMQPVPAAYPLPNQLTTMGSSLGTGWPHVY
+                     GSAGMIDSATPISMASGDYSAYGVPLKPLCHAAGQTLPAIPVPIKPTPAAVPALPALP
+                     APIPTLLSNSPPSLSPTSSQTATSQSSPATPSETLTSPASALHSVAVH"
+ORIGIN      
+        1 tcataccttc acacggcgca caccggccgg cgcgtccagc tgcctgccca gtggccgagg
+       61 ctcttccccc tcgcccagtc ttgagctgga agtgattcct attggccaag gtgtccatgt
+      121 aaataggtgt gaaagaaacc agagctggcc gggctctccc ttctcgctca gtcccctccc
+      181 tctgcagccc ccgctccccc tcctcttcct cctcctccca aggcgattgt catatgatag
+      241 ctaagaagtg gcacattaat gaagcgccgc tacaggggtc ttttctgctc ctgtcaccgc
+      301 ttaaaactat cagatggttc gagggaggac atggaggcag ccacctagct cagcggagac
+      361 gcggagccca cagcagcgcc ctccggagcc ctaacacgtc gctgccacca tccgcgccgg
+      421 gactccgcag ccgagctcgg ccgcccgcag gacgctccag gaagcgtcgc ggaacgggcg
+      481 gcacgggacg ctgcggggct gagctcaaga gcccaggttc gcgccgagtc caaccggacc
+      541 cggacgctgc gcgcggagtg cgcgtcgagt gcgcgccgag agagaagcgg cgcgcagcgg
+      601 cgtcctcccg gatgcggacg cgcaacttga agcaacttta aggtgagcag ctctctgttc
+      661 cgtccctgcc ccctattctg gccccagtac cgacttactt cccggctatc ctcgcgccgt
+      721 tcgccggctt cccctcccgc gcccactaag cccgcaaagt tgctggcgaa agagtccggg
+      781 cgctggctga tcgagcgccg caggccccac ccccgacccc cgaagtctgt tactcggtct
+      841 gggctgaccc gccggtgttc tctgtgcatc catgctacct ttccctatta cccaccccct
+      901 tcccagatcc aagcagtccg ccggcccgcg cggacccaga gcaagaagag ggcgaggaag
+      961 aagatgcctc ggcccggccg caacacgtac agcgaccaga agccgcccta ctcgtacatc
+     1021 tcgctgaccg ctatggccat ccagagctct cccgagaaga tgctgccgct gagcgagatt
+     1081 tacaagttca tcatggaccg cttcccctac tacagggaga acacgcagcg ttggcagaac
+     1141 agtctgcgcc acaacttctc cttcaacgac tgcttcatca agatcccgcg gcggccggac
+     1201 cagccaggca agggcagctt ttgggcgctg cacccaagct gcggggacat gttcgagaac
+     1261 ggcagcttcc tgcggcgccg caagcgcttc aaggtgctta agtccgacca cctggcgccc
+     1321 agcaagccag ccgacgcgca gtacctgcag cagcaggcca agctgcggct cagcgcgctg
+     1381 gcggcttcgg gcacgcacct gccacagatg cccgccgccg cctacaactt gggcggcgtg
+     1441 gcgcagccct cgggcttcaa gcaccccttc gccatcgaga acatcatcgc gcgggaatac
+     1501 aagatgcctg gggggctggc tttttccgcc atgcagccgg tgcccgctgc atacccgctc
+     1561 cccaaccagt tgactaccat gggcagctcg ctgggcaccg gctggccaca cgtgtatggc
+     1621 tccgccggca tgatcgattc ggccaccccc atctccatgg cgagtggcga ctacagcgcc
+     1681 tacggcgtgc cgttgaagcc gctgtgccac gcggcgggcc aaacgctgcc cgccatcccc
+     1741 gtgcccatta agcccacgcc ggccgccgtg cccgcgctgc ctgcgctgcc agcgcccatc
+     1801 cccaccttgc tctcgaactc gccgccctcg ctcagcccca cgtcctcgca aacagccacc
+     1861 agccaaagca gccccgccac ccccagcgaa acgctcacca gcccggcctc cgccttgcac
+     1921 tcggtggcgg tgcactgacc cgcaagagcc cacgccccct ctcgttctcc tccccaccac
+     1981 ctcactcgcc ttccctggct cccagtcctg ccggccccca cctggggaac gccacctaac
+     2041 ttgttcattt caccttcggc caaccgcctt gccccaag
+//

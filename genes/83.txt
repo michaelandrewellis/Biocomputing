@@ -1,0 +1,82 @@
+LOCUS       F436646S12               347 bp    DNA     linear   PRI 13-JAN-2004
+DEFINITION  Homo sapiens electron transfer flavoprotein alpha-subunit (ETFA)
+            gene, exon 12 and complete cds.
+ACCESSION   AF436657
+VERSION     AF436657.2  GI:22714637
+KEYWORDS    .
+SEGMENT     12 of 12
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 347)
+  AUTHORS   Olsen,R.K., Andresen,B.S., Christensen,E., Bross,P., Skovby,F. and
+            Gregersen,N.
+  TITLE     Clear relationship between ETF/ETFDH genotype and phenotype in
+            patients with multiple acyl-CoA dehydrogenation deficiency
+  JOURNAL   Hum. Mutat. 22 (1), 12-23 (2003)
+   PUBMED   12815589
+REFERENCE   2  (bases 1 to 347)
+  AUTHORS   Olsen,R.K.J., Andresen,B.S., Bross,P. and Gregersen,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-OCT-2001) Research Unit for Molecular Medicine,
+            Aarhus University Hospital, Brendstrupgaardsvej 100, Aarhus N 8200,
+            Denmark
+REFERENCE   3  (bases 1 to 347)
+  AUTHORS   Olsen,R.K.J., Andresen,B.S., Bross,P. and Gregersen,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-SEP-2002) Research Unit for Molecular Medicine,
+            Aarhus University Hospital, Brendstrupgaardsvej 100, Aarhus N 8200,
+            Denmark
+  REMARK    Sequence update by submitter
+COMMENT     On Sep 4, 2002 this sequence version replaced gi:22652450.
+FEATURES             Location/Qualifiers
+     source          1..347
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q23-q25"
+     gene            order(AF436646.1:<1..86,AF436647.1:1..191,
+                     AF436648.1:1..125,AF436649.1:1..128,AF436650.1:1..144,
+                     AF436651.1:1..156,AF436652.1:1..147,AF436653.1:1..114,
+                     AF436654.1:1..128,AF436655.1:1..110,AF436656.1:1..125,
+                     1..>347)
+                     /gene="ETFA"
+     mRNA            join(AF436646.1:<1..63,AF436647.1:22..168,
+                     AF436648.1:22..103,AF436649.1:23..105,AF436650.1:22..121,
+                     AF436651.1:23..133,AF436652.1:23..124,AF436653.1:23..91,
+                     AF436654.1:23..105,AF436655.1:22..87,AF436656.1:22..102,
+                     22..>347)
+                     /gene="ETFA"
+                     /product="electron transfer flavoprotein alpha-subunit"
+     CDS             join(AF436646.1:25..63,AF436647.1:22..168,
+                     AF436648.1:22..103,AF436649.1:23..105,AF436650.1:22..121,
+                     AF436651.1:23..133,AF436652.1:23..124,AF436653.1:23..91,
+                     AF436654.1:23..105,AF436655.1:22..87,AF436656.1:22..102,
+                     22..60)
+                     /gene="ETFA"
+                     /codon_start=1
+                     /product="electron transfer flavoprotein alpha-subunit"
+                     /protein_id="AAN03712.1"
+                     /db_xref="GI:22652451"
+                     /translation="MFRAAAPGQLRRAASLLRFQSTLVIAEHANDSLAPITLNTITAA
+                     TRLGGEVSCLVAGTKCDKVAQDLCKVAGIAKVLVAQHDVYKGLLPEELTPLILATQKQ
+                     FNYTHICAGASAFGKNLLPRVAAKLEVAPISDIIAIKSPDTFVRTIYAGNALCTVKCD
+                     EKVKVFSVRGTSFDAAATSGGSASSEKASSTSPVEISEWLDQKLTKSDRPELTGAKVV
+                     VSGGRGLKSGENFKLLYDLADQLHAAVGASRAAVDAGFVPNDMQVGQTGKIVAPELYI
+                     AVGISGAIQHLAGMKDSKTIVAINKDPEAPIFQVADYGIVADLFKVVPEMTEILKKK"
+     exon            22..>347
+                     /gene="ETFA"
+                     /number=12
+     3'UTR           61..>347
+                     /gene="ETFA"
+ORIGIN      
+        1 actttttgtt tttatttgca ggtagttcct gaaatgactg agatattgaa gaaaaaatga
+       61 atcaggatca tgccttaaaa agaaaacttt tgttaaagta ttccactgaa atcacagata
+      121 tttgtgggta ttataacaat cattggaaag catggagagc tacatttcat aatttgaggg
+      181 aaaatttcta acagatgcca gaatgcttgt ttatgggatt gctgtgtttc cttttaatta
+      241 tttgtggttc caaacaatta ttgtttgaac ttttttaatt ctgtactaaa atctataata
+      301 aagcttttcc acagctttaa aactatcaga aatatgccta gcctcta
+//

@@ -1,0 +1,74 @@
+LOCUS       GU984796                 967 bp    DNA     linear   PRI 11-JUN-2012
+DEFINITION  Homo sapiens BUB1B breakpoint junction, genomic sequence.
+ACCESSION   GU984796
+VERSION     GU984796.1  GI:294992074
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 967)
+  AUTHORS   Kuster,L., Grausenburger,R., Fuka,G., Kaindl,U., Krapf,G.,
+            Inthal,A., Mann,G., Kauer,M., Rainer,J., Kofler,R., Hall,A.,
+            Metzler,M., Meyer,L.H., Meyer,C., Harbott,J., Marschalek,R.,
+            Strehl,S., Haas,O.A. and Panzer-Grumayer,R.
+  TITLE     ETV6/RUNX1-positive relapses evolve from an ancestral clone and
+            frequently acquire deletions of genes implicated in glucocorticoid
+            signaling
+  JOURNAL   Blood 117 (9), 2658-2667 (2011)
+   PUBMED   21224468
+REFERENCE   2  (bases 1 to 967)
+  AUTHORS   Meyer,C. and Marschalek,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-MAR-2010) DCAL, Institute of Pharmaceutical Biology,
+            Goethe-University of Frankfurt, Max-von Laue-Str. 9, Frankfurt
+            60590, Germany
+FEATURES             Location/Qualifiers
+     source          1..967
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolation_source="patient with ETV6/RUNX1 positive ALL"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15"
+     misc_feature    <1..412
+                     /note="intergenic sequence"
+     misc_recomb     413^414
+                     /note="breakpoint junction; interstitial deletion"
+     gene            <415..>967
+                     /gene="BUB1B"
+     mRNA            <415..>599
+                     /gene="BUB1B"
+                     /product="BUB1B"
+     exon            <415..599
+                     /gene="BUB1B"
+                     /number=1
+     5'UTR           <415..564
+                     /gene="BUB1B"
+     CDS             565..>599
+                     /gene="BUB1B"
+                     /codon_start=1
+                     /product="BUB1B"
+                     /protein_id="ADF57218.1"
+                     /db_xref="GI:294992075"
+                     /translation="MAAVKKEGGAL"
+ORIGIN      
+        1 agttctacct ctgattagtc aggagaacta ggttgtaagc cctctctgcc actagccaac
+       61 ttgaaccctg ggccctctat aaagtcaagc attccaccac acaagaggtt ttcgctgagt
+      121 gcctctcagt ctgtgccagg cacggttgta gaggttgggg atgcagcagg ataagaaaag
+      181 ctaagttcct ggtttcctgg aagttgggtt aaaggggcag ggaggaaata aacaatgaag
+      241 caaacaagta agtagtacag cttcagataa tgaattccgt gagacagcct aagcagggct
+      301 gtataatgag agtgggaagg ggactgcctg ggttggggtc aggggagttc tcgtcgaaaa
+      361 ggagaacttt gagttgaaag ctgaaaggac cagccatcca aagatctagg gagggggctt
+      421 gaggtggccg gtttgttagg gagtcgtgta cgtgccttgg tcgcttctgt agctccgagg
+      481 gcaggttgcg gaagaaagcc caggcggtct gtggcccaga ggaaaggcct gcagcaggac
+      541 gaggacctga gccaggaatg caggatggcg gcggtgaaga aggaaggggg tgctctgagg
+      601 taggtacggg agaaagctgc tgggggctgg gcctgagagg acacggcctg gtaggtaata
+      661 gaaggctccg ctcggagcag tcgaggggga gatcggcacc gtcagaacag accccaccgg
+      721 agcctccttc cttttggagt agaatgccgg aggtggaggt gaaaacgcag tggactgagg
+      781 gcacgtgcga atcctgccgc atccagcttc aaagcgaaga aggctgcggg accccagcgg
+      841 aacaaagagt ttggaagttg caatgttgtc tgtttgtaac tcagctcagc cacctgctag
+      901 ttgtttgacc ttgggcaaat cgtttgtatg gaaaatgctg atgttaatgc tgccttacgt
+      961 ggttctg
+//

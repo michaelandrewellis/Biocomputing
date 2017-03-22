@@ -1,0 +1,105 @@
+LOCUS       HSHNF6A2                2987 bp    DNA     linear   PRI 05-JAN-1999
+DEFINITION  Homo sapiens hepatocyte nuclear factor 6 (HNF6) gene, exon 2 and
+            complete cds.
+ACCESSION   AF035581
+VERSION     AF035581.1  GI:4104417
+KEYWORDS    .
+SEGMENT     2 of 2
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2987)
+  AUTHORS   Furuta,H., Horikawa,Y., Wang,Y.-Q. and Bell,G.I.
+  TITLE     Isolation and Characterization of the Human Hepatocyte Nuclear
+            Factor 6 gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2987)
+  AUTHORS   Furuta,H., Horikawa,Y., Wang,Y.-Q. and Bell,G.I.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-1997) HHMI, The University of Chicago, 5841 South
+            Maryland Ave. NC1028, Chicago, IL 60637, USA
+FEATURES             Location/Qualifiers
+     source          1..2987
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21.1"
+     gene            order(AF035580.1:377..2357,1..2356)
+                     /gene="HNF6"
+     mRNA            join(AF035580.1:377..1609,962..2356)
+                     /gene="HNF6"
+                     /product="hepatocyte nuclear factor 6"
+     CDS             join(AF035580.1:505..1609,962..1254)
+                     /gene="HNF6"
+                     /function="transcription factor"
+                     /codon_start=1
+                     /product="hepatocyte nuclear factor 6"
+                     /protein_id="AAD02033.1"
+                     /db_xref="GI:4104419"
+                     /translation="MNAQLTMEAIGELHGVSHEPVPAPADLLGGSPHARSSVAHRGSH
+                     LPPAHPRSMGMASLLDGGSGGGDYHHHHRAPEHSLAGPLHPTMTMACETPPGMSMPTT
+                     YTTLTPLQPLPPISTVSDKFPHHHHHHHHHHHPHHHQRLAGNVSGSFTLMRDERGLAS
+                     MNNLYTPYHKDVAGMGQSLSPLSSSGLGSIHNSQQGLPHYAHPGAAMPTDKMLTPNGF
+                     EAHHPAMLGRHGEQHLTPTSAGMVPINGLPPHHPHAHLNAQGHGQLLGTAREPNPSVT
+                     GAQVSNGSNSGQMEEINTKEVAQRITTELKRYSIPQAIFAQRVLCRSQGTLSDLLRNP
+                     KPWSKLKSGRETFRRMWKWLQEPEFQRMSALRLAACKRKEQEHGKDRGNTPKKPRLVF
+                     TDVQRRTLHAIFKENKRPSKELQITISQQLGLELSTVSNFFMNARRRSLDKWQDEGSS
+                     NSGNSSSSSSTCTKA"
+     exon            962..2356
+                     /gene="HNF6"
+                     /number=2
+ORIGIN      
+        1 ttatggcatc taaaatcagg gagagaccct gatctggcgc caaaccctgg gtctgagggc
+       61 tccattggga tgatacatta gaataactcc atcagccaaa aagcagcttc ataatacagg
+      121 accagacatg caagcgcagg gaatgggccc cttagtggga gaccaagtaa gtgatgaggg
+      181 ggactccaag agcatggctt gcaaaaagga ggcacagaga gaccccagag atgaacatgg
+      241 ctaacttggc aggtttagtc tcaatgtcga agaagagcgg ttcacacctc cacagttccc
+      301 ggttccacta gaaaatcagt ggaagactgt ttgatggcca tgataaaaaa aactatatac
+      361 ttaactttct tatatacaga ttttcctgga aaataaaaaa gatcagaagg gaaacaaatg
+      421 caattccttt ctactatgtt tttagactct gattaggctc ttaatattct actggcagca
+      481 gactataaac cctttgaggg ctacaaccac ttcttgctga caaggtgttg catttgtaaa
+      541 gttagcataa acttttgcat acactatttc ataccacaac acggcaaggt aggtattctt
+      601 atatgcattt tgaggatgaa gaaataaagg ttcaaactga ttaagttcat ttagccagaa
+      661 acttacattc tacaggtgag gaatctgaag cccagatgga gttaactgac ttacccagga
+      721 caaagagcaa atactcatca aagccacaac ccacgcccag gcctcacaga acttcacctg
+      781 tatcccaatt ctccattctg ctattacact ttcctcccag cctccaatgg tgcttaaagc
+      841 agaggtcagc aaacagaaag caggccatga ggaatggcta acaaatttta tgagctctgt
+      901 ctttctactc atgattctcc cctagaccat ttgttctaac atcttctgtg tttcttcaca
+      961 gcatgcaaaa ggaaagaaca agaacatggg aaggatagag gcaacacacc caaaaagccc
+     1021 aggttggtct tcacagatgt ccagcgtcga actctacatg caatattcaa ggaaaataag
+     1081 cgtccatcca aagaattgca aatcaccatt tcccagcagc tggggttgga gctgagcact
+     1141 gtcagcaact tcttcatgaa cgcaagaagg aggagtctgg acaagtggca ggacgagggc
+     1201 agctccaatt caggcaactc atcttcttca tcaagcactt gtaccaaagc atgaaggaag
+     1261 aaccacaaac taaaacctcg gtggaaaagc tttaaattaa aaaaaatttt taaaagacca
+     1321 ggacctcaag atagcaggtt tatacttaga aatatttgaa gaaaaaaaag cgttatttat
+     1381 agtccaaaga aaccaaagac ttagctcacc tgcattctga ctttgtttgg agacacacac
+     1441 ttcagcaggg cggcgacttg gcaagacaaa tgatgagcag gaaaacacca ctggatctca
+     1501 caccttcaat ccatgaccat cctcgctgtg cttggctgtt tagtggtttg gagcatagtg
+     1561 attttgagcc attgagcgga catcttttaa gatcgaactt tctcatctgt tctaccatgc
+     1621 cacgaaggtg tatggtgtct cagtactacc accaccagtg gttacagact taggcagagc
+     1681 tggtcttcag aaatggttgt tctataggag tgcaaccaac atggtatggg gttgtctgag
+     1741 ttcattggat taggagtgtg attttgctcg tctagcctaa cgtttgaacc tgccaggccc
+     1801 gcaacctaaa tgcagattca aacccagcaa agaaaatttg aatgacacct aaaccagtgc
+     1861 attctctttg tttgttaagg aatgttcaga tattttttaa gaaatgaaac aagagtccat
+     1921 ccattaaaaa aatcacctag gtaccaaaga acacacttaa tattatagtg caggtatttt
+     1981 attgcaatga ttttaataac caaagctatt tttacacaag atactatgaa aagttatacg
+     2041 tatgaactga tctagctgta atacacatgc cacatagaat catgactatt atttatgact
+     2101 cttgaagcat ttgaaatatg agttttcaga actggcaaga aagaatgtag cttcagggaa
+     2161 gcaattaata tcatggcaga gaggtcgatg cagtacacgt gtacatccag atggcacact
+     2221 ccttttcagg atccataaat gtcacttaag tagagagata gacatggttc cataatctgt
+     2281 tcctagctga gaaaacctga ggatctttcc aaagtagtac cccattttta cactagaaaa
+     2341 ctaaatttaa cagggagggt aactaaatta gaaaatttgt tcaaagtaat gctttttagt
+     2401 aaaaggtcac taaataaaga actatcctta gattaattga cttatatttg ctttatgcat
+     2461 ctggcacaaa aacctctttt aaatacttta caaatacaaa taaagtttaa aaaacaacat
+     2521 tattattcaa atgagctatt cagtacttat aactatccta aaaagttatc aaattaactt
+     2581 attgccaatc ccagaaattt tatgacttgg acgtcaacaa aacagcaggt gcaactgaga
+     2641 aatggtggaa ttggtggaac tgtatagaaa aaagccagtg ttctggtgga cgacaagact
+     2701 tttgatctat tggtattaat caatttatgg aactaagaat agcctccaaa gcattctgcc
+     2761 ttctttcttg ctactgcatt tagctggaaa ttttataata tagattttgc tctctaacag
+     2821 ggacagatta aaaactagac ctgagcttac aaatacaaaa ttttaaattt ctatttgtcc
+     2881 aaatcactta accagagctg tagaagtcaa agtcaaaaaa aaaatgaagt cgtattagtg
+     2941 gtaccccagt gaatcacttg attcccagaa aaattctctc tgaattc
+//

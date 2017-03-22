@@ -1,0 +1,81 @@
+LOCUS       AF224242S16             1595 bp    DNA     linear   PRI 28-JAN-2003
+DEFINITION  Homo sapiens HERC2 (HERC2) gene, exon 70 and partial cds.
+ACCESSION   AF224257
+VERSION     AF224257.1  GI:27923070
+KEYWORDS    .
+SEGMENT     16 of 16
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1595)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Structure of the highly conserved HERC2 gene and of multiple
+            partially duplicated paralogs in human
+  JOURNAL   Genome Res. 10 (3), 319-329 (2000)
+   PUBMED   10720573
+REFERENCE   2  (bases 1 to 1595)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JAN-2000) Genetics, Case Western Reserve University,
+            10900 Euclid Ave, Cleveland, OH 44106-4955, USA
+FEATURES             Location/Qualifiers
+     source          1..1595
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13"
+     gene            order(AF224242.1:<1..1524,AF224243.1:1..755,
+                     AF224244.1:1..717,AF224245.1:1..645,AF224246.1:1..715,
+                     AF224247.1:1..1346,AF224248.1:1..2032,AF224249.1:1..1680,
+                     AF224250.1:1..709,AF224251.1:1..705,AF224252.1:1..1022,
+                     AF224253.1:1..695,AF224254.1:1..701,AF224255.1:1..618,
+                     AF224256.1:1..625,1..>1595)
+                     /gene="HERC2"
+     mRNA            join(AF224256.1:<1..151,207..>360)
+                     /gene="HERC2"
+                     /product="HERC2"
+     CDS             join(AF224256.1:<1..151,207..>360)
+                     /gene="HERC2"
+                     /codon_start=2
+                     /product="HERC2"
+                     /protein_id="AAO27480.1"
+                     /db_xref="GI:27923078"
+                     /translation="ALDEFTSLLIADDTRVVVDLLKLSVCSRAGDRGRDVLSAVLSGM
+                     GTAYPQMPDMLLELCVTELENVATDSQSGRLSSQPVVVESSHPYTDDTSTSGTVKIP"
+     exon            207..360
+                     /gene="HERC2"
+                     /number=70
+ORIGIN      
+        1 cacagtatat tacaggctct gagctgtctc tgtgttatgt gctaggaagc ctggccctga
+       61 tttgaactca atttctcaaa ctccatgccc tccactctgc cacgctgtcc ttgtggagct
+      121 cctgagcagg acgggcacag gtggcatgca ggtgaccagg tgtggggctg ttggccccat
+      181 cattcatgtc cttgcttcct gaccagatgc cagatatgct gttggagctc tgtgtcaccg
+      241 agttggagaa tgtggccaca gactcccaga gcggccgcct ctcttctcag cctgtggtgg
+      301 tggagagtag ccacccttac accgacgaca cctccaccag tggcacagtg aagataccag
+      361 gtacaggggc tggccccagc gtggatctgc agcttttccc accttcagaa tgatgtgatt
+      421 ctgtaattgc ttcagtagaa acaaccatct ccattttata aaaagaaatt acagaattgc
+      481 tttagaatca cttttctccc cttttctaac aaactacttt tgcacaataa atcatgatat
+      541 agaaagtcac acaaagtaaa tgtttagctt catgataatc aggcagatgc cctagtcatc
+      601 atgacccaag tctagaccta acctgtggca aattctggaa gccctcagtg tatcccctga
+      661 tgttcctctg agtgatgctg tcctgatatt gatccatcac tgacttgcat ttctggacag
+      721 cttctgttac ccatgtgtat atcttttgtt tttaacaact caacaaaaat tattaagaag
+      781 aaaattgttg aggccccggc ctttgatctg gcgggcttca ctgcagcctg gatctgctga
+      841 ctggacacgt gtgctgctgt tcagtgtgtt cctcaggccc gtccttctgc aaggtgctgc
+      901 ccgattcgga ggcccataag ttccgcccct tttgccagct ccttagtggt tgtgactcag
+      961 cctcagcagg cacctcctgc ctgcctgtct ttgctttgtg acatcagcag tccctgaggc
+     1021 ttattagcac ccgaggctat tggcccatga ggggctacaa atggtgctat tctagtggaa
+     1081 tcatttcttg cttatttgtt agctggaata ctttcctgta aagaggcatt tcccttcatc
+     1141 ctgtagttag ttgttcaagg tgctgtttgc ctgagaaaga caagataaaa gcttgattct
+     1201 ttcttccatt taccagagaa tgaattggtt tcctattatt tcttgaaggt gacctgtttt
+     1261 tttttttaat gttattatga actcatggat tggaacatat gtgattgttt tactctattg
+     1321 ttattatctt tgttgaagct gagattatcc tgtttctaga cagtggcagc ctcttcagtg
+     1381 tagctcccga agtgattctg gtagtcttca gtagcgtcca ggcagtctac acaaggtgtc
+     1441 ctcggttttt tgtaggttgc cactcttcac ctggggtctg ccctggattc ttttgagttc
+     1501 atactgatac ttaaaaattt tttcctttta tttatttttt atatttagat tatgatttat
+     1561 ttgtttagag ataggatctt gctctgtcat ccagg
+//

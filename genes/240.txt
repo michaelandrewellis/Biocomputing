@@ -1,0 +1,74 @@
+LOCUS       Z47043                  1141 bp    DNA     linear   PRI 06-OCT-1995
+DEFINITION  Human partial cDNA sequence, clone x529, unknown open reading
+            frame.
+ACCESSION   Z47043
+VERSION     Z47043.1  GI:1008978
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1141)
+  AUTHORS   Chiannilkulchai,N., Pasturaud,P., Richard,I., Auffray,C. and
+            Beckmann,J.S.
+  TITLE     A primary expression map of the chromosome 15q15 region containing
+            the recessive form of limb-girdle muscular dystrophy (LGMD2A) gene
+  JOURNAL   Hum. Mol. Genet. 4 (4), 717-725 (1995)
+   PUBMED   7633422
+REFERENCE   2  (bases 1 to 1141)
+  AUTHORS   Chiannilkulchai,N., Pasturaud,P., Richard,I., Auffray,C. and
+            Beckmann,J.S.
+  TITLE     cDNA selection in the LGMD2A region
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 1141)
+  AUTHORS   Genethon.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-DEC-1994) Genethon, B.P. 60, 91002 Evry Cedex France.
+            E-mail: Nuch@genethon.fr
+FEATURES             Location/Qualifiers
+     source          1..1141
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15"
+                     /tissue_type="fetal"
+                     /clone_lib="CEPH YAC clone 774G4 was used for cDNA
+                     selection"
+     CDS             <1..>1141
+                     /note="unnamed protein product; open reading frame"
+                     /codon_start=3
+                     /protein_id="CAA87105.1"
+                     /db_xref="GI:1015526"
+                     /db_xref="HGNC:19162"
+                     /db_xref="UniProtKB/TrEMBL:Q15885"
+                     /translation="IQRLIQPGADGTFQGRCIPDMTQQGSSEASHNSSVSNVLAASAT
+                     TLTHVGSTHERDWSALQQKYLLELSCPVLEAIGAPKPAYPYLEEDSGSLAQASSKGGD
+                     TLLPVGPRVSSNLNLNNFPVHLSRIRRLRAEKEQDSLNAKLEGVSDFFSTSEKEASYD
+                     ETYSADLESLSASRSTNAQVFATENAIPDSMTEACEVKQNNLEECLQSCRKPGLMTSS
+                     DEDFFQKNACHSNVTTATKADHWSQGWAPLRKNSAVQPGQLSPDSHYPLEEEKTDCQE
+                     SSKEAVRRHINVSFALPSGPEQYLHSAPWNPLSSSLQPPLLETFYVTKSRDALTETAL
+                     EIPACREVRVPSPPPREAWGFGHNHQALQGAYLKNNLSVLLQNQNS"
+ORIGIN      
+        1 gaattcaaag gcttattcaa ccaggagctg atggcacctt tcagggcaga tgtatccctg
+       61 acatgaccca gcagggcagc tctgaagcat cccacaattc tagcgtatca aacgtgctgg
+      121 ctgcctctgc caccaccttg actcatgtag gcagcaccca tgaaagggat tggtctgccc
+      181 ttcagcagaa gtacctcctt gaactctctt gtcctgtttt ggaggccata ggagcaccca
+      241 agccagctta cccctacctt gaggaagact ctggttccct ggcccaagct tctagcaaag
+      301 gaggagatac tctattgcca gttggcccta gggtatctag caatctgaat ctcaacaact
+      361 ttccagtcca tctgtccaga atcaggcgtt tgagggcaga gaaagaacag gacagtttaa
+      421 atgccaaatt agaaggtgtt tcagatttct ttagcactag tgagaaagag gcgagttatg
+      481 acgaaactta ttcggcagac ttagaatcat tgtctgcttc tcgatctaca aatgcacagg
+      541 tctttgcaac tgagaacgcg ataccagatt ccatgacaga agcatgtgaa gtcaagcaga
+      601 acaacttgga agaatgcctt cagagttgca ggaaacctgg actgatgact tcctcagatg
+      661 aggatttttt ccagaagaac gcttgtcaca gtaatgtcac tacagccacc aaagcggacc
+      721 attggtccca aggctgggct cctctcagga aaaatagtgc agtccagcca gggcaattaa
+      781 gtcccgacag ccactaccca ctagaggaag agaagacaga ttgccaggag agctctaagg
+      841 aagcagttag aagacacata aatgtttcct ttgcccttcc ttcaggtcca gagcaatacc
+      901 ttcactctgc tccctggaat ccattgtcat cttccctgca gcccccactc ttggaaacat
+      961 tctatgtgac caaaagcagg gatgccctga cagaaactgc cttagagatt ccagcttgca
+     1021 gagaagtaag ggtaccctcc ccacccccca gggaagcctg gggctttggt cacaaccacc
+     1081 aagctctcca aggtgcttat ttgaagaata atttgtcagt gctgttacaa aaccagaatt
+     1141 c
+//

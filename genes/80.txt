@@ -1,0 +1,48 @@
+LOCUS       AF320911                 303 bp    DNA     linear   PRI 07-DEC-2000
+DEFINITION  Homo sapiens MAGE-G1 (MAGEG1) gene, partial cds.
+ACCESSION   AF320911
+VERSION     AF320911.1  GI:11596407
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 303)
+  AUTHORS   Lucas,S. and Boon,T.
+  TITLE     Identification of new genes of the MAGE family
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 303)
+  AUTHORS   Lucas,S. and Boon,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-OCT-2000) Ludwig Institute for Cancer Research,
+            Universite Catholique de Louvain, avenue Hippocrate, 74, Brussels
+            1200, Belgium
+FEATURES             Location/Qualifiers
+     source          1..303
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="between AFM214xg11 and AFM248vc5"
+                     /tissue_type="testis"
+     gene            <1..>303
+                     /gene="MAGEG1"
+     CDS             <1..>303
+                     /gene="MAGEG1"
+                     /note="similar to tumor and germline-specific proteins of
+                     the MAGE family"
+                     /codon_start=3
+                     /product="MAGE-G1"
+                     /protein_id="AAG38607.1"
+                     /db_xref="GI:11596408"
+                     /translation="KGNTIKETEAWDFLRRLGVYPTKKHLIFGDPKKLITEDFVRQRY
+                     LEYRRIPHTDPVDYEFQWGPRTNLETSKMKVLKFVAKVHNQDPKDWPAQYCEALAD"
+ORIGIN      
+        1 tgaagggcaa caccatcaag gaaactgaag cctgggactt tctgcggcgc ttaggggtct
+       61 accccaccaa gaagcattta attttcggag atccaaagaa actcattact gaggactttg
+      121 tgcgacagcg ttacctggaa taccggcgga taccccacac cgaccccgtc gactacgaat
+      181 tccagtgggg cccgcgaacc aacctggaaa ccagcaagat gaaagttctt aagtttgtgg
+      241 ccaaggtcca taatcaagac cccaaggact ggccagcgca gtactgtgag gctttggcag
+      301 atg
+//

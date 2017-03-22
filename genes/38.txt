@@ -1,0 +1,106 @@
+LOCUS       AF157515                3589 bp    DNA     linear   PRI 02-JAN-2001
+DEFINITION  Homo sapiens NAD+-dependent isocitrate dehydrogenase 3 alpha
+            subunit (IDH3A) gene, promoter region and partial cds.
+ACCESSION   AF157515
+VERSION     AF157515.1  GI:12002706
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 3589)
+  AUTHORS   Kim,Y.-O., Koh,H.-J., Jo,S.-H., Son,M.-K. and Huh,T.-L.
+  TITLE     Structural and functional characterization of the human
+            NAD+-dependent isocitrate dehydrogenase alpha subunit promoter
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 3589)
+  AUTHORS   Kim,Y.-O., Koh,H.-J., Jo,S.-H., Son,M.-K. and Huh,T.-L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUN-1999) Genetic Engineering, Sankyuk-dong 1370,
+            Taegu 702-701, Korea
+FEATURES             Location/Qualifiers
+     source          1..3589
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q25"
+     misc_feature    1..3562
+                     /note="contains promoter and 5'UTR"
+     gene            <3563..>3589
+                     /gene="IDH3A"
+     mRNA            <3563..>3589
+                     /gene="IDH3A"
+                     /product="NAD+-dependent isocitrate dehydrogenase 3 alpha
+                     subunit"
+     CDS             3563..>3589
+                     /gene="IDH3A"
+                     /codon_start=1
+                     /product="NAD+-dependent isocitrate dehydrogenase 3 alpha
+                     subunit"
+                     /protein_id="AAG43379.1"
+                     /db_xref="GI:12002707"
+                     /translation="MAGPAWISK"
+ORIGIN      
+        1 gaattcttta atctacaata aacatcatat ttaatgatga agcttcagtt aaaataaggc
+       61 aagttatgta tcctcacttc agtctgacac tgtactgaag gtccaagcaa cagataagaa
+      121 aatgaattaa ggattagggg gaaaaaaaca aaattatcat ctgcagatgg tatgatttct
+      181 acatagaaat tatttaagaa tcaaaagata aaccattaga gctaattatt gatttcataa
+      241 ggcagatgac tacagatgaa catataacat cagtcgtgct cctatatggt agtaataact
+      301 atttagaata tataaaataa accggccagg tgcggcacgt cacgcctata atcccagcac
+      361 tttgggaggc cacgggcgga tcaggaggtc aggagatcga gaccatcctg gctaacacgg
+      421 tgaaaccccg tctctactaa aaatacaaaa aattagccgg gcatggtggc gggcgcctgt
+      481 agtctcagct acttgggaag gaggctgagg caggagaatg gtgtgacctg ggaggcagaa
+      541 cttgcagtga gctgagattg cgccactgca ctccagcctg ggcaacagag cgagactcca
+      601 tctcacagaa aaaaaaaaaa aaaaaaaaaa aaaacattca aaatagctat gaaaacccaa
+      661 caggtgcaag aggtgaagaa aactgtggag ctttattgaa ggatacaaaa gaataactaa
+      721 ctaatgaata gatgagaaaa tgaatacaag gttattccca aaattaatct ataaattcaa
+      781 tataattctt atcaaaaccc aaatgaggct ttggggaatg gatttattta tttatttatt
+      841 catttactta tttatttatt ttgagacaga gtcttgctct gtcacccagg ccggagtgca
+      901 gtggtgtgat cctggctcac tgcaaccttt gccacctggg ttcaagcaat tatcctgcct
+      961 tagcctccca agtagctggg tctacaggtg catgccacca tgcctagcta atttttgtat
+     1021 ttttagtaga gaagaggttt catcatgttg accaggctgg tctcaaacgc gtcacctgaa
+     1081 gtgatacgcc cgcctcagcc tcccaaagtg ctgggattac tggtgtgagt caccacgcct
+     1141 ggcctggact gaattataaa gcagacgtac ttaaaaccat atggtaaccc aaaacaaatc
+     1201 catacaagtg tgaaaaacta aaaagatgct actacaaaga aaattggtgc agggacaagt
+     1261 ggctttccat ataattaaaa aataaacttg gatcctacct tatagcaata taaaagtgaa
+     1321 tatgtagaaa gataactgaa gccaaaattg tcaaaaccaa gtagcagcta ttctggctta
+     1381 cccctagtag ccaaagtgag tacggctcca gtctcgtagg cttcaattta tactcccagc
+     1441 ttcctataaa gtgttcaggc caatacttct gccacagttt ttgagctgtc aagtggttac
+     1501 tgatcgaaat ttagcactga gaagccttat tcgatagcca aagaaaaagg agaaccaatt
+     1561 ttcaggtctt ggaatcttct tattcaacat aagtatttaa caaaaaatta gcaaataatc
+     1621 aatccaaaat tcctgcccag attgatgtcc acattccatt aaaacctgga tattctcttt
+     1681 ctgtagttat ttcccgggtg ttatctcaag tttagaggtc agaagaacaa gcttatcatt
+     1741 tggggtagtc atgatgtaaa taaactccta taaaatttat tggctcgaat gtttcaaatt
+     1801 agagaataca gtgtttagtg tcttgagtgg aatgtcagtt tttaagatga caaactgact
+     1861 tccaccaata cctttaaaag tttatatttt tcctgtttgt aaagtaatgt atgttcaaaa
+     1921 caaagaacct ggcaaacaga aaagcaaaag atacaaactc cctacaaatt tgcatcccaa
+     1981 tgaaacacca atgggttaaa tgcccttcca gtcattcaga atagtagata tgtgtttttt
+     2041 tttctttttt tttttttgag tcagtctcac tctgttgccc aggctggagt gtagtggcac
+     2101 gatctcggct cactgcaagc tccacctccc cggttcacgc cattctcctg cctcagcctc
+     2161 ccgagtagct gggactacag gtgcctgcca tcagcctccc gagtagctgg gactacaggt
+     2221 gcctgccacc acgccctgct cattttttga atttgtagag atggggtttc actgtggtag
+     2281 ccaggatggt ctcgatctcc tgacctcgtg atctgcctgc ctcggcctcc caaagtgttg
+     2341 ggattacagg cgtgagccac cgtgcccagc cagatatgtg ttatgtttta aaccaagttt
+     2401 gtaacatcta tttagactca agtacttaat gccttaaatg tccttatggg aagaagggaa
+     2461 ggagacaggt gtgactataa agtggtagga gagctgatca tgctgtattt ttatttttaa
+     2521 caggtaataa tatgctcaac agacatttct aacccctctt cccacctcgg ccatgtctca
+     2581 gtgccatgtc ttaggcaaca tcttagcgtt aacatcaaaa cagccctgat atccacacaa
+     2641 aggtgtgaca aaatgccaca catattgctt tacaattaat acatatgtaa ccattacaaa
+     2701 cagaagtggc tgccgggctc atgattctga cccttaacct ctcctcccct cctcaaaagg
+     2761 tttcttctgg taacagatcc agttgcctgg ccacagtatg acctagccag gctgaccaca
+     2821 ggacctgact ccttggcctg agtcacagac ctggaaggct gtgctctagg actgcgctca
+     2881 gtcacactgc ccccgacatg gagaaggcca cttgcagcca aaaacaatgt ggccaagcag
+     2941 agacatacag atgagtggca gagcaccctg acagtgacca agtccctgac tcttccttgg
+     3001 cttcagtgac ccaacgagga atcctattag tccccttttc tgcttaagaa aatctgaatt
+     3061 gggttcctga cacaaccaga atgcttgggg aaccagggaa gagggggcaa taggtaaaaa
+     3121 gcagcttcta gtctgcgatg agcttcccct ctgtgggtca taattatata ttatgagaca
+     3181 gactatacta tttgaaaaga tactttttaa tgccccagat cctagaacat taatcagcac
+     3241 ctagtaggtg tggaacaaac gtcttacctt aacagcgagt caatgaacca gggaggggag
+     3301 gaagaagctt tcccggagat gccggcccct cagtttccgg gttcgcctgg cgctcagcca
+     3361 ggccagtcac agagagacga gcccggcgat tcgccagcgg aatgtccagg ggcggggcag
+     3421 cgagcgaggc gaagcaatcc tgaggcggtc tagggggcgg ggcgttcagg gggcgtggcc
+     3481 gtgcaggggc gggctccgag cgtggggtgg gcgcttgcgc actgccgctg cggctgttgc
+     3541 tgcggagcca ggaggggaag cgatggctgg gcccgcgtgg atctccaag
+//

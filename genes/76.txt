@@ -1,0 +1,57 @@
+LOCUS       AF271609S9               190 bp    DNA     linear   PRI 01-AUG-2000
+DEFINITION  Homo sapiens transcription factor 12 (TCF12) gene, exon 17 and
+            partial cds.
+ACCESSION   AF271617
+VERSION     AF271617.1  GI:9049976
+KEYWORDS    .
+SEGMENT     9 of 9
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 190)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Organization of the HTF4 Gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 190)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-MAY-2000) Chemistry, Purdue University, 1393 Brown
+            Bldg., W. Lafayette, IN 47907, USA
+FEATURES             Location/Qualifiers
+     source          1..190
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21"
+     gene            order(AF271609.1:<1..153,AF271610.1:1..120,
+                     AF271611.1:1..170,AF271612.1:1..230,AF271613.1:1..150,
+                     AF271614.1:1..140,AF271615.1:1..82,AF271616.1:1..310,
+                     1..>190)
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+     mRNA            <34..>148
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /product="transcription factor 12"
+     CDS             <34..>148
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /note="helix-loop-helix transcription factor 4"
+                     /codon_start=1
+                     /product="transcription factor 12"
+                     /protein_id="AAF82573.1"
+                     /db_xref="GI:9049980"
+                     /translation="VGTHREDSVSLNGNHSVLSSTVTTSSTDLNHKTQENYR"
+     exon            34..148
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /number=17
+ORIGIN      
+        1 ctttttttat ttttgggttt tccttaactt taggttggaa ctcatcggga agactctgtc
+       61 agtctcaatg gcaatcattc agtcctgtct agtacagtca ctacttcaag cacagacctg
+      121 aaccataaaa cacaagaaaa ttatagaggt aactatattg ttggttttca gaaataatgc
+      181 agacagagat
+//

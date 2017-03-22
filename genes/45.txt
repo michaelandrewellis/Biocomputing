@@ -1,0 +1,91 @@
+LOCUS       AF200625                2253 bp    DNA     linear   PRI 01-NOV-2000
+DEFINITION  Homo sapiens necdin-like protein 1 (NDNL1) gene, complete cds.
+ACCESSION   AF200625
+VERSION     AF200625.1  GI:11066409
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2253)
+  AUTHORS   Lee,S., Bischof,J., Kozlov,S., Stewart,C.L. and Wevrick,R.
+  TITLE     A novel candidate gene for the Prader-Willi syndrome and its
+            homologous mouse imprinting phenotype: identification of a
+            necdin-like gene, NDNL1, adjacent to the human and mouse necdin
+            genes
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2253)
+  AUTHORS   Lee,S. and Bischof,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-OCT-1999) Medical Genetics, University of Alberta,
+            842 Medical Sciences Building, Edmonton, AB T6G 2H7, Canada
+FEATURES             Location/Qualifiers
+     source          1..2253
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11-q12"
+     gene            <260..>1849
+                     /gene="NDNL1"
+     mRNA            <260..>1849
+                     /gene="NDNL1"
+                     /product="necdin-like protein 1"
+     CDS             260..1849
+                     /gene="NDNL1"
+                     /note="similar to C-terminus of necdin"
+                     /codon_start=1
+                     /product="necdin-like protein 1"
+                     /protein_id="AAG28577.1"
+                     /db_xref="GI:11066410"
+                     /translation="MQGLFYRPQGSSKERRTSSKERRAPSKDRMIFAATFCAPKAVSA
+                     ARAHLPAAWKNLPATPETFAPSSSVFPATSQFQPASLNAFKGPSAASETPKSLPYALQ
+                     DPFACVEALPAVPWVPQPNMNASKASQAVPTFLMATAAAPQATATTQEASKTSVEPPR
+                     RSGKATRKKKHLEAQEDSRGHTLAFHDWQGPRPWENLNLSDWEVQSPIQVSGDWEHPN
+                     TPRGLSGWEGPSTSRILSGWEGPSASWALSAWEGPSTSRALGLSESPGSSLPVVVSEV
+                     ASVSPGSSATQDNSKVEAQPLSPLDERANALVQFLLVKDQAKVPVQRSEMVKVILREY
+                     KDECLDIINRANNKLECAFGYQLKEIDTKNHAYIIINKLGYHTGNLVASYLDRPKFGL
+                     LMVVLSLIFMKGNCVREDLIFNFLFKLGLDVRETNGLFGNTKKLITEVFVRQKYLEYR
+                     RIPYTEPAEYEFLWGPRAFLETSKMLVLRFLAKLHKKDPQSWPFHYLEALAECEWEDT
+                     DEDEPDTGDSAHGPTSRPPPR"
+ORIGIN      
+        1 aggcccagag gcaggctccc cccttggtcc agctggagca gccctttcag ggagccccgc
+       61 cctcccaaaa agccgtgcaa atccagctac ccccccagca ggcccaggca tcgggtccgc
+      121 aagcggaggt gcccacactg ccgctccagc cttcctggca ggcaccgcct gcagtcttgc
+      181 aggcccagcc cggacccccg gtagcagcgg caaattttcc cctgggctcc gctaaatcat
+      241 tgatgactcc atcaggagaa tgcagggcct cttctataga ccgcagggct cctctaaaga
+      301 gcgcaggacc tcctcgaagg agcgcagggc cccttcaaaa gaccgcatga tctttgctgc
+      361 caccttctgt gctcccaagg cagtgtcagc tgcgcgagca cacctgccag ctgcctggaa
+      421 aaacctgcct gccacaccgg agacctttgc tccctcctca agtgtcttcc cagctacctc
+      481 ccagtttcag cctgcctctc tgaatgcctt taaaggcccc tctgctgcct cagagacccc
+      541 aaagtcactg ccatatgctc tgcaggatcc ctttgcctgt gtagaggccc tgcctgcagt
+      601 tccatgggtc ccacagccca atatgaatgc ctcaaaggca tcgcaggcag tgcccacctt
+      661 cctgatggct acagcagctg ccccccaggc aactgccacc actcaagagg cctccaagac
+      721 ctccgtcgag ccgccacgcc gctccggcaa ggccacccgg aagaagaagc atctggaagc
+      781 ccaagaggac agccgtggcc acacgctagc ctttcatgac tggcagggcc caaggccctg
+      841 ggagaatcta aatctgagtg actgggaggt ccaaagccct atccaggtct cgggtgactg
+      901 ggagcaccca aacacccccc gtggcctgag tggttgggag ggccctagca cctccaggat
+      961 cctgagtggc tgggaagggc ccagcgcatc ctgggccctg agtgcctggg agggcccgag
+     1021 cacctccagg gccctgggtc tctctgaaag cccagggagc tctctgcccg tagttgtgtc
+     1081 tgaggtcgca agtgtctctc cgggatccag tgccacccag gataattcca aggtggaggc
+     1141 acagcccttg tctcccttgg atgagagggc aaatgcgttg gtgcagttcc tcttagtcaa
+     1201 ggaccaagcc aaggtgcctg tccagcgctc ggagatggtg aaagtcatcc tccgagagta
+     1261 taaagatgag tgcttagata tcatcaaccg tgccaacaat aagctggagt gtgcctttgg
+     1321 ttatcaattg aaagaaattg ataccaaaaa ccacgcctat attatcatca acaagctggg
+     1381 ctaccataca gggaatttgg tggcatccta tttagacagg cccaagtttg gccttctgat
+     1441 ggtggtcttg agcctcatct ttatgaaagg caactgtgtc agggaggatc tgatctttaa
+     1501 ttttctgttc aagttagggt tggatgtccg ggagacaaac ggtctctttg gaaatactaa
+     1561 gaagctcatc accgaagtgt ttgtcaggca gaagtaccta gagtacaggc gaatccctta
+     1621 cactgagccc gcagagtatg agttcctctg gggccctcga gcattcctgg aaaccagcaa
+     1681 gatgcttgtc ctgaggtttt tggccaagct ccataagaaa gatccacaga gctggccatt
+     1741 ccattacctt gaagcgctcg cagagtgtga gtgggaagac acagatgagg atgaacctga
+     1801 caccggtgac agtgcccacg gccccaccag caggccccct ccccgctaat aggtgtagca
+     1861 gagatctcgc tcctgtgttt ccctggccag aggccactga cagggtgggg ggacattttt
+     1921 gttcctggtg tttgtgttcc agttccacga gtgtaagttt ggattttcaa cttggtttcg
+     1981 tatctgccaa agctttgtac attttttatg tggtgttgat ttcaatcggc tactgttctg
+     2041 ttctgtattt tggcatctgt gtttttaagt gagatctgtg gttctctgtt ttgtgttata
+     2101 attgttatgt tttggtatca gctttgtgct ggctttgtga aatgaattga gaagctatcc
+     2161 atctcatttc tggtatagtt catgtagcat tgtaatcggt tgttctttga acgttcaaat
+     2221 gactcatcag taaaaactgt ctacagagaa gta
+//
