@@ -8,13 +8,7 @@ with open('chrom_CDS_15') as f:
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-------------------------------------------
-"""
-test_file_name_split = ['103.txt', '105.txt', '100.txt', '10.txt', '20.txt', '202.txt']
-file_name_compiler = re.compile(r'(\d+)')
-for x in test_file_name_split:                            #DO DOCSTRING FOR THIS
-    separator = file_name_compiler.split(x) #sgrabbing just the digit part of the filename i.e. ('101.txt') becomes ('101', '.txt')
-    separator[1::2] = map(int, separator[1::2]) # get every other item, starting with the second and converts into an integer
-"""
+
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
 # thus allowing all lists to be generated in the same order (from gene 1 to 241)
     
@@ -31,20 +25,26 @@ def numerical_convert(value):
     split_value[1::2] = map(int, split_value[1::2])
     return split_value
 
-
 # the following code loops through all 241 files in the directory 'genes'
 # it then opens each one and searches between 'LOCUS' and '//' using the regexes
 # then appends matched groups to the relevant list
 # this is the method used for extracting all of the required data from the file
 
-# -----------------------------------Iterator function----------------------------------------------
+# -----------------------------------Parser function------------------------------------------------
 
 def genbank_parser(list, compiler, else_statement = None):
     """
-
+    This function essentially walks through a given directory taking the filenames, sorting by numerical name using
+    the numerical_convert() function to convert string filenames into integers.
+    It takes the following as parameters:
+        list: the list to which the user wishes to append matches
+        compiler: the regex compiler in the format re.compile(r"...()...") that the function uses to search for a match group.
+        else_statement: this is a string that is appended to the list if no match group is found. It is set to None by default.
+    If a match to the regex is found, match group 1 is appended to the list. If not, the else_statement is appended instead.
+    Nothing visible is returned, but the list provided will be populated with matches.
     """
     for root, dirs, all_files in os.walk(indir):
-        for infile in sorted(all_files, key=numerical_sort):
+        for infile in sorted(all_files, key=numerical_convert):
             open_file = open(os.path.join(root, infile), 'r')
             match = compiler.search(open_file.read())
             if match:
@@ -88,7 +88,7 @@ for x in protein_seq:
     sub = re.sub(r"\W", "", x)
     clean_protein_seq.append(sub)
             
-# --- extracting the coding seq of the gene in order to get the exon boundaries --- #
+# --- extracting the coding seq of the gene in order to get the exon ranges --- #
 
 ex_int_boundaries = []
 cds_compiler = re.compile(r"^LOCUS\s.+\s{5}CDS\s+(.+?)\s{1}.+\/\/", re.MULTILINE|re.DOTALL)
