@@ -213,7 +213,7 @@ import pandas as pd
 import mysql.connector
 from sqlalchemy import create_engine
 
-engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost:3306/biocomp_project', echo=False)
+engine = create_engine('mysql+mysqlconnector://root:***********@localhost:3306/biocomp_project', echo=False)
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
