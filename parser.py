@@ -22,7 +22,6 @@ with open('chrom_CDS_15') as f:
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-------------------------------------------
 
-
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
 # thus allowing all lists to be generated in the same order (from gene 1 to 241)
     
