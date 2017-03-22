@@ -36,7 +36,6 @@ def numerical_sort(value):                              #DO DOCSTRING FOR THIS
 # then appends matched groups to the relevant list
 # this is the method used for extracting all of the required data from the file
 
-# --------------------------------------------------------------------------------------------------
 # -----------------------------------Iterator function----------------------------------------------
 
 def genbank_parser(list, compiler, else_statement = None):
@@ -85,7 +84,7 @@ for x in protein_seq:
     sub = re.sub(r"\W", "", x)
     clean_protein_seq.append(sub)
             
-# --- finding the coding seq of the gene in order to extract exon boundaries --- #
+# --- extracting the coding seq of the gene in order to get the exon boundaries --- #
 
 ex_int_boundaries = []
 cds_compiler = re.compile(r"^LOCUS\s.+\s{5}CDS\s+(.+?)\s{1}.+\/\/", re.MULTILINE|re.DOTALL)
@@ -132,8 +131,8 @@ for list in exons_into_lists:
 
 # the following code grabs all the exon start positions for a particular and puts them into a sub-list
 # the sub-list is then appended to the main list:
-exon_start = []                                                            # exon start positions
-exon_end = []                                                              # exon end positions
+exon_start = []
+exon_end = []
 exon_start_compiler = re.compile(r"^(\d+)\.")
 exon_end_compiler = re.compile(r"^\d+\.\.(\d+)")
 for list in remove_spans:
@@ -161,16 +160,16 @@ for list in remove_spans:
         exon_end.append(end_matches)
 
 # the sql import doesn't like lists of lists, so converting sub-lists into strings
-str_ex_start = []
-str_ex_end = []
+str_ex_start = []                                                           # exon start positions
+str_ex_end = []                                                             # exon end positions
 for list in exon_start:
     str_ex_start.append(str(list))
 for list in exon_end:
     str_ex_end.append(str(list))
 
 
-# ------------------------------------------------------------------------------------------------
-# -----------------------------------Database connection tier-------------------------------------
+# --------------------------------------------------------------------------------------------------
+# -----------------------------------Database connection tier---------------------------------------
 
 # Using Pandas to generate dataframes from my lists
 
@@ -183,8 +182,10 @@ for list in exon_end:
 #exon_end                          will be 'End_location' in DB
 
 
-gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq, 'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start}, index=gene_ids)
+gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
+                             'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
+coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
+                                index=gene_ids)
 
 # filtering out splice variants:
 pattern = "[A-Z]+\d+S"
@@ -202,4 +203,4 @@ engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_pr
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
-# ------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------
