@@ -1,7 +1,7 @@
 import re
 import os
 import pandas as pd
-indir = '/Users/ainefairbrother/Documents/Group_project/genes'
+indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 
 with open('chrom_CDS_15') as f:
     original_file = f.read().splitlines()
@@ -207,14 +207,21 @@ for list in exon_end:
 #exon_end                          will be 'End_location' in DB
 
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq, 'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start})
+coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start}, index=gene_ids)
+
+# filtering out splice variants:
+pattern = "[A-Z]+\d+S"
+filter = gene_info_df['Gene_ID'].str.contains(pattern)
+gene_info_df = gene_info_df[~filter]
+coding_region_df = coding_region_df[~filter]
 
 import pandas as pd
 import mysql.connector
 from sqlalchemy import create_engine
 
-engine = create_engine('mysql+mysqlconnector://root:***********@localhost:3306/biocomp_project', echo=False)
-#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
-#coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost:3306/biocomp_project', echo=False)
+gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
 # ------------------------------------------------------------------------------------------------
+
