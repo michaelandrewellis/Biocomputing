@@ -1,11 +1,20 @@
-from functions import get_data, getCodonTable
+#! /usr/bin/env python3
+
+#from functions import get_data
 import cgi
-import pandas as pd
+import cgitb; cgitb.enable()
+#import pandas as pd
 
-''' PERHAPS ADD DEBUGGING '''
 
-print ("Content-Type: text/html\n")
+html = "Content-Type: text/html\n"
+html += '''
+<html>
+<head>
+ <title>Hello World!</title>
+</head>
+'''
 
+"""
 form = cgi.FieldStorage()
 
 input = form['input'].value
@@ -19,9 +28,26 @@ codon_table_df.columns = ['Triplet', 'Amino Acid', 'Gene %', 'Chr %', 'Relative 
 index = pd.MultiIndex.from_product([['T','C','A','G'],['T','C','A','G'],['T','C','A','G']])
 codon_table_df = codon_table_df.set_index(index)
 codon_table_df = codon_table_df.stack().unstack(level=-4).unstack()
+
+for col in codon_table_df.columns:
+    codon_table_df[col] = codon_table_df[col].apply(lambda x: '<a href= 'webcgiaddress?type=''+col+'&input='+x+'/>' + x) # Link to summary page
+
 codon_table_html = codon_table_df.to_html
 
 
 print(DNA)
 print(pd.DataFrame(CDS_loc,columns=['Start of coding region','End of coding region']).to_html(index=False))
 print(codon_table_html())
+"""
+html += '''
+<html>
+<head>
+ <title>Hello World!</title>
+</head>
+'''
+'''
+<body>
+<h1>Hello World!</h1>
+</body>
+</html>
+'''

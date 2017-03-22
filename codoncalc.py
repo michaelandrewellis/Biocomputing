@@ -42,4 +42,6 @@ def summary_html_table():
     cursor.close()
     df = pd.DataFrame(rows)
     df.columns = ['A','B','C','D']
+    for col in df.columns:
+        df[col] = df[col].apply(lambda x: '<a href= webcgiaddress?type = ' + col + '&input=' + x + '/>' + x)  # Link to summary page
     return(df.to_html)
