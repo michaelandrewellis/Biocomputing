@@ -6,30 +6,31 @@ indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 with open('chrom_CDS_15') as f:
     original_file = f.read().splitlines()
 
-# ---------------------------------------------------------------------------------------------------
-# -----------------------------------Testing tier----------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-------------------------------------------
-
+"""
+test_file_name_split = ['103.txt', '105.txt', '100.txt', '10.txt', '20.txt', '202.txt']
+file_name_compiler = re.compile(r'(\d+)')
+for x in test_file_name_split:                            #DO DOCSTRING FOR THIS
+    separator = file_name_compiler.split(x) #sgrabbing just the digit part of the filename i.e. ('101.txt') becomes ('101', '.txt')
+    separator[1::2] = map(int, separator[1::2]) # get every other item, starting with the second and converts into an integer
+"""
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
 # thus allowing all lists to be generated in the same order (from gene 1 to 241)
     
 file_name_compiler = re.compile(r'(\d+)')
-def numerical_sort(value):                              #DO DOCSTRING FOR THIS
-    separator = file_name_compiler.split(value)
-    separator[1::2] = map(int, separator[1::2])
-    return separator
+def numerical_convert(value):
+    """
+    The main purpose of this function is to take a string containing digits and convert those digits into integers.
+    It takes a string as the input. It splits the string into its 'digit' and 'other' components
+    Taking every other item (starting with the second one, as the first is '') in the outcome of the split, the string
+    format digits are converted to integers using the map() and int() functions.
+    The numerical_convert function then returns any digits it found in 'value' in integer format.
+    """
+    split_value = file_name_compiler.split(value)
+    split_value[1::2] = map(int, split_value[1::2])
+    return split_value
+
 
 # the following code loops through all 241 files in the directory 'genes'
 # it then opens each one and searches between 'LOCUS' and '//' using the regexes
@@ -39,6 +40,9 @@ def numerical_sort(value):                              #DO DOCSTRING FOR THIS
 # -----------------------------------Iterator function----------------------------------------------
 
 def genbank_parser(list, compiler, else_statement = None):
+    """
+
+    """
     for root, dirs, all_files in os.walk(indir):
         for infile in sorted(all_files, key=numerical_sort):
             open_file = open(os.path.join(root, infile), 'r')
@@ -167,7 +171,6 @@ for list in exon_start:
 for list in exon_end:
     str_ex_end.append(str(list))
 
-
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
@@ -203,4 +206,17 @@ engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_pr
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
-# --------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------
+# -----------------------------------Testing tier----------------------------------------------------
+"""
+#testing lists - all should be 241 to align correct data values:
+correct_length = 241
+list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
+                len(clean_protein_seq), len(gene_products), len(str_ex_start), len(str_ex_end)]
+for list in list_lengths:
+    if list != correct_length:
+        print('test fail')
+    else:
+        print('length:', list, '--', 'test successful')
+"""
+
