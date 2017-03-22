@@ -7,10 +7,22 @@ with open('chrom_CDS_15') as f:
     original_file = f.read().splitlines()
 
 # ------------------------------------------------------------------------------------------------
+# -----------------------------------Test tier----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+# ------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-----------------------------------------
 
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
-# thus allowing all lists generated to in the same order (from gene 1 to 241)
+# thus allowing all lists to be generated in the same order (from gene 1 to 241)
     
 file_name_compiler = re.compile(r'(\d+)')
 def numerical_sort(value):                              #DO DOCSTRING FOR THIS
@@ -215,13 +227,14 @@ filter = gene_info_df['Gene_ID'].str.contains(pattern)
 gene_info_df = gene_info_df[~filter]
 coding_region_df = coding_region_df[~filter]
 
-import pandas as pd
+import pandas as pd2
 import mysql.connector
 from sqlalchemy import create_engine
+import admin
+pw = admin.password
 
-engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost:3306/biocomp_project', echo=False)
-gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
-coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
+#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+#coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
 # ------------------------------------------------------------------------------------------------
-
