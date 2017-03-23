@@ -4,6 +4,7 @@ from functions import get_data
 import cgi
 import cgitb; cgitb.enable()
 import pandas as pd
+import htmlfunctions
 
 
 html = "Content-Type: text/html\n"
@@ -56,6 +57,10 @@ html += DNA_html
 html += pd.DataFrame(CDS_loc,columns=['Start of coding region','End of coding region']).to_html(index=False)
 html += codon_table_html
 html += enzyme_table_df.to_html(index=False)
+
+htmlfunctions.draw_gene(DNA,CDS_loc)
+
+html += "<img src='TEST.bmp'/>"
 
 with open('test.html','w') as f:
     f.write(html)
