@@ -4,8 +4,9 @@
 </head>
 
 <body>
+<!--action="/cgi-bin/cgiwrap/em001/cgi-script.py"-->
 <form
-action="/cgi-bin/cgiwrap/em001/cgi-script.py"
+action="cgi-bin/cgi-script.py"
 method='get'>
     <p>
         <b>Search term:</b><br />
@@ -13,10 +14,10 @@ method='get'>
     </p>
 
 <h2>Input type:</h2>
-    <input name='type' value='geneid' type='radio' checked='checked' />Gene ID
-    <input name='type' value='protein_product' type='radio' />Protein product
-    <input name='type' value='accession' type='radio' />Accession
-    <input name='type' value='protein_product' type='radio' />Protein product
+    <input name='type' value='Gene_ID' type='radio' checked='checked' />Gene ID
+    <input name='type' value='Protein_product' type='radio' />Protein Product
+    <input name='type' value='Accession' type='radio' />Accession
+    <input name='type' value='Chromosome_location' type='radio' />Chromosome Location
     <p>
         <input type='submit' value='Submit' />
         <input type='reset'  value='Clear form' />

@@ -128,9 +128,11 @@ def get_data(input, type):
     enzymeTable = getEnzymeTable(DNA, CDSloc)
     return [DNA,CDSloc,codonTable,enzymeTable]
 
-testCDS = 'TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGC' \
+'''testCDS = 'TTTTTTTTTAGAGAGAATCCTACTCTCTAAGCTTCGCGCGAAGCTCGCGCGC' \
           'GATAGCGCATAGCGCTAGCTATCAGCGGGGCGCCCGCGCCTCCTATATATATTCATTCTAGGAGGCTTCTTAAAGCT'
 codon_table = pd.DataFrame(getCodonTable(testCDS)).T
+
+print(get_data('AB024537','Gene_ID'))'''
 
 if __name__ == "__main__":
     import doctest

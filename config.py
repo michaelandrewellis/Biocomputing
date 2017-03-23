@@ -15,7 +15,7 @@ codons = ['TTT', 'TTC', 'TTA', 'TTG',
           'TGT', 'TGC', 'TGA', 'TGG',
           'CGT', 'CGC', 'CGA', 'CGG',
           'AGT', 'AGC', 'AGA', 'AGG',
-          'GGT', 'GGT', 'GGA', 'GGG']
+          'GGT', 'GGC', 'GGA', 'GGG']
 
 AA = ['Phe','Phe','Leu','Leu',
       'Leu','Leu','Leu','Leu',
@@ -55,7 +55,7 @@ codons = ['TTT', 'TTC', 'TTA', 'TTG',
           'TGT', 'TGC', 'TGA', 'TGG',
           'CGT', 'CGC', 'CGA', 'CGG',
           'AGT', 'AGC', 'AGA', 'AGG',
-          'GGT', 'GGT', 'GGA', 'GGG']
+          'GGT', 'GGC', 'GGA', 'GGG']
 
 enzymeDict = {'EcoRI':'GAATC',
               'BamHI':'GGATCC',
