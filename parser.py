@@ -91,7 +91,7 @@ for x in protein_seq:
 # --- extracting the coding seq of the gene in order to get the exon ranges --- #
 
 ex_int_boundaries = []
-cds_compiler = re.compile(r"^LOCUS\s.+\s{5}CDS\s+(.+?)\s{1}.+\/\/", re.MULTILINE|re.DOTALL)
+cds_compiler = re.compile(r"^LOCUS\s.+\s{5}CDS\s+(.+?)\/.+\/\/", re.MULTILINE|re.DOTALL)
 genbank_parser(ex_int_boundaries, cds_compiler, else_statement='none')
 
 # the following code strips off superfluous characters from items in  ex_int_boundaries:
@@ -167,9 +167,9 @@ for list in remove_spans:
 str_ex_start = []                                                           # exon start positions
 str_ex_end = []                                                             # exon end positions
 for list in exon_start:
-    str_ex_start.append(str(list))
+    str_ex_start.append(list)
 for list in exon_end:
-    str_ex_end.append(str(list))
+    str_ex_end.append(list)
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
@@ -202,9 +202,15 @@ from sqlalchemy import create_engine
 import admin
 pw = admin.password
 
-engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
+#engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+
+# http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.from_dict.html
+# make the codon dataframe into a dictionary instead with the accession as the 'key' and the lists of exon
+# ends and starts as the 'value'
+
+
 
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
