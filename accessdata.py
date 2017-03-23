@@ -19,7 +19,7 @@ def getCDSfromSQL(input, type, cursor):
             "AND g." + type + " = '" + input + "';"
     cursor.execute(query)
     CDSloc = cursor.fetchall()
-    # Extra code to deal with database storing data in an unusual way
+    # Extra code to deal with database storing coding region locations as strings of lists of strings
     CDSloc = CDSloc[0]
     CDSloc = (ast.literal_eval(x) for x in CDSloc)
     CDSloc = list(map(list, zip(*CDSloc)))
