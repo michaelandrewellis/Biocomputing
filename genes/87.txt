@@ -1,0 +1,134 @@
+LOCUS       SEG_HSUBE6AP            2881 bp    DNA     linear   PRI 28-JUL-2011
+DEFINITION  Homo sapiens E6-AP ubiquitin-protein ligase (UBE3A) gene, partial
+            cds.
+ACCESSION   AH006486 AF009339 AF009340 AF009341
+VERSION     AH006486.2  GI:341871314
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2881)
+  AUTHORS   Kishino,T. and Wagstaff,J.
+  TITLE     Genomic organization of the UBE3A/E6-AP gene and related
+            pseudogenes
+  JOURNAL   Genomics 47 (1), 101-107 (1998)
+   PUBMED   9465301
+REFERENCE   2  (bases 1 to 2881)
+  AUTHORS   Kishino,T. and Wagstaff,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-JUN-1997) Genetics, Children's Hospital, 300 Longwood
+            Ave., Boston, MA 20115, USA
+COMMENT     On or before Jul 28, 2011 this sequence version replaced
+            gi:2853316, gi:2853317, gi:2853318, gi:2853319.
+FEATURES             Location/Qualifiers
+     source          1..2881
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11-13"
+                     /tissue_type="brain"
+                     /dev_stage="fetal"
+     gene            <1..2881
+                     /gene="UBE3A"
+     mRNA            join(<1..539,640..>772)
+                     /gene="UBE3A"
+                     /product="E6-AP ubiquitin-protein ligase"
+                     /note="uses alternative exon 2a"
+     5'UTR           join(<1..539,640..>772)
+                     /gene="UBE3A"
+                     /note="uses alternative exon 2a"
+     mRNA            join(<1..539,640..>767)
+                     /gene="UBE3A"
+                     /product="E6-AP ubiquitin-protein ligase"
+     5'UTR           join(<1..539,640..>767)
+                     /gene="UBE3A"
+     exon            <1..539
+                     /gene="UBE3A"
+                     /note="splices to exons 2, 2a, and 3"
+                     /number=1
+     gap             540..639
+                     /estimated_length=unknown
+     exon            640..772
+                     /gene="UBE3A"
+                     /note="alternative exon 2a"
+     exon            640..767
+                     /gene="UBE3A"
+                     /number=2
+     gap             773..872
+                     /estimated_length=unknown
+     mRNA            <873..2881
+                     /gene="UBE3A"
+                     /product="E6-AP ubiquitin-protein ligase"
+     exon            873..2881
+                     /gene="UBE3A"
+                     /number=16
+     CDS             <873..993
+                     /gene="UBE3A"
+                     /note="E6-associated protein"
+                     /codon_start=2
+                     /product="E6-AP ubiquitin-protein ligase"
+                     /protein_id="AAC39580.1"
+                     /db_xref="GI:2853320"
+                     /translation="LPTSHTCFNVLLLPEYSSKEKLKERLLKAITYAKGFGML"
+     3'UTR           994..2881
+                     /gene="UBE3A"
+     polyA_signal    2334..2339
+                     /gene="UBE3A"
+     polyA_signal    2618..2623
+                     /gene="UBE3A"
+     polyA_signal    2866..2871
+                     /gene="UBE3A"
+ORIGIN      
+        1 gccagtcctc ccgtcttgcg ccgcggccgc gagatccgtg tgtctcccaa gatggtggcg
+       61 ctgggctcgg ggtgactaca ggagacgacg gggccttttc ccttcgccag gacccgacac
+      121 accaggcttc gctcgctcgc gcacccctcc gccgcgtagc catccgccag cgcgggcgcc
+      181 cgccatccgc cgcctactta cgcttcacct ctgccgaccc ggcgcgctcg gctgcgggcg
+      241 gcggcgcctc cttcggctcc tcctcggaat agctcgcggc ctgtagcccc tggcaggagg
+      301 gcccctcagc cccccggtgt ggacaggcag cggcggctgg cgacgaacgc cgggatttcg
+      361 gcggccccgg cgctcccttt cccggcctcg ttttccggat aaggaagcgc gggtcccgca
+      421 tgagccccgg cggtggcggc agcgaaagag aacgaggcgg tggcgggcgg aggcggcggg
+      481 cgagggcgac tacgaccagt gaggcggccg ccgcagccca ggcgcggggg cgacgacagn
+      541 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      601 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnna ggggaggtat ggtgtcaaga
+      661 aaacatagtc accattatta cgaaaagtaa aatatggaag agatgatccc taccatcaat
+      721 cagcttacaa ctagaggcac tgacaaatgt atacagatag ctgtaatgta agnnnnnnnn
+      781 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      841 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nngttaccta catctcatac ttgctttaat
+      901 gtgcttttac ttccggaata ctcaagcaaa gaaaaactta aagagagatt gttgaaggcc
+      961 atcacgtatg ccaaaggatt tggcatgctg taaaacaaaa caaaacaaaa taaaacaaaa
+     1021 aaaaggaagg aaaaaaaaag aaaaaattta aaaaatttta aaaatataac gagggataaa
+     1081 tttttggtgg tgatagtgtc ccagtacaaa aaggctgtaa gatagtcaac cacagtagtc
+     1141 acctatgtct gtgcctccct tctttattgg ggacatgtgg gctggaacag cagatttcag
+     1201 ctacatatat gaacaaatcc tttattatta ttataattat ttttttgcgt gaaagtgtta
+     1261 catattcttt cacttgtatg tacagagagg tttttctgaa tatttatttt aagggttaaa
+     1321 tcacttttgc ttgtgtttat tactgcttga ggttgagcct tttgagtatt taaaaaatat
+     1381 ataccaacag aactactctc ccaaggaaaa tattgccacc atttgtagac cacgtaacct
+     1441 tcaagtatgt gctacttttt tgtccctgta tctaactcaa atcaggaact gtattttttt
+     1501 taatgatttg cttttgaaac ttgaagtctt gaaaacagtg tgatgcaatt actgctgttc
+     1561 tagcccccaa agagttttct gtgcaaaatc ttgagaatca atcaataaag aaagatggaa
+     1621 ggaagggaga aattggaatg ttttaactgc agccctcaga actttagtaa cagcacaaca
+     1681 aattaaaaac aaaaacaact catgccacag tatgtcgtct tcatgtgtct tgcaatgaac
+     1741 tgtttcagta gccaatcctc tttcttagta tatgaaagga cagggatttt tgttcttgtt
+     1801 gttctcgttg ttgttttaag tttactgggg aaagtgcatt tggccaaatg aaatggtagt
+     1861 caagcctatt gcaacaaagt taggaagttt gttgtttgtt tattataaac aaaaagcatg
+     1921 tgaaagtgca cttaagatag agtttttatt aattacttac ttattaccta gattttaaat
+     1981 agacaatcca aagtctcccc ttcgtgttgc catcatcttg ttgaatcagc cattttatcg
+     2041 aggcacgtga tcagtgttgc aacataatga aaaagatggc tactgtgcct tgtgttactt
+     2101 aatcatacag taagctgacc tggaaatgaa tgaaactatt actcctaaga attacattgt
+     2161 atagccccac agattaaatt taattaatta attcaaaaca tgttaaacgt tactttcatg
+     2221 tactatggaa aagtacaagt aggtttacat tactgatttc cagaagtaag tagtttcccc
+     2281 tttcctagtc ttctgtgtat gtgatgttgt taatttcttt tattgcatta taaaataaaa
+     2341 ggattatgta tttttaacta aggtgagaca ttgatatatc cttttgctac aagctatagc
+     2401 taatgtgctg agcttgtgcc ttggtgattg attgattgat tgactgattg ttttaactga
+     2461 ttactgtaga tcaacctgat gatttgtttg tttgaaattg gcaggaaaaa tgcagctttc
+     2521 aaatcattgg ggggagaaaa aggatgtctt tcaggattat tttaattaat ttttttcata
+     2581 attgagacag aactgtttgt tatgtaccat aatgctaaat aaaactgtgg cacttttcac
+     2641 cataatttaa tttagtggaa aaagaagaca atgctttcca tattgtgata aggtaacatg
+     2701 gggtttttct gggccagcct ttagaacact gttagggtac atacgctacc ttgatgaaag
+     2761 ggaccttcgt gcaactgtag tcatcttaaa ggcttctcat ccactgtgct tcttaatgtg
+     2821 taattaaagt gaggagaaat taaatactct gagggcgttt tatataataa attcgtgaag
+     2881 a
+//

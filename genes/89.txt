@@ -1,0 +1,71 @@
+LOCUS       SEG_AY641830S            645 bp    DNA     linear   PRI 29-JUL-2011
+DEFINITION  Homo sapiens alpha-7 nicotinic cholinergic receptor subunit
+            (CHRNA7) gene, partial cds.
+ACCESSION   AH013945 AY641830 AY641831
+VERSION     AH013945.2  GI:342160326
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 645)
+  AUTHORS   Xu,Y., Lin,R., Ren,S., Xiang,Z. and Fei,Q.
+  TITLE     The association between alpha7 nicotinic acetylcholine receptor
+            gene polymorphisms and Alzheimer's disease
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 358 to 645)
+  AUTHORS   Xu,Y., Lin,R., Ren,S., Yi,L. and Fei,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAY-2004) Biochemistry and Molecular Biology, Guiyang
+            Medical College, 4 Beijing Road, Guiyang, Guizhou 550004, China
+REFERENCE   3  (bases 1 to 257)
+  AUTHORS   Ying,X., Lin,R., Ren,S., Yi,L., Yanfei,Q. and Yan,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAY-2004) Biochemistry and Molecular Biology, Guiyang
+            Medical College, 4 Beijing Road, Guiyang, Guizhou 550004, China
+COMMENT     On or before Jul 29, 2011 this sequence version replaced
+            gi:50812366, gi:50812367, gi:50812365.
+FEATURES             Location/Qualifiers
+     source          1..645
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13-q14"
+     gene            <1..>645
+                     /gene="CHRNA7"
+     mRNA            <33..>164
+                     /gene="CHRNA7"
+                     /product="alpha-7 nicotinic cholinergic receptor subunit"
+     exon            33..164
+                     /gene="CHRNA7"
+                     /number=3
+     gap             258..357
+                     /estimated_length=unknown
+     mRNA            <436..>522
+                     /gene="CHRNA7"
+                     /product="alpha-7 nicotinic cholinergic receptor subunit"
+     CDS             <436..>522
+                     /gene="CHRNA7"
+                     /codon_start=3
+                     /product="alpha-7 nicotinic cholinergic receptor subunit"
+                     /protein_id="AAT81394.1"
+                     /db_xref="GI:50812368"
+                     /translation="ITVLLSLTVFMLLVAEIMPATSDSVPLI"
+     exon            436..522
+                     /gene="CHRNA7"
+                     /number=8
+ORIGIN      
+        1 gaaacaaagt caaatttttg ttctcatttc agattacaag tggacacgtg agtcagcagg
+       61 acctggaatc ccagatgaga gagcttatct acacgactca gatcttgttg tcacccccat
+      121 tattgacaat ccaaaggtgc agaaagcact ctgacaagtg agttgtagac tttactgaga
+      181 tctgaaatct gcataagatt ttcattcaga atattattta ctgtctaatc tttcctgttt
+      241 ctcttgtccg cttctctnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      301 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnngga
+      361 gccctcgtta gacagaattg aggccttctt gtctgttttt gtctgaggaa ccactgtgtg
+      421 gtgtttatgt tttagggata acagtcttac tctctcttac cgtcttcatg ctgctcgtgg
+      481 ctgagatcat gcccgcaaca tccgattcgg taccattgat aggtaaggca agagttgggc
+      541 tcctctctta gagatatggg gttagggtta gagtgtgccc aggatttccc agcagatgaa
+      601 actagaagaa atacggctgc actgccccca ttttctctgg aaggt
+//

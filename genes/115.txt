@@ -1,0 +1,68 @@
+LOCUS       AB675599                 181 bp    DNA     linear   PRI 20-OCT-2011
+DEFINITION  Homo sapiens HEXA gene for hexosaminidase A, partial cds, exon 7,
+            clone: C6Ac.805+1G>C.
+ACCESSION   AB675599
+VERSION     AB675599.1  GI:353351779
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Mistri,M., Tamhankar,P.M., Sheth,F., Sanghavi,D., Kondurkar,P.,
+            Patil,S., Idicula-Thomas,S., Gupta,S. and Sheth,J.
+  TITLE     Novel mutations in HEXA gene in Indian patients with Tay Sachs
+            disease
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 181)
+  AUTHORS   Tamhankar,P.M. and Sheth,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2011) Contact:Parag M Tamhankar National
+            Institute for Research in Reproductive Health, ICMR Genetic
+            Research Center; Jehangir Merwanji Street, Mumbai, Maharashtra
+            400081, India URL
+            :http://nirrh.res.in/staff/scientific/DrTamhankar_resume.htm
+FEATURES             Location/Qualifiers
+     source          1..181
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /clone="C6Ac.805+1G>C"
+                     /cell_type="leucocyte"
+                     /dev_stage="25 years old"
+                     /country="India"
+                     /note="Tay Sachs disease carrier: C6A"
+     gene            <1..>181
+                     /gene="HEXA"
+     intron          <1..8
+                     /gene="HEXA"
+                     /number=6
+     CDS             <9..>141
+                     /gene="HEXA"
+                     /codon_start=1
+                     /product="hexosaminidase A"
+                     /protein_id="BAL04463.1"
+                     /db_xref="GI:353351780"
+                     /translation="GSYNPVTHIYTAQDVKEVIEYARLRGIRVLAEFDTPGHTLSWGP
+                     "
+     exon            9..141
+                     /gene="HEXA"
+                     /number=7
+     intron          142..>181
+                     /gene="HEXA"
+                     /number=7
+     variation       142
+                     /gene="HEXA"
+                     /note="This substitution is in splicing donor site, 5' end
+                     of intron 7;
+                     heterozygous mutation in a carrier of Tay Sachs disease"
+                     /compare=S62059.1
+                     /replace="c"
+ORIGIN      
+        1 cctttcaggg gtcctacaac cctgtcaccc acatctacac agcacaggat gtgaaggagg
+       61 tcattgaata cgcacggctc cggggtatcc gtgtgcttgc agagtttgac actcctggcc
+      121 acactttgtc ctggggacca gctaagaatg atgtctggga ccagagggac tctgcttgtt
+      181 a
+//

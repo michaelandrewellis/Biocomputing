@@ -1,0 +1,57 @@
+LOCUS       AF224242S14              618 bp    DNA     linear   PRI 28-JAN-2003
+DEFINITION  Homo sapiens HERC2 (HERC2) gene, exon 69 and partial cds.
+ACCESSION   AF224255
+VERSION     AF224255.1  GI:27923068
+KEYWORDS    .
+SEGMENT     14 of 16
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 618)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Structure of the highly conserved HERC2 gene and of multiple
+            partially duplicated paralogs in human
+  JOURNAL   Genome Res. 10 (3), 319-329 (2000)
+   PUBMED   10720573
+REFERENCE   2  (bases 1 to 618)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JAN-2000) Genetics, Case Western Reserve University,
+            10900 Euclid Ave, Cleveland, OH 44106-4955, USA
+FEATURES             Location/Qualifiers
+     source          1..618
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13"
+     mRNA            join(AF224254.1:<1..21,592..>618)
+                     /gene="HERC2"
+                     /product="HERC2"
+     CDS             join(AF224254.1:<1..21,592..>618)
+                     /gene="HERC2"
+                     /codon_start=1
+                     /product="HERC2"
+                     /protein_id="AAO27479.1"
+                     /db_xref="GI:27923077"
+                     /translation="TMTKTKEDVESQNKAA"
+     exon            592..>618
+                     /gene="HERC2"
+                     /number=69
+ORIGIN      
+        1 gatgtggtat gtttaggctg acatggcagg aatgggaagt acacgagtgg taatgagaaa
+       61 gacttttatg tatgatgttt tcaatgaacc caaggagaga gagagactgg atagtgtgtt
+      121 aatgccagtg agttgcttga aataagattc caggaaagaa ttatggagag gatctagnca
+      181 aaatgtatac aattagagaa tacaaattta gtttgtaaac gattccctag cgtatcttat
+      241 gggtagatta tacaggatgc agcttcattc caaaactccc cctgtagtat ctgcttatga
+      301 tccaaacttg gtcccagtaa taaattgtca tttctttata gcttaagtca tccctttttg
+      361 ataaatgcca ttggtaatac aacagttaat tggtcttgaa aacatagtac atggcttggt
+      421 ggagatttta ggggccgtcg tttcttaatc tgtttcttaa ggtcttaaac accttcaggt
+      481 ttcttactcg ttggtattca tgtgttctct gagtttatgg gtaaactggt gactctttat
+      541 ctcttagcat atcattcctc atgttaaatt gttggatgtc atttgactta ggatgttgaa
+      601 agccaaaata aagcagca
+//

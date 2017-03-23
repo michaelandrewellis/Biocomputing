@@ -1,0 +1,149 @@
+LOCUS       HSRAB27A6               3532 bp    DNA     linear   PRI 16-NOV-1999
+DEFINITION  Homo sapiens Ras-like GTP-binding protein (RAB27A) gene, exon 6 and
+            complete cds; and alternative transcripts.
+ACCESSION   AF154840
+VERSION     AF154840.1  GI:5712734
+KEYWORDS    .
+SEGMENT     6 of 6
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 3532)
+  AUTHORS   Tolmachova,T., Ramalho,J.S., Anant,J.S., Schultz,R.A., Huxley,C.M.
+            and Seabra,M.C.
+  TITLE     Cloning, mapping and characterization of the human RAB27A gene
+  JOURNAL   Gene 239 (1), 109-116 (1999)
+   PUBMED   10571040
+REFERENCE   2  (bases 1 to 3532)
+  AUTHORS   Tolmachova,T., Ramalho,J.S., Huxley,C.M. and Seabra,M.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-MAY-1999) Molecular Genetics, Imperial College School
+            of Medicine, Sir Alexander Fleming Building, Imperial College Road,
+            London SW7 2AZ, UK
+FEATURES             Location/Qualifiers
+     source          1..3532
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15-q21.1"
+     gene            order(AF154835.1:1..2179,AF154836.1:1..5478,
+                     AF154837.1:1..1200,AF154838.1:1..1079,AF154839.1:1..1023,
+                     1..3013)
+                     /gene="RAB27A"
+     mRNA            join(AF154835.1:1196..1418,AF154836.1:734..822,
+                     AF154836.1:4270..4444,AF154837.1:657..742,
+                     AF154838.1:434..537,AF154839.1:572..695,274..3013)
+                     /gene="RAB27A"
+                     /product="Ras-like GTP-binding protein"
+     mRNA            join(AF154835.1:1196..1418,AF154836.1:734..822,
+                     AF154836.1:4270..4444,AF154837.1:657..742,
+                     AF154838.1:434..537,AF154839.1:572..695,274..2039)
+                     /gene="RAB27A"
+                     /product="Ras-like GTP-binding protein"
+                     /note="alternative transcript"
+     mRNA            join(AF154835.1:1196..1418,AF154836.1:734..822,
+                     AF154836.1:4270..4444,AF154837.1:657..742,
+                     AF154838.1:434..537,AF154839.1:572..695,274..630)
+                     /gene="RAB27A"
+                     /product="Ras-like GTP-binding protein"
+                     /note="alternative transcript"
+     CDS             join(AF154836.1:4292..4444,AF154837.1:657..742,
+                     AF154838.1:434..537,AF154839.1:572..695,274..472)
+                     /gene="RAB27A"
+                     /note="Rab27a/Ram"
+                     /codon_start=1
+                     /product="Ras-like GTP-binding protein"
+                     /protein_id="AAD47629.1"
+                     /db_xref="GI:5712736"
+                     /translation="MSDGDYDYLIKFLALGDSGVGKTSVLYQYTDGKFNSKFITTVGI
+                     DFREKRVVYRASGPDGATGRGQRIHLQLWDTAGQERFRSLTTAFFRDAMGFLLLFDLT
+                     NEQSFLNVRNWISQLQMHAYCENPDIVLCGNKSDLEDQRVVKEEEAIALAEKYGIPYF
+                     ETSAANGTNISQAIEMLLDLIMKRMERCVDKSWIPEGVVRSNGHASTDQLSEEKEKGA
+                     CGC"
+     exon            274..3013
+                     /gene="RAB27A"
+                     /number=6
+     exon            274..2039
+                     /gene="RAB27A"
+                     /note="alternate exon 6"
+                     /number=6
+     exon            274..630
+                     /gene="RAB27A"
+                     /note="alternate exon 6"
+                     /number=6
+     3'UTR           473..3013
+                     /gene="RAB27A"
+     3'UTR           473..2039
+                     /gene="RAB27A"
+                     /note="alternative"
+     3'UTR           473..630
+                     /gene="RAB27A"
+                     /note="alternative"
+     repeat_region   complement(2258..2532)
+                     /rpt_family="Alu"
+     repeat_region   complement(3172..3396)
+                     /rpt_family="Alu"
+ORIGIN      
+        1 tgagcctccc agagtgctgg gaggtgtgag ccactgcgcc cagccaaaaa ttgatatttt
+       61 gaagagtcta aaatttccag ttttgcatat ctactggaaa tgcagtgtga gtattttatt
+      121 gtctttttaa ctttttaatg tactctgggg tggtaaaatg tttgtcatct tgtatatttg
+      181 tattctatcg attctctaat ttgaattatc aagagcaaag gtcactctcc tttccctcca
+      241 catgttgtta cctcagttgt ctctgtcttc cagaatcccc tactttgaaa ctagtgctgc
+      301 caatgggaca aacataagcc aagcaattga gatgcttctg gacctgataa tgaagcgaat
+      361 ggaacggtgt gtggacaagt cctggattcc tgaaggagtg gtgcgatcaa atggtcatgc
+      421 ctctacggat cagttaagtg aagaaaagga gaaaggggca tgtggctgtt gagaagtcaa
+      481 gtaagtgaca tagtagttca ggtggcccat gcctgggatc ttctctatga ttgatacatg
+      541 gcacagtgag agattaatgg gcattgtgta caaattgctt ctcaccatcc ccattagacc
+      601 tacgaataaa gcatccggtt ctaaaattaa tttgttgcag ctttgtaaat atttctttaa
+      661 gattcagcct gagagttagg agaaatattt cagagccaaa agtgccttat acaaccttag
+      721 cctattatag taaatcattc aaggattcag aattttgcag tcacagaaga gtgtatttat
+      781 tatgtagaat gaatgagggt actgtcacct gccttaatgt aggtaggccc agagtcttac
+      841 atttaagatc ttacatgcag ttataaaacc gccacagtct tcaatccaga tttgaagact
+      901 catgccatag gtgacattct aaaataccat taaagccact taaatgttaa ataagaatat
+      961 acatgcacat cagctcaatg tctttgagta ttaattttat gtaagcattc tatttaacat
+     1021 gaatatagga caaatcatgg ctatatctat agaccttgga taaactggat tgaccaatta
+     1081 tacactcacg gtgacttttt tattggtggg aaggggattg gggtggggca ggctggctta
+     1141 atgtaatatg agcaaccaaa gtgggacttc tgtctccccg ctatattccc attgctctga
+     1201 atggttgatt gaagggtcag ggaactagat tttatggctt tagttcactg tgattgtaca
+     1261 tttatacttg gcctatgtgc tggccgcacc tgaacatagc tggtgcttat gccgagttat
+     1321 ttgtgatgag taaatattta gtttcttttt cttcatattt ataatgttga tctggcatcc
+     1381 tcaggctgca gctttattag cttataaatt actcatctct gtctttacca gcaggctctg
+     1441 tattgttgat atttgcaact tgttttgctt ttccattggt ggaattgaaa taattagttt
+     1501 ttaattacat aagatgcctg tttgctattt ggtggaagat agatgttcat attgaagcag
+     1561 tcacatttgt actgtagttc aataaaagaa aaatgaagta ttctgtagcc tatatttttc
+     1621 atagagctca tgagcattta ctgtacttgc tgggtcttgc caagatcatt tattccgctg
+     1681 cattgccaaa gtgtcttcat accaaattaa aggtggtttt aatatatgtt tcatggaagt
+     1741 tgtttataaa attcaaaggt atttcattta ggtgaaaagt cttatttatt aaagtggttt
+     1801 gaataaagta gatcaaaact tccagagatc ttaatggcta tataggaaga aatatcactc
+     1861 accataattt aaataaagaa taaaaataca tgtattttat ggtggcaaat gtttggtaga
+     1921 actgtaatta gaaaaataca agtatatttg cgtgatggtt acactagaag cccagacttt
+     1981 acgactacac aatatattca tgtatctaaa ctgtacttgt accccctaaa tttattttta
+     2041 aaaaaggaaa aataaaagta tcatgaaaaa acctattttt ttttccactg tccttccact
+     2101 actcccataa caaacttatc catggttggt aaaattttac atatttctat ccttgaaatg
+     2161 aaggcttctt ttaaattcca aagaagtcat ggaggcctgt gcatttgaat tgtatatgct
+     2221 agtgaggaaa agatttagac atttcaagag cagggttggc caggcgcggt ggctcacacc
+     2281 tgtaatccca gcactttggg aggccgagga gggcggatca cgaggtcagg agatcgagac
+     2341 catcctggct aacacagtga aaccccatct ctactaaaaa aaaaaaaaaa aaaaaaatgg
+     2401 gctgggcgtg gtggtgggca cctgtagtcc cagctactca ggaggctgag gcaggagaat
+     2461 ggcgtgaacc tgggaggcgg agcttgcagt gagccgagat tgcgccactg cactccagcc
+     2521 tgggggacag aggagactct gtctcaaaaa aaaaaaaaaa aaaaaagagc agggtcataa
+     2581 tcacacagca gtgccttata tagttgccat aagacttcag tgcagtacaa cataatttta
+     2641 cagctacata tcagggcata ttctatatgg tgtatttgtg ttagaataac acattaaatg
+     2701 tctttaaaca taaaaataag aatgtttgca tgtttcagtt ttcaagaacc aaatgagtaa
+     2761 ttagctatag attccactgg ccttaaacat acaattaagt gtatacatga tatagtgcac
+     2821 acacaaaagc cacctttaat tattgaaata acctgtattc tttttggaaa tcatttaagt
+     2881 ttggtattga agtactatat tttttgtgca tcaatgtatt tttctattta caagcctatg
+     2941 taaaagtgaa gtgtatcttc agtgaaccat gtgccaatta agctgtaata aaaaagtggt
+     3001 ctagtctgtc aaatttgtgt gtgaacgtaa ctgtatttat tatcacaaag tttcatacca
+     3061 gaggttgtaa tgccaaagga aatgaaattc agggatacac gttccattag gtgctcactg
+     3121 aggggccagc caagacaaca tattctggaa aagtaattaa aaatgttatc aggttgggcg
+     3181 cagtggctca cgcctgtaat cccagcactt tgggaggccg aggcaggcag atcacctgag
+     3241 gttgagagtt tgagaccagc ctgacaaaca tggagaaacc ccatctctac taaaaataca
+     3301 aaattagctg ggcgtggtgg cgcatgactg taaccccagc tacttgggag gctgaggcag
+     3361 gagaatcgct tgaacccagg aggcggaggt tgcactccag cctgggcaac aagagcaaaa
+     3421 ctctgtctca aaaaaaaaaa aaaagttatc aaacatatat taagcaccta tatttgggaa
+     3481 gtgttgtagt agacaatctc agataaacaa aacaaggatg attgaggcct ga
+//

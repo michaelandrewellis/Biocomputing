@@ -1,0 +1,73 @@
+LOCUS       AF225400S08              796 bp    DNA     linear   PRI 28-JAN-2003
+DEFINITION  Homo sapiens HERC2 (HERC2) gene, exon 88 and partial cds.
+ACCESSION   AF225407
+VERSION     AF225407.1  GI:27923087
+KEYWORDS    .
+SEGMENT     8 of 10
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 796)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Structure of the highly conserved HERC2 gene and of multiple
+            partially duplicated paralogs in human
+  JOURNAL   Genome Res. 10 (3), 319-329 (2000)
+   PUBMED   10720573
+REFERENCE   2  (bases 1 to 796)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-JAN-2000) Genetics, Case Western Reserve University,
+            10900 Euclid Ave., Cleveland, OH 44106-4955, USA
+FEATURES             Location/Qualifiers
+     source          1..796
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13"
+     mRNA            join(AF225405.1:<1..120,AF225405.1:512..673,
+                     AF225405.1:2181..2272,AF225405.1:2473..2612,
+                     AF225405.1:7584..7771,AF225405.1:8542..8739,
+                     AF225405.1:11346..11429,AF225406.1:1288..1429,697..>796)
+                     /gene="HERC2"
+                     /product="HERC2"
+     CDS             join(AF225405.1:<1..120,AF225405.1:512..673,
+                     AF225405.1:2181..2272,AF225405.1:2473..2612,
+                     AF225405.1:7584..7771,AF225405.1:8542..8739,
+                     AF225405.1:11346..11429,AF225406.1:1288..1429,697..>796)
+                     /gene="HERC2"
+                     /codon_start=1
+                     /product="HERC2"
+                     /protein_id="AAO27483.1"
+                     /db_xref="GI:27923092"
+                     /translation="AAGGAHSACVTAAGDLYTWGKGRYGRLGHSDSEDQLKPKLVEAL
+                     QGHRVVDIACGSGDAQTLCLTDDDTVWSWGDGDYGKLGRGGSDGCKVPMKIDSLTGLG
+                     VVKVECGSQFSVALTKSGAVYTWGKGDYHRLGHGSDDHVRRPRQVQGLQGKKVIAIAT
+                     GSLHCVCCTEDGEVYTWGDNDEGQLGDGTTNAIQRPRLVAALQGKKVNRVACGSAHTL
+                     AWSTSKPASAGKLPAQVPMEYNHLQEIPIIALRNRLLLLHHLSELFCPCIPMFDLEGS
+                     LDETGLGPSVGFDTLRGILISQGKEAAFRKVVQATMVRDRQHGPVVELNRIQVKRSRS
+                     KGGLAGPDGTKSVFGQMCAKMSSFGPDSLLLPHRVWKVKFVGESVDDCGGGYSESIAE
+                     ICEELQNGLTPLLIVTP"
+     exon            697..>796
+                     /gene="HERC2"
+                     /number=88
+ORIGIN      
+        1 agnntngaac aagggggggn accacncgng ggnccacaaa tntggtgaac ggtgggngnn
+       61 nggttgtnaa tacntnttna aaaggttgtn tttttgttna aacaacacan nngntcttgg
+      121 gggggaattn ntggggnaaa aanacantgg cnaaaaaatg gcccnaaatg ggggnggaga
+      181 caggggttnc tcnggggtgt nncacaaacc canagcgccc caaagagcgn caggngtctn
+      241 cctgnccnnn cacnacnaag caggtgttgt gacccaggna aggggnccaa ngcacgggtg
+      301 ccctccctcn tggngcattc gccagtcccg aaatatcccc gtntgtgtgn ttcngggggc
+      361 gncagcggcc tcaagtttgc ttncttcctc ctctnnaggt caaangatca agnaccaaag
+      421 gcgggctgcc cggccccaan nacacnaagt ntgtctttgg gcatatgtgt aanaaaatga
+      481 nctgngtttg gtncnanaca cccncctcct tcctnacngt gtatgnaaag tnaagtnngt
+      541 gggnnaganc ttgccatgtg ctgaaagcac ntgtgtcccc ggcagtggtc gcctnagccc
+      601 acagggagca cagagcccac atggtgtggg agcgttgggg ctctctttac acaggactgt
+      661 gtgaggggac ttcgagtggc tgcttctccc ctgcaggtga atctgtggat gactgtgggg
+      721 gcggctacag cgagtccata gctgagatct gtgaggagct gcagaacgga ctcacgcccc
+      781 tgctgatcgt gacacc
+//

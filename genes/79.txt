@@ -1,0 +1,163 @@
+LOCUS       F314931S26               783 bp    DNA     linear   PRI 18-OCT-2002
+DEFINITION  Homo sapiens potassium-chloride transporter 3 (SLC12A6) gene, exon
+            25 and complete cds, alternatively spliced.
+ACCESSION   AF314956
+VERSION     AF314956.1  GI:22416426
+KEYWORDS    .
+SEGMENT     26 of 26
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 783)
+  AUTHORS   Howard,H.C., Mount,D.B., Rochefort,D., Byun,N., Dupre,N., Lu,J.,
+            Fan,X., Song,L., Riviere,J.B., Prevost,C., Horst,J., Simonati,A.,
+            Lemcke,B., Welch,R., England,R., Zhan,F.Q., Mercado,A.,
+            Siesser,W.B., George,A.L. Jr., McDonald,M.P., Bouchard,J.P.,
+            Mathieu,J., Delpire,E. and Rouleau,G.A.
+  TITLE     The K-Cl cotransporter KCC3 is mutant in a severe peripheral
+            neuropathy associated with agenesis of the corpus callosum
+  JOURNAL   Nat. Genet. 32 (3), 384-392 (2002)
+   PUBMED   12368912
+  REMARK    Erratum:[Nat Genet 2002 Dec;32(4):681]
+REFERENCE   2  (bases 1 to 783)
+  AUTHORS   Mount,D.B.
+  TITLE     Genomic structure of human KCC3
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 783)
+  AUTHORS   Mount,D.B.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-OCT-2000) Medicine, Vanderbilt University Medical
+            Center, S-3223 Medical Center North, VUMC, Nashville, TN
+            37232-2372, USA
+FEATURES             Location/Qualifiers
+     source          1..783
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q14"
+     gene            order(AF314931.1:<165..489,AF314932.1:1..291,
+                     AF314933.1:1..299,AF314934.1:1..366,AF314935.1:1..342,
+                     AF314936.1:1..278,AF314937.1:1..167,AF314938.1:1..359,
+                     AF314939.1:1..402,AF314940.1:1..363,AF314941.1:1..291,
+                     AF314942.1:1..250,AF314943.1:1..205,AF314944.1:1..304,
+                     AF314945.1:1..249,AF314946.1:1..255,AF314947.1:1..251,
+                     AF314948.1:1..313,AF314949.1:1..305,AF314950.1:1..323,
+                     AF314951.1:1..312,AF314952.1:1..335,AF314953.1:1..235,
+                     AF314954.1:1..335,AF314955.1:1..274,1..783)
+                     /gene="SLC12A6"
+                     /note="KCC3"
+     mRNA            join(AF314931.1:<165..435,AF314933.1:110..154,
+                     AF314934.1:124..218,AF314935.1:72..203,AF314936.1:54..200,
+                     AF314937.1:56..110,AF314938.1:104..234,AF314939.1:92..333,
+                     AF314940.1:76..290,AF314941.1:68..226,AF314942.1:85..183,
+                     AF314943.1:81..138,AF314944.1:67..241,AF314945.1:65..183,
+                     AF314946.1:88..186,AF314947.1:72..191,AF314948.1:104..208,
+                     AF314949.1:77..245,AF314950.1:62..257,AF314951.1:83..252,
+                     AF314952.1:104..235,AF314953.1:59..166,AF314954.1:83..267,
+                     AF314955.1:79..212,73..783)
+                     /gene="SLC12A6"
+                     /product="potassium-chloride transporter-3a"
+     CDS             join(AF314931.1:165..435,AF314933.1:110..154,
+                     AF314934.1:124..218,AF314935.1:72..203,AF314936.1:54..200,
+                     AF314937.1:56..110,AF314938.1:104..234,AF314939.1:92..333,
+                     AF314940.1:76..290,AF314941.1:68..226,AF314942.1:85..183,
+                     AF314943.1:81..138,AF314944.1:67..241,AF314945.1:65..183,
+                     AF314946.1:88..186,AF314947.1:72..191,AF314948.1:104..208,
+                     AF314949.1:77..245,AF314950.1:62..257,AF314951.1:83..252,
+                     AF314952.1:104..235,AF314953.1:59..166,AF314954.1:83..267,
+                     AF314955.1:79..212,73..164)
+                     /gene="SLC12A6"
+                     /note="KCC3a"
+                     /codon_start=1
+                     /product="potassium-chloride transporter-3a"
+                     /protein_id="AAM96215.1"
+                     /db_xref="GI:22416427"
+                     /translation="MHPPETTTKMASVRFMVTPTKIDDIPGLSDTSPDLSSRSSSRVR
+                     FSSRESVPETSRSEPMSEMSGATTSLATVALDPPSDRTSHPQDVIEDLSQNSITGEHS
+                     QLLDDGHKKARNAYLNNSNYEEGDEYFDKNLALFEEEMDTRPKVSSLLNRMANYTNLT
+                     QGAKEHEEAENITEGKKKPTKTPQMGTFMGVYLPCLQNIFGVILFLRLTWVVGTAGVL
+                     QAFAIVLICCCCTMLTAISMSAIATNGVVPAGGSYFMISRALGPEFGGAVGLCFYLGT
+                     TFAAAMYILGAIEIFLVYIVPRAAIFHSDDALKESAAMLNNMRVYGTAFLVLMVLVVF
+                     IGVRYVNKFASLFLACVIVSILAIYAGAIKSSFAPPHFPVCMLGNRTLSSRHIDVCSK
+                     TKEINNMTVPSKLWGFFCNSSQFFNATCDEYFVHNNVTSIQGIPGLASGIITENLWSN
+                     YLPKGEIIEKPSAKSSDVLGSLNHEYVLVDITTSFTLLVGIFFPSVTGIMAGSNRSGD
+                     LKDAQKSIPIGTILAILTTSFVYLSNVVLFGACIEGVVLRDKFGDAVKGNLVVGTLSW
+                     PSPWVIVIGSFFSTCGAGLQSLTGAPRLLQAIAKDNIIPFLRVFGHSKANGEPTWALL
+                     LTAAIAELGILIASLDLVAPILSMFFLMCYLFVNLACALQTLLRTPNWRPRFRYYHWA
+                     LSFMGMSICLALMFISSWYYAIVAMVIAGMIYKYIEYQGAEKEWGDGIRGLSLSAARF
+                     ALLRLEEGPPHTKNWRPQLLVLLKLDEDLHVKHPRLLTFASQLKAGKGLTIVGSVIVG
+                     NFLENYGEALAAEQTIKHLMEAEKVKGFCQLVVAAKLREGISHLIQSCGLGGMKHNTV
+                     VMGWPNGWRQSEDARAWKTFIGTVRVTTAAHLALLVAKNISFFPSNVEQFSEGNIDVW
+                     WIVHDGGMLMLLPFLLKQHKVWRKCSIRIFTVAQLEDNSIQMKKDLATFLYHLRIEAE
+                     VEVVEMHDSDISAYTYERTLMMEQRSQMLRHMRLSKTERDREAQLVKDRNSMLRLTSI
+                     GSDEDEETETYQEKVHMTWTKDKYMASRGQKAKSMEGFQDLLNMRPDQSNVRRMHTAV
+                     KLNEVIVNKSHEAKLVLLNMPGPPRNPEGDENYMEFLEVLTEGLERVLLVRGGGSEVI
+                     TIYS"
+     mRNA            join(AF314932.1:<52..169,AF314933.1:110..154,
+                     AF314934.1:124..218,AF314935.1:72..203,AF314936.1:54..200,
+                     AF314937.1:56..110,AF314938.1:104..234,AF314939.1:92..333,
+                     AF314940.1:76..290,AF314941.1:68..226,AF314942.1:85..183,
+                     AF314943.1:81..138,AF314944.1:67..241,AF314945.1:65..183,
+                     AF314946.1:88..186,AF314947.1:72..191,AF314948.1:104..208,
+                     AF314949.1:77..245,AF314950.1:62..257,AF314951.1:83..252,
+                     AF314952.1:104..235,AF314953.1:59..166,AF314954.1:83..267,
+                     AF314955.1:79..212,73..783)
+                     /gene="SLC12A6"
+                     /product="potassium-chloride transporter-3b"
+     CDS             join(AF314932.1:52..169,AF314933.1:110..154,
+                     AF314934.1:124..218,AF314935.1:72..203,AF314936.1:54..200,
+                     AF314937.1:56..110,AF314938.1:104..234,AF314939.1:92..333,
+                     AF314940.1:76..290,AF314941.1:68..226,AF314942.1:85..183,
+                     AF314943.1:81..138,AF314944.1:67..241,AF314945.1:65..183,
+                     AF314946.1:88..186,AF314947.1:72..191,AF314948.1:104..208,
+                     AF314949.1:77..245,AF314950.1:62..257,AF314951.1:83..252,
+                     AF314952.1:104..235,AF314953.1:59..166,AF314954.1:83..267,
+                     AF314955.1:79..212,73..164)
+                     /gene="SLC12A6"
+                     /note="KCC3b"
+                     /codon_start=1
+                     /product="potassium-chloride transporter-3b"
+                     /protein_id="AAM96216.1"
+                     /db_xref="GI:22416428"
+                     /translation="MPHFTVTKVEDPEEGAAASISQEPSLADIKARIQDSDEPDLSQN
+                     SITGEHSQLLDDGHKKARNAYLNNSNYEEGDEYFDKNLALFEEEMDTRPKVSSLLNRM
+                     ANYTNLTQGAKEHEEAENITEGKKKPTKTPQMGTFMGVYLPCLQNIFGVILFLRLTWV
+                     VGTAGVLQAFAIVLICCCCTMLTAISMSAIATNGVVPAGGSYFMISRALGPEFGGAVG
+                     LCFYLGTTFAAAMYILGAIEIFLVYIVPRAAIFHSDDALKESAAMLNNMRVYGTAFLV
+                     LMVLVVFIGVRYVNKFASLFLACVIVSILAIYAGAIKSSFAPPHFPVCMLGNRTLSSR
+                     HIDVCSKTKEINNMTVPSKLWGFFCNSSQFFNATCDEYFVHNNVTSIQGIPGLASGII
+                     TENLWSNYLPKGEIIEKPSAKSSDVLGSLNHEYVLVDITTSFTLLVGIFFPSVTGIMA
+                     GSNRSGDLKDAQKSIPIGTILAILTTSFVYLSNVVLFGACIEGVVLRDKFGDAVKGNL
+                     VVGTLSWPSPWVIVIGSFFSTCGAGLQSLTGAPRLLQAIAKDNIIPFLRVFGHSKANG
+                     EPTWALLLTAAIAELGILIASLDLVAPILSMFFLMCYLFVNLACALQTLLRTPNWRPR
+                     FRYYHWALSFMGMSICLALMFISSWYYAIVAMVIAGMIYKYIEYQGAEKEWGDGIRGL
+                     SLSAARFALLRLEEGPPHTKNWRPQLLVLLKLDEDLHVKHPRLLTFASQLKAGKGLTI
+                     VGSVIVGNFLENYGEALAAEQTIKHLMEAEKVKGFCQLVVAAKLREGISHLIQSCGLG
+                     GMKHNTVVMGWPNGWRQSEDARAWKTFIGTVRVTTAAHLALLVAKNISFFPSNVEQFS
+                     EGNIDVWWIVHDGGMLMLLPFLLKQHKVWRKCSIRIFTVAQLEDNSIQMKKDLATFLY
+                     HLRIEAEVEVVEMHDSDISAYTYERTLMMEQRSQMLRHMRLSKTERDREAQLVKDRNS
+                     MLRLTSIGSDEDEETETYQEKVHMTWTKDKYMASRGQKAKSMEGFQDLLNMRPDQSNV
+                     RRMHTAVKLNEVIVNKSHEAKLVLLNMPGPPRNPEGDENYMEFLEVLTEGLERVLLVR
+                     GGGSEVITIYS"
+     exon            73..783
+                     /gene="SLC12A6"
+                     /number=25
+ORIGIN      
+        1 cctcagatta tgatgatgcc aggttttaag tttgtgctct tcttttgcct gtctccttga
+       61 caagttttga agacatggag ttcctagagg tgcttaccga gggactagag cgagtcctac
+      121 ttgtccgggg tggtggcagt gaagtgatca ccatttattc ataacctact ctgaatgacc
+      181 gtgcttgacc tgttttctta aaaggcctac gtcctccatg gaagtgccag ctcattacta
+      241 ccactcccac tcaactagaa gcctgtgttc tgtacacatc atactgaact cttgatgagc
+      301 tgagcctcaa gtacctgtgt aaaagagctc ccatctgatc tgcagtcatt acagaaaaag
+      361 caaatattcc ctcaacatca gaacaatgct caagtctttc aagccactgt ctgagcagtc
+      421 aaaggcaaat tagaattaac aagctgagcc aataaatgaa ttggtaaaag ggatgctaga
+      481 aattcaactg aagaaaaaaa gcaagtcaag tacgtattca gcattaaaga tgaatctcag
+      541 aagtcatggt tcaatgttga cactgtgagg ataacaacta gagacagctt catcttacta
+      601 aagaatttat ggtcaagtat atttggacct attatcctcg gcaagccaag atgcaaacat
+      661 tttttagcta tatttcttta gtatacccac tgctgtaatt ttatattagg atactaactt
+      721 gaaacatggc tgcagcctct acttcttcaa aaacatcccc ccaaaatacc agatttaaat
+      781 atc
+//

@@ -1,0 +1,87 @@
+LOCUS       AJ001108                1612 bp    DNA     linear   PRI 14-NOV-2006
+DEFINITION  Homo sapiens UBE3A gene, exon 9.
+ACCESSION   AJ001108
+VERSION     AJ001108.1  GI:3421152
+KEYWORDS    E6-AP gene; UBE3A gene; ubiquitin-protein ligase.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Hennies,H.C., Buerger,J., Sperling,K. and Reis,A.
+  TITLE     Mutations in the E6-AP gene (UBE3A) in patients with Angelman
+            syndrome
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1612)
+  AUTHORS   Hennies,H.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-1997) Hennies H.C., Institute of Human Genetics,
+            Charite, Humboldt University, Augustenburger Platz 1, Berlin,
+            D-13353, GERMANY
+FEATURES             Location/Qualifiers
+     source          1..1612
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="q11-q13"
+                     /clone="PAC 14I12"
+     gene            <306..>1552
+                     /gene="UBE3A"
+     CDS             <306..>1552
+                     /gene="UBE3A"
+                     /codon_start=3
+                     /product="E6-AP ubiquitin-protein ligase"
+                     /protein_id="CAA04535.1"
+                     /db_xref="GI:3421153"
+                     /db_xref="GDB:228487"
+                     /db_xref="GOA:Q05086"
+                     /db_xref="HGNC:12496"
+                     /db_xref="InterPro:IPR000569"
+                     /db_xref="InterPro:IPR017134"
+                     /db_xref="PDB:1C4Z"
+                     /db_xref="PDB:1D5F"
+                     /db_xref="PDB:1EQX"
+                     /db_xref="PDB:2KR1"
+                     /db_xref="UniProtKB/Swiss-Prot:Q05086"
+                     /translation="VTYLTEEKVYEILELCREREDYSPLIRVIGRVFSSAEALVQSFR
+                     KVKQHTKEELKSLQAKDEDKDEDEKEKAACSAAAMEEDSEASSSRIGDSSQGDNNLQK
+                     LGPDDVSVDIDAIRRVYTRLLSNEKIETAFLNALVYLSPNVECDLTYHNVYSRDPNYL
+                     NLFIIGMENRNLHSPEYLEMALPLFCKAMSKLPLAAQGKLIRLWSKYNADQIRRMMET
+                     FQQLITYKVISNEFNSRNLVNDDDAIVAASKCLKMVYYANVVGGEVDTNHNEEDDEEP
+                     IPESSELTLQELLGEERRNKKGPRVDPLETELGVKTLDCRKPLIPFEEFINEPLNEVL
+                     EMDKDYTFFKVETENKFSFMTCPFILNAVTKNLGLYYDNRIRMYSERRITVLYSLVQG
+                     QQLNPYLRLKVRRDHIIDDALVR"
+     exon            306..1552
+                     /gene="UBE3A"
+                     /number=9
+ORIGIN      
+        1 tatacattaa tagatatctt gattataaag aagtttaaac tcatgatctt attaagagtt
+       61 atacattgtt gaaagaatgt aaaagcatgg gtgaggtcat tggtataggt aggtagttca
+      121 ttgaaaaaaa taggtaagca ttaaattttg tttgctgaat ctaagtatta gatactttaa
+      181 gagttgtata tcataaatga tattgagcct agaatgtttg gctgttttac ttttagaact
+      241 ttttgcaaca gagtaaacat acatattatg aaataaatgt tctctttttt cctctgattt
+      301 tctagatgtg acttacttaa cagaagagaa ggtatatgaa attcttgaat tatgtagaga
+      361 aagagaggat tattcccctt taatccgtgt tattggaaga gttttttcta gtgctgaggc
+      421 attggtacag agcttccgga aagttaaaca acacaccaag gaagaactga aatctcttca
+      481 agcaaaagat gaagacaaag atgaagatga aaaggaaaaa gctgcatgtt ctgctgctgc
+      541 tatggaagaa gactcagaag catcttcctc aaggataggt gatagctcac agggagacaa
+      601 caatttgcaa aaattaggcc ctgatgatgt gtctgtggat attgatgcca ttagaagggt
+      661 ctacaccaga ttgctctcta atgaaaaaat tgaaactgcc tttctcaatg cacttgtata
+      721 tttgtcacct aacgtggaat gtgacttgac gtatcacaat gtatactctc gagatcctaa
+      781 ttatctgaat ttgttcatta tcggaatgga gaatagaaat ctccacagtc ctgaatatct
+      841 ggaaatggct ttgccattat tttgcaaagc gatgagcaag ctaccccttg cagcccaagg
+      901 aaaactgatc agactgtggt ctaaatacaa tgcagaccag attcggagaa tgatggagac
+      961 atttcagcaa cttattactt ataaagtcat aagcaatgaa tttaacagtc gaaatctagt
+     1021 gaatgatgat gatgccattg ttgctgcttc gaagtgcttg aaaatggttt actatgcaaa
+     1081 tgtagtggga ggggaagtgg acacaaatca caatgaagaa gatgatgaag agcccatccc
+     1141 tgagtccagc gagctgacac ttcaggaact tttgggagaa gaaagaagaa acaagaaagg
+     1201 tcctcgagtg gaccccctgg aaactgaact tggtgttaaa accctggatt gtcgaaaacc
+     1261 acttatccct tttgaagagt ttattaatga accactgaat gaggttctag aaatggataa
+     1321 agattatact tttttcaaag tagaaacaga gaacaaattc tcttttatga catgtccctt
+     1381 tatattgaat gctgtcacaa agaatttggg attatattat gacaatagaa ttcgcatgta
+     1441 cagtgaacga agaatcactg ttctctacag cttagttcaa ggacagcagt tgaatccata
+     1501 tttgagactc aaagttagac gtgaccatat catagatgat gcacttgtcc gggtaagttg
+     1561 ggctgctaga ttaaaaacct aataatgggg atatcatgat acagttcagt ga
+//

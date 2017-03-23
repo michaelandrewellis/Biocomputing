@@ -1,0 +1,50 @@
+LOCUS       U86233                   636 bp    DNA     linear   PRI 02-MAR-1998
+DEFINITION  Homo sapiens olfactory receptor (OR15-82) pseudogene, partial
+            sequence.
+ACCESSION   U86233
+VERSION     U86233.1  GI:2921648
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 636)
+  AUTHORS   Rouquier,S., Taviaux,S., Trask,B.J., Brand-Arpon,V., van den
+            Engh,G., Demaille,J. and Giorgi,D.
+  TITLE     Distribution of olfactory receptor genes in the human genome
+  JOURNAL   Nat. Genet. 18 (3), 243-250 (1998)
+   PUBMED   9500546
+REFERENCE   2  (bases 1 to 636)
+  AUTHORS   Giorgi,D.G. and Rouquier,S.P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-JAN-1997) CRBM, CNRS ERS 155, 1919, route de Mende,
+            BP 5051, Montpellier 34033 Cedex, France
+FEATURES             Location/Qualifiers
+     source          1..636
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /clone="15-82"
+     gene            <1..>636
+                     /gene="OR15-82"
+                     /note="olfactory receptor"
+                     /pseudo
+     CDS             <1..>636
+                     /gene="OR15-82"
+                     /pseudo
+                     /codon_start=2
+ORIGIN      
+        1 tcttgtggac attgcctgtt cctcagccac agcacccaag atgattgaag actttgtttc
+       61 tgagaaaaag actatttcct actggggctg tataactcag atgtttacct tccacttttt
+      121 tggttgtgct gagatttttg tcttgactgt catggctttt gatcgctatg ctgctatctg
+      181 ccaacccctc cgttacactg tcatcatgag tgctaatgct tatactgtgc tggcatcact
+      241 gtcctggttg ggggccctgg gtcattcctt tgttcagacc gtcctgacct tccagctgcc
+      301 cttctgtaat gctcaggtta tagaccatta cttttgtgat gtccacccag tcctaaaact
+      361 tgcctgtgct gatacaactc tggtaaatat gttggtggtt gccaacagtg gtctcatctc
+      421 cctggggtgt ttcctcattc ttttggcctc ctacacagtc attctgctta gtcttcaaaa
+      481 acagtctgca gagagctgac acaaagttct ctctacctgt ggatctcatc tgactatagt
+      541 aactttcttc tttgttccgt gtatctttat ttatctccat ccactacttt cccattggat
+      601 aaagctgtgt ctgtgttcta taccaccatc acccca
+//

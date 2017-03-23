@@ -1,0 +1,76 @@
+LOCUS       AJ005333                1600 bp    DNA     linear   PRI 14-NOV-2006
+DEFINITION  Homo sapiens NKCC2 gene, exon 4, isoform F.
+ACCESSION   AJ005333
+VERSION     AJ005333.1  GI:3688377
+KEYWORDS    Na-K-2Cl cotransporter; NKCC2 gene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Vargas-Poussou,R., Feldmann,D., Vollmer,M., Konrad,M., Kelly,L.,
+            van den Heuvel,L.P.W.J., Tebourbi,L., Brandis,M., Karolyi,L.,
+            Hebert,S., Lemmink,H., Deschenes,G., Hildebrandt,F., Seyberth,H.,
+            Guay-Woodford,L., Knoers,N.A.V.M. and Antignac,C.
+  TITLE     Novel molecular variants of the Na-K-2Cl cotransporter gene are
+            responsible for antenatal Bartter syndrome
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1600)
+  AUTHORS   Antignac,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-APR-1998) Antignac C., INSERM, U 423, tour lavoisier,
+            6eme etage, hopital Necker-Enfants malades, 149 rue de Sevres, 75
+            015 Paris, FRANCE
+FEATURES             Location/Qualifiers
+     source          1..1600
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     gene            <270..>365
+                     /gene="NKCC2"
+     mRNA            <270..>365
+                     /gene="NKCC2"
+     CDS             <270..>365
+                     /gene="NKCC2"
+                     /codon_start=3
+                     /product="Na-K-2Cl cotransporter"
+                     /protein_id="CAA06480.1"
+                     /db_xref="GI:3688378"
+                     /db_xref="HGNC:10910"
+                     /db_xref="UniProtKB/TrEMBL:O76030"
+                     /translation="LGVIIIGLSVVVTTLTGISMSAICTNGVVRG"
+     exon            270..365
+                     /gene="NKCC2"
+                     /note="isoform F"
+                     /number=4
+ORIGIN      
+        1 ttccttaggt aaactttttc tttttcaggc tagtctgcac acctctagct gatgttcctt
+       61 ggaaactgat tccagatttg gcttctgttt taacgtttag tacatttcag gtgcttccta
+      121 gaccttcatg aaatgggatc ttttagaaca tttcaggttt tcacagggag gtggatcttt
+      181 ctgtgacaag attcagactg ctgcctcctg aagtactggt gggttctctc agtactggaa
+      241 ccaaacacct ttcttggggg attttgcagg tcttggagtc atcatcattg gcctaagtgt
+      301 ggtagtaacg acactcacag gtatttctat gtctgctatt tgcacgaatg gagtagtaag
+      361 aggaggtaag ccaattaatt tacttatgac tagaggcttg gttactagta atgtctggag
+      421 ttaatttact attggaagtg aaagtaacat attgctaatt agtccccagt gtcctaaaca
+      481 aaataaccca aaatttaaac agcaaagcaa aatttttctc aactaaaatt ggaatatctt
+      541 cattgacatg acccatttct tgtaacaaaa catgtttata aagtggagag tgactatgtg
+      601 tctagtaaga aggtatggaa tattatagca aaatatatgg tttctttgta ccttggatga
+      661 gaccactggc tctctcgcag gtcctctcag catgggtctt ctccaatgcc ccagatggca
+      721 ttgctgatga ttgccactca gtaaaccact cctgcaccca ggcctcgggg ctcaccccaa
+      781 acgctgtgct cccaatgacc aacaggcaag ggaagatcat tagaagggaa taaacaaata
+      841 aataagcaaa gagttacttt caaataatct aggagtaggc aggcctaggc agaaagtgaa
+      901 atggatgaaa tgtattgttg ttctgtcttc ctttgttccc cctccccttc ccctttggtt
+      961 tctctggttc tctacttcgg caccttatcc aggtcttcct actcagggcc ttctaaaaca
+     1021 tcctgcccac aacacacttc cactctcaac ttctgcctgt ctctcatgtt gatccagccc
+     1081 acctaggtaa ctgactagct cacttgttta aggtgatctg tataaaggaa ataatgggga
+     1141 tttgctccac ccagacaata tgctacattt ttagacagga ctttgacccc tgagcccaaa
+     1201 agagttacta tagtgaaaga aatttctctc agcaaaaagt aattttgttt tgtctttagg
+     1261 tatgttggtt tgtcattgct gtgccaactc tgcctacctc caaagccagc tctgtatagg
+     1321 aagtcataat cttactatgg tctgtgataa tcagacctcc taacatctag tgcttttcac
+     1381 cttcaataag ctgccctagg tacccttttg gcatttgacc aatctagttc aatccttcat
+     1441 atgcacagaa gtatgcaact atatataatt aatagaacta ttttttcaat gtccgaggga
+     1501 gaagtaattg ttccagaccc tccccacttt tcttcccact tgcaactccc aaacactgtg
+     1561 ctctcagtgg ccaacaggca agagacctac ttgtcacacc
+//

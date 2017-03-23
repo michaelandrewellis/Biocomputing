@@ -1,0 +1,180 @@
+LOCUS       HSMEF2A10               4508 bp    DNA     linear   PRI 21-OCT-1996
+DEFINITION  Human myocyte-specific enhancer factor 2A (MEF2A) gene, last coding
+            exon, and complete cds.
+ACCESSION   U49020
+VERSION     U49020.1  GI:1197535
+KEYWORDS    transcription factor; MADS domain.
+SEGMENT     10 of 10
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 4508)
+  AUTHORS   Suzuki,E., Lowry,J., Sonoda,G., Testa,J.R. and Walsh,K.
+  TITLE     Structures and chromosome locations of the human MEF2A gene and a
+            pseudogene MEF2AP
+  JOURNAL   Cytogenet. Cell Genet. 73 (3), 244-249 (1996)
+   PUBMED   8697817
+REFERENCE   2  (bases 1 to 4508)
+  AUTHORS   Walsh,K., Suzuki,E. and Lowry,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-JAN-1996) Kenneth Walsh, Cardiovascular Research, St.
+            Elizabeth's Medical Center, 736 Cambridge Street, Brighton, MA
+            02135, USA
+REFERENCE   3  (bases 1 to 4508)
+  AUTHORS   Walsh,K., Suzuki,E. and Lowry,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-FEB-1996) Kenneth Walsh, Cardiovascular Research, St.
+            Elizabeth's Medical Center, 736 Cambridge Street, Brighton, MA
+            02135, USA
+FEATURES             Location/Qualifiers
+     source          1..4508
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q26"
+     gene            join(U44889.1:1..1232,U49012.1:1..847,U49013.1:1..961,
+                     U49014.1:1..842,U49015.1:1..688,U49016.1:1..857,
+                     U49017.1:1..837,U49018.1:1..851,U49019.1:1..835,1..4269)
+                     /gene="MEF2A"
+     mRNA            join(U44889.1:<668..863,U49012.1:227..430,
+                     U49013.1:352..483,U49014.1:404..623,U49015.1:360..419,
+                     U49016.1:347..534,U49017.1:400..423,U49018.1:436..562,
+                     U49019.1:358..484,225..4269)
+                     /gene="MEF2A"
+                     /note="C9 form"
+     mRNA            join(U44889.1:<668..863,U49012.1:227..430,
+                     U49013.1:549..686,U49014.1:404..623,U49015.1:360..419,
+                     U49016.1:347..534,U49017.1:400..423,U49018.1:436..562,
+                     U49019.1:358..484,225..4269)
+                     /gene="MEF2A"
+                     /note="C4 form"
+     CDS             join(U44889.1:810..863,U49012.1:227..430,
+                     U49013.1:352..483,U49014.1:404..623,U49015.1:360..419,
+                     U49016.1:347..534,U49017.1:400..423,U49018.1:436..562,
+                     U49019.1:358..484,225..603)
+                     /gene="MEF2A"
+                     /codon_start=1
+                     /product="myocyte-specific enhancer factor 2A, C9 form"
+                     /protein_id="AAB17195.1"
+                     /db_xref="GI:1197537"
+                     /translation="MGRKKIQITRIMDERNRQVTFTKRKFGLMKKAYELSVLCDCEIA
+                     LIIFNSSNKLFQYASTDMDKVLLKYTEYNEPHESRTNSDIVETLRKKGLNGCESPDAD
+                     DYFEHSPLSEDRFSKLNEDSDFIFKRGPPGLPPQNFSMSVTVPVTSPNALSYTNPGSS
+                     LVSPSLAASSTLTDSSMLSPPQTTLHRNVSPGAPQRPPSTGNAGGMLSTTDLTVPNGA
+                     GSSPVGNGFVNSRASPNLIGATGANSLGKVMPTKSPPPPGGGNLGMNSRKPDLRVVIP
+                     PSSKGMMPPLSEEEELELNTQRISSSQATQPLATPVVSVTTPSLPPQGLVYSAMPTAY
+                     NTDYSLTSADLSALQGFNSPGMLSLGQVSAWQQHHLGQAALSSLVAGGQLSQGSNLSI
+                     NTNQNISIKSEPISPPRDRMTPSGFQQQQQQQQQQPPPPPQPQPQPPQPQPRQEMGRS
+                     PVDSLSSSSSSYDGSDREDPRGDFHSPIVLGRPPNTEDRESPSVKRMRMDAWVT"
+     CDS             join(U44889.1:810..863,U49012.1:227..430,
+                     U49013.1:549..686,U49014.1:404..623,U49015.1:360..419,
+                     U49016.1:347..534,U49017.1:400..423,U49018.1:436..562,
+                     U49019.1:358..484,225..603)
+                     /gene="MEF2A"
+                     /codon_start=1
+                     /product="myocyte-specific enhancer factor 2A, C4 form"
+                     /protein_id="AAB17196.1"
+                     /db_xref="GI:1197538"
+                     /translation="MGRKKIQITRIMDERNRQVTFTKRKFGLMKKAYELSVLCDCEIA
+                     LIIFNSSNKLFQYASTDMDKVLLKYTEYNEPHESRTNSDIVEALNKKEHRGCDSPDPD
+                     TSYVLTPHTEEKYKKINEEFDNMMRNHKIAPGLPPQNFSMSVTVPVTSPNALSYTNPG
+                     SSLVSPSLAASSTLTDSSMLSPPQTTLHRNVSPGAPQRPPSTGNAGGMLSTTDLTVPN
+                     GAGSSPVGNGFVNSRASPNLIGATGANSLGKVMPTKSPPPPGGGNLGMNSRKPDLRVV
+                     IPPSSKGMMPPLSEEEELELNTQRISSSQATQPLATPVVSVTTPSLPPQGLVYSAMPT
+                     AYNTDYSLTSADLSALQGFNSPGMLSLGQVSAWQQHHLGQAALSSLVAGGQLSQGSNL
+                     SINTNQNISIKSEPISPPRDRMTPSGFQQQQQQQQQQPPPPPQPQPQPPQPQPRQEMG
+                     RSPVDSLSSSSSSYDGSDREDPRGDFHSPIVLGRPPNTEDRESPSVKRMRMDAWVT"
+     intron          <1..224
+                     /gene="MEF2A"
+     exon            225..4269
+                     /gene="MEF2A"
+                     /note="eleventh coding exon"
+     3'UTR           604..4269
+                     /gene="MEF2A"
+     polyA_signal    4220..4225
+                     /gene="MEF2A"
+     polyA_site      4266..4268
+                     /gene="MEF2A"
+     misc_feature    4270..>4508
+                     /note="3' flank"
+ORIGIN      
+        1 gacccaagta cgtcagggct ccacggtact gttttctttc ctcctaggaa gatgggattt
+       61 ccttttgtcc aagcactgaa ggaaccgacc caaaccagtc ttgggggctc tgataagatt
+      121 tcagactctg gacccttttc catcaggcag tgtctctgct gtatcatccc agttttgcag
+      181 aggtacttgc aagccatctg acctctctct tttttttcct tcagtgctgg agggcagtta
+      241 tctcagggtt ccaatttatc cattaatacc aaccaaaaca tcagcatcaa gtccgaaccg
+      301 atttcacctc ctcgggatcg tatgacccca tcgggcttcc agcagcagca gcagcagcag
+      361 cagcagcagc cgccgccacc accgcagccc cagccacaac ccccgcagcc ccagccccga
+      421 caggaaatgg ggcgctcccc tgtggacagt ctgagcagct ctagtagctc ctatgatggc
+      481 agtgatcggg aggatccacg gggcgacttc cattctccaa ttgtgcttgg ccgaccccca
+      541 aacactgagg acagagaaag cccttctgta aagcgaatga ggatggacgc gtgggtgacc
+      601 taaggcttcc aagctgatgt ttgtactttt gtgttactgc agtgacctgc cctacatatc
+      661 taaatcggta aataaggaca tgagttaaat atatttatat gtacatacat atatatatcc
+      721 ctttacatat atatgtatgt gggtgtgagt gtgtgtgtat gtgtgggtgt gtgttacata
+      781 cacagaatca ggcacttacc tgcaaactcc ttgtaggtct gcagatgtgt gtcccatggc
+      841 agacaaagca ccctgtaggc acagacaagt ctggcacttc cttggactac ttgtttcgta
+      901 aagataacca gtttttgcag agaaacgtgt acccatatat aattctccca cactagcttg
+      961 cagaaaccta gagggccccc tacttgtttt atttaactgt gcagtgactg tagttactta
+     1021 agagaaaatg ctttgtagaa cagagcagta gaaaagcagg aaccaagaaa gcaatactgt
+     1081 acataaaatg tcatttatat tttccaacct ggcatgggtg tctgttgcaa aggggtgcat
+     1141 gggaaagggc tgttgatatt aaaaacaaac aaaacaaaaa agccccacac ataactgttt
+     1201 tgcacgtgca aaaatgtatt gggtcaagaa gtgatcttta gctaataaag aaagagaata
+     1261 gaaaacacgc atgagatatt cagaaaatac tagcctagaa atatagagca ttaacaaagt
+     1321 aaaattaata tattaagtta taattggaat atgtcagaag tttcttttta cattcatatc
+     1381 ttaaaaatta aagaaactga ttttagctca tgtatatttt atatgaaaga aaacaccctt
+     1441 atgaattgat gactatatat aaaattatat tcactacttt tgaacacatt ctgctatgaa
+     1501 ttatttatat aagccaaagc tatatgttgt aacttttttt tagagaatag ctttatcttg
+     1561 gtttaactct ttagttttat tttaagaggg gaaaacaaaa atatcttgca agcagaacct
+     1621 tgaaaaaaaa aaagccatga acacttattc taaatgtaaa ttaaaagttg agccaaactc
+     1681 tttgtgtata tagcatctta aatatattat cacctttgat gtaagtacct atgtattgta
+     1741 tggtcaccag attaaaaagt atatttttgt ggattgccgc caatctgggg ggaaaaggcg
+     1801 aggtccttta ttaagtattc actgtctaat atttactatt ttggtaaata tactgtactt
+     1861 tggattttaa ttattaggcc agtgttttca gaggattgta ttaaggggtt tctcccctca
+     1921 ctggtggggg aatgtgtgat ggttacaatg gaatcttcgg ggctgtttgg gtnggagcat
+     1981 caanatattt tttgggttgt ggtcaataaa ttggaaaggg gcaaaaaaaa ttgggggtta
+     2041 agtccaaccc gaataagaat aaaatgtgtt tgtaacaaga tttaataagc cattatttaa
+     2101 aacttccctt ttgtgnggnn naaatgtaga aganaaacct gacctaattt aattaatatn
+     2161 agagaaaatg ccaaaatagn agatgagccc aaaggtttaa taagtggtaa atgattaggg
+     2221 gaaaataatc atggggaaag ggatcttttt tccttgaccc tctgaaaaca gaacgatgca
+     2281 gctggttaca aaatcctacc gttatcagct cttctgcaca ttgcagtgat gctttggtat
+     2341 gcggggagaa acactcttag ggtgccggtc cttggcatga ctcttgccat tctaattgga
+     2401 attagtgcca ccctcagctt ggattttgaa caagccttat tctttcagga agacaactaa
+     2461 tggatgatag caagttcatc cacttactgg gcttgtgcca tgagcaaaat tcaaagtcct
+     2521 gtatatcttt cattgtagat ttttaaatac tccttttcct aaaaaactca agggtttaaa
+     2581 aattgctatt ttatatttta aatgatattg agcagctacc tacaatttct atgtacattt
+     2641 tgttcccccc ccaccaccac ccccaaatta cgttcctttt gacattttcc tcatctgctg
+     2701 tttgtgacaa gtcatcagcc agatttcctg actgacacat aggtatgatc agtgcaggag
+     2761 agacctgcgc accacaggct gcaaactgga ggttctgttc tcatggcagg ttgggcagta
+     2821 acttttgaga gaggccaaaa aaaggaggat gacatgctgt ctcctctctt cagatagaca
+     2881 ttaggctctt attcagaaag gatttttctt taaaaatgta cttactttac tgaactactt
+     2941 acaggcacat ttcttcataa ggccacacct aatccaaaca agacagtctc ccaacactga
+     3001 agttccaaaa taatccttac cactttgtaa accatttata gctttgaaag tgttaagtga
+     3061 ttccttcgtt attatttatg catgttcatg aacttctgct ggacattgga ataggagtta
+     3121 acacattcac atttactgtc tattttcttg ggtgccttat gagatggccn cnctgacagt
+     3181 actccaatag tctttctngc tacgcaggnn nataatcagc acaactactg ctttctagaa
+     3241 tactactact caaggctcgg cgttgggttt aaattacact gcaccaggta acaatgaact
+     3301 ccatttcagg aactgaatat ttgactgtta acctttttcc catacgtcca gtgtggcatg
+     3361 gagcatatgg acttgacaga catctctcac ccagacgccc acgtgtgaac acacccacat
+     3421 ccacatctct gggtggaaac cagcctagag aggggacgac gctaatggtg ttgctttaga
+     3481 accgtctttt cttacccttt tagactcgtg ttttgtgtga gacaccattg caagaaaatt
+     3541 ttatccctcc agaagtattt tattactaaa gaacaaaagc aaaaaaagct taaattgcac
+     3601 tggttaaagt acagtttcca acagctgtcc ttcctcagta ctctaatggc cactccaccg
+     3661 cgagtggaag tcactgttgt gtgtacacag gtggtcccaa tcaaaacttc atcttgtgag
+     3721 cccaattatg tccattttgt tatagactaa atcaggggtt tgttctacaa gaacaataca
+     3781 tgttttaccc tttcctttaa ctagaaggat aactagtaat gcatcaacat aatttctgta
+     3841 ttaaccatca tgcgcacaag aaatacatag gaaataagga agaagaaaac tcctggcatc
+     3901 ggatcttaag ctagatgatt agaatgtgaa aaagatttta caaatgtaaa acttctattt
+     3961 ctctgtagaa actttcttca ctttgctgtg caagaagaca ctgctttgct atattcaaaa
+     4021 tggcttttct tacaagagat ttatgtattt ggtaaatgtt tgtagtcaac agttcacaca
+     4081 agaagctgta cacggtttga tcatgtaaaa ccgtttggcg gcacaagctg gactttgttg
+     4141 ccatccttga gatgaacctt ttaagaaaaa taagttaatc tcaatttttc cctgaatgtg
+     4201 ttgtttttct tcattataca ataaatataa tagtgaactt tttatcaaat ggtgaagaca
+     4261 atgctaaagg ttgttgcaaa ctgtttgtct cccgcactca ctccagtaaa gacggactgg
+     4321 ctcttcctgt gcgtcgagac tctgtcacgt ttgcctgggg acacaaggcg ctggctttgc
+     4381 caccaggcag ccccttcccc taaagccctc tcctttttca ttcctttcac gaagaccttc
+     4441 ttcacccgca ggcttctttc tctgggttga gacagggcca aggaaaccgt cccaacgccc
+     4501 cactgggc
+//

@@ -1,0 +1,57 @@
+LOCUS       HSSORDPM8                402 bp    DNA     linear   PRI 03-MAR-1999
+DEFINITION  Homo sapiens sorbitol dehydrogenase polymorphic variant (SORD)
+            pseudogene, exon 9 and complete cds.
+ACCESSION   AF010493
+VERSION     AF010493.1  GI:2352895
+KEYWORDS    .
+SEGMENT     8 of 8
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 402)
+  AUTHORS   Carr,I.M., Whitehouse,A., Coletta,P.L. and Markham,A.F.
+  TITLE     Structural and evolutionary characterization of the human sorbitol
+            dehydrogenase gene duplication
+  JOURNAL   Mamm. Genome 9 (12), 1042-1048 (1998)
+   PUBMED   9880675
+REFERENCE   2  (bases 1 to 402)
+  AUTHORS   Carr,I.M. and Markham,A.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUN-1997) Molecular Medicine, University of Leeds,
+            Becket Street, Leeds, West Yorkshire LS9 7TF, UK
+FEATURES             Location/Qualifiers
+     source          1..402
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15.3"
+     gene            order(AF010486.1:<56..167,AF010487.1:1..276,
+                     AF010488.1:1..278,AF010489.1:1..194,AF010490.1:1..168,
+                     AF010491.1:1..274,AF010492.1:1..305,1..>402)
+                     /gene="SORD"
+                     /note="sorbitol dehydrogenase polymorphic variant"
+                     /pseudo
+     CDS             join(AF010486.1:<56..89,AF010487.1:48..212,
+                     AF010488.1:67..226,AF010489.1:41..159,AF010490.1:60..125,
+                     AF010491.1:65..239,AF010492.1:104..226,67..230)
+                     /gene="SORD"
+                     /note="sorbitol dehydrogenase polymorphic variant;
+                     ADH-like protein"
+                     /pseudo
+                     /codon_start=1
+     exon            67..>402
+                     /gene="SORD"
+                     /number=9
+                     /pseudo
+ORIGIN      
+        1 agcttagttt ggggcacctg gctctttcct cttgaaggtt gaatataatg ctcgtgctct
+       61 tttacaggtg gccagtggcg atttcgatgc ttgcgtccaa gtctgtgaat gtaaaacccc
+      121 tcgtcaccca taggtttcct ctggagaaag ctctggaggc ctttgaaaca tttaaaaagg
+      181 gattggggtt gaaaatcatg ctcaagtgtg accccagtga ccagaatctc tgatgttaat
+      241 gggctctgcc ctcatcccca cagtctcggg atctcagggc acaatggctg gacacgagtg
+      301 ggctctgatg cagaactttc tcttttgaat gttaagaata actaatacaa ttcattgtga
+      361 acagaagtcc ttaagcagag gaattggtgt gccttaaaga ta
+//

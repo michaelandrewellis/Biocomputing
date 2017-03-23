@@ -1,0 +1,75 @@
+LOCUS       DQ251107                1600 bp    DNA     linear   PRI 05-JUN-2006
+DEFINITION  Homo sapiens butyrate-induced protein 1 (PTPLAD1) gene, promoter
+            region and partial cds.
+ACCESSION   DQ251107
+VERSION     DQ251107.1  GI:82569866
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1600)
+  AUTHORS   Sabbah,M., Saucier,C. and Redeuilh,G.
+  TITLE     Human B-ind1 gene promoter: cloning and regulation by histone
+            deacetylase inhibitors
+  JOURNAL   Gene 374, 128-133 (2006)
+   PUBMED   16516406
+REFERENCE   2  (bases 1 to 1600)
+  AUTHORS   Redeuilh,G., Sabbah,M. and Saucier,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-OCT-2005) INSERM U673, 184, rue du Faubourg
+            Saint-Antoine, Paris cedex 12 75571, France
+FEATURES             Location/Qualifiers
+     source          1..1600
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22.2"
+     gene            1..>1600
+                     /gene="PTPLAD1"
+                     /note="B-ind1"
+     promoter        1..1334
+                     /gene="PTPLAD1"
+     mRNA            1335..>1587
+                     /gene="PTPLAD1"
+                     /product="butyrate-induced protein 1"
+     5'UTR           1335..1500
+                     /gene="PTPLAD1"
+     CDS             1501..>1587
+                     /gene="PTPLAD1"
+                     /codon_start=1
+                     /product="butyrate-induced protein 1"
+                     /protein_id="ABB83547.1"
+                     /db_xref="GI:82569867"
+                     /translation="MENQVLTPHVYWAQRHRELYLRVELSDVQ"
+ORIGIN      
+        1 cattcattat atgaaaactc tctatatttt attctgtcca ctcttgagct aaatgtttcc
+       61 agagagctag cagaatttgt tttcagcgtt agatccctct gctaaacaaa cgggtgctaa
+      121 tagaatcact ttgctaaata aatgggagct aacaggattg aatatgagtt ccatttttgt
+      181 cccagagttc tagttttcat ataaatattt cttcccatta aattcttctc tgcagaagaa
+      241 cttggggatg aaacccgata cagacaagac agcttaagta agacataaat gagtgttgtc
+      301 tctagtttga gtttcctatt tttttgagac agtctcctgc actgtccaat agaatagcca
+      361 ccaaaaatat ggatatttaa gtttaaatta gaagtgaata aagttggccg ggcgcggtgt
+      421 ctcacgccta taatctcagc actttgggag gccaaggcgg gcggatcacc tgaggtcggg
+      481 agttcgagac cagcctgacc aacatggaga aacctcgtct ctactaaaaa tacaaaatta
+      541 gccggtggcg catgcctgta atcccagcta ctcgggaggc tgaggcagga gaatcacttg
+      601 aacccgggag acagaggttg cggtgagccg agatcgcgcc attgcactcc agcctgggca
+      661 acaagagaga aactccgtct caaaacaaaa caacaacaac aacaaaaaaa aaacagaagt
+      721 gagtaaaatt gaaaattcgg ttattcagtt caagtactca aaagcctcat gtggctagtg
+      781 gctaccgtat taaagagcgc aatgtgcaat atttccatca tcacctacag ttttattggg
+      841 cagcgctgcc ctggtcttta ttttcccttg ttggaacgct cttccacgct gctcccacac
+      901 catgtcccct atcaccatta ttatcctcat ttcatctgta attacttgca tcttttaata
+      961 ggctgggagt tctaagacag aagggactgt gtctcacttc tgttgttcca gtgtttagct
+     1021 ttgaaaccca ggcacacagt aggtactcag taaacagaat gcgaaggacc gtccagagac
+     1081 accagtccca aacccttttc caggctgatc ggtcccccat aagtctccag ccttttttat
+     1141 tttaaagctt attttaaagc atgtccctga agacgagtgg ggagagcaga ccacccgctg
+     1201 attccaattc cctaggcggc cgcggcgagc tgcggcgtct ctgtgccccg gcctgcccct
+     1261 atcccgcctg cgccccgccc ccgcccggct cgcgccaagg cccgctgctg gcgccgccgc
+     1321 catcccggcg cgtcactgcg caggcgcggc ccgcgagcgt ggggtatctc gaggtgccgg
+     1381 gttgcaggcg ctcaggagcg ctagggtttg aggcctgctt tctgctcgcg ccagcagagc
+     1441 actacctgag gcagcgaggc gcagcgagcc tagcctcccc gcgccctggg cagtgtggcc
+     1501 atggagaatc aggtgttgac gccgcatgtc tactgggctc agcgacaccg cgagctatat
+     1561 ctgcgcgtgg agctgagtga cgtacaggta aaggccgggt
+//

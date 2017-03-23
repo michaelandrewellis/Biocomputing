@@ -1,0 +1,58 @@
+LOCUS       GU174495                 253 bp    DNA     linear   PRI 12-JAN-2010
+DEFINITION  Homo sapiens DUOX2 (DUOX2) gene, exon 33 and partial cds.
+ACCESSION   GU174495
+VERSION     GU174495.1  GI:283459001
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 253)
+  AUTHORS   Hoste,C., Rigutto,S., Miot,F., Van Vliet,G. and De Deken,X.
+  TITLE     Compound heterozygosity for a novel hemizygous missense mutation
+            and a partial deletion affecting the catalytic core of the
+            H2O2-generating enzyme DUOX2 associated with transient congenital
+            hypothyroidism
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 253)
+  AUTHORS   Hoste,C. and De Deken,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-NOV-2009) IRIBHM, Route de Lennik, 808, Brussels
+            1070, Belgium
+FEATURES             Location/Qualifiers
+     source          1..253
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15.3"
+                     /cell_type="leukocyte"
+                     /PCR_primers="fwd_seq: aggctcaggaagcagctttt, rev_seq:
+                     gcacagaagagaaggcagga"
+     gene            <1..>253
+                     /gene="DUOX2"
+     exon            81..>253
+                     /gene="DUOX2"
+                     /number=33
+     mRNA            <81..>203
+                     /gene="DUOX2"
+                     /product="DUOX2"
+     CDS             <81..203
+                     /gene="DUOX2"
+                     /codon_start=1
+                     /product="DUOX2"
+                     /protein_id="ADB22378.1"
+                     /db_xref="GI:283459002"
+                     /translation="VRKIGVFSCSPPGMTKNVEKACQLVNRQDRAHFMHHYENF"
+     variation       108
+                     /gene="DUOX2"
+                     /note="results in serine to glycine substitution"
+                     /replace="g"
+ORIGIN      
+        1 aggctcagga agcagctttt cccaaggaga gtgagcacct ttaggctgca ggcccctctc
+       61 tctctccaat ctcctgacag gtgcgcaaga tcggggtgtt cagctgcagc cctccaggaa
+      121 tgaccaagaa tgtagagaag gcctgtcagc tcgtcaacag gcaggaccga gcccacttca
+      181 tgcaccacta tgagaacttc tgagcctgtc ctccctggct gctgcttcca gtatcctgcc
+      241 ttctcttctg tgc
+//

@@ -1,0 +1,129 @@
+LOCUS       AY341000                3957 bp    DNA     linear   PRI 12-DEC-2005
+DEFINITION  Homo sapiens connexin 36 (GJA9) gene, 5' UTR and partial cds.
+ACCESSION   AY341000
+VERSION     AY341000.2  GI:83568861
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 3957)
+  AUTHORS   Martin,D., Tawadros,T., Meylan,L., Abderrahmani,A.,
+            Condorelli,D.F., Waeber,G. and Haefliger,J.A.
+  TITLE     Critical role of the transcriptional repressor neuron-restrictive
+            silencer factor in the specific control of connexin36 in
+            insulin-producing cell lines
+  JOURNAL   J. Biol. Chem. 278 (52), 53082-53089 (2003)
+   PUBMED   14565956
+REFERENCE   2  (bases 1 to 3957)
+  AUTHORS   Allagnat,F., Martin,D., Condorelli,D.F., Waeber,G. and
+            Haefliger,J.A.
+  TITLE     Glucose represses connexin36 in insulin-secreting cells
+  JOURNAL   J. Cell. Sci. 118 (PT 22), 5335-5344 (2005)
+   PUBMED   16263767
+REFERENCE   3  (bases 1 to 3957)
+  AUTHORS   Condorelli,D.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-JUL-2003) Chemical Sciences, Section of Biochemistry,
+            University of Catania, Viale A. Doria 6, Catania 95125, Italy
+REFERENCE   4  (bases 1 to 3957)
+  AUTHORS   Condorelli,D.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-DEC-2004) Chemical Sciences, Section of Biochemistry,
+            University of Catania, Viale A. Doria 6, Catania 95125, Italy
+  REMARK    Sequence update by submitter
+COMMENT     On Dec 12, 2005 this sequence version replaced gi:38640583.
+FEATURES             Location/Qualifiers
+     source          1..3957
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /cell_line="INS-1; betaTC3"
+     gene            1..>3957
+                     /gene="GJA9"
+     misc_feature    1..3641
+                     /gene="GJA9"
+                     /note="5' flanking region"
+     mRNA            3642..>3957
+                     /gene="GJA9"
+                     /product="connexin 36"
+     5'UTR           3642..3954
+                     /gene="GJA9"
+     CDS             3955..>3957
+                     /gene="GJA9"
+                     /note="gap junction protein; Cx36; Cx-36"
+                     /codon_start=1
+                     /product="connexin 36"
+                     /protein_id="AAR25920.1"
+                     /db_xref="GI:38640584"
+                     /translation="M"
+ORIGIN      
+        1 tagtaagaag gctttctact gaggggtcca ggctatccta agtgtgtagg aactttcact
+       61 tcgcaaaggg agcccctttc tcctttctga cttgaatatt acttgtgatt gtggaggaca
+      121 cccaggaccc acttctcctc aggaaaagtg cagttctgct aggctgaggg gaatagagag
+      181 ccagaatagc tgaccttcac tttcaacaaa tgcttgagtt taaagacgct atgaaaagaa
+      241 ccatgacata tgagcatgct ctctgatctc taggaattta cagtccagta gaatagaggt
+      301 cagtagatta atgttcattc ttacaacata tacaaagctc ctatgaggtt tcatttacaa
+      361 aacatttgaa gctgcaaggc tgaaaggttc acctgggagt ctgtggttga gaagagaatg
+      421 aaattttgag cacatataag gataagaaca aattcagaca cccctatgta gtaaatggaa
+      481 tcattgttag tagctctaca ttctctcctg tattataaca ttcaacaaca ccctttgctc
+      541 catgcctttg cagtttttcc cactagatgt ggataatatt tccctgctct gttaatggaa
+      601 aatactattt ggtaagacat agatttgcag atcaacaatc taggtatttt tttcctctaa
+      661 atgtctggag gtgagcatgt tcccacttta attccccttt tcttcttcaa atatcacatt
+      721 tttttcatac ttttaaataa ttttgatctt ctctaggatt ctgaatacca cattcttcat
+      781 agcttttcct ttgctaccca tatgatttta ggcaagctag ctaagctttg ggtcagtttt
+      841 aacactatga aacaaatgga tgatagattt cctcatccct aggattcact cctgccctaa
+      901 tagtcatgga actaaaagtt ctcaggtttt tattgttatt ggagctgtgg atgagaaccc
+      961 gttaataaca cagctacctc aatcttgttt ccatagattt caatttagca gaattgggat
+     1021 gggatcgcag catctgtctt tttaatgaag atccccagac agtctgttgt gcagcaaagg
+     1081 ttattctatg agcattctac gaatttcatt gtttctcatc caaaactatt attttaataa
+     1141 acagaatggc ttttaaataa gatgtaatgg aaagaacttc ccagctgcct taaacggggg
+     1201 ttttcaatca gaggagagtt gagataatca gaatctatca agaagataca atgccctgag
+     1261 gaaactgaga gatgcccgga tccacagaga accatttcac atttaatgca catttgttta
+     1321 tcggaacaaa ttattaattg aaaatggagt tgactggact tgaaggagga agtacaatgt
+     1381 agtaagtgtg aaatttatga gtggttatta aaaataaaaa tggttatttc tgaagtgtgg
+     1441 tggtgagact aagattttta tttaaaagta gcctacacag tccaactgat gagttttaaa
+     1501 atataggttc tatatatatg cgtctttgtg cacttataca cctatgttgt ttgcacatgt
+     1561 ttatatgtgg aatctatatg gcatattaaa gtatatttca aaataataca caaatgatca
+     1621 acaattcagt catagcgtag tgtctgataa ttgcatttcc tgcagtctat gttcttagga
+     1681 tcataatctt taacggtttg ggaaagccaa cacataaaat gacaattttg agttgtgcag
+     1741 cctattttgg gacatttaaa gatgttaaac agatttccct ttggacttac tcattcactt
+     1801 cttggctaag atcatttact ataagagagt ctgccagaca aggagggaat acagggacct
+     1861 agggccaagg ggagtagaag ggaaacctgg gaaaacacac caagtttggg ttaggggatc
+     1921 accattccat ctggaagcta actggataat agggtatcca ttcgtcctca cccttgaacc
+     1981 tcctccgtgt tcagaaggaa actaataaat cactttatcc ctctctccat tgttagtgga
+     2041 ctcttttact cctttgcagt gaaaggctgc tttcttgggg taaagatgtc aaccctagca
+     2101 gaggatttca gtgatctttc tggcggcgaa gcttagaccg tgtgtttaaa catcatttta
+     2161 tgaagaagta cactgtgagt ggactgaggg ccatgccctg cacctttctt cccagtccct
+     2221 gggccaccaa ctacccaacc acctcggttg ttccagaagt gaaggctcac catggtgtgg
+     2281 cttatgtaat atacatatgt gctatgatcc ctgtggataa ttaaggctag gtccctttat
+     2341 atgcctagga caagttagca accctttcaa ggtcgtgttt tcgaaaggat gacaattact
+     2401 ttcccattgg acttttggta catttacatc aaacactgcc agctacagtg tctcctaata
+     2461 ctgacccctg ggctaattag cagcttagtg aggttgtttc aatttttcag caaccaatta
+     2521 agtagttgct ctagacagaa ctgacaacac aatgtgaatt ttaaaaaccg ggatctgctg
+     2581 gttgagggga gaaagccaaa cccagtaagg caagtggggg cagggcgagg ctgtgagtgg
+     2641 ctctgtttct gctagcagaa tactgggtct taaattcaga ttaaatcaca gtttacctga
+     2701 cgagtacccc gccccccctt cccattagta aaataatagc aataatttaa aaagagccga
+     2761 gcatctgggt tagtgcaagg ggaagcgaga cctttaacca tggccacccc acttgctctt
+     2821 tgcgaggcac ctgttagatg cgctcgtgtg ccctgacccc tataccgaga gacagctcca
+     2881 cacctgcatt tacccttcag cctaaatgga ttcccatcaa gcctttctca cttcactgtc
+     2941 ggatccacag aggcaccgaa ccgcagccac tctgcagaag cactctcagc cactctgtcc
+     3001 cctaagggag atttaaaagt ggtcgccccc actcgccctc cctcagccag catctccatc
+     3061 tagggaagga atttcagttg tctccaggag gcaaaaagcg aaaaggtgag ggatgcaccg
+     3121 agagaagaga agatacctac tcactcccct ccccactcac ccacgcgtcc gctcccggct
+     3181 ccccctccgc ctgcttgggt ctggcggtca ggtgaggtta cctgggctcc ccgagaagcc
+     3241 ccgaggggcg ctgcagtcct tcctttcgaa atcgccccgc tccccgccgg gcctccagga
+     3301 ctcttgcccc tctccccccg cgcgcgtccc cggcccctcg ggctccgacg cgcagcgaca
+     3361 gccgcacggc gcgctctgct cccctccgcc gacctggcgt gacgcaggcg gagactactt
+     3421 aagggcggat tagaggcggc ggccgcggat ccccgagccc agcattcggc tccgcgcgct
+     3481 cggccctggc ctcgcaggct gccgcgccgg agcgccaggt gcccgctgaa gtagcaggaa
+     3541 cagagccggt gttcggaccc tcccctggcc cccaacctgc ggcggagagc ggcgctgaga
+     3601 cttctcctgg gcgggcgagc gctggaggac ctgcaggctg ccaccccgcc ccgcccctcg
+     3661 tcccggcgtc cgcgggatcc agacccgaac cccggacggc gcccgaggtt cgtgccctct
+     3721 ctctagaccg cgccaactgc cccatcggtc gggacgcgct tggatttctt tccccatttc
+     3781 ttctctttta agtacaataa aaggaaaggg ggattcgagg attttttaaa aaattgcttc
+     3841 tttaattggg aggcaattca ctcccattct ggaagtgcgg cccggggagg ggccaggagc
+     3901 gggaacgtgc ccggtgctgc ccagtctttg tctgctgcct ccggatgcac agcgatg
+//

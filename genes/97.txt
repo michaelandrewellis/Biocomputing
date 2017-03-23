@@ -1,0 +1,71 @@
+LOCUS       AJ005331                1340 bp    DNA     linear   PRI 14-NOV-2006
+DEFINITION  Homo sapiens NKCC2 gene, exon 4, isoform B.
+ACCESSION   AJ005331
+VERSION     AJ005331.1  GI:3688373
+KEYWORDS    Na-K-2Cl cotransporter; NKCC2 gene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Vargas-Poussou,R., Feldmann,D., Vollmer,M., Konrad,M., Kelly,L.,
+            van den Heuvel,L.P.W.J., Tebourbi,L., Brandis,M., Karolyi,L.,
+            Hebert,S., Lemmink,H., Deschenes,G., Hildebrandt,F., Seyberth,H.,
+            Guay-Woodford,L., Knoers,N.A.V.M. and Antignac,C.
+  TITLE     Novel molecular variants of the Na-K-2Cl cotransporter gene are
+            responsible for antenatal Bartter syndrome
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1340)
+  AUTHORS   Antignac,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-APR-1998) Antignac C., INSERM, U 423, tour lavoisier,
+            6eme etage, hopital Necker-Enfants malades, 149 rue de Sevres, 75
+            015 Paris, FRANCE
+FEATURES             Location/Qualifiers
+     source          1..1340
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     gene            <986..>1081
+                     /gene="NKCC2"
+     mRNA            <986..>1081
+                     /gene="NKCC2"
+     CDS             <986..>1081
+                     /gene="NKCC2"
+                     /codon_start=3
+                     /product="Na-K-2Cl cotransporter"
+                     /protein_id="CAA06478.1"
+                     /db_xref="GI:3688374"
+                     /db_xref="UniProtKB/TrEMBL:O76028"
+                     /translation="LGVIIIGLAVTVTGITGLSTSAIATNGCVRG"
+     exon            986..1081
+                     /gene="NKCC2"
+                     /note="isoform B"
+                     /number=4
+ORIGIN      
+        1 agtcacggct tcgttgaatt ctggcctnta ccactttctc cctctcttta taatcatcaa
+       61 ccttntgaac cataaaatcc ttggggcagc tttttaaatt tcattttatt tgtgtcttgt
+      121 gtttcttaca ttacctgcca catagctgga tatatagtag gtttttaaaa agcagtaagt
+      181 attataacta ctgtgaatat gatcaaaaag caatatcatt gagtgtgtac tnnnttccat
+      241 gtgctatgct agccatttna cacatgcatt ctttctaatt tcattgctat ttttggctca
+      301 gttatttatt tatttgaggt gncttatcat aataancaac tttccagaat tcacacggtc
+      361 aacaagttaa tgtaatttaa tttcattctt tccactttac ccatctgcca gatgaataat
+      421 ttgctatact gtatgtagtt ctccacctct aagtgaccaa atgtacataa aaagatagta
+      481 acctggaagg atgaacattt aatctctagt tatcttgaca gcttggaatt gtaggccaat
+      541 atcatgttat agggttataa ttctccaaag atggaattct gtcaggtgca atagtgcagc
+      601 ctgtagtccc agttacttgg gaggctgaga gaggaggatg acttgaggcc aggagtttga
+      661 gaccagcctg gaaaaaatag caagactgtc tctaaaaata ataataataa taagatgggg
+      721 tgcacattaa attttgacca gccctagtgg ctttgttttg tacaacttag ttctgcacat
+      781 tttagctctt aagtttcttg gaaccagagc tactacaagc agaaaacttc aaagctaagc
+      841 atttactcca tggtgatttc ctagccaact tgttaaactc aaatgtggtc ctttgatgtt
+      901 taccctagac ttgctggttt ttatgtaaat gatccaatga attcttccac catttaatac
+      961 ctttattttt cctctttcaa ctgaggtctt ggtgtgatta tcatcggctt agccgtgaca
+     1021 gtgactggta tcactggttt atccacctct gctattgcca caaatggatg tgtcagagga
+     1081 ggtaattaaa cttgtgaccc gcaccatcat ttgtaaggta aaggcaacac aggctctaac
+     1141 agttcaccac tgacctttct ggagtgtttt caaaggtaat gcaagttggt ttcttttccc
+     1201 ccatcaggca aagagatgca agaaaaatgg ggaaggattt aacctttgtc aaacccccaa
+     1261 ctttctcatt ctagttcctt caagcaagaa agaaggtcaa atgtcatgtt ttctcttttc
+     1321 acagccagga tagtttctct
+//

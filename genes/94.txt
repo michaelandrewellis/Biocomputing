@@ -1,0 +1,68 @@
+LOCUS       AJ001111                 744 bp    DNA     linear   PRI 14-NOV-2006
+DEFINITION  Homo sapiens UBE3A gene, exon 12.
+ACCESSION   AJ001111
+VERSION     AJ001111.1  GI:3421135
+KEYWORDS    E6-AP gene; UBE3A gene; ubiquitin-protein ligase.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Hennies,H.C., Buerger,J., Sperling,K. and Reis,A.
+  TITLE     Mutations in the E6-AP gene (UBE3A) in patients with Angelman
+            syndrome
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 744)
+  AUTHORS   Hennies,H.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-1997) Hennies H.C., Institute of Human Genetics,
+            Charite, Humboldt University, Augustenburger Platz 1, Berlin,
+            D-13353, GERMANY
+FEATURES             Location/Qualifiers
+     source          1..744
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="q11-q13"
+                     /clone="PAC 14I12"
+                     /clone_lib="Human PAC"
+     gene            <284..>448
+                     /gene="UBE3A"
+     CDS             <284..>448
+                     /gene="UBE3A"
+                     /codon_start=1
+                     /product="E6-AP ubiquitin-protein ligase"
+                     /protein_id="CAA04538.1"
+                     /db_xref="GI:3421136"
+                     /db_xref="GDB:228487"
+                     /db_xref="GOA:Q05086"
+                     /db_xref="HGNC:12496"
+                     /db_xref="InterPro:IPR000569"
+                     /db_xref="InterPro:IPR017134"
+                     /db_xref="PDB:1C4Z"
+                     /db_xref="PDB:1D5F"
+                     /db_xref="PDB:1EQX"
+                     /db_xref="PDB:2KR1"
+                     /db_xref="UniProtKB/Swiss-Prot:Q05086"
+                     /translation="VLYQSLKDLLEYEGNVEDDMMITFQISQTDLFGNPMMYDLKENG
+                     DKIPITNENRK"
+     exon            284..448
+                     /gene="UBE3A"
+                     /number=12
+ORIGIN      
+        1 cacccccacc ttgagacacc acagaatttc tcatagagca cagtgtgaat tctattgcta
+       61 aattggtggt atggggtttc tcagcagaga atggacatca cagtgactga caatctttct
+      121 tttataggtt ggtaactatt tgggggactg gagggatact gtctacactt ttttacaatt
+      181 tttattgata agatttttgt tgtcttctaa gaagagtgat ataaattatt tgttgtattt
+      241 tgtagttcta tggtggcctc aatttaccat ttctggttgc taggttctat atcagagttt
+      301 aaaagattta ttggagtatg aagggaatgt ggaagatgac atgatgatca ctttccagat
+      361 atcacagaca gatctttttg gtaacccaat gatgtatgat ctaaaggaaa atggtgataa
+      421 aattccaatt acaaatgaaa acaggaaggt aataaatgtt tttatgtcac attttgtctc
+      481 ttcattaaca ctttcaaagc atgtatgctt ataattttta aagaagtatc taatatagtc
+      541 tgtacaaaaa aaaaacaagt aactaagttt atgtaaatgc hagagtccac ttttctaaat
+      601 cttggatata agttggtatg aaagcacaca gttgggcact aaagcccctt ttagagaaag
+      661 aggacatgaa gcaggagata gttaatagct aagtgktggt tgtagtataa agcaagagca
+      721 gggtgtttct tgtattaagc tgta
+//

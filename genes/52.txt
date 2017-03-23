@@ -1,0 +1,88 @@
+LOCUS       AF224242S08             1680 bp    DNA     linear   PRI 28-JAN-2003
+DEFINITION  Homo sapiens HERC2 (HERC2) gene, exons 64, 65, and partial cds.
+ACCESSION   AF224249
+VERSION     AF224249.1  GI:27923062
+KEYWORDS    .
+SEGMENT     8 of 16
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1680)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Structure of the highly conserved HERC2 gene and of multiple
+            partially duplicated paralogs in human
+  JOURNAL   Genome Res. 10 (3), 319-329 (2000)
+   PUBMED   10720573
+REFERENCE   2  (bases 1 to 1680)
+  AUTHORS   Ji,Y., Rebert,N.A., Joslin,J.M., Higgins,M.J., Schultz,R.A. and
+            Nicholls,R.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JAN-2000) Genetics, Case Western Reserve University,
+            10900 Euclid Ave, Cleveland, OH 44106-4955, USA
+FEATURES             Location/Qualifiers
+     source          1..1680
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13"
+     mRNA            join(AF224246.1:<1..51,AF224247.1:534..615,
+                     AF224247.1:727..870,AF224248.1:660..750,
+                     AF224248.1:1042..1219,AF224248.1:1401..1482,
+                     AF224248.1:1570..1741,602..746,1641..>1680)
+                     /gene="HERC2"
+                     /product="HERC2"
+     CDS             join(AF224246.1:<1..51,AF224247.1:534..615,
+                     AF224247.1:727..870,AF224248.1:660..750,
+                     AF224248.1:1042..1219,AF224248.1:1401..1482,
+                     AF224248.1:1570..1741,602..746,1641..>1680)
+                     /gene="HERC2"
+                     /codon_start=1
+                     /product="HERC2"
+                     /protein_id="AAO27475.1"
+                     /db_xref="GI:27923073"
+                     /translation="VWGLNDKDQLGGLKGSKIKVPSFSETLSALNVVQVAGGSKSLFA
+                     VTVEGKVYACGEATNGRLGLGISSGTVPIPRQITALSSYVVKKVAVHSGGRHATALTV
+                     DGKVFWWGEGDDGKLGHFSRMNCDKPRLIEALKTKRIRDIACGSSHSAALTSSGELYT
+                     WGLGEYGRLGHGDNTTQLKPKMVKVLLGHRVIQVACGSRDAQTLALTDEGLVFSWGDG
+                     DFGKLGRGGSEGCNIPQNIERLNGQGVCQIECGAQFSLALTKSGVVWTWGKGDYFRLG
+                     HGSDVHVRKPQVVEGLRGKKIVHVAVGALHCLAVTDSGQVYAWGDNDHGQQG"
+     exon            602..746
+                     /gene="HERC2"
+                     /number=64
+     exon            1641..>1680
+                     /gene="HERC2"
+                     /number=65
+ORIGIN      
+        1 agaagaaatt tcccattgta actgggtcat tttgaaaata ctagaaaaat tttaggccac
+       61 ttacctttcc tgtttgggtg agatttatgg gaacggtttc ttctgctgaa gcctaaggat
+      121 aaaatggagc aaaatagcct tctgaatcct ttgatcctga aaaagttaac atgtgtttct
+      181 tgtaaaagct tattttatta atatgcaaaa gagcaggtgc ctggactggc tgtggatggt
+      241 gtgtcaggcc ttagtgccaa tgtcatgacc cgaggcagct tgagaaagat gtataccaga
+      301 taggactttg gataggtgtt tgcagtagtg tgtcttattt tcagtctctt tatatgaaaa
+      361 cctacaacag taacttaaat atcataaaat atgtattaag gtattaaggt ttttcccagc
+      421 tggcttaata agttaatttg aattaatggt gtatgatttt gaatacaagt ttgaagacct
+      481 tgggtgctgt gtgtgatgtc attgagctgg ctgtgaaaga tgtgagacaa tgagtgtctt
+      541 cttgtatagc attgtcagac cataaccgta ttgtaactct ccaccatggg ccttctctca
+      601 ggggaaaggg ggattacttc agattgggcc acggctctga cgtgcacgtg cggaaaccac
+      661 aggtggtgga agggctgaga gggaagaaga tcgtgcatgt ggctgtcggg gccctgcact
+      721 gcctggcggt cacggactcg gggcaggtaa ggctgcaggt ggcctggggg tggcgtgcca
+      781 tcctgacttg ggggacgtgg gggtcatgac acggccttcg tcctgttgaa atcacagctg
+      841 ttgatgaaat cagctgagtc ttactgcttg gagaaccatg agggcgggtc ctgttccttt
+      901 tgcccactgg tgtatctgcc tgctttgcag caggggttgg gggcggggtc ctcagaaaag
+      961 aggcgttccc actctgaagt ccacgtgaaa agtgtgtgga aagactgtta ttcttgaaga
+     1021 tgctcctagt gcaagatatt agcaagactt tcctttagag aattggtaac tggcgaggag
+     1081 ggatccatgc ctcattttaa agacagaaaa gctagtgcct gacaagtgtt acactctctt
+     1141 ctgcttggag aagcatacgc tatgactggc ttatggatat tcaattttaa attttattta
+     1201 tggaaacaaa attaccatta ctgtatttta gtcagaatga attttacttt ataattctat
+     1261 aaggccaaga agcaacttac ttgaaaaatg agcatactgt ttttggtcat ttttctttgc
+     1321 aaaataaaag ggaaaaaatt attacactta gttagagaga ggaccttctg tgtgtcttgc
+     1381 aacaaagcag aattggatta atattaagaa aatactcctt ttataggtat tagcaagcat
+     1441 tttcatggtt agattttctt cagaattgta gtacgctgat gccattttga aagattgtga
+     1501 aatggtttgt ttttaccttt aagaactcaa ttctttcaac taccgtggca tacgcgttaa
+     1561 gcattttgaa gtaaaaatta cattaaagaa aatgtcctga aatgttgaaa aattataagc
+     1621 ttttttcncc tcgtaaacag gtgtatgctt ggggtgacaa cgaccacggc cagcagggca
+//

@@ -1,0 +1,64 @@
+LOCUS       AY377897                 114 bp    DNA     linear   PRI 09-JUN-2004
+DEFINITION  Homo sapiens mitochondrial DNA polymerase gamma (POLG) gene,
+            POLG-4R allele, exon 2 and partial cds; nuclear gene for
+            mitochondrial product.
+ACCESSION   AY377897
+VERSION     AY377897.1  GI:39980565
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 114)
+  AUTHORS   Rovio,A.T., Abel,J., Ahola,A.L., Andres,A.M., Bertranpetit,J.,
+            Blancher,A., Bontrop,R.E., Chemnick,L.G., Cooke,H.J., Cummins,J.M.,
+            Davis,H.A., Elliott,D.J., Fritsche,E., Hargreave,T.B.,
+            Hoffman,S.M., Jequier,A.M., Kao,S.H., Kim,H.S., Marchington,D.R.,
+            Mehmet,D., Otting,N., Poulton,J., Ryder,O.A., Schuppe,H.C.,
+            Takenaka,O., Wei,Y.H., Wichmann,L. and Jacobs,H.T.
+  TITLE     A prevalent POLG CAG microsatellite length allele in humans and
+            African great apes
+  JOURNAL   Mamm. Genome 15 (6), 492-502 (2004)
+   PUBMED   15181541
+REFERENCE   2  (bases 1 to 114)
+  AUTHORS   Rovio,A.T. and Jacobs,H.T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-SEP-2003) Institute of Medical Technology, University
+            of Tampere, Lenkkeilijankatu 6, Tampere FIN-33014, Finland
+FEATURES             Location/Qualifiers
+     source          1..114
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q26"
+     gene            <1..>114
+                     /gene="POLG"
+                     /allele="4R"
+     mRNA            <1..>114
+                     /gene="POLG"
+                     /allele="4R"
+                     /product="mitochondrial DNA polymerase gamma"
+     CDS             <1..>114
+                     /gene="POLG"
+                     /allele="4R"
+                     /codon_start=1
+                     /product="mitochondrial DNA polymerase gamma"
+                     /protein_id="AAR32994.1"
+                     /db_xref="GI:39980566"
+                     /translation="PSDGQRRRRQQQQQQQQQQQQPQQPQVLSSEGGQLRHN"
+     exon            <1..>114
+                     /gene="POLG"
+                     /allele="4R"
+                     /number=2
+     variation       25..27
+                     /gene="POLG"
+                     /note="relative to human DNA polymerase gamma encoded by
+                     GenBank Accession Number X98093"
+                     /frequency="0.004"
+                     /replace=""
+ORIGIN      
+        1 cccagcgacg ggcagcggcg gcggcggcag cagcagcagc agcagcagca gcagcaacag
+       61 cagcctcagc agccgcaagt gctatcctcg gagggcgggc agctgcggca caac
+//

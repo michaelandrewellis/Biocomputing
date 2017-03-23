@@ -6,117 +6,96 @@ indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 with open('chrom_CDS_15') as f:
     original_file = f.read().splitlines()
 
-# ------------------------------------------------------------------------------------------------
-# -----------------------------------Data extraction tier-----------------------------------------
+# --------------------------------------------------------------------------------------------------
+# -----------------------------------Data extraction tier-------------------------------------------
 
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
-# thus allowing all lists generated to in the same order (from gene 1 to 241)
+# thus allowing all lists to be generated in the same order (from gene 1 to 241)
     
 file_name_compiler = re.compile(r'(\d+)')
-def numerical_sort(value):                              #DO DOCSTRING FOR THIS
-    separator = file_name_compiler.split(value)
-    separator[1::2] = map(int, separator[1::2])
-    return separator
+def numerical_convert(value):
+    """
+    The main purpose of this function is to take a string containing digits and convert those digits into integers.
+    It takes a string as the input. It splits the string into its 'digit' and 'other' components
+    Taking every other item (starting with the second one, as the first is '') in the outcome of the split, the string
+    format digits are converted to integers using the map() and int() functions.
+    The numerical_convert function then returns any digits it found in 'value' in integer format.
+    """
+    split_value = file_name_compiler.split(value)
+    split_value[1::2] = map(int, split_value[1::2])
+    return split_value
 
 # the following code loops through all 241 files in the directory 'genes'
 # it then opens each one and searches between 'LOCUS' and '//' using the regexes
 # then appends matched groups to the relevant list
 # this is the method used for extracting all of the required data from the file
 
-genbank_accessions = list()                                                 ## genbank accessions
+# -----------------------------------Parser function------------------------------------------------
+
+def genbank_parser(list, compiler, else_statement = None):
+    """
+    This function essentially walks through a given directory taking the filenames, sorting by numerical name using
+    the numerical_convert() function to convert string filenames into integers.
+    It takes the following as parameters:
+        list: the list to which the user wishes to append matches
+        compiler: the regex compiler in the format re.compile(r"...()...") that the function uses to search for a match group.
+        else_statement: this is a string that is appended to the list if no match group is found. It is set to None by default.
+    If a match to the regex is found, match group 1 is appended to the list. If not, the else_statement is appended instead.
+    Nothing visible is returned, but the list provided will be populated with matches.
+    """
+    for root, dirs, all_files in os.walk(indir):
+        for infile in sorted(all_files, key=numerical_convert):
+            open_file = open(os.path.join(root, infile), 'r')
+            match = compiler.search(open_file.read())
+            if match:
+                list.append(str(match.group(1)))
+            else:
+                list.append(str(else_statement))
+    return()
+
+# --------------------------------------------------------------------------------------------------
+
+genbank_accessions = []                                                      ## genbank accessions
 accession_compiler = re.compile(r"^ACCESSION\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_sort):
-        open_file = open(os.path.join(root, infile), 'r')
-        match_acc = accession_compiler.search(open_file.read())
-        if match_acc:
-            genbank_accessions.append(str(match_acc.group(1)))
-        else:
-            genbank_accessions.append(str('none'))
+genbank_parser(genbank_accessions, accession_compiler, else_statement='none')
 
-gene_ids = list()                                                           ## gene IDs
+gene_ids = []                                                               ## gene IDs
 id_compiler = re.compile(r"^LOCUS\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_sort):
-        open_file = open(os.path.join(root, infile), 'r')
-        match_id = id_compiler.search(open_file.read())
-        if match_id:
-            gene_ids.append(str(match_id.group(1)))
-        else:
-           gene_ids.append(str('none'))
+genbank_parser(gene_ids, id_compiler, else_statement='none')
 
-dna_seq = list()                                                            
+dna_seq = []
 dnaseq_compiler = re.compile(r"^ORIGIN\s+(.+)\/\/", re.DOTALL|re.MULTILINE)
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_sort):
-        open_file = open(os.path.join(root, infile), 'r')
-        match_seq = dnaseq_compiler.search(open_file.read())
-        if match_seq:
-            dna_seq.append(str(match_seq.group(1)))
-        else:
-            dna_seq.append(str('none'))
-
-clean_dna_seq = list()                                                      ## DNA sequence
+genbank_parser(dna_seq, dnaseq_compiler, else_statement='none')
+clean_dna_seq = []                                                          ## DNA sequence
 for x in dna_seq:
     sub1 = re.sub(r"\W", "", x)
     sub2 = re.sub(r"\d", "", sub1)
     clean_dna_seq.append(sub2)
 
-gene_products = list()                                                      ## 1st protein product
+gene_products = []                                                          ## 1st protein product
 prod_compiler = re.compile(r"^LOCUS\s.+\/product\=\"(.+?)\".+\/\/", re.MULTILINE|re.DOTALL)
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_sort):
-        open_file = open(os.path.join(root, infile), 'r')
-        match_pp = prod_compiler.search(open_file.read())
-        if match_pp:
-            gene_products.append(str(match_pp.group(1)))
-        else:
-            gene_products.append(str('none'))
-            
-chr_loc = list()                                                            ## chromosomal location
-chromosome_no = '15'
+genbank_parser(gene_products, prod_compiler, else_statement='none')
+
+chr_loc = []                                                                ## chromosomal location
 chrloc_compiler = re.compile(r"^LOCUS\s.+\/map\=\"(.+?)\".+^\/\/", re.MULTILINE|re.DOTALL)
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_sort):
-        open_file = open(os.path.join(root, infile), 'r')
-        match_chrloc = chrloc_compiler.search(open_file.read())
-        if match_chrloc:
-            chr_loc.append(str(match_chrloc.group(1)))
-        else:
-            chr_loc.append(chromosome_no)
+genbank_parser(chr_loc, chrloc_compiler, else_statement='15')
 
 protein_seq = []
 proseq_compiler = re.compile(r"^LOCUS\s.+\/translation\=\"(.+?)\".+\/\/", re.MULTILINE | re.DOTALL)
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_sort):
-        open_file = open(os.path.join(root, infile), 'r')
-        match_protseq = proseq_compiler.search(open_file.read())
-        if match_protseq:
-            protein_seq.append(str(match_protseq.group(1)))
-        else:
-            protein_seq.append(str('none'))
-
+genbank_parser(protein_seq, proseq_compiler, else_statement='none')
 clean_protein_seq = []                                                      ## protein sequence
 for x in protein_seq:
     sub = re.sub(r"\W", "", x)
     clean_protein_seq.append(sub)
-
             
-# --- finding the coding seq of the gene in order to extract exon boundaries --- #
+# --- extracting the coding seq of the gene in order to get the exon ranges --- #
 
-ex_int_boundaries = list()
+ex_int_boundaries = []
 cds_compiler = re.compile(r"^LOCUS\s.+\s{5}CDS\s+(.+?)\s{1}.+\/\/", re.MULTILINE|re.DOTALL)
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_sort):
-        open_file = open(os.path.join(root, infile), 'r')
-        match_cds = cds_compiler.search(open_file.read())
-        if match_cds:
-            ex_int_boundaries.append(match_cds.group(1))
-        else:
-            ex_int_boundaries.append('none')
+genbank_parser(ex_int_boundaries, cds_compiler, else_statement='none')
 
 # the following code strips off superfluous characters from items in  ex_int_boundaries:
-clean_boundaries = list()
+clean_boundaries = []
 for x in ex_int_boundaries:
     sub = re.sub(r"join\(", "", x)
     sub1 = re.sub(r"\<", "", sub)
@@ -128,7 +107,7 @@ for x in ex_int_boundaries:
 
 # the following code generates a list containing lists. Each sub list contains all the exon boundaries for one gene.
 # some lists just have one, whereas others have multiple exons, and so have lists containing multiple terms:
-exons_into_lists = list()
+exons_into_lists = []
 for x in clean_boundaries:
     no_comma = x.rstrip(',') #cuts off extra comma at the end of items in clean_boundaries
     split_to_list = list((no_comma.split(',')))
@@ -156,8 +135,8 @@ for list in exons_into_lists:
 
 # the following code grabs all the exon start positions for a particular and puts them into a sub-list
 # the sub-list is then appended to the main list:
-exon_start = []                                                            # exon start positions
-exon_end = []                                                              # exon end positions
+exon_start = []
+exon_end = []
 exon_start_compiler = re.compile(r"^(\d+)\.")
 exon_end_compiler = re.compile(r"^\d+\.\.(\d+)")
 for list in remove_spans:
@@ -185,16 +164,15 @@ for list in remove_spans:
         exon_end.append(end_matches)
 
 # the sql import doesn't like lists of lists, so converting sub-lists into strings
-str_ex_start = []
-str_ex_end = []
+str_ex_start = []                                                           # exon start positions
+str_ex_end = []                                                             # exon end positions
 for list in exon_start:
     str_ex_start.append(str(list))
 for list in exon_end:
     str_ex_end.append(str(list))
 
-
-# ------------------------------------------------------------------------------------------------
-# -----------------------------------Database connection tier-------------------------------------
+# --------------------------------------------------------------------------------------------------
+# -----------------------------------Database connection tier---------------------------------------
 
 # Using Pandas to generate dataframes from my lists
 
@@ -206,8 +184,11 @@ for list in exon_end:
 #exon_start                        will be 'Start_location' in DB
 #exon_end                          will be 'End_location' in DB
 
-gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq, 'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start}, index=gene_ids)
+
+gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
+                             'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
+coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
+                                index=gene_ids)
 
 # filtering out splice variants:
 pattern = "[A-Z]+\d+S"
@@ -215,13 +196,27 @@ filter = gene_info_df['Gene_ID'].str.contains(pattern)
 gene_info_df = gene_info_df[~filter]
 coding_region_df = coding_region_df[~filter]
 
-import pandas as pd
+import pandas as pd2
 import mysql.connector
 from sqlalchemy import create_engine
+import admin
+pw = admin.password
 
-engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost:3306/biocomp_project', echo=False)
-gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
-coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
+#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+#coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
-# ------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------
+# -----------------------------------Testing tier----------------------------------------------------
+"""
+#testing lists - all should be 241 to align correct data values:
+correct_length = 241
+list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
+                len(clean_protein_seq), len(gene_products), len(str_ex_start), len(str_ex_end)]
+for list in list_lengths:
+    if list != correct_length:
+        print('test fail')
+    else:
+        print('length:', list, '--', 'test successful')
+"""
 

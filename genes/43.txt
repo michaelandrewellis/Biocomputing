@@ -1,0 +1,90 @@
+LOCUS       F185592S19               397 bp    DNA     linear   PRI 11-DEC-2003
+DEFINITION  Homo sapiens aryl-hydrocarbon receptor nuclear translocator 2
+            (ARNT2) gene, exon 19 and complete cds.
+ACCESSION   AF185610
+VERSION     AF185610.1  GI:10242105
+KEYWORDS    .
+SEGMENT     19 of 19
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 397)
+  AUTHORS   Barrow,L.L., Wines,M.E., Romitti,P.A., Holdener,B.C. and
+            Murray,J.C.
+  TITLE     Aryl hydrocarbon receptor nuclear translocator 2 (ARNT2):
+            structure, gene mapping, polymorphisms, and candidate evaluation
+            for human orofacial clefts
+  JOURNAL   Teratology 66 (2), 85-90 (2002)
+   PUBMED   12210012
+REFERENCE   2  (bases 1 to 397)
+  AUTHORS   Barrow,L.L., Wines,M.E., Romitti,P.A., Holdener,B.C. and
+            Murray,J.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1999) Pediatrics, University of Iowa, 140 EMRB,
+            Iowa City, IA 52242, USA
+FEATURES             Location/Qualifiers
+     source          1..397
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q24"
+     gene            order(AF185592.1:1..62,AF185593.1:1..115,AF185594.1:1..48,
+                     AF185595.1:1..214,AF185596.1:1..214,AF185597.1:1..103,
+                     AF185598.1:1..66,AF185599.1:1..86,AF185600.1:1..77,
+                     AF185601.1:1..135,AF185602.1:1..75,AF185603.1:1..152,
+                     AF185604.1:1..73,AF185605.1:1..124,AF185606.1:1..100,
+                     AF185607.1:1..139,AF185608.1:1..166,AF185609.1:1..137,
+                     1..>397)
+                     /gene="ARNT2"
+     mRNA            join(AF185592.1:1..62,AF185593.1:1..115,AF185594.1:1..48,
+                     AF185595.1:1..214,AF185596.1:1..214,AF185597.1:1..103,
+                     AF185598.1:1..66,AF185599.1:1..86,AF185600.1:1..77,
+                     AF185601.1:1..135,AF185602.1:1..75,AF185603.1:1..152,
+                     AF185604.1:1..73,AF185605.1:1..124,AF185606.1:1..100,
+                     AF185607.1:1..139,AF185608.1:1..166,AF185609.1:1..137,
+                     1..>397)
+                     /gene="ARNT2"
+                     /product="aryl-hydrocarbon receptor nuclear translocator
+                     2"
+     CDS             join(AF185593.1:3..115,AF185594.1:1..48,AF185595.1:1..214,
+                     AF185596.1:1..214,AF185597.1:1..103,AF185598.1:1..66,
+                     AF185599.1:1..86,AF185600.1:1..77,AF185601.1:1..135,
+                     AF185602.1:1..75,AF185603.1:1..152,AF185604.1:1..73,
+                     AF185605.1:1..124,AF185606.1:1..100,AF185607.1:1..139,
+                     AF185608.1:1..166,AF185609.1:1..137,1..99)
+                     /gene="ARNT2"
+                     /codon_start=1
+                     /product="aryl-hydrocarbon receptor nuclear translocator
+                     2"
+                     /protein_id="AAG15310.1"
+                     /db_xref="GI:10242106"
+                     /translation="MASDIPGSVTLPVAPMAATGQVRMAGAMPARGGKRRSGMDFDDE
+                     DGEGPSKFSRENHSEIERRRRNKMTQYITELSDMVPTCSALARKPDKLTILRMAVSHM
+                     KSMRGTGNKSTDGAYKPSFLTEQELKHLILEAADGFLFVVAAETGRVIYVSDSVTPVL
+                     NQPQSEWFGSTLYEQVHPDDVEKLREQLCTSENSMTGRILDLKTGTVKKEGQQSSMRM
+                     CMGSRRSFICRMRCGNAPLDHLPLNRITTMRKRFRNGLGPVKEGEAQYAVVHCTGYIK
+                     AWPPAGMTIPEEDADVGQGSKYCLVAIGRLQVTSSPVCMDMNGMSVPTEFLSRHNSDG
+                     IITFVDPRCISVIGYQPQDLLGKDILEFCHPEDQSHLRESFQQVVKLKGQVLSVMYRF
+                     RTKNREWMLIRTSSFTFQNPYSDEIEYIICTNTNVKQLQQQQAELEVHQRDGLSSYDL
+                     SQVPVPNLPAGVHEAGKSVEKADAIFSQERDPRFAEMFAGISASEKKMMSSASAAGTQ
+                     QIYSQGSPFPSGHSGKAFSSSVVHVPGVNDIQSSSSTGQNMSQISRQLNQSQVAWTGS
+                     RPPFPGQQIPSQSSKTQSSPFGIGTSHTYPADPSSYSPLSSPATSSPSGNAYSSLANR
+                     TPGFAESGQSSGQFQGRPSEVWSQWQSQHHGQQSGEQHSHQQPGQTEVFQDMLPMPGD
+                     PTQGTGNYNIEDFADLGMFPPFSE"
+     exon            1..>397
+                     /gene="ARNT2"
+                     /number=19
+     3'UTR           100..>397
+                     /gene="ARNT2"
+ORIGIN      
+        1 gacatgctgc ccatgccagg agatccaacc caggggactg gcaactataa catcgaagac
+       61 tttgccgacc tgggcatgtt tccaccgttt tctgagtagc tgcggccaga gtgaggctcc
+      121 tgctgtacag tgccacccat actgtgatgt cgatgcccat gtgaatgagg cccaccctcg
+      181 ccctgcttgc cctgccgcag gccccccacc agaagccatc tcccccgctg tgtgtcccca
+      241 ggcgcatcat tgctccactc tcccctgcag ccgcggctgc tcggccactg accaggggcc
+      301 ctggcagaca ttaggggatc agttgtattt attgtatttt atctgtgtgt gctcaggagg
+      361 tgagcctagt gggtccttaa gtttggttgt gaataat
+//

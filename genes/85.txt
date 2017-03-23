@@ -1,0 +1,58 @@
+LOCUS       AF453877                 754 bp    DNA     linear   PRI 11-MAR-2002
+DEFINITION  Homo sapiens neuronal nicotinic receptor beta 4 subunit precursor,
+            gene, exon 1 and partial cds.
+ACCESSION   AF453877
+VERSION     AF453877.1  GI:18042122
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 754)
+  AUTHORS   Valor,L.M., Campos-Caro,A., Carrasco-Serrano,C., Ortiz,J.A.,
+            Ballesta,J.J. and Criado,M.
+  TITLE     Transcription factors NF-Y and Sp1 are important determinants of
+            the promoter activity of the bovine and human neuronal nicotinic
+            receptor beta 4 subunit genes
+  JOURNAL   J. Biol. Chem. 277 (11), 8866-8876 (2002)
+   PUBMED   11742001
+REFERENCE   2  (bases 1 to 754)
+  AUTHORS   Valor,L.M. and Criado,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-NOV-2001) Dept. Bioquimica y Biologia Molecular,
+            Instituto de Neurosciencias, U. Miguel Hernandez-CSIC, San Juan,
+            Alicante, Spain
+FEATURES             Location/Qualifiers
+     source          1..754
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+     mRNA            519..>662
+                     /product="neuronal nicotinic receptor beta 4 subunit
+                     precursor"
+     exon            519..662
+                     /number=1
+     CDS             608..>662
+                     /codon_start=1
+                     /product="neuronal nicotinic receptor beta 4 subunit
+                     precursor"
+                     /protein_id="AAL57840.1"
+                     /db_xref="GI:18042123"
+                     /translation="MRRAPSLVLFFLVALCGR"
+ORIGIN      
+        1 aagctgggtg aggggccctg agctattcac cctcccagat tccactcact tttcctaagt
+       61 gtcctccctg caaagtctgc agagagcagc gctccctcgc gctcggctca cccagcagtg
+      121 tcctttcttt cagcaaaccc catgcgaatg aacctgagat gactcatttg cctaaaagcg
+      181 tcttcgaggt gagggaaggc aaagcccaag gacctccccg ctcaagcaca tgctctttcc
+      241 ccaacagtag agggatcctg cgctagcgtc cgccgccctc gagggctcag tctccccagc
+      301 tgtaccaagg gtgcccgcac tgtcctgcct gccttccttg ggggaaggtt gcgaggcccg
+      361 aagagatagg gaagccaggc ggcaggtggg gtccagacca cccagggggc gtcggggcgg
+      421 agcagcgggc ccagtacatc cctgagtggg gcggggctcg gcggggctct ccgcggggtc
+      481 ctagtgagcg ccgccccgcc agcaaacctc gggggccagg accggcgctc actcgaccgc
+      541 gcggctcacg ggtgccctgt gaccccacag cggagctcgc ggcggctgcc acccggcccc
+      601 gccggccatg aggcgcgcgc cttccctggt ccttttcttc ctggtcgccc tttgcgggcg
+      661 cggtgagttc ttttcgggga aggagggagg ggcgcctggg ttgggctgaa aggggctgga
+      721 ctggccacag gtgggaggga agggagggtg cctg
+//

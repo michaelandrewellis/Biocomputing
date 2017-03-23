@@ -1,0 +1,103 @@
+LOCUS       AH008469S12             1424 bp    DNA     linear   PRI 03-OCT-2002
+DEFINITION  Homo sapiens concentrative nucleoside transporter (CNT1) gene, exon
+            17, 18, and complete cds.
+ACCESSION   AF187978
+VERSION     AF187978.1  GI:6525166
+KEYWORDS    .
+SEGMENT     12 of 12
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1424)
+  AUTHORS   Ritzel,M.W.L., Ritzel,R.G., Cass,C.E. and Young,J.D.
+  TITLE     Genomic organization and sequence of the gene encoding the human
+            sodium-dependent, pyrimidine-selective nucleoside transporter
+            (CNT1)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1424)
+  AUTHORS   Ritzel,M.W.L., Ritzel,R.G., Cass,C.E. and Young,J.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-1999) Department of Physiology, Faculty of
+            Medicine and Dentistry, University of Alberta, 725 Medical Sciences
+            Building, Edmonton, Alberta T6G 2H7, Canada
+FEATURES             Location/Qualifiers
+     source          1..1424
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q25-26"
+     gene            order(AF187967.1:1480..2130,AF187968.1:1..1044,
+                     AF187969.1:1..2208,AF187970.1:1..917,AF187971.1:1..792,
+                     AF187972.1:1..609,AF187973.1:1..2177,AF187974.1:1..2605,
+                     AF187975.1:1..1706,AF187976.1:1..1276,AF187977.1:1..879,
+                     1..1424)
+                     /gene="CNT1"
+     mRNA            join(AF187967.1:1480..1619,AF187968.1:889..1003,
+                     AF187969.1:121..267,AF187969.1:480..591,
+                     AF187969.1:1506..1594,AF187970.1:172..262,
+                     AF187970.1:621..805,AF187971.1:96..237,
+                     AF187972.1:184..297,AF187973.1:453..611,
+                     AF187973.1:1661..1741,AF187974.1:1004..1129,
+                     AF187975.1:1302..1432,AF187976.1:425..593,
+                     AF187976.1:720..917,AF187977.1:369..449,285..496,754..829)
+                     /gene="CNT1"
+                     /product="concentrative nucleoside transporter"
+     CDS             join(AF187969.1:496..591,AF187969.1:1506..1594,
+                     AF187970.1:172..262,AF187970.1:621..805,
+                     AF187971.1:96..237,AF187972.1:184..297,
+                     AF187973.1:453..611,AF187973.1:1661..1741,
+                     AF187974.1:1004..1129,AF187975.1:1302..1432,
+                     AF187976.1:425..593,AF187976.1:720..917,
+                     AF187977.1:369..449,285..496,754..829)
+                     /gene="CNT1"
+                     /codon_start=1
+                     /product="concentrative nucleoside transporter"
+                     /protein_id="AAF15353.1"
+                     /db_xref="GI:6525168"
+                     /translation="MENDPSRRRESISLTPVAKGLENMGADFLESLEGGQLPRSDLSP
+                     AEIRSSWSEAAPKPFSRWRNLQPALRARSFCREHMQLFRWIGTGLLCTGLSAFLLVAC
+                     LLDFQRALALFVLTCVVLTFLGHRLLKRLLGPKLRRFLKPQGHPRLLLWFKRGLALAA
+                     FLGLVLWLSLDTSQRPEQLVSFAGICVFVALLFACSKHHCAVSWRAVSWGLGLQFVLG
+                     LLVIRTEPGFIAFEWLGEQIRIFLSYTKAGSSFVFGEALVKDVFAFQVLPIIVFFSCV
+                     ISVLYHVGLMQWVILKIAWLMQVTMGTTATETLSVAGNIFVSQTEAPLLIRPYLADMT
+                     LSEVHVVMTGGYATIAGSLLGAYISFGIDATSLIAASVMAAPCALALSKLVYPEVEES
+                     KFRREEGVKLTYGDAQNLIEAASTGAAISVKVVANIAANLIAFLAVLDFINAALSWLG
+                     DMVDIQGLSFQLICSYILRPVAFLMGVAWEDCPVVAELLGIKLFLNEFVAYQDLSKYK
+                     QRRLAGAEEWVGDRKQWISVRAEVLTTFALCGFANFSSIGIMLGGLTSMVPQRKSDFS
+                     QIVLRALFTGACVSLVNACMAGILYMPRGAEVDCMSLLNTTLSSSSFEIYQCCREAFQ
+                     SVNPEFSPEALDNCCRFYNHTICAQ"
+     exon            285..496
+                     /gene="CNT1"
+                     /number=17
+     exon            754..829
+                     /gene="CNT1"
+                     /number=18
+ORIGIN      
+        1 gggacctggg ttaaattccc agttgcctga aatccaaaaa tcaacatctt tttccctgat
+       61 tgccaactca tggtgtgtag ggaaatgtgg ggcattgcct aggggtccaa gccaggccaa
+      121 agagaactcc tgagctcagc aagctgtcag gaggacaaca tctgtccctc tggccatcta
+      181 ttaatagaag aggaagggag gtcagcagat gcagcccgag ctgcggaacg cgggcagaga
+      241 gggacacagc ttcccaggcc ctgagcactt ctgtcccctt gcagacctcc atggtccccc
+      301 aacggaagag cgacttctcc cagatagtgc tccgggcgct cttcacggga gcctgtgtgt
+      361 ccctggtgaa cgcctgtatg gcagggatcc tctacatgcc caggggggct gaagttgact
+      421 gcatgtccct cttgaacacg accctcagca gcagcagctt tgagatttac cagtgctgcc
+      481 gtgaggcctt ccagaggtga gggcctgggc tgtgggacct gcagggcacc cacagtgata
+      541 gacagaatgc ttgagcgctg ggggggatgc ctttggtacc agggtgaggg tagaaatgtt
+      601 acggctgcag ctaatgggga ggtgaaggct cgaggaccaa tggaggaagg gtggaccaga
+      661 gacttgaaac agtgttcccg gtgttgcaca gcctgatggt ggcccgcaga accaggcctg
+      721 gagctcccac tgcgatcttt gctttctttt tagcgtcaat ccagagttca gcccagaggc
+      781 cctggacaac tgctgtcggt tttacaacca cacgatctgt gcacagtgag gacagaacat
+      841 gcttgtgctt ctgcgcttct gagggctgtt ctcccccggg aaccatctgt ccccaccttc
+      901 cctttcccag agccctcttc agggaagcca caggacttag acccagctca atcccacaat
+      961 tgggaagggg tcatggagtg agtgtgcaga gagtgagtga ggacataagg aaggacatgt
+     1021 cccactccat cccccttcct gctcccccat ttcctaactc ccccagtgtg aattctcagg
+     1081 gtcacttctg cctcctcccg tttcccctcc acatccaaac agcaccctgg tcctctctat
+     1141 cccccctctc ctggggtccc tcacatgccc cttcccttct gttgtgggct gcacaccaaa
+     1201 gcctcctccc ctccccactt cctaggcact aggatctctc tgtggcttcc cctgctgggt
+     1261 ggtgtcacct ctttctctgc tttcagagaa acccttcccg cctttcctca gagtgcttcc
+     1321 caaactgagg tcccatggca cactgtcctg ggaggcgttc agagggttcc atgatggact
+     1381 aggtttggaa ccactgggtt aaataaactt agagagggct gttt
+//

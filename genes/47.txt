@@ -1,0 +1,119 @@
+LOCUS       AF206502S9              1471 bp    DNA     linear   PRI 29-AUG-2001
+DEFINITION  Homo sapiens transglutaminase X (TGM5) gene, exons 12, 13, and
+            complete cds.
+ACCESSION   AF206510
+VERSION     AF206510.1  GI:6690085
+KEYWORDS    .
+SEGMENT     9 of 9
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1471)
+  AUTHORS   Grenard,P., Bates,M.K. and Aeschlimann,D.
+  TITLE     Evolution of transglutaminase genes: identification of a
+            transglutaminase gene cluster on human chromosome 15q15. Structure
+            of the gene encoding transglutaminase X and a novel gene family
+            member, transglutaminase Z
+  JOURNAL   J. Biol. Chem. 276 (35), 33066-33078 (2001)
+   PUBMED   11390390
+REFERENCE   2  (bases 1 to 1471)
+  AUTHORS   Aeschlimann,D. and Bates,M.K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-NOV-1999) Connective Tissue Biology Laboratories,
+            Cardiff School of Biosciences, Cardiff University, Museums Ave,
+            Cardiff CF10 3US, UK
+FEATURES             Location/Qualifiers
+     source          1..1471
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15"
+                     /note="BAC-33(P5) and BAC-228(P20) (Genome Systems, St.
+                     Louis, MO)"
+     gene            order(AF206502.1:308..1105,AF206503.1:1..1838,
+                     AF206504.1:1..645,AF206505.1:1..437,AF206506.1:1..650,
+                     AF206507.1:1..381,AF206508.1:1..781,AF206509.1:1..1303,
+                     1..1471)
+                     /gene="TGM5"
+     mRNA            join(AF206502.1:308..474,AF206503.1:1139..1318,
+                     AF206503.1:1421..1666,AF206504.1:362..480,
+                     AF206505.1:164..292,AF206506.1:285..462,
+                     AF206507.1:131..269,AF206508.1:157..260,
+                     AF206508.1:367..606,AF206509.1:104..472,
+                     AF206509.1:1018..1178,200..333,543..1471)
+                     /gene="TGM5"
+     CDS             join(AF206502.1:465..474,AF206503.1:1139..1318,
+                     AF206503.1:1421..1666,AF206504.1:362..480,
+                     AF206505.1:164..292,AF206506.1:285..462,
+                     AF206507.1:131..269,AF206508.1:157..260,
+                     AF206508.1:367..606,AF206509.1:104..472,
+                     AF206509.1:1018..1178,200..333,543..696)
+                     /gene="TGM5"
+                     /EC_number="2.3.2.13"
+                     /note="transglutaminase V"
+                     /codon_start=1
+                     /product="transglutaminase X"
+                     /protein_id="AAF23981.1"
+                     /db_xref="GI:6690087"
+                     /translation="MAQGLEVALTDLQSSRNNVRHHTEEITVDHLLVRRGQAFNLTLY
+                     FRNRSFQPGLDNIIFVVETGPLPDLALGTRAVFSLARHHSPSPWIAWLETNGATSTEV
+                     SLCAPPTAAVGRYLLKIHIDSFQGSVTAYQLGEFILLFNPWCPEDAVYLDSEPQRQEY
+                     VMNDYGFIYQGSKNWIRPCPWNYGQFEDKIIDICLKLLDKSLHFQTDPATDCALRGSP
+                     VYVSRVVCAMINSNDDNGVLNGNWSENYTDGANPAEWTGSVAILKQWNATGCQPVRYG
+                     QCWVFAAVMCTVMRCLGIPTRVITNFDSGHDTDGNLIIDEYYDNTGRILGNKKKDTIW
+                     NFHVWNECWMARKDLPPGYGGWQVLDATPQEMSNGVYCCGPASVRAIKEGEVDLNYDT
+                     PFVFSMVNADCMSWLVQGGKEQKLHQDTSSVGNFISTKSIQSDERDDITENYKYEEGS
+                     LQERQVFLKALQKLKARSFHGSQRGAELQPSRPTSLSQDSPRSLHTPSLRPSDVVQVS
+                     LKFKLLDPPNMGQDICFVLLALNMSSQFKDLKVNLSAQSLLHDGSPLSPFWQDTAFIT
+                     LSPKEAKTYPCKISYSQYSQYLSTDKLIRISALGEEKSSPEKILVNKIITLSYPSITI
+                     NVLGAAVVNQPLSIQVIFSNPLSEQVEDCVLTVEGSGLFKKQQKVFLGVLKPQHQASI
+                     ILETVPFKSGQRQIQANMRSNKFKDIKGYRNVYVDFAL"
+     repeat_region   1..105
+     exon            200..333
+                     /gene="TGM5"
+                     /number=12
+     exon            543..1471
+                     /gene="TGM5"
+                     /number=13
+     polyA_signal    693..697
+                     /gene="TGM5"
+                     /note="alternative"
+     3'UTR           697..1471
+                     /gene="TGM5"
+     repeat_region   853..968
+                     /rpt_type=inverted
+     polyA_signal    1270..1275
+                     /gene="TGM5"
+                     /note="alternative"
+     repeat_region   1348..1470
+                     /rpt_type=inverted
+ORIGIN      
+        1 tttaggcaaa taaagggaaa ctagagagct tttctaatat ctgcttcttc tcaattgtct
+       61 tcggctcaaa gaattcttat gccaaagtgg catatttgga ggtggcatat cctgccacct
+      121 tacagaatgg tgcccttcgt aaatatctgg tgagttgggg aatgagaact aattctcctt
+      181 cccctcctgg tctgtttagg ttctaggagc agccgttgtg aaccagccac tctccataca
+      241 ggtgatattt tcaaaccccc tctcggagca ggttgaggac tgtgtgctga ctgtggaagg
+      301 aagtggcctc ttcaagaaac agcagaaagt cttgtaagtg ctgcaagtgc tcagccttct
+      361 cctgtttttc ccccctgaga ttagcactat ccttcctgaa catgggttcc tgagccagac
+      421 tccacaacac cggggaaggg aaagtggaag cactccctcc cactcaggaa gctgggtgga
+      481 aaagggctcc agggtcatta tcatgctttt ggttttctga catgctccat tctctgttgc
+      541 agccttggag tcctcaaacc ccaacaccaa gcaagcatca ttctggagac cgtccccttc
+      601 aagagtggac aaaggcagat ccaagctaat atgagaagca acaagtttaa ggacattaag
+      661 ggttacagga atgtttatgt agactttgca ttataaattc tggaacaacg cgccagacgt
+      721 gtgaatttca agcttcagga aaaggagcaa gttcaaatgc aagctgcgcc attccccacc
+      781 acaacagagg cttcacaggg ctccagcaag agccacagag gggatgacgt gttcattttc
+      841 tgtctctcct gactccacta gaaatttaag ctccatgagg gcaaagactt tgctttgttt
+      901 actaccccta tactcagaac catttctggc atatgctagg cactcaacaa atattttttg
+      961 aatgaatgaa taggagactc cagcatccag agaacaggta ggaaatgtct atggatggat
+     1021 atttccctgg accatttgca cagctcccct ggactctttt cagggcccag ggattccact
+     1081 gtgtcccatc cagagattcc aggattccag tcacctatcc agaagcgtga tttggcacag
+     1141 aggtcagagg atactggtag gacttggcca tgacttaact gccccctgcc ccagatatcc
+     1201 aggaaagaaa aagacaggct gaacagctca ctgttgtttt gttgttgcga aagctaattc
+     1261 cctagtatga ataaacttca gaccttgctc tcctttgcct catgtagtca tcactttcct
+     1321 atctgttcct tggatagctg cagtctccat tcattcaaaa aagtcattta ttgagtgcct
+     1381 agcatatgcc agaagtggtt ctgagtgtag gggtacaaag taaacaaagc aaagtccctg
+     1441 ccctcatgga gcgcacattt ctcagtggag g
+//

@@ -1,0 +1,66 @@
+LOCUS       AB675563                 138 bp    DNA     linear   PRI 20-OCT-2011
+DEFINITION  Homo sapiens HEXA gene for hexosaminidase A, partial cds, exon 2,
+            clone: T17:E114K.
+ACCESSION   AB675563
+VERSION     AB675563.1  GI:353351765
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Mistri,M., Tamhankar,P.M., Sheth,F., Sanghavi,D., Kondurkar,P.,
+            Patil,S., Idicula-Thomas,S., Gupta,S. and Sheth,J.
+  TITLE     Novel mutations in HEXA gene in Indian patients with Tay Sachs
+            disease
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 138)
+  AUTHORS   Tamhankar,P.M. and Sheth,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-OCT-2011) Contact:Parag M Tamhankar National
+            Institute for Research in Reproductive Health, ICMR Genetic
+            Research Center; Jehangir Merwanji Street, Mumbai, Maharashtra
+            400081, India URL
+            :http://nirrh.res.in/staff/scientific/DrTamhankar_resume.htm
+FEATURES             Location/Qualifiers
+     source          1..138
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /clone="T17:E114K"
+                     /cell_type="leucocyte"
+                     /dev_stage="10 months old"
+                     /country="India"
+                     /note="Tay Sachs disease patient: T17"
+     gene            <1..>138
+                     /gene="HEXA"
+     intron          <1..9
+                     /gene="HEXA"
+                     /number=1
+     CDS             <10..>102
+                     /gene="HEXA"
+                     /codon_start=3
+                     /product="hexosaminidase A"
+                     /protein_id="BAL04456.1"
+                     /db_xref="GI:353351766"
+                     /translation="KRHTLEKNVLVVSVVTPGCNQLPTLESVKN"
+     exon            10..102
+                     /gene="HEXA"
+                     /number=2
+     variation       96
+                     /gene="HEXA"
+                     /note="This substitution causes an amino acid substitution
+                     from Glu to Lys.;
+                     homozygous mutation in a patient of Tay Sachs disease"
+                     /compare=S62049.1
+                     /replace="g"
+     intron          103..>138
+                     /gene="HEXA"
+                     /number=3
+ORIGIN      
+        1 tcttcctagg gaaacggcat acactggaga agaatgtgtt ggttgtctct gtagtcacac
+       61 ctggatgtaa ccagcttcct actttggagt cagtgaagaa ttgtaagtac catcctgttc
+      121 cctgtcttag aagagcaa
+//

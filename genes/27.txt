@@ -1,0 +1,82 @@
+LOCUS       HSSMAD6S4               1677 bp    DNA     linear   PRI 02-DEC-1999
+DEFINITION  Homo sapiens Smad6 protein (SMAD6) gene, exon 4 and complete cds.
+ACCESSION   AF041065
+VERSION     AF041065.1  GI:6502521
+KEYWORDS    .
+SEGMENT     4 of 4
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1677)
+  AUTHORS   Hagiwara,K., Freeman,A.H., McMenamin,M.G., Bennett,W.P.,
+            Nagashima,M., Minter,A.R., Yang,K., Takenoshita,S. and Harris,C.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-JAN-1998) LHC, NCI, Building 37, Room 2C22, 37
+            Convent Dr., Bethesda, MD 20892, USA
+FEATURES             Location/Qualifiers
+     source          1..1677
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21-22"
+     gene            order(AF041062.1:<217..1263,AF041063.1:1..1007,
+                     AF041064.1:1..638,1..>1068)
+                     /gene="SMAD6"
+     mRNA            join(AF041062.1:<217..1033,AF041063.1:675..731,
+                     AF041064.1:172..249,91..>1068)
+                     /gene="SMAD6"
+                     /product="Smad6 protein"
+     CDS             join(AF041062.1:217..1033,AF041063.1:675..731,
+                     AF041064.1:172..249,91..629)
+                     /gene="SMAD6"
+                     /codon_start=1
+                     /product="Smad6 protein"
+                     /protein_id="AAF14343.1"
+                     /db_xref="GI:6502523"
+                     /translation="MFRSKRSGLVRRLWRSRVVPDREEGGSGGGGGGDEDGSLGSRAE
+                     PAPRAREGGGCGRSEVRPVAPRRPRDAVGQRGAQGAGRRRRAGGPPRPMSEPGAGAGS
+                     SLLDVAEPGGPGWLPESDCETVTCCLFSERDAAGAPRDASDPLAGAALEPAGGGRSRE
+                     ARSRLLLLEQELKTVTYSLLKRLKERSLDTLLEAVESRGGVPGGCVLVPRADLRLGGQ
+                     PAPPQLLLGRLFRWPDLQHAVELKPLCGCHSFAAAADGPTVCCNPYHFSRLCGPESPP
+                     PPYSRLSPRDEYKPLDLSDSTLSYTETEATNSLITAPGEFSDASMSPDATKPSHWCSV
+                     AYWEHRTRVGRLYAVYDQAVSIFYDLPQGSGFCLGQLNLEQRSESVRRTRSKIGFGIL
+                     LSKEPDGVWAYNRGEHPIFVNSPTLDAPGGRALVVRKVPPGYSIKVFDFERSGLQHAP
+                     EPDAADGPYDPNSVRISFAKGWGPCYSRQFITSCPCWLEILLNNPR"
+     exon            91..>1068
+                     /gene="SMAD6"
+                     /number=4
+     polyA_signal    1063..1068
+                     /gene="SMAD6"
+ORIGIN      
+        1 ctgtgcagac agcagtgccc acctccgctc ctcggtgcct cccacctccc cacccagaat
+       61 aacgcggcgg accctgtgct tgtcccgcag acgccagcat gtctccggac gccaccaagc
+      121 cgagccactg gtgcagcgtg gcgtactggg agcaccggac gcgcgtgggc cgcctctatg
+      181 cggtgtacga ccaggccgtc agcatcttct acgacctacc tcagggcagc ggcttctgcc
+      241 tgggccagct caacctggag cagcgcagcg agtcggtgcg gcgaacgcgc agcaagatcg
+      301 gcttcggcat cctgctcagc aaggagcccg acggcgtgtg ggcctacaac cgcggcgagc
+      361 accccatctt cgtcaactcc ccgacgctgg acgcgcccgg cggccgcgcc ctggtcgtgc
+      421 gcaaggtgcc ccccggctac tccatcaagg tgttcgactt cgagcgctcg ggcctgcagc
+      481 acgcgcccga gcccgacgcc gccgacggcc cctacgaccc caacagcgtc cgcatcagct
+      541 tcgccaaggg ctgggggccc tgctactccc ggcagttcat cacctcctgc ccctgctggc
+      601 tggagatcct cctcaacaac cccagatagt ggcggccccg gcgggagggg cgggtgggag
+      661 gccgcggcca ccgccacctg ccggcctcga gaggggccga tgcccagaga cacagccccc
+      721 acggacaaaa ccccccagat atcatctacc tagatttaat ataaagtttt atatattata
+      781 tggaaatata tattatactt gtaattatgg agtcattttt acaatgtaat tatttatgta
+      841 tggtgcaatg tgtgtatatg gacaaaacaa gaaagacgca ctttggctta taattctttc
+      901 aatacagata tattttcttt ctcttcctcc ttcctcttcc ttacttttta tatatatata
+      961 taaagaaaat gatacagcag agctaggtgg aaaagcctgg gtttggtgta tggtttttga
+     1021 gatattaatg cccagacaaa aagctaatac cagtcactcg ataataaagt attcgcatta
+     1081 tagttttttt taaactgtct tctttttaca aagaggggca ggtagggctt cagcggattt
+     1141 ctgacccatc atgtaccttg aaacttgacc tcagttttca agttttactt ttattggata
+     1201 aagacagaac aaattgaaaa gggaggaaag tcacatttac tcttaagtaa accagagaaa
+     1261 gttctgttgt tccttcctgc ccatggctat ggggtgtcca gtggataggg atggcggtgg
+     1321 ggaaaaggag aatacactgg ccatttatcc tggacaagct cttccagtct gatggaggag
+     1381 gttcatgccc tagcctagaa aggcccaggt ccatgacccc catctttgag ttatgagcaa
+     1441 gctaaaagaa gacactattt ctcaccattt tgtggaaatg gcctggggaa caaagactga
+     1501 aatgggcctt gagcccacct gctaccttgc agagaaccat ctcgagcccc gtagatcttt
+     1561 ttaggacctc cacaggctat ttcccacccc ccagccaaaa atagctcaga atctgcccat
+     1621 ccagggctgt attaatgatt tatgtaaagg cagatggttt atttctactt tgtaaaa
+//

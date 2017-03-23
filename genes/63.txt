@@ -1,0 +1,62 @@
+LOCUS       AF228447S2               371 bp    DNA     linear   PRI 05-APR-2000
+DEFINITION  Homo sapiens gamma-aminobutyric acid receptor alpha 5 subunit
+            (GABRA5) gene, exon 8 and partial cds.
+ACCESSION   AF228448
+VERSION     AF228448.1  GI:7417242
+KEYWORDS    .
+SEGMENT     2 of 3
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 371)
+  AUTHORS   Kim,S.-J., Gonen,D., Yang,Z.-Y., Reliford,A., Dy,A., Leventhal,B.L.
+            and Cook,E.H. Jr.
+  TITLE     Homo sapiens gamma-aminobutyric acid (GABA) A receptor, alpha 5
+            subunit gene (GABRA5)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 371)
+  AUTHORS   Kim,S.-J., Gonen,D., Yang,Z.-Y., Reliford,A., Dy,A., Leventhal,B.L.
+            and Cook,E.H. Jr.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JAN-2000) Psychiatry, University of Chicago, 924 E.
+            57th Street, Chicago, IL 60637, USA
+FEATURES             Location/Qualifiers
+     source          1..371
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11.2-q12"
+     intron          <1..187
+                     /gene="GABRA5"
+                     /number=7
+     mRNA            <188..>331
+                     /gene="GABRA5"
+                     /product="gamma-aminobutyric acid receptor alpha 5
+                     subunit"
+     CDS             <188..>331
+                     /gene="GABRA5"
+                     /codon_start=3
+                     /product="gamma-aminobutyric acid receptor alpha 5
+                     subunit"
+                     /protein_id="AAF62509.1"
+                     /db_xref="GI:7417245"
+                     /translation="AYPNSEVVYVWTNGSTKSVVVAEDGSRLNQYHLMGQTVGTENIS
+                     TST"
+     exon            188..331
+                     /gene="GABRA5"
+                     /number=8
+     intron          332..>371
+                     /gene="GABRA5"
+                     /number=8
+ORIGIN      
+        1 atgggaagat gccgaactgc agtggcgtct gccctggtcc aaccacccta tgcatttttt
+       61 aggtcatgga accttgactt ttcaaacgtt ctcatcctct ctcttgctac tttagtaaaa
+      121 gcttctgtgt tttccaggct gggaatgatt tcatgtttat gtcactttct gccccctcct
+      181 catacagatg cgtaccctaa ttctgaagtc gtttacgtct ggaccaacgg ctccaccaag
+      241 tcggtggtgg tggcggaaga tggctccaga ctgaaccagt accacctgat ggggcagacg
+      301 gtgggcactg agaacatcag caccagcaca ggtgagggct cggcacgcgc tgtgctgcca
+      361 ggcgcatcca g
+//

@@ -1,0 +1,94 @@
+LOCUS       HSSMAD3S08              2127 bp    DNA     linear   PRI 30-JAN-2002
+DEFINITION  Homo sapiens Smad3 (MADH3) gene, exon 9, and complete cds.
+ACCESSION   AF025300
+VERSION     AF025300.1  GI:18418622
+KEYWORDS    .
+SEGMENT     8 of 8
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2127)
+  AUTHORS   Hagiwara,K., Yang,K., McMenamin,M.G., Freeman,A.H., Bennett,W.P.,
+            Nagashima,M., Minter,A.R., Miyazono,K., Takenoshita,S. and
+            Harris,C.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-SEP-1997) LHC, NCI, Bldg 37, Rm 2C22 37 Convent
+            Drive, Bethesda, MD 20892, USA
+FEATURES             Location/Qualifiers
+     source          1..2127
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21-22"
+     gene            order(AF025293.1:4648..9288,AF025294.1:1..1512,
+                     AF025295.1:1..508,AF025296.1:1..662,AF025297.1:1..1268,
+                     AF025298.1:1..903,AF025299.1:1..403,1..>802)
+                     /gene="MADH3"
+                     /note="SMAD3"
+     mRNA            join(AF025293.1:4648..4919,AF025294.1:227..420,
+                     AF025294.1:585..716,AF025295.1:271..345,
+                     AF025296.1:296..346,AF025297.1:989..1201,
+                     AF025298.1:390..527,AF025299.1:161..305,679..>802)
+                     /gene="MADH3"
+                     /product="Smad3"
+     CDS             join(AF025293.1:4714..4919,AF025294.1:227..420,
+                     AF025294.1:585..716,AF025295.1:271..345,
+                     AF025296.1:296..346,AF025297.1:989..1201,
+                     AF025298.1:390..527,AF025299.1:161..305,679..802)
+                     /gene="MADH3"
+                     /codon_start=1
+                     /product="Smad3"
+                     /protein_id="AAL68976.1"
+                     /db_xref="GI:18418623"
+                     /translation="MSSILPFTPPIVKRLLGWKKGEQNGQEEKWCEKAVKSLVKKLKK
+                     TGQLDELEKAITTQNVNTKCITIPRSLDGRLQVSHRKGLPHVIYCRLWRWPDLHSHHE
+                     LRAMELCEFAFNMKKDEVCVNPYHYQRVETPVLPPVLVPRHTEIPAEFPPLDDYSHSI
+                     PENTNFPAGIEPQSNIPETPPPGYLSEDGETSDHQMNHSMDAGSPNLSPNPMSPAHNN
+                     LDLQPVTYCEPAFWCSISYYELNQRVGETFHASQPSMTVDGFTDPSNSERFCLGLLSN
+                     VNRNAAVELTRRHIGRGVRLYYIGGEVFAECLSDSAIFVQSPNCNQRYGWHPATVCKI
+                     PPGCNLKIFNNQEFAALLAQSVNQGFEAVYQLTRMCTIRMSFVKGWGAEYRRQTVTST
+                     PCWIELHLNGPLQWLDKVLTQMGSPSIRCSSVS"
+     exon            679..>802
+                     /gene="MADH3"
+                     /number=9
+ORIGIN      
+        1 agcctgcctg caagctgcgt catcaactag cctgaattta gacaaagtgc tttggggaaa
+       61 agaaacgtgt ggtgtgcctt gtttttttcc agtaattgtt ccatggctcg ttctgcttgt
+      121 aagattttcc aaaataaggc cgtagatgag aattatatca gcacattggg aaccgaaggc
+      181 atgcggacac tgttggcgct ttgtaaaaaa cacccctcaa tcagacagac acacgtcatc
+      241 gtcgcctgct ggggctgggc ccagatttcg agatagggga gcggcacgtg cccgtgtggt
+      301 acagatggga gccaggaagc cctttgctca ggatggaggt ctcctctatt agggggcctg
+      361 ttacagtaac tggtgggcct ctggggtacc ctgcaattga ctttacatat ttaactcttt
+      421 gccattgact ttacatgttt aactctttaa agtcgacttc cttccccctc aagagaactt
+      481 aatttactca aagtcctccc tgggtagagg agtttggccg ggtagtttca gcaagttact
+      541 ggtaccgctt ctaggacagc gtctaacagc atctttggga agatgactgt caccaaagca
+      601 gaaaaagctt tctgacttgt gtaaccccct ggagattttt taagtccccc accccacccc
+      661 tttccctatt tcttacagga gacagactgt gaccagtacc ccctgctgga ttgagctgca
+      721 cctgaatggg cctttgcagt ggcttgacaa ggtcctcacc cagatgggct ccccaagcat
+      781 ccgctgttcc agtgtgtctt agagacatca agtatggtag gggagggcag gcttggggaa
+      841 aatggccatg caggaggtgg agaaaattgg aactctactc aacccattgt tgtcaaggaa
+      901 gaagaaatct ttctccctca actgaagggg tgcacccacc tgttttctga aacacacgag
+      961 caaacccaga ggtggatgtt atgaacagct gtgtctgcca aacacattta ccctttggcc
+     1021 ccactttgaa gggcaagaaa tggcgtctgc tctggtggct taagtgagca gaacaggtag
+     1081 tattacacca ccggccccct ccccccagac tctttttttg agtgacagct ttctgggatg
+     1141 tcacagtcca accagaaaca cccctctgtc taggactgca gtgtggagtt caccttggaa
+     1201 gggcgttcta ggtaggaaga gcccgcaggg ccatgcagac ctcatgccca gctctctgac
+     1261 gcttgtgaca gtgcctcttc cagtgaacat tcccagccca gccccgcccc gccccgcccc
+     1321 accactccag cagaccttgc cccttgtgag ctggatagac ttgggatggg gagggaggga
+     1381 gttttgtctg tctccctccc ctctcagaac atactgattg ggaggtgcgt gttcagcaga
+     1441 acctgcacac aggacagcgg gaaaaatcga tgagcgccac ctctttaaaa actcacttac
+     1501 gtttgtcctt tttcactttg aaaagttgga aggatctgct gaggcccagt gcatatgcaa
+     1561 tgtatagtgt ctattatcac attaatctca aagagattcg aatgacggta agtgttctca
+     1621 tgaagcagga ggcccttgtc gtgggatggc atttggtctc aggcagcacc acactgggtg
+     1681 cgtctccagt catctgtaag agcttgctcc agattctgat gcatacggct atattggttt
+     1741 atgtagtcag ttgcattcat taaatcaact ttatcatatg ctcttttaaa tgtttggttt
+     1801 atatattttc tttaaaaatc ctgggctggc acattgactg ggaaacctga gtgagaccca
+     1861 gcaactgctt ctctcccttc tctctcctga ggtgaagctt ttccaggttt tgttgaagag
+     1921 atacctgcca gcacttctgc aagctgaaat ttacagaagc aaattcacca gaagggaaac
+     1981 atctcaggcc aacataggca aatgaaaagg gctattaaaa tatttttaca cctttgaaaa
+     2041 ttgcaggctt ggtacaaaga ggtctgtcat cttccccctg ggatataaga tgatctagct
+     2101 cccggtagag gatcaccggt gacaact
+//

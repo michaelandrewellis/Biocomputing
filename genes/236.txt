@@ -1,0 +1,83 @@
+LOCUS       X74270                  1075 bp    DNA     linear   PRI 18-APR-2005
+DEFINITION  H.sapiens RYR3 gene for ryanodine receptor type 3 (partial).
+ACCESSION   X74270
+VERSION     X74270.1  GI:405716
+KEYWORDS    ryanodine receptor; RYR3 gene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1075)
+  AUTHORS   Sorrentino,V., Giannini,G., Malzac,P. and Mattei,M.G.
+  TITLE     Localizatin of a novel ryanodine receptor gene (RYR3) to human
+            chromosome 15q14-915 by in situ hybridization
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1075)
+  AUTHORS   Giannini,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUL-1993) G. Giannini, EMBL, Meyerhofstr. 1, 69012
+            Heidelberg, FRG
+FEATURES             Location/Qualifiers
+     source          1..1075
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q14-q15"
+                     /cell_line="HeLa"
+     intron          <1..934
+     gene            935..>1075
+                     /gene="RYR3"
+     CDS             935..>1075
+                     /gene="RYR3"
+                     /note="Protein sequence is in conflict with the conceptual
+                     translation"
+                     /codon_start=1
+                     /product="ryanodine receptor type 3"
+                     /protein_id="CAA52327.1"
+                     /db_xref="GI:1335301"
+                     /db_xref="GDB:138451"
+                     /db_xref="GOA:Q15413"
+                     /db_xref="HGNC:10485"
+                     /db_xref="InterPro:IPR000699"
+                     /db_xref="InterPro:IPR001870"
+                     /db_xref="InterPro:IPR003032"
+                     /db_xref="InterPro:IPR003608"
+                     /db_xref="InterPro:IPR003877"
+                     /db_xref="InterPro:IPR005821"
+                     /db_xref="InterPro:IPR008985"
+                     /db_xref="InterPro:IPR009460"
+                     /db_xref="InterPro:IPR011992"
+                     /db_xref="InterPro:IPR013333"
+                     /db_xref="InterPro:IPR013662"
+                     /db_xref="InterPro:IPR014821"
+                     /db_xref="InterPro:IPR015925"
+                     /db_xref="InterPro:IPR016093"
+                     /db_xref="InterPro:IPR018249"
+                     /db_xref="InterPro:IPR018355"
+                     /db_xref="UniProtKB/Swiss-Prot:Q15413"
+                     /translation="CYLFHMYVGVRAGGGIGDEIEDPAGDPYEMYRIVFDITFFFFVI
+                     VIL"
+     exon            935..>1075
+                     /gene="RYR3"
+ORIGIN      
+        1 ccatggaccg ggattaagca cttgatttat ttcagcaagc cagtcggagg ttctttgcgg
+       61 acagccagca gcaggatcag gttggaggtg gggaggggga gtcccgtcag gccagatctt
+      121 cgtgagaaaa aaggcgctgc ccagataagc cagcttggct gcagcaacat cgccagttta
+      181 ttttgaccag atttcagaaa aagaatctgt gtctcaggga caggggacag tgaaatgccc
+      241 agtctgtgag catctccata aaagaggtaa cacttcttga cgaaaaactc tccatgtgct
+      301 ttctcgggcc aagcaccgtc atgagacagc aatcctagcc cctagagtac tggcatgacc
+      361 agcgtgtctt caggcgcccc tggcttttga ttttccaggt gtaagacggt cctttctctg
+      421 tgagtctaat caacccatca ggtggagaga cagagggtga gaacaggagg agcagaaaag
+      481 tccattacct ttgaccttcc tactgcagga atccctgccc taccaggtgt aaggggaatg
+      541 tggatgaaga agagggggga cctttttgca gttatagcac agcctgaagg ccaggctaac
+      601 actcttaaaa ttaaatgagg aaaaattatt atatggcata ggccatactc atcaaggctt
+      661 aaagatcttt taacttatat acacctttaa tgggcctaaa aatacctttt aaaagcctaa
+      721 atgtaacgac agtctttcca tctttgtaga tatcaaactg tccagagggt gcagtggaca
+      781 gcagctagca gcatgaatac tggcacctct gaagagttcc cctctcctgg cttagggctg
+      841 ccacaatctg accgaatcat atgaatgatc tgagcatctt gctaaaaaca gaactgtgac
+      901 ttttgcctaa atccccctta tttttcttct ctagtgttac cttttccaca tgtacgtggg
+      961 agtgagagca ggaggtggca ttggtgatga aattgaagac cctgctggtg acccttatga
+     1021 aatgtatcgc attgtctttg acattacctt tttcttcttc gtcattgtca tcttg
+//

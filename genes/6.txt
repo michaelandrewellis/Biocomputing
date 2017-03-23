@@ -1,0 +1,245 @@
+LOCUS       AB061820                6194 bp    DNA     linear   PRI 07-NOV-2007
+DEFINITION  Homo sapiens RPL4, U18 genes for ribosomal protein L4 and U18
+            snoRNA, complete cds and sequence.
+ACCESSION   AB061820
+VERSION     AB061820.1  GI:17932933
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Yoshihama,M., Uechi,T., Asakawa,S., Kawasaki,K., Kato,S., Higa,S.,
+            Maeda,N., Minoshima,S., Tanaka,T., Shimizu,N. and Kenmochi,N.
+  TITLE     The human ribosomal protein genes: sequencing and comparative
+            analysis of 73 genes
+  JOURNAL   Genome Res. 12 (3), 379-390 (2002)
+   PUBMED   11875025
+REFERENCE   2  (bases 1 to 6194)
+  AUTHORS   Kenmochi,N. and Shimizu,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-MAY-2001) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..6194
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22"
+                     /clone_lib="Keio BAC library"
+     gene            648..6173
+                     /gene="RPL4"
+     exon            648..706
+                     /gene="RPL4"
+                     /number=1
+     CDS             join(704..706,1963..2134,2328..2434,2742..2880,3580..3704,
+                     3988..4117,4387..4543,5116..5199,5316..5436,5841..6086)
+                     /gene="RPL4"
+                     /codon_start=1
+                     /product="ribosomal protein L4"
+                     /protein_id="BAB79458.1"
+                     /db_xref="GI:17932934"
+                     /translation="MACARPLISVYSEKGESSGKNVTLPAVFKAPIRPDIVNFVHTNL
+                     RKNNRQPYAVSELAGHQTSAESWGTGRAVARIPRVRGGGTHRSGQGAFGNMCRGGRMF
+                     APTKTWRRWHRRVNTTQKRYAICSALAASALPALVMSKGHRIEEVPELPLVVEDKVEG
+                     YKKTKEAVLLLKKLKAWNDIKKVYASQRMRAGKGKMRNRRRIQRRGPCIIYNEDNGII
+                     KAFRNIPGITLLNVSKLNILKLAPGGHVGRFCIWTESAFRKLDELYGTWRKAASLKSN
+                     YNLPMHKMINTDLSRILKSPEIQRALRAPRKKIHRRVLKKNPLKNLRIMLKLNPYAKT
+                     MRRNTILRQARNHKLRVDKAAAAAAALQAKSDEKAAVAGKKPVVGKKGKKAAVGVKKQ
+                     KKPLVGKKAAATKKPAPEKKPAEKKPTTEEKKPAA"
+     intron          707..1962
+                     /gene="RPL4"
+                     /number=1
+     exon            1963..2134
+                     /gene="RPL4"
+                     /number=2
+     intron          2135..2327
+                     /gene="RPL4"
+                     /number=2
+     ncRNA           2178..2247
+                     /gene="RPL4"
+                     /ncRNA_class="snoRNA"
+                     /product="U18 small nucleolar RNA"
+                     /note="U18 snoRNA"
+     exon            2328..2434
+                     /gene="RPL4"
+                     /number=3
+     intron          2435..2741
+                     /gene="RPL4"
+                     /number=3
+     ncRNA           2582..2681
+                     /gene="RPL4"
+                     /ncRNA_class="snoRNA"
+                     /product="putative U16 small nucleolar RNA"
+                     /note="U16 snoRNA"
+     exon            2742..2880
+                     /gene="RPL4"
+                     /number=4
+     intron          2881..3579
+                     /gene="RPL4"
+                     /number=4
+     repeat_region   2904..3101
+                     /gene="RPL4"
+                     /rpt_family="L1MA4"
+     ncRNA           3401..3470
+                     /gene="RPL4"
+                     /ncRNA_class="snoRNA"
+                     /product="putative U18 small nucleolar RNA"
+                     /note="U18 snoRNA"
+     exon            3580..3704
+                     /gene="RPL4"
+                     /number=5
+     intron          3705..3987
+                     /gene="RPL4"
+                     /number=5
+     repeat_region   3808..3923
+                     /gene="RPL4"
+                     /rpt_family="MIR"
+     exon            3988..4117
+                     /gene="RPL4"
+                     /number=6
+     intron          4118..4386
+                     /gene="RPL4"
+                     /number=6
+     ncRNA           4174..4240
+                     /gene="RPL4"
+                     /ncRNA_class="snoRNA"
+                     /product="putative U18 small nucleolar RNA"
+                     /note="U18 snoRNA"
+     exon            4387..4543
+                     /gene="RPL4"
+                     /number=7
+     intron          4544..5115
+                     /gene="RPL4"
+                     /number=7
+     repeat_region   complement(4687..4980)
+                     /rpt_family="AluSx"
+     exon            5116..5199
+                     /gene="RPL4"
+                     /number=8
+     intron          5200..5315
+                     /gene="RPL4"
+                     /number=8
+     exon            5316..5436
+                     /gene="RPL4"
+                     /number=9
+     intron          5437..5840
+                     /gene="RPL4"
+                     /number=9
+     repeat_region   complement(5465..5751)
+                     /rpt_family="AluSx"
+     exon            5841..6173
+                     /gene="RPL4"
+                     /number=10
+     polyA_signal    6142..6147
+                     /gene="RPL4"
+ORIGIN      
+        1 cgctgatccc cagagtggca agaggcttag ggcggggatc cagacaccca gggaaagaag
+       61 tgctgtccca ggaccccagc caaaagaaga gactagactc actgaaggag acgagaataa
+      121 aagtcctctg ctgcgcagtt cagccgctcc cacatcccgc cccaatgtga gagcggtacc
+      181 ggaaccgcca aactgaactg cgcgccggac cggcgacgtc aggggtcatg gccccgcccc
+      241 gccgggacta ttttgaccac cccctacaat aagtcctgtt tgtccgcaaa gttaaacttt
+      301 cgtttcaagc cacccagagc tatttactat gtcaatagtt ttcaacttcc gtctgcaata
+      361 attaaaataa gagcagtggt tggggagaag atacctcgac tcgcgagagt tggcctcgcc
+      421 ccctatggat tattccgcaa aaaggagtcc ctattttcta agaattatta ttacgtttgg
+      481 aagaaaatag ataccgtaat ttcccacaaa taaagaaata acactctcgt ttttactttt
+      541 gtagtgtggt agagagatat tttttgtatc cgtgttggtt cttaggcggg gcaaggtggg
+      601 gcggtcaagg ggaaggtgac atatacagcg ggagtggtaa gcacttcctt ttcctgtggc
+      661 agcagccggg ctgagaggag cgtggctgtc tcctctctcc gccatggtga gtggaagttc
+      721 tcttggctgg ccttaccccg tatctcgggg ccagtaagga aggatttggg gttcggagca
+      781 tagaatctgt aggagataga gcgaggagag ggagatgagg accaaaggcg tctttttctg
+      841 gtgtggaact gggatgtgcg gcgatacggc agccatctta gaggcaacgt ggggttccca
+      901 gcacaggacg cgccgggaag cagtagtgga aagcactggg tcgttctcag gagcagtggg
+      961 accttctgtt agaatatttg cttatttagc ctttttctgg atgcttgtct ctgcctagct
+     1021 tgggaatcat ttctattaaa agctttctgg ttctcttcgc ctaaaaattg ttcggtgtta
+     1081 tcaaaatctt tgaatcctta gccaactcgt aataagacca gtgttatatg tgtactgctt
+     1141 ttccacaaat agtgttcgta tatactatgt agtgttgtgt gccgggggag ttaagcgaac
+     1201 aaaacagaca ctgtcctgac tgggatggta gttgcgttgg actaaatacg tagtaatatt
+     1261 ctatggtagt aagagatgaa aacataggga ataggagtgg tttggcttta aacagtgatc
+     1321 agagaaagct taaagtggcc tgaaggatgt gagaaagctg gcaaagagga gctttagagt
+     1381 gaacacttgg aaagtctgag gcaagtgctg ggtggtcctg agaccgaaaa atatctggaa
+     1441 gagtgtatgg gagttgagat cagaagtaga gaagatggtg taggcagcct caggattttc
+     1501 agtttactca cagttgggaa gacttggagg tttaaacaaa aagtaatatc accagtcttt
+     1561 ccactggtga gctttggaaa cacgtgttta gtagagggtg agggtgagtg ggacaggatg
+     1621 gaagttggga tgagtagagc ccgggtagac aggatttgct gattaattgg cattaaacag
+     1681 catctccaaa ccttacaata tggttttgat ttagctattg tgctttataa ggcttgcttt
+     1741 gaaagtttta tgataaacaa ttctttttga aaataaaatt gtgcagtaga ggttgagatt
+     1801 ctaagggttc tagtcattta ctgctatttt ggtttaaggg ttgtttgccc caccatacca
+     1861 gtctcttctg caattgagta tttaatggta ttgttggcgt atgagaagag tttgcttcaa
+     1921 acattacttg tcaataaaaa taatccttgt ctttttcttt aggcgtgtgc tcgcccactg
+     1981 atatcggtgt actccgaaaa gggggagtca tctggcaaaa atgtcacttt gcctgctgta
+     2041 ttcaaggctc ctattcgacc agatattgtg aactttgttc acaccaactt gcgcaaaaac
+     2101 aacagacagc cctatgctgt cagtgaatta gcaggtatgg atttatatct tctgcagata
+     2161 ttttagggac tgctttacag tagtgatgaa attccacttc attggtccgt gtttctgaac
+     2221 cacatgattt tctcggatgt tctgatgctg tttgctacca tgcataatag tcatgggttg
+     2281 gtatgtatga tgaagcagct acaactttta tctcttctca attttaggtc atcagactag
+     2341 tgctgagtct tggggtactg gcagagctgt ggctcgaatt cccagagttc gaggtggtgg
+     2401 gactcaccgc tctggccagg gtgcttttgg aaacgtatcc tttgtttcac tacctaagac
+     2461 tggtcatctc tgatggaatt tagcggcctg ggtctggttt attgatgata atacggtgta
+     2521 aaaatattac ttttttttgt cttgaagaga aggggcttca tttatatggg gttattttgc
+     2581 ttgcaatgat gtcgtaattt gcgtcttact ctgttctcag cgacagttgc ctgctgtcag
+     2641 taagctggta cagaaggttg acgaaaattc ttactgagca agaaataacc ttgttgtaat
+     2701 tactaaaatt tgagaaatgt gattcttgac tggaaaaata gatgtgtcgt ggaggccgaa
+     2761 tgtttgcacc aaccaaaacc tggcgccgtt ggcatcgtag agtgaacaca acccaaaaac
+     2821 gatacgccat ctgttctgcc ctggctgcct cagccctacc agcactggtc atgtctaaag
+     2881 gtttgtaata ctttatataa gagagtttga tagaagaaat aagacaccta ctatttgatc
+     2941 attagggtga tttttattca cagtaaccca tttcaagatg gctagaagag aataatttga
+     3001 atgtttttag cataaaatat tttagttcat ggatattcca gttacactga tttgatcttg
+     3061 acaaatgagt gcattcagtt atcaaatgta ctccagaaat acatgttaca taccggttta
+     3121 aaagtttttt aatcaaaaat atttcgtatc agtgatacaa aatgccccac tttttctttc
+     3181 acgtgaacct ttgttaaaat tgcacattct tttcattctg aagtgtctga ttaaatttta
+     3241 atcctttact aaatactagg tctgactact taaatctgac aaatcaatca gggaatacta
+     3301 gcgtaactgg ggaactattc aagtagtagt ttagtatatc cttagaaaac ttccaactta
+     3361 aacttgcctg ttgcgtaccc atcgcatttt tatttaactg tcaaaatgat gagattccac
+     3421 ttaattggtc cgtgtttctg aaacacatga tatttgtgga aattctgact tggcaaatgg
+     3481 aaaaccattt tgcttttatt ggttgtataa aatgtttgat tttttttttt tctccaaaag
+     3541 tttcaggata accaagtaag tgtcattggt ttttgttagg tcatcgtatt gaggaagttc
+     3601 ctgaacttcc tttggtagtt gaagataaag ttgaaggcta caagaagacc aaggaagctg
+     3661 ttttgctcct taagaaactt aaagcctgga atgatatcaa aaaggtccgt tcaatgagca
+     3721 catttacagt ttggtactcc ttgttcacag tttgtcactt tgaatttcag aagataaggg
+     3781 cagtatagct aagccttaat gtgtgagaga acaagaacct cagagcccga ttacttgggt
+     3841 ttgaatccta actgctgttt atggctctgt gtaaccttgg caagttattg tgcccagttt
+     3901 aatcatctgt aaaaaggaat taaaactctg aagatctatt gcagagattc tatcttaatc
+     3961 agaatactaa aactgctcac tttgtaggtc tatgcctctc agcgaatgag agctggcaaa
+     4021 ggcaaaatga gaaaccgtcg ccgtatccag cgcaggggcc cgtgcatcat ctataatgag
+     4081 gataatggta tcatcaaggc cttcagaaac atccctggta attaaactgc ttacatatat
+     4141 tgactaggta tactctgcaa gtctactcag cttttgttat gatgagattc cacttaaggt
+     4201 ccgtgtttct gaaacaaatg attttgtgga agttctgatt tatggctgaa agagttgcac
+     4261 cattgatggt tgaaacttca taattaataa gttctcaggt accttttata gctcttaagc
+     4321 cataaagatg atttgtgttt cttttgttga aatacaggct ccctaatttt tctttccctt
+     4381 taaaaggaat tactctgctt aatgtaagca agctgaacat tttgaagctt gctcctggtg
+     4441 ggcatgtggg acgtttctgc atttggactg aaagtgcttt ccggaagtta gatgaattgt
+     4501 acggcacttg gcgtaaagcc gcttccctca agagtaacta caagtaagta tctttcatat
+     4561 actaagcaca gatgtttata ttgtggatat taacattcag aattggctta catgttttct
+     4621 aaatttattc ccatttcccc ttatgtgcag caacagtatg ccaaaatgag actcacctgg
+     4681 tctatatttt tggttttttg ttttgttttt gagacagagt tgttctgtct cacccacgct
+     4741 ggagtgtagt ggtgtgatcg tggcttactg cagcctccgc ctcccgggtt caagcagttc
+     4801 tcctgtctca gcctcccaag tacctgggac tacaggcttg tgccaccaca cccggctaat
+     4861 tgtagagttg gggttttacc atgttggcca ggctggtctg gaactcctga ccttaggtga
+     4921 tccacccgcc tcggcctccc caagtgctgg gattataggg gtgagccacc acacccggcc
+     4981 tggtccatgt ttatgagaag tgatagtgta gtagatattt tggagagcat agtggctaaa
+     5041 aataaagctt cagttgagct tcctgttctt tggttgatta cttttacatg tacatgtcaa
+     5101 tcttttccct ttcagtcttc ccatgcacaa gatgattaat acagatctta gcagaatctt
+     5161 gaaaagccca gagatccaaa gagcccttcg agcaccacgg taaagtgata cttagagtgt
+     5221 aattctcgcc ccaaccctat actattggtt gtttcaaaaa tttgtatgtg tataatgtta
+     5281 agtaaaatgt tgatacagta tctgcttttt tatagcaaga agatccatcg cagagtccta
+     5341 aagaagaacc cactgaaaaa cttgagaatc atgttgaagc taaacccata tgcaaagacc
+     5401 atgcgccgga acaccattct tcgccaggcc aggaatgtga gtggagtaat tgggtgtggg
+     5461 gttgtttatg agcgggaatc tcactctgtc attcaggctc agagtgcaat ggcgtgatct
+     5521 gagctcactg caacctccac ctaccaagtt caagcagttc ttctgtctca gcctcccaag
+     5581 tagctggcac tacaggcgca cgccaccatg tccggctaat ttttgtattt tcagtagaga
+     5641 cggggtgtca ctatattgtt aggctggtct caaactcctg acctcaggtg attcacctgc
+     5701 ctcggcctcc caaagtgctg ggattacagg cgtgagccac cgtacccggc tggtttgttt
+     5761 tgtttttgtt tttctcttcc tgatacatta agttcttaca gggatttgat tcttactgtt
+     5821 ttctgcctaa tttgttgcag cacaagctcc gggtggataa ggcagctgct gcagcagcgg
+     5881 cactacaagc caaatcagat gagaaggcgg cggttgcagg caagaagcct gtggtaggta
+     5941 agaaaggaaa gaaggctgct gttggtgtta agaagcagaa gaagcctctg gtgggaaaaa
+     6001 aggcagcagc taccaagaaa ccagcccctg aaaagaagcc tgcagagaag aaacctacta
+     6061 cagaggagaa gaagcctgct gcataaactc ttaaatttga ttattccata aaggtcaaat
+     6121 cattttggac agcttctttt gaataaagac ctgattatac aggcagtgag aaacatgact
+     6181 tggtgtgctc tgta
+//

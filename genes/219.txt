@@ -1,0 +1,64 @@
+LOCUS       HSLYOXL7                 466 bp    DNA     linear   PRI 28-JUN-1995
+DEFINITION  Human lysyl oxidase-like protein gene, exon 7 and complete cds.
+ACCESSION   U24389
+VERSION     U24389.1  GI:790665
+KEYWORDS    .
+SEGMENT     7 of 7
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 170)
+  AUTHORS   Kenyon,K., Sathya,G., Contente,S. and Friedman,R.M.
+  TITLE     Structure of the human lysyl oxidase-like gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 466)
+  AUTHORS   Contente,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-APR-1995) Sara Contente, Pathology, Uniformed
+            Services University of the Health Sciences, 4301 Jones Bridge Road,
+            Bethesda, MD 20814-4799, USA
+FEATURES             Location/Qualifiers
+     source          1..466
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q24-q25"
+                     /clone="R4"
+                     /sex="male"
+                     /tissue_type="placenta"
+                     /clone_lib="cosmid genomic pWE15 library, Stratagene Cat.
+                     number 951202"
+     CDS             join(U24395.1:447..1548,U24394.1:20..128,
+                     U24393.1:177..314,U24392.1:68..224,U24391.1:83..178,
+                     U24390.1:285..400,78..84)
+                     /codon_start=1
+                     /product="lysyl oxidase-like protein"
+                     /protein_id="AAA68940.1"
+                     /db_xref="GI:790667"
+                     /translation="MALARGSRQLGALVWGACLCVLVHGQQAQPGQGSDPARWRQLIQ
+                     WENNGQVYSLLNSGSEYVPAGPQRSESSSRVLLAGAPQAQQRRSHGSPRRRQAPSLPL
+                     PGRVGSDTVRGQARHPFGFGQVPDNWREVAVGDSTGMALARTSVSQQRHGGSASSVSA
+                     SAFASTYRQQPSYPQQFPYPQAPFVSQYENYDPASRTYDQGFVYYRPAGGGVGAGAAA
+                     VASAGVIYPYQPRARYEEYGGGEELPEYPPQGFYPAPERPYVPPPPPPPDGLDRRYSH
+                     SLYSEGTPGFEQAYPDPGPEAAQAHGGDPRLGWYPPYANPPPEAYGPPRALEPPYLPV
+                     RSSDTPPPGGERNGAQQGRLSVGSVYRPNQNGRGLPDLVPDPNYVQASTYVQRAHLYS
+                     LRCAAEEKCLASTAYAPEATDYDVRVLLRFPQRVKNQGTADFLPNRPRHTWEWHSCHQ
+                     HYHSMDEFSHYDLLDAATGKKVAEGHKASFCLEDSTCDFGNLKRYACTSHTQGLSPGC
+                     YDTYNADIDCQWIDITDVQPGNYILKVHVNPKYIVLESDFTNNVVRCNIHYTGRYVSA
+                     TNCKIVQS"
+     exon            78..466
+                     /number=7
+     3'UTR           85..466
+ORIGIN      
+        1 gggacgccct ggctgaggag gccacggggg gcctactttg cagcccctca ttgacccgac
+       61 tgtctttcct tcctcagatc ctgatctccg ggagggacag atggccaatc tctccccttc
+      121 caaagcaggc cctgctcccc gggcagcctc ccgccgaggg gcccagcccc caacccacag
+      181 gcagggaggg gcatccctcc ctgccggcct cagggagcga acgtggatga aaaccacagg
+      241 gattccggac gccagacccc attttatact tcacttttct ctacagtgtt gttttgttgt
+      301 tgttggtttt tattttttat actttggcca taccacagag ctagattgcc caggtctggg
+      361 ctgaataaaa caaggttttt ctactctgtg gctctgcatg cggcctgctg gctggctggc
+      421 agaccagcta gtttgggcct gggggatgtc cttaggcatc atcctt
+//

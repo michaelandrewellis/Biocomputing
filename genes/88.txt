@@ -1,0 +1,104 @@
+LOCUS       SEG_AF206512S           2180 bp    DNA     linear   PRI 29-JUN-2011
+DEFINITION  Homo sapiens erythrocyte protein band 4.2 (EPB42) gene, partial
+            cds.
+ACCESSION   AH009244 AF206511 AF206512
+VERSION     AH009244.2  GI:338825438
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2180)
+  AUTHORS   Grenard,P., Bates,M.K. and Aeschlimann,D.
+  TITLE     Evolution of transglutaminase genes: identification of a
+            transglutaminase gene cluster on human chromosome 15q15. Structure
+            of the gene encoding transglutaminase X and a novel gene family
+            member, transglutaminase Z
+  JOURNAL   J. Biol. Chem. 276 (35), 33066-33078 (2001)
+   PUBMED   11390390
+REFERENCE   2  (bases 1 to 2180)
+  AUTHORS   Aeschlimann,D. and Bates,M.K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-NOV-1999) Connective Tissue Biology Laboratories,
+            Cardiff School of Biosciences, Cardiff University, Museums Ave,
+            Cardiff CF10 3US, UK
+COMMENT     On or before Jun 29, 2011 this sequence version replaced
+            gi:7595352, gi:7595353, gi:7595351.
+FEATURES             Location/Qualifiers
+     source          1..2180
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15"
+                     /clone="BAC-33(P5), BAC-228(P20); Genome Systems, St.
+                     Louis, MO"
+                     /cell_type="erythrocyte"
+     repeat_region   1..77
+                     /rpt_family="Alu-Sb"
+                     /rpt_type=dispersed
+     gene            918..>2180
+                     /gene="EPB42"
+     mRNA            918..>934
+                     /gene="EPB42"
+                     /product="erythrocyte protein band 4.2"
+     5'UTR           918..>934
+                     /gene="EPB42"
+     gap             935..1034
+                     /estimated_length=unknown
+     mRNA            <1035..>2180
+                     /gene="EPB42"
+                     /product="erythrocyte protein band 4.2"
+     5'UTR           <1035..2177
+                     /gene="EPB42"
+     repeat_region   <1035..1142
+                     /rpt_family="Alu"
+                     /rpt_type=dispersed
+     CDS             2178..>2180
+                     /gene="EPB42"
+                     /note="similar to transglutaminase"
+                     /codon_start=1
+                     /product="erythrocyte protein band 4.2"
+                     /protein_id="AAF64425.1"
+                     /db_xref="GI:7595354"
+                     /translation="M"
+ORIGIN      
+        1 aactcctgac ctcgtgatcc gcccgcctcg gcctcccaaa gttctgggat tacaggtgtg
+       61 agccaccgtg ccccatctgc atatctttta acattgtgca tatttccatt taaaaatttt
+      121 taaggaatca aatttctcag tattttcttt ttgtcttctg agttttgcat aatattttta
+      181 aaggttttcc caagttaact taagaagaag tgtctcattt tttcttctat tactttaaga
+      241 atttaataag agttttgatc catctgaaat ttattttgat gtgtggcata agataggaag
+      301 ccaactgtat tttgacaagc tagttgtccc aaaatcattt actgataaat ccttcatttc
+      361 cccatggatt tgaagtgcca catttagcat acatttaata catgtatttt gatctactgg
+      421 acttttcaat tacagtaata tcatatgatg tgtgcatatc taggaaggct ggtcacactt
+      481 tattattatc ttagaaattt tcttttgaac cttagaatca gtttacctag tttcaaaaaa
+      541 caatcttggt gtttttattg ggaatgaatt aaacttaaga tcaacttggg aagaaatgac
+      601 cgctttataa agttgagttg tcctacacag gatggtgatc ttccttttta tctgctcaag
+      661 tcttatttgg tgtccctcca taccgtttcc aagtgtttta ctgacagcac ttcacatttc
+      721 ttaagtttat ttctagaaat tttacctttt gttgttgttg ctattatagg ttgggtcttt
+      781 aattacagtt tctgacttgt tattgattgc aggtatgaaa actattggct tctatacttt
+      841 tggtattagc cagctcacta aattaccttt tataatcatt gttagtagat ttaagttttc
+      901 caggtaaaaa atgacatctt caaataatga aaaannnnnn nnnnnnnnnn nnnnnnnnnn
+      961 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     1021 nnnnnnnnnn nnnngtttca ccatattggc caggctggtc tcgaactcct gacctcaggt
+     1081 gatccgcctg actcggcttc ccaaagtgct gggattacag gcatgagcca ctgcgctagt
+     1141 gaaaggcaac agtttcattt tttttttttt tttttttttt tacataataa gatccttcaa
+     1201 atgagttcaa aagttcaaag ttttaaaagt ataaaagagt aaacagcaga aagataacct
+     1261 ttctacccca ctgcccagat cccctcccca caggcaacca atatttttgg cagtgtgttt
+     1321 tatatcattc tatagacgtc tcatgtatat gcagcaagta cagctgccct gaaagtgctt
+     1381 ctggtaacac agtttcacaa gcccaggtag ggccaaatat gagatccttc tcttgtctct
+     1441 tcaggaacta aagaaagaaa aattgaaaag acatagggcc tgagtcccaa gatagttccc
+     1501 aaccttctct ggtagagggt cccagaccag gtaggcttgg aagagttggg gccccagctt
+     1561 ctacttttaa tacatttatt tttcaccaac aaattctact tccttatctt tttcacacag
+     1621 ataaattgca gatgcacgtg ttctctctat tatcaaaaca gcccatgaac atcttgcaac
+     1681 ttgcagcccc tgtcacgttt agggcctgag atttggagtt ggatatggga ctcctgtttg
+     1741 tggcctcctc tcttccagag tcttccagtg cagtccagat aacatctctg agagtctctt
+     1801 gagaccactg aagcaagagg cttcaaggtt tgttctaggc ttctctagtt ggcaggtctt
+     1861 ccccatccca ccccctcccc cagggctgcc aggcgtattc ctgcctgggc ctcctggcac
+     1921 aagagataaa atgaacaggg ttactcccag taactggtcc aggagatacc agcagagagg
+     1981 gagtaggaga gaagaaacat gtcagggtgc tcacaggagt agtgggggga ggttttgcta
+     2041 tttccagatt cttaagccaa caaaagtgcc ttcatatttt ctgtctggaa gacagaaagc
+     2101 ccagaaggag cccagaagca acagtttgag agaggcgctt tctgcggcca agtggataag
+     2161 aggagcggcc tgcaaccatg
+//

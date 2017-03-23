@@ -1,0 +1,54 @@
+LOCUS       AF271609S8               310 bp    DNA     linear   PRI 01-AUG-2000
+DEFINITION  Homo sapiens transcription factor 12 (TCF12) gene, exon 16 and
+            partial cds.
+ACCESSION   AF271616
+VERSION     AF271616.1  GI:9049975
+KEYWORDS    .
+SEGMENT     8 of 9
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 310)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Organization of the HTF4 Gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 310)
+  AUTHORS   Gan,T.-I., O'Sickey,T., Zhang,Y., Kim,U.-J. and Bina,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-MAY-2000) Chemistry, Purdue University, 1393 Brown
+            Bldg., W. Lafayette, IN 47907, USA
+FEATURES             Location/Qualifiers
+     source          1..310
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21"
+     mRNA            <43..>249
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /product="transcription factor 12"
+     CDS             <43..>249
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /note="helix-loop-helix transcription factor 4"
+                     /codon_start=1
+                     /product="transcription factor 12"
+                     /protein_id="AAF82578.1"
+                     /db_xref="GI:9049985"
+                     /translation="QSRMEDRLDRLDDAIHVLRNHAVGPSTSLPAGHSDIHSLLGPSH
+                     NAPIGSLNSNYGGSSLVASSRSASM"
+     exon            43..249
+                     /gene="TCF12"
+                     /gene_synonym="HTF4"
+                     /number=16
+ORIGIN      
+        1 atgccagcaa taaccaccat gttttttttt taatccatac agcagtctcg aatggaggat
+       61 cgtttagaca gactggatga tgcaatccat gtgctgcgga accatgctgt gggaccttcc
+      121 accagtttgc ctgctggtca cagtgatata catagtttat tgggaccatc ccataatgca
+      181 ccaattggaa gcctcaattc aaactatgga ggatcaagcc ttgttgcaag cagtcgatca
+      241 gcttcaatgg taaaatcatg ctcatctttt ttgtagtaaa ccctaaagat tcttgtccta
+      301 aatgtcttta
+//

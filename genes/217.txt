@@ -1,0 +1,77 @@
+LOCUS       HSPPROT19                463 bp    DNA     linear   PRI 02-FEB-1996
+DEFINITION  Human P protein (P) gene, exon 19, and complete cds for truncated P
+            protein.
+ACCESSION   U19170
+VERSION     U19170.1  GI:773319
+KEYWORDS    tyrosinase-positive oculocutaneous albinism; OCA2.
+SEGMENT     19 of 25
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 463)
+  AUTHORS   Lee,S.T., Nicholls,R.D., Jong,M.T., Fukai,K. and Spritz,R.A.
+  TITLE     Organization and sequence of the human P gene and identification of
+            a new family of transport proteins
+  JOURNAL   Genomics 26 (2), 354-363 (1995)
+   PUBMED   7601462
+REFERENCE   2  (sites)
+  AUTHORS   Rinchik,E.M., Bultman,S.J., Horsthemke,B., Lee,S.T., Strunk,K.M.,
+            Spritz,R.A., Avidano,K.M., Jong,M.T. and Nicholls,R.D.
+  TITLE     A gene for the mouse pink-eyed dilution locus and for human type II
+            oculocutaneous albinism
+  JOURNAL   Nature 361 (6407), 72-76 (1993)
+   PUBMED   8421497
+REFERENCE   3  (bases 1 to 463)
+  AUTHORS   Spritz,R.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-DEC-1994) Richard A. Spritz, Medical Genetics,
+            University of Wisconsin, 445 Henry Mall, Madison, WI 53706, USA
+FEATURES             Location/Qualifiers
+     source          1..463
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11.2-q12"
+     CDS             join(U19153.1:366..592,U19154.1:131..229,
+                     U19155.1:179..367,U19156.1:282..339,U19157.1:167..239,
+                     U19158.1:278..438,U19159.1:228..310,U19160.1:167..320,
+                     U19161.1:205..276,U19162.1:334..399,U19163.1:84..140,
+                     U19164.1:310..434,U19165.1:92..230,U19166.1:88..220,
+                     U19167.1:240..387,U19168.1:330..387,U19169.1:163..271,
+                     187..242)
+                     /gene="P"
+                     /codon_start=1
+                     /product="P protein, truncated"
+                     /protein_id="AAC13783.1"
+                     /db_xref="GI:773327"
+                     /translation="MHLEGRDGRRYPGAPAVELLQTSVPSGLAELVAGKRRLPRGAGG
+                     ADPSHSCPRGAAGQSSWAPAGQEFASFLTKGRSHSSLPQMSSSRSKDSCFTENTPLLR
+                     NSLQEKGSRCIPVYHPEFITAEESWEDSSADWERRYLLSREVSGLSASASSEKGDLLD
+                     SPHIRLRLSKLRRCVQWLKVMGLFAFVVLCSILFSLYPDQGKLWQLLALSPLENYSVN
+                     LSSHVDSTLLQVDLAGALVASGPSRPGREEHIVVELTQADALGSRWRRPQQVTHNWTV
+                     YLNPRRSEHSVMSRTFEVLTRETVSISIRASLQQTQAVPLLMAHQYLRGSVETQVTIA
+                     TAILAGVYALIIFEIVHRTLAAMLGSLAALAALAVIGDRPSLTHVVEWIDFETLALLF
+                     GMMILVAIFSETGFFDYCAVKAYRLSRGRVWAMIIMLCLIAAVLSAFLDNVTTMLLFT
+                     PVTIRLCEVLNLDPRQVLIAEVIFTNIGGAATAIGDPPNVIIVSNQELRKMGLDFAGF
+                     TAHMFIGICLVLLVCFPLLRLLYWNRKLYNKEPSEIVELKHEIHVWRLTAQRISPASR
+                     EETAVRRLLLGKVLALEHLLARRLHTFHRQISQEDKNWETNIQELQKKHRISDGILLA
+                     KCLTVLGFVIFMFFLNSFVPGIHLDLGGLGLVQAGRYYLSTPES"
+     exon            187..263
+                     /gene="P"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="alternatively spliced"
+                     /number=19
+ORIGIN      
+        1 ctggaaacca tcagacattc atgggctaga agttggtctt ccttttctct tatgtaaaaa
+       61 agccgcattt ctagattctc acacaacaca tgatgtatgt gcttttgact ggagttccag
+      121 ctttgtgtta tgtatttgca gcccctccat ttctttctct tgataatctc aaatccaact
+      181 tgccaggtgg cctgggcttg gttcaagctg gcaggtatta tttatccaca cctgagagct
+      241 gatctgcttg gaatcctgat gaggtaatga tccaaagctg gagtggtaac gattttgtga
+      301 atttcaattg tatttggtgg attacatcta gaaattgctg cagtgtaatt atttttaatt
+      361 acacctcagg cctaatgtaa ttttaacatt agaaacctta atgactacaa gaatgttacg
+      421 tggtcaccac tggtaattaa acaaatttaa aaaactagtg ttt
+//

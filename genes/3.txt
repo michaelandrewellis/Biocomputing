@@ -1,0 +1,70 @@
+LOCUS       AB043103                1364 bp    DNA     linear   PRI 20-SEP-2008
+DEFINITION  Homo sapiens gene for Nop10p, complete cds.
+ACCESSION   AB043103
+VERSION     AB043103.1  GI:8096259
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Henras,A., Henry,Y., Bousquet-Antonelli,C., Noaillac-Depeyre,J.,
+            Gelugne,J.P. and Caizergues-Ferrer,M.
+  TITLE     Nhp2p and Nop10p are essential for the function of H/ACA snoRNPs
+  JOURNAL   EMBO J. 17 (23), 7078-7090 (1998)
+   PUBMED   9843512
+REFERENCE   2
+  AUTHORS   Toji,S., Yano,M. and Tamai,K.
+  TITLE     Human Nop10p genomic DNA
+  JOURNAL   Published Only in Database (2000)
+REFERENCE   3  (bases 1 to 1364)
+  AUTHORS   Toji,S., Yano,M. and Tamai,K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-MAY-2000) Contact:Shingo Toji Medical & Biological
+            Laboratories, Research and Development division; Terawasaoka,
+            Oohara, 1063-103, Ina, Nagano 396-0002, Japan URL
+            :http://www.mbl.co.jp
+FEATURES             Location/Qualifiers
+     source          1..1364
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q13-q14"
+     gene            84..1186
+                     /gene="Nop10"
+     CDS             join(84..137,1046..1186)
+                     /gene="Nop10"
+                     /note="human orthlog of Saccharomyces cerevisiae Nop10p"
+                     /codon_start=1
+                     /product="Nop10p"
+                     /protein_id="BAA96107.1"
+                     /db_xref="GI:8096260"
+                     /translation="MFLQYYLNEQGDRVYTLKKFDPMGQQTCSAHPARFSPDDKYSRH
+                     RITIKKRFKVLMTQQPRPVL"
+ORIGIN      
+        1 attgacgaac acgtgacgcg gtcgggcgga ccactgcaga ctgagcggtg gaccgaattg
+       61 ggaccgctgg cttataagcg atcatgtttc tccagtatta cctcaacgag cagggagatc
+      121 gagtctatac gctgaaggtg aggagagaaa acagggtgta aataggcatg gcgagaaatg
+      181 tagatgggag gagtgggtga ggtcatacgt ggagttacct agctgggtgc ggggaaccag
+      241 aaagtccaga accgaggtgg ggaagaaccg ggaccgcgcg actcattttt taattaaaag
+      301 aaaaaattct ggcggggcgc agtggctcac gcctgtaatc ctagcacttt gggaggccga
+      361 ggcgggtgga ttgccttagc tcaggagttc gcgaccattc tgggcaacac tgtgaaactc
+      421 cgtttctact aaaatacaaa aaattagccg ggcatggcgg tgtgcgcctg ttatcccagc
+      481 tactcgggag gctgagacag gagaatcgct taaacccggg aggcagaggt tgcagtgagc
+      541 cgggatagcg ccattgcact cacttttcct tttttttttt ttttttttta aagacaggga
+      601 ctcgctttgt tgcctaggct gtagtgcggt ggtgcggtct cggctcactg caacctccgc
+      661 ctcctgggct caaacaatcc ttctgcctca gcctcccgag tagttgggac tacaggcgtg
+      721 cgccaccata cccggctaat ttttggtttt ggggtttttt gtttggttgg ttggttttgt
+      781 ttgtttgttt gttgtagaga cgaggtttcg ccatattgcc caggctggtc tcaaaccatc
+      841 ctcccgcctc gacctcccaa agtgccagga ttacaggcgt gagccaccgc gctcggcctt
+      901 tttaaatttt atatttctct atttatttgt acaacttttt gagttgacca ttgcatcttc
+      961 tattttcatg tttgcccttt ttcgcgctgg ccccacccca tttcatcact cctgtactga
+     1021 catacattct ctgttcctgg agcagaaatt tgacccgatg ggacaacaga cctgctcagc
+     1081 ccatcctgct cggttctccc cagatgacaa atactctcga caccgaatca ccatcaagaa
+     1141 acgcttcaag gtgctcatga cccagcaacc gcgccctgtc ctctgagggt cccttaaact
+     1201 gatgtctttt ctgccacctg ttacccctcg gagactccgt aaccaaactc ttcggactgt
+     1261 gagccctgat gcctttttgc cagccatact ctttggcatc cagtctctcg tggcgattga
+     1321 ttatgcttgt gtgaggcaat cagggtggca tcacccataa aggg
+//

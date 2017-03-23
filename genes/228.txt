@@ -1,0 +1,120 @@
+LOCUS       HSU78190                4000 bp    DNA     linear   PRI 03-DEC-1996
+DEFINITION  Human GTP cyclohydrolase I feedback regulatory protein gene,
+            complete cds.
+ACCESSION   U78190
+VERSION     U78190.1  GI:1698996
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 4000)
+  AUTHORS   Milstien,S., Jaffe,H., Kowlessur,D. and Bonner,T.I.
+  TITLE     Purification and cloning of the GTP cyclohydrolase I feedback
+            regulatory protein, GFRP
+  JOURNAL   J. Biol. Chem. 271 (33), 19743-19751 (1996)
+   PUBMED   8702680
+REFERENCE   2  (bases 1 to 4000)
+  AUTHORS   Bonner,T.I., Modi,W.S. and Milstein,S.
+  TITLE     Structure of the human GTP cyclohydrolase I feedback regulatory
+            protein gene
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 4000)
+  AUTHORS   Bonner,T.I.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-NOV-1996) Lab of Cell Biology, NIMH, Bldg 36, Rm
+            3A17, Bethesda, MD 20892-4090, USA
+FEATURES             Location/Qualifiers
+     source          1..4000
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15"
+     mRNA            join(<356..485,2096..2190,3495..3981)
+                     /note="5' end based on comparison with EST, GenBank
+                     Accession Number AA100037"
+     CDS             join(450..485,2096..2190,3495..3618)
+                     /function="mediates tetrahydrobiopterin inhibition of GTP
+                     cyclohydrolase I"
+                     /codon_start=1
+                     /product="GTP cyclohydrolase I feedback regulatory
+                     protein"
+                     /protein_id="AAB37337.1"
+                     /db_xref="GI:1698997"
+                     /translation="MPYLLISTQIRMEVGPTMVGDEQSDPELMQHLGASKRRALGNNF
+                     YEYYVDDPPRIVLDKLERRGFRVLSMTGVGQTLVWCLHKE"
+     polyA_signal    3951..3957
+     polyA_site      3982
+                     /note="based on comparison with EST, Genbank Accession
+                     Number N89728"
+ORIGIN      
+        1 tgttcaagaa gcgggcgcgg gggcaacacg cgcgcgggga cgcagtaaga tcacaggctg
+       61 caaagaaaac agcactaagc gtcctggagg acgctggagc ttcaggatag tgtccttcca
+      121 ggtcgtggga ccgccccctc ctccccgcac tccaccttcc cgcaactgga tcactcggcg
+      181 gaagcctcag gtgggccccg gggtccaagt ccgccgccgg gagggcgggg gcgggccccg
+      241 aaccgccgac tgcagggcgc gtcacggcag ccgctcctga ttggcggcca cggcggtcac
+      301 gggcaaggtg ccccgggatt gacgccgcct gtggccagag ccggagtaac gggactccca
+      361 gctgcgcgtc gcagtcccga cgcgagaagg gctggagtcg gcgtccagcc tagagccccc
+      421 ggtgggagcc aggccgggac gcgtgcacca tgccctacct gctcatcagc acccagatcc
+      481 gcatggtgag taccggccgc ctggcgactt ggagccggga ccaggcccta gggggctgcg
+      541 actgcacctt catgcctccc tcctgggctg cacccaccgg ggactggacc gggaacccgc
+      601 ccagacacgc ccccttggcc ggggagaggg agtggagaag cgggctcagc tcggcttccg
+      661 ggactcagcg agctctggcc ggcctgaagc ctttattgcc gcgaaggggc ccgggtacgt
+      721 gcgtcccggc aacagggcga cctccgggcg cttccggctc ctgtcctacc tgtcggcggg
+      781 agagacccag ggagccctgg cctcacgcgc agcacctagt gccctgcaca gagccgctcc
+      841 gcaggggaaa aaagggcgaa taacctgaga gaaagaggtt tggaaaagat aaggacctgc
+      901 caaggcgcta aaaccccggt gccaagtcct tgacccataa acagcaacta gctgcaccct
+      961 taggcacttc caggaagggc tatccctgaa gctttaggga aggaagaaaa gaaagaacac
+     1021 cctgcttgga aaaaaggaag gcgagaaggg gctgtgcagt tagaggtggg aacaccatga
+     1081 gttagaagtc acgttccttt ctctgggcgc agtttcctta tctgtaaaaa ggttctgatt
+     1141 gcccctcagg agtccccttt tagcttcaga aagacatgac gggcagcaag gtgctctctg
+     1201 cccttgctca ctgcccagtg ctggggtgaa ccagcaaagg gtacacaacc cccttggtgg
+     1261 gttcaccacg caacagagag ctcttgcaga gccctgggca gcggtttgtg aagcagccat
+     1321 ctgctcagct gccaaaatgt ggattcctgg gtcccttccc agacctccta aaactctgtc
+     1381 tggggcttgg gaacccatac ttggaaatgg ccccccaaag tgattcttat ttcttaaaag
+     1441 atatggcttt attgatatgt aatgtgcata ccataaattc tttgatttaa agtgtacaat
+     1501 tcagtgttgt tgtttcttta gtgtactcag agttgtgcaa ccatcaccat aatcagtttt
+     1561 agaacatttc taatacccca aaaggaaacc ctgtacccac tggcagacac tcttgatttc
+     1621 ccccaagtcc ctcagcccta gataaccact aattaccttt ctgtggtaat gtgatctgag
+     1681 tctggcttct ttcatttaca tgtttatttt gttttgtttt tttgaaatgg agtctcactc
+     1741 tgtcacccag gctggagtgc agtggtgcaa tcatggctca ctgcagcctc aaactcctcc
+     1801 cacctcaagc gatcctccca cctcagcctc agtagctgga actataggct cgtgatactt
+     1861 tgcctggcta aagctgagct ttaaggcact agggagggcg cctacattgc tcctcctgat
+     1921 cattgatggg ctccacccct tcacagcttg tgctcagccc ctaagaatcc ttgctactct
+     1981 ctgtagcctt tacctgaacc ttactcaggg ctagcaggca ggggaggaag gacaggcaag
+     2041 accttccacc tcctcctggc agccagccaa gcagccactg tggcttacct tgcaggaggt
+     2101 gggccccact atggtgggcg atgaacagtc ggatccagag ctgatgcagc atctgggggc
+     2161 ttcaaagaga agagccttgg gaaacaactt gtaagtagca gcctccctca gtatcctctc
+     2221 cctgccagcc cctagacctg cctctgctcc ctttatacaa cctccaagcc cagggacagg
+     2281 gcccagcatc agagccccct gcctgcatcc tggggctctg ttctccggag gagttggtcc
+     2341 catctgtagc ctctccaaca tcccccctct cccccacgag gcttgctctg aaagctttcc
+     2401 acatccttac tggaaccgca gaaacagagt ccgttccctg ggtctaggac tccactagca
+     2461 gactgttcct tgccctgccc tctcctaagc tggaccccat caaggacaga caggcacaga
+     2521 gagaaaggtt tttgtcgtga ggatctgcat gagtcgcaaa gctaagccct agaagcaggg
+     2581 agcagggagc ctgcgtccta cctccagggt ggctgctgcc tggggaccta gccatttccc
+     2641 ttggcattct tcctaatgcc tccatgtcta aactgtgact actgcttcca ttcctcctct
+     2701 cacccctgga ggcagggaga acccaagcta cacaggctct ctgaaaagag ttgtcagagt
+     2761 gagtgccagt tcaaatcggg gaaagaggag ggctgatccc agcccctggg tcaaggctcg
+     2821 gggacagaag ccagccccct ccctttgcca tgaggcactt gcctctccat gcccagcttg
+     2881 gggcttgagc cctttgtctg cttcatggtc tttcagcatc aattaaacct gacagaagga
+     2941 ctaccagcac tctccatgct agggagtggc gcacagagcc aggagctact ggggctcagc
+     3001 cttgttgcta cagaactgca ggacagccag ggcagtgagg ggcctggagg cttatttttt
+     3061 tttgaaatgg agtctctgtc gcccaggctg gagtgcggtg gtgcaatcat ggctcactgc
+     3121 agcctcagcc tcctcctacc tggaagcctg ggtggggagc aagcccaggg agggcggcag
+     3181 cagggctgtg gtcagactaa catggtctac catctgggac gctggggaac ctgattaacc
+     3241 cctctgtttt ctcatctatc aatggccaca acagtggcac cttcactagc ttgttgggaa
+     3301 gaataaatga gatagctcgt gaagtaccta gaaggggagg aggcaggggg cgtgcactta
+     3361 ccccagcgcc cagcaagcag ccagcaagtg tgagtcacta caagagtggc caggctgcct
+     3421 gctgcagaca ctagctttgt accaggagct tgctgtgtgc ccctcctcac cccccccatc
+     3481 ctgtctcttt gcagttatga atactacgtc gatgaccctc cccgcatagt cctggacaag
+     3541 ctggaacgca ggggcttccg tgtgctgagc atgacggggg tgggccagac gctggtgtgg
+     3601 tgtctgcaca aggagtgacc ttctcatgct gatttgcaga cggggcaccc ctgtggaggg
+     3661 gctgctgtgg gccctgacct ccaagctcct gcctcaccgt ctgccttgct cctctcttcc
+     3721 caaatcatca ccgccatggg cccagcccca aagggcagtg aatggccttc tctgaaaccc
+     3781 tgcgtcaagc agtgggagag ggcagtgccc ggtgccctgg tgctcccagc tgccctcctg
+     3841 cttcgggcct gggccgaggg ccttgtgtag gccatgttcc tcgggcagct gccccgggcc
+     3901 ggagctgggc actccagcgg ccctggcgcg tggctcctgc atagctagcc caagccaata
+     3961 aagggctgtg atgagtggct gcgcctgtgc tctgcttgtg
+//

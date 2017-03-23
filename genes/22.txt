@@ -1,0 +1,42 @@
+LOCUS       AF030492                  82 bp    DNA     linear   PRI 03-SEP-1998
+DEFINITION  Homo sapiens Ig heavy chain variable region VH1B20 gene, partial
+            cds.
+ACCESSION   AF030492
+VERSION     AF030492.1  GI:3513500
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 82)
+  AUTHORS   Cui,X. and Li,H.
+  TITLE     Determination of gene organization in individual haplotypes by
+            analyzing single DNA fragments from single spermatozoa
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 95 (18), 10791-10796 (1998)
+   PUBMED   9724783
+REFERENCE   2  (bases 1 to 82)
+  AUTHORS   Cui,X. and Li,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-OCT-1997) Laboratory of Human Genetics, Coriell
+            Institute for Medical Research, 401 Haddon Avenue, Camden, NJ
+            08103, USA
+FEATURES             Location/Qualifiers
+     source          1..82
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11.2"
+                     /germline
+                     /note="identified by PCR-DGGE"
+     CDS             <1..>82
+                     /codon_start=3
+                     /product="Ig heavy chain variable region VH1B20"
+                     /protein_id="AAC33837.1"
+                     /db_xref="GI:3513501"
+                     /translation="VCPSDGSTSYAQKFQARVTITRDTSM"
+ORIGIN      
+        1 tggtgtgccc tagtgatggc agcacaagct atgcacaaaa gttccaggcc agagtcacca
+       61 taaccaggga cacatccatg ag
+//

@@ -1,0 +1,58 @@
+LOCUS       D83062                   158 bp    DNA     linear   PRI 05-OCT-2006
+DEFINITION  Homo sapiens DNA for hepatic triglyceride lipase, partial cds.
+ACCESSION   D83062
+VERSION     D83062.1  GI:1695661
+KEYWORDS    hepatic triglyceride lipase.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Cai,S.J., Wong,D.M., Chen,S.H. and Chan,L.
+  TITLE     Structure of the human hepatic triglyceride lipase gene
+  JOURNAL   Biochemistry 28 (23), 8966-8971 (1989)
+   PUBMED   2605236
+REFERENCE   2
+  AUTHORS   Takagi,A., Ikeda,Y., Mori,A., Ashida,Y. and Yamamoto,A.
+  TITLE     Identification of a BstNI polymorphism in exon 9 of the human
+            hepatic triglyceride lipase gene
+  JOURNAL   Mol. Cell. Probes 10 (4), 313-314 (1996)
+   PUBMED   8865180
+REFERENCE   3  (bases 1 to 158)
+  AUTHORS   Takagi,A., Mori,A., Ikeda,Y. and Yamamoto,A.
+  TITLE     Single base polymorphism in exon 9 of the human triglyceride lipase
+            gene
+  JOURNAL   Unpublished
+REFERENCE   4  (bases 1 to 158)
+  AUTHORS   Takagi,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JAN-1996) Atsuko Takagi, National Cardiovascular
+            Center Research Institute, Etiology and Pathophysiology;
+            Fujishirodai 5-7-1, Suita, Osaka 565, Japan
+            (Tel:06-833-5012(ex.2476), Fax:06-872-8091)
+FEATURES             Location/Qualifiers
+     source          1..158
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="Subject#221"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21"
+     exon            1..158
+                     /number=9
+     CDS             <1..112
+                     /codon_start=2
+                     /product="hepatic triglyceride lipase"
+                     /protein_id="BAA11760.1"
+                     /db_xref="GI:1695662"
+                     /translation="MTFCSENTDDLLLRPTQEKIFVKCEIKSKTSKRKIR"
+     variation       49
+                     /citation=[3]
+                     /frequency="0.35"
+                     /replace="c"
+ORIGIN      
+        1 aatgacattt tgttcagaaa acacagatga cctactactt cgcccaacac aggaaaaaat
+       61 cttcgtgaaa tgtgaaataa agtctaaaac atcaaagcga aagatcagat gagatttaat
+      121 gaagacccag tgtaaagaat aaatgaatct tactcctt
+//

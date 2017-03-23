@@ -1,0 +1,36 @@
+README (tier 1 documentation)
+
+GenBank file parser and database
+================================
+
+Description of project
+----------------------
+This tier of the project aims to parse a GenBank file and store some
+relevant information in an SQL database.
+
+Setup
+-----
+Some steps must be taken prior to use of the parser.
+Please see the 'Dependencies' section below for required imports.
+As well as these, before using the parser.py file, the split_file.py script must
+be run. This takes the raw GenBank file and splits it at the '//' entry separator.
+Thus, a separate file for each gene locus is generated.
+Ensure that these files are contained in a directory with nothing else in it.
+Once this step has been completed, set the 'indir' variable in the parser.py script
+as the path to this directory containing your split files.
+
+Dependencies
+------------
+split_file.py:
+    import re
+
+parser.py:
+    import re
+    import os
+    import pandas as pd
+
+Explanation
+-----------
+
+
+

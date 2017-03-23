@@ -1,0 +1,63 @@
+LOCUS       AF228447S3               335 bp    DNA     linear   PRI 05-APR-2000
+DEFINITION  Homo sapiens gamma-aminobutyric acid receptor alpha 5 subunit
+            (GABRA5) gene, exon 10 and partial cds.
+ACCESSION   AF228449
+VERSION     AF228449.1  GI:7417243
+KEYWORDS    .
+SEGMENT     3 of 3
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 335)
+  AUTHORS   Kim,S.-J., Gonen,D., Yang,Z.-Y., Reliford,A., Dy,A., Leventhal,B.L.
+            and Cook,E.H. Jr.
+  TITLE     Homo sapiens gamma-aminobutyric acid (GABA) A receptor, alpha 5
+            subunit gene (GABRA5)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 335)
+  AUTHORS   Kim,S.-J., Gonen,D., Yang,Z.-Y., Reliford,A., Dy,A., Leventhal,B.L.
+            and Cook,E.H. Jr.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JAN-2000) Psychiatry, University of Chicago, 924 E.
+            57th Street, Chicago, IL 60637, USA
+FEATURES             Location/Qualifiers
+     source          1..335
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q11.2-q12"
+     gene            order(AF228447.1:<1..602,AF228448.1:1..371,1..>335)
+                     /gene="GABRA5"
+     intron          <1..70
+                     /gene="GABRA5"
+                     /number=9
+     mRNA            <71..>282
+                     /gene="GABRA5"
+                     /product="gamma-aminobutyric acid receptor alpha 5
+                     subunit"
+     CDS             <71..>282
+                     /gene="GABRA5"
+                     /codon_start=3
+                     /product="gamma-aminobutyric acid receptor alpha 5
+                     subunit"
+                     /protein_id="AAF62510.1"
+                     /db_xref="GI:7417246"
+                     /translation="VTTVLTMTTLSISARNSLPKVAYATAMDWFIAVCYAFVFSALIE
+                     FATVNYFTKRGWAWDGKKALEAAKIK"
+     exon            71..282
+                     /gene="GABRA5"
+                     /number=10
+     intron          283..>335
+                     /gene="GABRA5"
+                     /number=10
+ORIGIN      
+        1 tactggggtc ctgggtgcca gcactgaccc ctgtttccgt ttttcactct gccctgcctg
+       61 aaccccgcag gggtcaccac ggtgctgacc atgacgaccc tcagcatcag cgccaggaac
+      121 tctctgccca aagtggccta cgccaccgcc atggactggt tcatagctgt gtgctatgcc
+      181 ttcgtcttct cggcgctgat agagtttgcc acggtcaatt actttaccaa gagaggctgg
+      241 gcctgggatg gcaaaaaagc cttggaagca gccaagatca aggtactgac tatttctcct
+      301 cctttcttcc aggtcccctt gacagagaaa gtgtg
+//

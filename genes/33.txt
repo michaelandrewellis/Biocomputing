@@ -1,0 +1,69 @@
+LOCUS       AF102870                 962 bp    DNA     linear   PRI 27-JAN-2000
+DEFINITION  Homo sapiens aquaporin 9 (AQP9) gene, partial cds.
+ACCESSION   AF102870
+VERSION     AF102870.1  GI:6759670
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 962)
+  AUTHORS   Tsukaguchi,H., Shayakul,C., Berger,U.V., Mackenzie,B., Devidas,S.,
+            Guggino,W.B., van Hoek,A.N. and Hediger,M.A.
+  TITLE     Molecular characterization of a broad selectivity neutral solute
+            channel
+  JOURNAL   J. Biol. Chem. 273 (38), 24737-24743 (1998)
+   PUBMED   9733774
+REFERENCE   2  (bases 1 to 962)
+  AUTHORS   Tsukaguchi,H., Weremowicz,S., Morton,C.C. and Hediger,M.A.
+  TITLE     Functional and molecular characterization of the human neutral
+            solute channel aquaporin-9
+  JOURNAL   Am. J. Physiol. 277 (5 PT 2), F685-F696 (1999)
+   PUBMED   10564231
+REFERENCE   3  (bases 1 to 962)
+  AUTHORS   Tsukaguchi,H., Weremowicz,S., Morton,C.C. and Hediger,M.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-OCT-1998) Renal Division, Brigham and Women's
+            Hospital, Harvard Institutes of Medicine, 77 Avenue Louis Pasteur,
+            Boston, MA 02115, USA
+FEATURES             Location/Qualifiers
+     source          1..962
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22"
+     gene            1..>962
+                     /gene="AQP9"
+     promoter        1..604
+                     /gene="AQP9"
+     mRNA            605..>962
+                     /gene="AQP9"
+                     /product="aquaporin 9"
+     CDS             891..>962
+                     /gene="AQP9"
+                     /codon_start=1
+                     /product="aquaporin 9"
+                     /protein_id="AAF27983.1"
+                     /db_xref="GI:6759671"
+                     /translation="MQPEGAEKGKSFKQRLVLKSSLAK"
+ORIGIN      
+        1 aaactggaat gcttcttcag aagaaaccca aactggaatg tttcttcaga agaaacttca
+       61 gaagtcacca aaaaggtgac tcctccatct ttctgattct tggatcctaa agtatcttca
+      121 gcaagtgaag cccagtttca taaccgaaga ggtgactcca tctgtcctac agacttgcag
+      181 tgtgaagctt gcaatggttt ctctgtatgt taatttctcc atctctagga tggcctatgt
+      241 ggttcttact aacctcagag tggtatcatg aagccactga aatgatacca gaagaaaaca
+      301 agagtgatta atcttctagg atgataaatc tatattttct tcaaattctt cattttgcat
+      361 aaaaaccttt ttcagaaaag aatgttaaca ttggatatat ctacacctga tttgacagtt
+      421 ccaaactaca ccccaaccac ccacttctga atgagaagaa aaaaaaatca gaagcctgca
+      481 attgtgtaac atgaaaatct tttctggacc agggcccgtc actgtgattt ggcaacacaa
+      541 ctggcacatc tcttttctca tctcttgaaa aaaaccaaca gagaaaaaag taccttgaga
+      601 ataaaggtaa tgattaatct gtcaggcaca aaagggattg ttttggggat ttcgggttct
+      661 aagtcgcaga ttcaaacaaa tagcagcgaa cagggaatga cagttccacc agaagacgat
+      721 taagccacag cctctaattg gaacggcatt tgtacagtca gagactctta ccagacatct
+      781 ccaggaatct gtgagccatt gtcaaaacgt ccattttcat ctggctgtga aagtgaggac
+      841 cacaacaggt aggtattggt agaaacagga gtcctcagag aagccccaag atgcagcctg
+      901 agggagcaga aaagggaaaa agcttcaagc agagactggt cttgaagagc agcttagcga
+      961 aa
+//

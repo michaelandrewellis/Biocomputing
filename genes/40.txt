@@ -1,0 +1,52 @@
+LOCUS       AF157693                 239 bp    DNA     linear   PRI 12-OCT-2005
+DEFINITION  Homo sapiens frameshifted pyruvate kinase M2 gene, partial cds.
+ACCESSION   AF157693
+VERSION     AF157693.1  GI:5702303
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 239)
+  AUTHORS   Anitha,M., Kaur,G., Baquer,N.Z. and Bamezai,R.
+  TITLE     Dominant negative effect of novel mutations in pyruvate kinase-M2
+  JOURNAL   DNA Cell Biol. 23 (7), 442-449 (2004)
+   PUBMED   15294093
+REFERENCE   2  (bases 1 to 239)
+  AUTHORS   Bamezai,R.N.K., Anitha,M. and Saha,A.
+  TITLE     Frame shift mutation in the inter-subunit contact domain region of
+            the pyruvate kinase M2 gene in a Bloom syndrome cell line
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 239)
+  AUTHORS   Bamezai,R.N.K., Anitha,M. and Saha,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-JUN-1999) Human Genetics, Jawaharlal Nehru
+            University, Munirka, New Delhi, Delhi 110067, India
+FEATURES             Location/Qualifiers
+     source          1..239
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22.3"
+                     /note="isolated from individual with Bloom's syndrome"
+     mRNA            <30..174
+                     /product="pyruvate kinase M2"
+     CDS             <30..174
+                     /note="inter-subunit contact domain region"
+                     /codon_start=2
+                     /product="frameshifted pyruvate kinase M2"
+                     /protein_id="AAD47249.1"
+                     /db_xref="GI:5702304"
+                     /translation="IAREAEAAIYHLQLFEELRRLAPITSDPQKPPPWVPWRPPSSAA
+                     VGP"
+     variation       112^113
+                     /note="in wildtype"
+                     /replace="c"
+ORIGIN      
+        1 cgtccctctg gacggatgtt gctcccctag attgcccgtg aggcagaggc tgccatctac
+       61 cacttgcaat tatttgagga actccgccgc ctggcgccca ttaccagcga cccacagaag
+      121 ccaccgccgt gggtgccgtg gaggcctcct tcaagtgctg cagtggggcc ataatcgtcc
+      181 tcaccaagtc tggcaggtag gaggcggcag cggctccctg gaatgccctg ctcagtggt
+//

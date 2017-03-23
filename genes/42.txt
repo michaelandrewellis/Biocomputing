@@ -1,0 +1,53 @@
+LOCUS       AF185280                 240 bp    DNA     linear   PRI 12-OCT-2005
+DEFINITION  Homo sapiens pyruvate kinase M2 gene, partial cds.
+ACCESSION   AF185280
+VERSION     AF185280.1  GI:6018095
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 240)
+  AUTHORS   Anitha,M., Kaur,G., Baquer,N.Z. and Bamezai,R.
+  TITLE     Dominant negative effect of novel mutations in pyruvate kinase-M2
+  JOURNAL   DNA Cell Biol. 23 (7), 442-449 (2004)
+   PUBMED   15294093
+REFERENCE   2  (bases 1 to 240)
+  AUTHORS   Bamezai,R.N.K. and Anitha,M.
+  TITLE     Identification of a missense and neutral mutations in Bloom
+            syndrome
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 240)
+  AUTHORS   Bamezai,R.N.K. and Anitha,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-SEP-1999) Human Genetics, School of Life Sciences,
+            Jawaharlal Nehru University, Munirka, New Delhi, Delhi 110067,
+            India
+FEATURES             Location/Qualifiers
+     source          1..240
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22.3"
+                     /note="isolated from individual with Bloom's syndrome"
+     mRNA            <31..>200
+                     /product="pyruvate kinase M2"
+     CDS             <31..>200
+                     /codon_start=1
+                     /product="pyruvate kinase M2"
+                     /protein_id="AAF01766.1"
+                     /db_xref="GI:6018096"
+                     /translation="IAREAEAAIYYLQLFEELRRLAPITSDPTEATAVGAVEASFKCC
+                     SGAIIVLTKSGR"
+     variation       61
+                     /note="neutral mutation in inter-subunit contact domain
+                     region"
+                     /replace="c"
+ORIGIN      
+        1 cgtccctctg gacggatgtt gctcccctag attgcccgtg aggcagaggc tgccatctac
+       61 tacttgcaat tatttgaaga actccgccgc ctggcgccca ttaccagcga ccccacagaa
+      121 gccaccgccg tgggtgccgt ggaggcctcc ttcaagtgct gcagtggggc cataatcgtc
+      181 ctcaccaagt ctggcaggta ggaggcggca gcggctccct ggaatgccct gctcagtggt
+//

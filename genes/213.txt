@@ -1,0 +1,121 @@
+LOCUS       HUMB2M02                2871 bp    DNA     linear   PRI 02-NOV-2001
+DEFINITION  Homo sapiens beta-2-microglobulin (B2M) gene, exons 2, 3, 4, and
+            complete cds.
+ACCESSION   M17987
+VERSION     M17987.1  GI:179316
+KEYWORDS    .
+SEGMENT     2 of 2
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2871)
+  AUTHORS   Gussow,D., Rein,R., Ginjaar,I., Hochstenbach,F., Seemann,G.,
+            Kottman,A. and Ploegh,H.L.
+  TITLE     The human beta 2-microglobulin gene. Primary structure and
+            definition of the transcriptional unit
+  JOURNAL   J. Immunol. 139 (9), 3132-3138 (1987)
+   PUBMED   3312414
+COMMENT     Draft entry and computer-readable sequence for [J. Immunol. 139,
+            3132-3138 (1987)] kindly provided
+            by E.J.Baas, 03-DEC-1987.
+FEATURES             Location/Qualifiers
+     source          1..2871
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q21-q22.2"
+                     /clone="pB2m13"
+     gene            order(M17986.1:<846..1217,1..2290)
+                     /gene="B2M"
+     CDS             join(M17986.1:883..949,123..401,1018..1031)
+                     /gene="B2M"
+                     /note="precursor"
+                     /codon_start=1
+                     /product="beta-2-microglobulin"
+                     /protein_id="AAA51811.1"
+                     /db_xref="GI:179318"
+                     /db_xref="GDB:G00-119-028"
+                     /translation="MSRSVALAVLALLSLSGLEGIQRTPKIQVYSRHPAENGKSNFLN
+                     CYVSGFHQSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRV
+                     NHVTLSQPKIVKWDRDM"
+     mat_peptide     join(M17986.1:943..949,123..401,1018..1028)
+                     /gene="B2M"
+                     /product="beta-2-microglobulin"
+                     /note="G00-119-028"
+     intron          <1..122
+                     /gene="B2M"
+                     /note="G00-119-028"
+                     /number=1
+     exon            123..401
+                     /gene="B2M"
+                     /note="G00-119-028"
+                     /number=2
+     intron          402..1017
+                     /gene="B2M"
+                     /note="G00-119-028"
+                     /number=2
+     exon            1018..>1045
+                     /gene="B2M"
+                     /note="G00-119-028"
+                     /number=3
+     intron          1046..2289
+                     /gene="B2M"
+                     /note="G00-119-028"
+                     /number=3
+     exon            2290..>2290
+                     /gene="B2M"
+                     /note="G00-119-028"
+                     /number=4
+ORIGIN      
+        1 aaatggaatt ggagaaatcg atgaccaaat gtaaacactg tgcctgatat agcttgacac
+       61 caagttagcc ccaagtgaaa taccctggca atattaatgt gtctttcccc gatattcctc
+      121 aggtactcca aagattcagg tttactcacg tcatccagca gagaatggaa agtcaaattt
+      181 cctgaattgc tatgtgtctg ggtttcatca atccgacatt gaagttgact tactgaagaa
+      241 tggagagaga attgaaaaag tggagcattc agacttgtct ttcagcaagg actggtcttt
+      301 ctatctcttg tactacactg aattcacccc cactgaaaaa gatgagtatg cctgccgtgt
+      361 gaaccatgtg actttgtcac agcccaagat agttaagtgg ggtaagtctt acattctttt
+      421 gtaagctgct gaaagttgtg tatgagtagt catatcataa agctgctttg atataaaaaa
+      481 ggtctatggc catactaccc tgaatgagtc ccatccatct gatataacac tctgcatatt
+      541 gggattgtca gggaatgttc gtaaagatca gattagtggc actgctgaga tactgatgca
+      601 cagcatggtt tctgaaccag tagtttcctg cagttgagca gggcgagcag cagcattgca
+      661 caatacatat acactcttaa cacttcttac ctactgcttc tctagctttt gtggcagctt
+      721 caggtatatt agcactgaac gaacatctca agaaggtata ggcctttgtt tgtaagtcct
+      781 gctgtcctag catcctataa tcctggactt ctccagtact ttctggctgg attggtatct
+      841 gaggctagta ggaagggctt gttcctgctg ggtagctcta aacaatgtat tcatgggtag
+      901 gaacagcagc ctattctgcc agcttatttc taaccatttt agacatttgt tagtacatgg
+      961 tattttaaaa gtaaaactta atgtcttcct tttttttctc cactgtcttt ttcatagatc
+     1021 gagacatgta agcagcatca tggaggtaag tttttgacct tgagaaaatg tttttgtttc
+     1081 actgtcctga ggactattta tagacagctc taacatgata accctcacta tgtgagaaca
+     1141 ttgacagagt aacattttag cagggaaaga agaatcctac aggatcatgt tcccttctcc
+     1201 tgtgagtggc atgaagaagg tgtatggccc cacctatggc ctatttactg accctctaca
+     1261 gagagggcaa agaactgcca gtatggtatt gcaggataaa ggcagtggtt acccacatta
+     1321 cctgcaaggc tttgatcttt cttctgccat ttccacattg gacatctctg ctgaggagag
+     1381 aaaatgaacc actcttttcc tttgtataat gttgttttat tcttcagaca gaagagagga
+     1441 gttatacagc tctgcagaca tcccattcct gtatggggaa ctgtgtttgc ctcttagagg
+     1501 ttcccaggcc actagaggag ataaagggaa acagattgtt ataacttgat ataatgatac
+     1561 tataatagat gtaactacaa gagctccaga agtaagagag agggaggaac ttggacttct
+     1621 ctccatcttt gattggagtc caaaggcttt tcaatgaaat tctactgccc agggtacatt
+     1681 gatgctgaaa ccccattaaa tctcctgtta tattctagaa cagggaattg atttgggaga
+     1741 gcatcaggaa ggtggatgat ctgcccagtc acactgttag taaattgtag agccaggacc
+     1801 tgaactctaa tatagtcatg tgttacttaa tgacggggac atgttctgag aaatgcttac
+     1861 acaaacctag tgttgtagcc tactacacgc ataggctaca tggtatagcc tattgctcct
+     1921 agactacaaa cctgtacagc ctgttacttg actgaatact gtggcattgt aacacaatgg
+     1981 taagtatttg tgtatctaaa catagaaaag ttgcagtaaa aatatgctat tttaatctta
+     2041 tgagaccact gtcatatata cagtccatca ttgaccaaaa catcatatca gcattttttc
+     2101 ttctaagatt ttgggagcac caaagggata cactaacagg atatactctt tataatgggt
+     2161 ttggagaact gtctgcagct acttctttta aaaaggtgat ctacacagta gaaattagac
+     2221 agttttggta atgagatctg caatccaaat aaaataaatt cattgctaac ctttttcttt
+     2281 tcttttcagg tttgaagatg ccgcatttgg attgagtgaa ttcaaattct gcttgcttgc
+     2341 tttttaatat tgatatgctt atacacttac actttatgca caaaatgtag ggttataata
+     2401 atgttaacat ggacatgatc gtctttataa ttctactttg agtgctgtct ccatgtttga
+     2461 tgtatctgag caggttgctc cacaggtagc tctaggaggg ctggcaactt agaggtgggg
+     2521 agcagagaat tctcttatcc aacatcaaca tcttggtcag atttgaactc ttcaatctct
+     2581 tgcactcaaa gcttgttaag atagttaagc gtgcataagt taactttcaa tttacatact
+     2641 ctgcttagaa tttgggggaa aatttagaaa ctataattga caggattatt ggaaatttgt
+     2701 tataatgaat gaaacatttt gtcatataag attcatattt acttcttata catttgataa
+     2761 agtaaggcat ggttgtggtt aatctggttt attttggttt cacaagttaa ataaatcata
+     2821 aaacttgatg tgttatctct tatatctcac tccactatta gccctttatt t
+//

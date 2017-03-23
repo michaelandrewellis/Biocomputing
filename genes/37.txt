@@ -1,0 +1,68 @@
+LOCUS       AF156558S7               911 bp    DNA     linear   PRI 05-JAN-2000
+DEFINITION  Homo sapiens stomatin related protein gene, exon 7, complete cds.
+ACCESSION   AF156564
+VERSION     AF156564.1  GI:6671066
+KEYWORDS    .
+SEGMENT     7 of 7
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 911)
+  AUTHORS   Gilles,F., Glenn,M., Goy,A., Remache,Y. and Zelenetz,A.D.
+  TITLE     A novel gene STORP (stomatin related protein) is localized 2kb
+            upstream of the PML gene on chromosome 15q22
+  JOURNAL   Eur. J. Haematol. (2000) In press
+REFERENCE   2  (bases 1 to 911)
+  AUTHORS   Gilles,F., Glenn,M., Goy,A., Remache,Y. and Zelenetz,A.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-JUN-1999) Hematology Oncology, Memorial Sloan
+            Kettering Cancer Center, 1275 York Avenue, New York, NY 10021, USA
+FEATURES             Location/Qualifiers
+     source          1..911
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q22"
+     mRNA            join(AF156558.1:<552..685,AF156559.1:1..106,
+                     AF156560.1:1..150,AF156561.1:1..204,AF156562.1:1..196,
+                     AF156563.1:1..213,1..>194)
+                     /product="stomatin related protein"
+     CDS             join(AF156558.1:552..685,AF156559.1:1..106,
+                     AF156560.1:1..150,AF156561.1:1..204,AF156562.1:1..196,
+                     AF156563.1:1..213,1..194)
+                     /note="STORP"
+                     /codon_start=1
+                     /product="stomatin related protein"
+                     /protein_id="AAF23080.1"
+                     /db_xref="GI:6671068"
+                     /translation="MLGRSGYRALPLGDFDRFQQSSFGFLGSQKGCLSPERGGVGTGA
+                     DVPQSWPSCLCHGLISFLGFLLLLVTFPISGWFALKIVPTYERMIVFRLGRIRTPQGP
+                     GMVLLLPFIDSFQRVDLRTRAFNVPPCKLASKDGAVLSVGADVQFRIWDPVLSVMTVK
+                     DLNTATRMTAQNAMTKALLKRPLREIQMEKLKISDQLLLEINDVTRAWGLEVDRVELA
+                     VEAVLQPPQDSPAGPNLDSTLQQLALHFLGGSMNSMAGGAPSPGPADTVEMVSEVEPP
+                     APQVGARSSPKQPLAEGLLTALQPFLSEALVSQVGACYQFNVVLPSGTQSAYFLDLTT
+                     GRGRVGHGVPDGIPDVVVEMAEADLRALLCRELRPLGAYMSGRLKVKGDLAMAMKLEA
+                     VLRALK"
+     exon            1..>194
+                     /number=7
+ORIGIN      
+        1 gacgaggaag agtgggacac ggggtgcctg atggcatccc tgatgtggtg gtggagatgg
+       61 ccgaggcaga cctgcgggcc ctgctatgca gagagctgcg gcccctgggg gcctacatga
+      121 gtggacggct gaaggtgaag ggcgacctgg ctatggccat gaagctggag gctgtcctca
+      181 gggccttgaa gtagcagcct tggctgactt tccagagccc agtcccaagc ctggcaccaa
+      241 gcctgagggg cctcttggag gaggaggtgt tcatctgcac cacagagagt tgaggcccta
+      301 acaaatttca ggcccagcca agagcccatg aatggaggct gcaggaggct gagtccggct
+      361 gccatgcacg tctcccctac agtggttctc tggacaaggc tttgtccatc ccggtcccca
+      421 gctgagtgcc cagcgctgag ctgggtgcac ggtgtgattc caggaggaga gccaggcctg
+      481 ccctgccctg ctggcttcct gactggagag acaggaccca cagaaacagc ctgacagcag
+      541 ctggtttggt ccttgtgtga gggaccaagc atgtggccca ggctctaagc tctgcgggga
+      601 ttggagaggg atggggaggg aagggaaggc agctccaaga agaggtccct gtggcgaagt
+      661 tacctgggga tcctggctgg cccaccttcc tggctgcagt ccaggcccgt gctggcggga
+      721 ttgggcatgg gaaggagcag ggcctgctgc ttccctggcg ctgctcccaa agatttctga
+      781 ctcatctgcc agctctgtcc tgcatgcctg gcgagctggg gcccagggca gcatgaagga
+      841 gagccctgcg ttctgtgctt cttaccagag gtttgcaagc ctcagacaaa taaatgtggt
+      901 gtttacaatg t
+//

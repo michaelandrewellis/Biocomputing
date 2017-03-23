@@ -1,0 +1,61 @@
+LOCUS       AF067635                 237 bp    DNA     linear   PRI 10-MAR-1999
+DEFINITION  Homo sapiens cytochrome c oxidase subunit Va (COX5A) gene, nuclear
+            gene encoding mitochondrial protein, partial cds.
+ACCESSION   AF067635
+VERSION     AF067635.1  GI:3859863
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 237)
+  AUTHORS   Rizzuto,R., Nakase,H., Zeviani,M., DiMauro,S. and Schon,E.A.
+  TITLE     Subunit Va of human and bovine cytochrome c oxidase is highly
+            conserved
+  JOURNAL   Gene 69 (2), 245-256 (1988)
+   PUBMED   2853101
+REFERENCE   2  (bases 1 to 237)
+  AUTHORS   Hofmann,S., Lichtner,P., Schuffenhauer,S., Gerbitz,K.D. and
+            Meitinger,T.
+  TITLE     Assignment of the human genes coding for cytochrome c oxidase
+            subunits Va (COX5A), VIc (COX6C) and VIIc (COX7C) to chromosome
+            bands 15q25, 8q22-->q23 and 5q14 and of three pseudogenes (COX5AP1,
+            COX6CP1, COX7CP1) to 14q22, 16p12 and 13q14-->q21 by FISH and
+            radiation hybrid mapping
+  JOURNAL   Cytogenet. Cell Genet. 83 (3-4), 226-227 (1998)
+   PUBMED   10072584
+REFERENCE   3  (bases 1 to 237)
+  AUTHORS   Hofmann,S., Lichtner,P., Schuffenhauer,S., Gerbitz,K.D. and
+            Meitinger,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-MAY-1998) Institute of Clinical Chemistry and
+            Diabetes Research, Koelner Platz 1, Muenchen 80804, Germany
+FEATURES             Location/Qualifiers
+     source          1..237
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q25"
+                     /clone="LLNLP704B14507"
+                     /clone_lib="PAC library LLNLP704"
+     gene            <1..>237
+                     /gene="COX5A"
+     mRNA            <124..>237
+                     /gene="COX5A"
+                     /product="cytochrome c oxidase subunit Va"
+     CDS             <124..237
+                     /gene="COX5A"
+                     /EC_number="1.9.3.1"
+                     /codon_start=1
+                     /product="cytochrome c oxidase subunit Va"
+                     /protein_id="AAC73060.1"
+                     /db_xref="GI:3859864"
+                     /translation="DKAGPHKEIYPYVIQELRPTLNELGISTPEELGLDKV"
+ORIGIN      
+        1 acctgtatta ttctgtccta cctgcctctg cataagtaat taaaggcatt tttaagttca
+       61 tttcatgaat taatagacat ggcttttgag agagttaaat gtgaatattc tctttgccat
+      121 caggacaaag caggacctca taaggaaatc tacccctatg tcatccagga acttagacca
+      181 actttaaatg aactgggaat ctccactccg gaggaactgg gccttgacaa agtgtaa
+//

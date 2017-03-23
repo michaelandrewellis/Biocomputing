@@ -1,0 +1,68 @@
+LOCUS       Z47038                   859 bp    DNA     linear   PRI 16-JAN-1996
+DEFINITION  Human partial cDNA sequence, clone x101, putative
+            microtubule-associated; protein 1A (MAP1A).
+ACCESSION   Z47038
+VERSION     Z47038.1  GI:1160190
+KEYWORDS    microtubule-associated protein 1A, MAP1A.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 859)
+  AUTHORS   Chiannilkulchai,N., Pasturaud,P., Richard,I., Auffray,C. and
+            Beckmann,J.S.
+  TITLE     cDNA selection in the LGMD2A region
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 859)
+  AUTHORS   Genethon.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-DEC-1994) Genethon, B.P. 60, 91002 Evry Cedex France.
+            E-mail: Nuch@genethon.fr
+FEATURES             Location/Qualifiers
+     source          1..859
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15"
+                     /tissue_type="fetalmuscles"
+                     /clone_lib="CEPH YAC clone 189D1 was used for cDNA
+                     selection"
+     gene            <1..>859
+                     /gene="putative microtubule-associated protein 1A"
+     CDS             <1..>859
+                     /gene="putative microtubule-associated protein 1A"
+                     /note="open reading frame;
+                     N-terminal region"
+                     /codon_start=3
+                     /protein_id="CAA87104.1"
+                     /db_xref="GI:1160191"
+                     /db_xref="GDB:132858"
+                     /db_xref="GOA:P78559"
+                     /db_xref="HGNC:6835"
+                     /db_xref="InterPro:IPR015656"
+                     /db_xref="UniProtKB/Swiss-Prot:P78559"
+                     /translation="IPFFNVPEKLRLPDASRKAKRSIEEACLTLQHLNRLGIQAEPLY
+                     RVVSNTIEPLTLFHKMGVGRLDMYVLNPVKDSKEMQFLMQKWAGNSKAKTGIVLPNGK
+                     EAEISVPYLTSITGLVVWLPANPTEKIARVLFPGNAPQNKILEGLEKLRHLDFLRYPV
+                     ATQKDLASGAVPTNLKPGKIKQRXDSKESLKATTKTAVSKLAKREEVVEEGAKEARSE
+                     LAKELAKTEKKAKESSEKPPEKPAKPERVKTESSEALKAEKRKLIKDKVGKKHLKEKI
+                     SKLEKKKRNS"
+ORIGIN      
+        1 gaattccttt tttcaacgtg cctgagaagc tgcggcttcc tgatgcctcc cggaaagcca
+       61 agcgtagcat tgaggaggcc tgcctcactc tgcagcactt aaaccgcctg ggcatccagg
+      121 ctgagcctct atatcgtgtg gtcagcaata ccattgagcc actgaccctc ttccacaaaa
+      181 tgggtgtggg ccggctggac atgtatgtcc tcaaccctgt caaggacagc aaggagatgc
+      241 agttcctcat gcaaaagtgg gcaggcaata gtaaagccaa gacaggcatc gtgctgccca
+      301 atgggaagga ggctgagatc tccgtgccct accttacctc tatcactggt ctggtggtct
+      361 ggctaccagc caatcccact gagaagattg cgcgtgtgct ttttccagga aatgctcccc
+      421 aaaacaagat cttggagggc ctagaaaagc ttcggcatct ggacttcctg cgttaccctg
+      481 tggccacgca gaaggacctg gcttctgggg ctgtgcctac caacctcaag cccggcaaaa
+      541 tcaaacagcg gnctgatagc aaggagagcc tcaaagccac taccaagacg gccgtgagca
+      601 agttggccaa acgggaggag gtggtagaag agggagccaa ggaggcacgt tcagagctgg
+      661 ccaaggagtt agccaagaca gagaagaagg caaaagagtc atctgagaag cccccagaga
+      721 agcctgccaa gcctgagagg gtgaagacag agtcaagtga ggcactgaag gcagagaagc
+      781 gaaagctgat caaagacaag gtagggaaaa agcaccttaa agaaaagata tcaaagctgg
+      841 aaaaaaaaaa aaggaattc
+//

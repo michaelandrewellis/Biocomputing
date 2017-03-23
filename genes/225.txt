@@ -1,0 +1,133 @@
+LOCUS       HSPSORD7                3394 bp    DNA     linear   PRI 03-MAR-1999
+DEFINITION  Homo sapiens sorbitol dehydrogenase (SORD) pseudogene, exons 8 and
+            9.
+ACCESSION   U67252
+VERSION     U67252.1  GI:2228521
+KEYWORDS    .
+SEGMENT     7 of 7
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 3394)
+  AUTHORS   Carr,I.M., Coletta,P.L. and Markham,A.F.
+  TITLE     Exon 8 of a human sorbitol dehydrogenase like gene (possible
+            pseudogene)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 3394)
+  AUTHORS   Carr,I.M., Coletta,P.L. and Markham,A.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-AUG-1996) Molecular Medicine, Leeds, University,
+            Beecket Street, Leeds, West Yorkshire, UK
+REFERENCE   3  (bases 1 to 3394)
+  AUTHORS   Carr,I.M., Coletta,P.L. and Markham,A.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-JUN-1997) Molecular Medicine, Leeds, University,
+            Beecket Street, Leeds, West Yorkshire, UK
+  REMARK    Sequence update by submitter
+REFERENCE   4  (bases 1 to 3394)
+  AUTHORS   Carr,I.M., Coletta,P.L. and Markham,A.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-OCT-1997) Molecular Medicine, Leeds, University,
+            Beecket Street, Leeds, West Yorkshire, UK
+  REMARK    Sequence update by submitter
+COMMENT     On Jul 1, 1997 this sequence version replaced gi:1755145.
+            Possible pseudogene of SORD; no exon 1 was found and there is a
+            frameshift mutation in exon 7 causing the protein to be truncated
+            by an in-frame stop codon in exon 8.
+FEATURES             Location/Qualifiers
+     source          1..3394
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="15"
+                     /map="15q15.3"
+     gene            join(U67246.1:56..976,U67247.1:1..276,U67248.1:1..452,
+                     U67249.1:1..194,U67250.1:1..168,U67251.1:1..560,1..>2138)
+                     /gene="SORD"
+     mRNA            join(U67246.1:<56..89,U67247.1:48..212,U67248.1:67..226,
+                     U67249.1:41..159,U67250.1:60..125,U67251.1:65..239,
+                     567..688,1918..>2138)
+                     /gene="SORD"
+     CDS             join(U67246.1:<56..89,U67247.1:48..212,U67248.1:67..226,
+                     U67249.1:41..159,U67250.1:60..125,U67251.1:65..239,
+                     567..688,1918..2083)
+                     /gene="SORD"
+                     /pseudo
+                     /codon_start=1
+     exon            567..688
+                     /gene="SORD"
+                     /product="sorbitol dehydrogenase"
+                     /note="an in-frame stop codon within this exon results in
+                     a truncated protein"
+                     /number=8
+                     /pseudo
+     misc_feature    616..618
+                     /gene="SORD"
+                     /note="in-frame stop codon that truncates the protein"
+     repeat_region   919..1176
+                     /rpt_family="Alu"
+                     /rpt_type=dispersed
+     exon            1918..>2138
+                     /gene="SORD"
+                     /number=9
+ORIGIN      
+        1 ccttcagtaa gacaaaaccc attatggctc atactgttga ggtaaacatc tctggaacaa
+       61 aaagatttct aactgccagc ctgcacgcat gtatgaagcc ttttttaagc cacagaatac
+      121 aagtgcccat ctgctcatgt ttatagtttt ctcaccaccg gtgagcttac agggccatgt
+      181 ggttcctcca gctctgatga aagtgctgcc tgtggagggc gctctgggga ggaacaggtg
+      241 cttagactgt ggacggtggc tgaatccaat attgggtccc gaatctgtaa agctttggaa
+      301 gatgttccca ctgtgcctgg ttctccatgg gttaagtgta tgttttcaca atacacttta
+      361 aagaaaactg tgtttactct cccgctcagt taagtttggt tggcaggttg agcagttcag
+      421 cagtgtacac aaatgagatt ctcaggaatt tttggatgct cagctgatgc aaccagaaga
+      481 tacttgtgtg atgacaatat gttattgtaa gtgggaagtc agtatttctt atcttctgag
+      541 ctttcttgtt tttacctcct ttacaggcca ctcgctctgg tgggaccctc gtgcttgtgg
+      601 ggctgggctc tgagatgacc accgtacccc tactgcatgc agccatccgg gaggtggata
+      661 tcaagggcgt gtttcgatac tgcaacacgt gagtatgctg tgggtgaagc cgggatgccc
+      721 agcctccagc aagaccatgg caggccccac tcagcctctg gcccatgatc tctgcctagt
+      781 tgttcatggg gggcactccc tggccacact gatagctgtg tgatataaca gggatccaaa
+      841 gagagaacac tcactcccag ttaaagaatg ggaaggccgg gcgtggcggc tcatgcctgt
+      901 aatcccagca ctttgggaag ccgaggcagg cggatcacga ggtcaggaga tcgagagcat
+      961 cctggctaac acggtgaccc ctgtctctac taaaaataca aaaaattagc caggcatggt
+     1021 ggtgggtgtc tgtagtccca gctacttggg aggctgaggc aggagagtgg tgtgaaccca
+     1081 ggtggcagag attgcagtga gcggagatcg caccactgca ctccagcctg ggcaacagag
+     1141 ccagactctg tctcaaaaaa aaaaaaaaga atgggaggaa cagaaggatg gatggaggga
+     1201 gggaaggagg ggattttgaa gcatagtctt actgagtgtc tgctgcttat ccgccctagg
+     1261 cccctttatc ccccaatttt cttaagttac caggtctcca ttttctccat ttaaagggaa
+     1321 gaaggagaga aaggagacaa aaggaagaaa tcaagtcctg tggcttccgt tccttagccc
+     1381 tagggcccac cctggggagc gaaagggtct tagtttgccc cacccatgtt ctgcagctcc
+     1441 accctctccc ctgctggggc cctctggctg ggacccctct ccccagcagt gtcccttact
+     1501 cctggcttta gaggcgtgaa ctccctgccc tcatcagggc gccagttttc cagtaagctg
+     1561 agctgttagt gggtgtgact ggattgtccc gggctgcctc cccacggctt ctctgccttt
+     1621 tcccagtggc ctccaccatg tgcctcgtac cttcatgcca caggaattct aggctccatg
+     1681 gcagacgtgg cggcagagtg agcgggtggg tgaggggtgg gggcaattgc aaataggctc
+     1741 tgtacccctg aatcataagc cataaggtcc tttcctgggt tgttggcctg taaaattggc
+     1801 tttgcagaac cacagtgcta tcaataaata cggccaagct gatctagtgc ttggtagttt
+     1861 ggggcacctg gctctttcct cttgaaggtt gaatataatg ctcgtgctct tttacaggtg
+     1921 gccagtggcg atttcgatgc ttgcgtccaa gtctgtgaat gtaaaacccc tcgtcaccca
+     1981 taggtttcct ctggagaaag ctctggaggc ctttgaaaca tttaaaaagg gattggggtt
+     2041 gaaaatcatg ctcaagtgtg accccagtga ccagaatccc tgatgttaat gggctctgcc
+     2101 ctcatcccca gtctcgggat ctcagggcac aatggctgga catgggtggg ctctgatgca
+     2161 gaactttctc ttttgaatgt taagaataac taatacaatt cattgtgaac agaagtcctt
+     2221 acgcagagga attggtgtgc cttaaagata caatctggga tagtttgggg gaacttgtag
+     2281 ccagaatgcc ctgttcatgc tgagcaaagt tcagcaagta gagcagagtt tggcaggcag
+     2341 gtgccaggaa ctccccttct tcctggagtg ccttcattga ggaaggaaat ctggcccttg
+     2401 ggtttcctgg ttccactgct actgacccag aggggaatga gggctgagtt atgaaaagat
+     2461 aacttcatga agacttaact ggcccagaag ctgattttca tgaaaatctg ccactcaggg
+     2521 tctgggatga aggcttgtca gcacttccag tttagaacgc aatgtttcta gagacatatt
+     2581 ggcttgtttg ttttgatgat aaaaggagaa taagaaaagg catcactttc ctggatccag
+     2641 gataattttt aaaccaatca aatgaaaaaa acaaacaaac aaaaaaggaa atgtcatgtg
+     2701 aggttaaacc agtttgcatt cccctaatgt ggaaaaagta agaggactac tcagcactgt
+     2761 ttgaagattg cctcttctac agcttctgag aattgtgtta tttcacttgc caagtgaagg
+     2821 accccctccc caacatgccc caccccaccc ctaagtacgg tcccttgttc accagggcaa
+     2881 ccaggaaact gctacttgtg gacctcacca gagaccagga gggtttggtt agctcacagg
+     2941 acttccccca ccccagaaga ttagcatgcc atactagact catactcaac tcaactaggc
+     3001 tcatactcaa ttgatggtta ttagacaatt ccatttcttt ctggttatta taaacagaaa
+     3061 atctttcctc ttctcattac cagtaaaggc tcttggtatc tttctgttgg aatgatttct
+     3121 atgaacttgt cttattttaa tggtgggttt tttttctggt aagatttgga cctaaatcgc
+     3181 atcatgccaa cttgtgactt tgagactatt catcaagaat gaggatatag tagccatgac
+     3241 atagcttgag ctatagcctt taattcctta ctttggctat gggtggaggg tgagtttgaa
+     3301 gaggttctga ttttcttgta acctgggaaa gccatgacct tgtgcccgat tctttcagat
+     3361 tgctttgggt aataaatatt ggtggtggta tctg
+//
