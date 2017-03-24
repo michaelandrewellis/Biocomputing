@@ -96,57 +96,58 @@ for x in protein_seq:
             
 # --- extracting the coding seq of the gene in order to get the exon ranges --- #
 
-ex_int_boundaries = []
+cds_grab = []
 for root, dirs, all_files in os.walk(indir):
     for infile in sorted(all_files, key=numerical_convert):
         open_file = open(os.path.join(root, infile), 'r')
         find_all_cds = list(re.findall(r"^\s{5}CDS\s+(.+?)\/", open_file.read(), re.MULTILINE | re.DOTALL))
-        ex_int_boundaries.append(find_all_cds)
+        cds_grab.append(find_all_cds)
 
-clean_ex_int_boundaries = []
-for list in ex_int_boundaries:
+# this removes the \n and whitespace from the strings in cds_grab:
+cds_ws_strip = []
+for list in cds_grab:
     for item in list:
         stripped_item = re.sub(r"\n\s{21}", "", item)
         subL = []
         subL.append(stripped_item)
-    clean_ex_int_boundaries.append(subL)
-print(clean_ex_int_boundaries)
+    cds_ws_strip.append(subL)
 
-
-
-"""
-# the following code strips off superfluous characters from items in  ex_int_boundaries:
+# the following code strips off superfluous characters from items in cds_ws_strip:
 clean_boundaries = []
-for x in ex_int_boundaries:
-    sub = re.sub(r"join\(", "", x)
-    sub1 = re.sub(r"\<", "", sub)
-    sub2 = re.sub(r"\>", "", sub1)
-    sub3 = re.sub(r"\(", "", sub2)
-    sub4 = re.sub(r"\)", "", sub3)
-    sub5 = re.sub(r"complement", "", sub4)
-    sub6 = re.sub(r"\\n", "", sub5)
-    clean_boundaries.append(sub6)
-
+for list in cds_ws_strip:
+    for item in list:
+        b_sub = re.sub(r"join\(", "", item)
+        sub1 = re.sub(r"\<", "", b_sub)
+        sub2 = re.sub(r"\>", "", sub1)
+        sub3 = re.sub(r"\(", "", sub2)
+        sub4 = re.sub(r"\)", "", sub3)
+        sub5 = re.sub(r"complement", "", sub4)
+        subL = []
+        subL.append(sub5)
+    clean_boundaries.append(subL)
 
 
 # the following code generates a list containing lists. Each sub list contains all the exon boundaries for one gene.
 # some lists just have one, whereas others have multiple exons, and so have lists containing multiple terms:
 exons_into_lists = []
-for x in clean_boundaries:
-    no_comma = x.rstrip(',') #cuts off extra comma at the end of items in clean_boundaries
-    split_to_list = list((no_comma.split(',')))
-    exons_into_lists.append(split_to_list)
+for list in clean_boundaries:
+    for item in list:
+        split_to_list = item.split(',') #THE SUBLIST IS A STRING
+        subL = []
+        subL.append(split_to_list)
+    exons_into_lists.append(subL)
+for x in exons_into_lists:
+    print(x)
 
-# the following code searches for any gene where its exons span multiple genes and replaces its exon location information
-# with 'exons span multiple genes':
 exon_across_genes_compiler = re.compile(r"[A-Z]{1,2}.+?\:")
 remove_spans = []
 phrase = 'exons span multiple genes'
 for list in exons_into_lists:
-    for items in list:
-        match = exon_across_genes_compiler.search(items)
-        if match:
-            list.append(phrase)
+    for sublist in list:
+        for item in sublist:
+            match = exon_across_genes_compiler.search(item)
+            if match:
+                list.append(phrase)
     if phrase in list:
         l = len(list)
         chop = l - 1
@@ -163,29 +164,41 @@ exon_start = []
 exon_end = []
 exon_start_compiler = re.compile(r"^(\d+)\.")
 exon_end_compiler = re.compile(r"^\d+\.\.(\d+)")
-for list in remove_spans:
-    start_matches = []
-    if phrase in list:
-        exon_start.append(phrase)
-    else:
-        for items in list:
-            match = exon_start_compiler.search(items)
-            if match:
-                start_matches.append(str(match.group(1)))
-        exon_start.append(start_matches)
 
+
+
+
+
+
+"""
+for all in remove_spans:
+    for list in all:
+        start_matches = []
+        if phrase in list:
+            exon_start.append(phrase)
+        else:
+            for item in list:
+                match = exon_start_compiler.search(item)
+                if match:
+                    start_matches.append(str(match.group(1)))
+            exon_start.append(start_matches)
+
+print(exon_start)
+"""
 # the following code grabs all the exon end positions for a particular and puts them into a sub-list
 # the sub-list is then appended to the main list:
 for list in remove_spans:
-    end_matches = []
-    if phrase in list:
-        exon_end.append(phrase)
-    else:
-        for items in list:
-            match = exon_end_compiler.search(items)
-            if match:
-                end_matches.append(str(match.group(1)))
-        exon_end.append(end_matches)
+    for sublist in list:
+        end_matches = []
+        if phrase in sublist:
+            exon_end.append(phrase)
+        else:
+            for items in sublist:
+                match = exon_end_compiler.search(items)
+                if match:
+                    end_matches.append(str(match.group(1)))
+            exon_end.append(end_matches)
+
 
 # the sql import doesn't like lists of lists, so converting sub-lists into strings
 str_ex_start = []                                                           # exon start positions
@@ -195,12 +208,13 @@ for list in exon_start:
 for list in exon_end:
     str_ex_end.append(str(list))
 
+"""
 dict1 = {}
 for x, y in str_ex_start, gene_ids:
     dict1[y] = x
 print(dict1)
 """
-
+"""
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
@@ -214,11 +228,13 @@ print(dict1)
 #exon_start                        will be 'Start_location' in DB
 #exon_end                          will be 'End_location' in DB
 
-"""
+
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
                              'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
 coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
                                 index=gene_ids)
+
+coding_region_df.to_csv('/Users/ainefairbrother/PycharmProjects/BiocomputingII/codingregionDF')
 
 # filtering out splice variants:
 pattern = "[A-Z]+\d+S"
@@ -231,7 +247,7 @@ import mysql.connector
 from sqlalchemy import create_engine
 import admin
 pw = admin.password
-"""
+
 #engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
@@ -244,7 +260,7 @@ pw = admin.password
 
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
-"""
+
 #testing lists - all should be 241 to align correct data values:
 correct_length = 241
 list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
@@ -255,4 +271,3 @@ for list in list_lengths:
     else:
         print('length:', list, '--', 'test successful')
 """
-
