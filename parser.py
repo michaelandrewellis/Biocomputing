@@ -167,9 +167,15 @@ for list in remove_spans:
 str_ex_start = []                                                           # exon start positions
 str_ex_end = []                                                             # exon end positions
 for list in exon_start:
-    str_ex_start.append(list)
+    str_ex_start.append(str(list))
 for list in exon_end:
-    str_ex_end.append(list)
+    str_ex_end.append(str(list))
+
+dict1 = {}
+for x, y in str_ex_start, gene_ids:
+    dict1[y] = x
+print(dict1)
+
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
