@@ -36,7 +36,6 @@ def numerical_convert(value):
     split_value[1::2] = map(int, split_value[1::2])
     return split_value
 
-
 word = str('CDS')
 count = 0
 all_cds_no = []

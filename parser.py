@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import re
 import os
 import pandas as pd
@@ -32,7 +34,7 @@ def numerical_convert(value):
 
 # -----------------------------------Parser function------------------------------------------------
 
-def genbank_parser(list, compiler, else_statement = None):
+def match_finder(list, compiler, else_statement = None):
     """
     This function essentially walks through a given directory taking the filenames, sorting by numerical name using
     the numerical_convert() function to convert string filenames into integers.
@@ -57,15 +59,19 @@ def genbank_parser(list, compiler, else_statement = None):
 
 genbank_accessions = []                                                      ## genbank accessions
 accession_compiler = re.compile(r"^ACCESSION\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
-genbank_parser(genbank_accessions, accession_compiler, else_statement='none')
+match_finder(genbank_accessions, accession_compiler, else_statement='none')
 
 gene_ids = []                                                               ## gene IDs
 id_compiler = re.compile(r"^LOCUS\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
-genbank_parser(gene_ids, id_compiler, else_statement='none')
+match_finder(gene_ids, id_compiler, else_statement='none')
+
+gene_name = []
+name_compiler = re.compile(r"^LOCUS\s.+\/gene\=\"(.+?)\".+\/\/", re.MULTILINE|re.DOTALL)
+match_finder(gene_name, name_compiler, else_statement='none')
 
 dna_seq = []
 dnaseq_compiler = re.compile(r"^ORIGIN\s+(.+)\/\/", re.DOTALL|re.MULTILINE)
-genbank_parser(dna_seq, dnaseq_compiler, else_statement='none')
+match_finder(dna_seq, dnaseq_compiler, else_statement='none')
 clean_dna_seq = []                                                          ## DNA sequence
 for x in dna_seq:
     sub1 = re.sub(r"\W", "", x)
@@ -74,15 +80,15 @@ for x in dna_seq:
 
 gene_products = []                                                          ## 1st protein product
 prod_compiler = re.compile(r"^LOCUS\s.+\/product\=\"(.+?)\".+\/\/", re.MULTILINE|re.DOTALL)
-genbank_parser(gene_products, prod_compiler, else_statement='none')
+match_finder(gene_products, prod_compiler, else_statement='none')
 
 chr_loc = []                                                                ## chromosomal location
 chrloc_compiler = re.compile(r"^LOCUS\s.+\/map\=\"(.+?)\".+^\/\/", re.MULTILINE|re.DOTALL)
-genbank_parser(chr_loc, chrloc_compiler, else_statement='15')
+match_finder(chr_loc, chrloc_compiler, else_statement='15')
 
 protein_seq = []
 proseq_compiler = re.compile(r"^LOCUS\s.+\/translation\=\"(.+?)\".+\/\/", re.MULTILINE | re.DOTALL)
-genbank_parser(protein_seq, proseq_compiler, else_statement='none')
+match_finder(protein_seq, proseq_compiler, else_statement='none')
 clean_protein_seq = []                                                      ## protein sequence
 for x in protein_seq:
     sub = re.sub(r"\W", "", x)
@@ -92,7 +98,7 @@ for x in protein_seq:
 
 ex_int_boundaries = []
 cds_compiler = re.compile(r"^LOCUS\s.+\s{5}CDS\s+(.+?)\/.+\/\/", re.MULTILINE|re.DOTALL)
-genbank_parser(ex_int_boundaries, cds_compiler, else_statement='none')
+match_finder(ex_int_boundaries, cds_compiler, else_statement='none')
 
 # the following code strips off superfluous characters from items in  ex_int_boundaries:
 clean_boundaries = []
@@ -163,6 +169,7 @@ for list in remove_spans:
                 end_matches.append(str(match.group(1)))
         exon_end.append(end_matches)
 
+
 # the sql import doesn't like lists of lists, so converting sub-lists into strings
 str_ex_start = []                                                           # exon start positions
 str_ex_end = []                                                             # exon end positions
@@ -170,12 +177,12 @@ for list in exon_start:
     str_ex_start.append(str(list))
 for list in exon_end:
     str_ex_end.append(str(list))
-
+"""
 dict1 = {}
 for x, y in str_ex_start, gene_ids:
     dict1[y] = x
 print(dict1)
-
+"""
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
