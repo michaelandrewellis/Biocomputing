@@ -61,3 +61,22 @@ for root, dirs, all_files in os.walk(indir):
             ex_int_boundaries.append(match_cds.group(1))
         else:
             ex_int_boundaries.append('none')
+
+
+# the following code searches for any gene where its exons span multiple genes and replaces its exon location information
+# with 'exons span multiple genes':
+exon_across_genes_compiler = re.compile(r"[A-Z]{1,2}.+?\:")
+remove_spans = []
+phrase = 'exons span multiple genes'
+for list in exons_into_lists:
+    for items in list:
+        match = exon_across_genes_compiler.search(items)
+        if match:
+            list.append(phrase)
+    if phrase in list:
+        l = len(list)
+        chop = l - 1
+        new_list = list[chop:]
+        remove_spans.append(new_list)
+    else:
+        remove_spans.append(list)
