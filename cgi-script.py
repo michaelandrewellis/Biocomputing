@@ -4,6 +4,7 @@ from functions import get_data
 import cgi
 import cgitb; cgitb.enable()
 import pandas as pd
+import htmlfunctions
 
 
 html = "Content-Type: text/html\n"
@@ -38,10 +39,28 @@ codon_table_html = codon_table_df.to_html(border=0)
 enzyme_table_df = pd.DataFrame(enzyme_table).T
 enzyme_table_df.columns = ['Enzyme','Cutting Locations','Good or Bad']
 
-html += DNA
+
+# ADD HIGHLIGHT REGIONS
+opening_tag = ''
+closing_tag = ''
+j=0
+tagged_DNA = ''
+for i in CDS_loc:
+    tagged_DNA += DNA[j:i[0]] + opening_tag + DNA[i[0]:i[1]+1] + closing_tag
+    j=i[1]+1
+tagged_DNA += DNA[j:]
+
+
+DNA_split = [DNA[i:i+50] for i in range(0, len(DNA), 50)]
+DNA_html = '\n'.join(DNA_split)
+html += DNA_html
 html += pd.DataFrame(CDS_loc,columns=['Start of coding region','End of coding region']).to_html(index=False)
 html += codon_table_html
 html += enzyme_table_df.to_html(index=False)
+
+htmlfunctions.draw_gene(DNA,CDS_loc)
+
+html += "<img src='TEST.bmp'/>"
 
 with open('test.html','w') as f:
     f.write(html)
