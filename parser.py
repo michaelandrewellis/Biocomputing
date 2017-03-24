@@ -97,9 +97,24 @@ for x in protein_seq:
 # --- extracting the coding seq of the gene in order to get the exon ranges --- #
 
 ex_int_boundaries = []
-cds_compiler = re.compile(r"^LOCUS\s.+\s{5}CDS\s+(.+?)\/.+\/\/", re.MULTILINE|re.DOTALL)
-match_finder(ex_int_boundaries, cds_compiler, else_statement='none')
+for root, dirs, all_files in os.walk(indir):
+    for infile in sorted(all_files, key=numerical_convert):
+        open_file = open(os.path.join(root, infile), 'r')
+        find_all_cds = list(re.findall(r"^\s{5}CDS\s+(.+?)\/", open_file.read(), re.MULTILINE | re.DOTALL))
+        ex_int_boundaries.append(find_all_cds)
 
+clean_ex_int_boundaries = []
+for list in ex_int_boundaries:
+    for item in list:
+        stripped_item = re.sub(r"\n\s{21}", "", item)
+        subL = []
+        subL.append(stripped_item)
+    clean_ex_int_boundaries.append(subL)
+print(clean_ex_int_boundaries)
+
+
+
+"""
 # the following code strips off superfluous characters from items in  ex_int_boundaries:
 clean_boundaries = []
 for x in ex_int_boundaries:
@@ -109,7 +124,10 @@ for x in ex_int_boundaries:
     sub3 = re.sub(r"\(", "", sub2)
     sub4 = re.sub(r"\)", "", sub3)
     sub5 = re.sub(r"complement", "", sub4)
-    clean_boundaries.append(sub5)
+    sub6 = re.sub(r"\\n", "", sub5)
+    clean_boundaries.append(sub6)
+
+
 
 # the following code generates a list containing lists. Each sub list contains all the exon boundaries for one gene.
 # some lists just have one, whereas others have multiple exons, and so have lists containing multiple terms:
@@ -169,7 +187,6 @@ for list in remove_spans:
                 end_matches.append(str(match.group(1)))
         exon_end.append(end_matches)
 
-
 # the sql import doesn't like lists of lists, so converting sub-lists into strings
 str_ex_start = []                                                           # exon start positions
 str_ex_end = []                                                             # exon end positions
@@ -177,7 +194,7 @@ for list in exon_start:
     str_ex_start.append(str(list))
 for list in exon_end:
     str_ex_end.append(str(list))
-"""
+
 dict1 = {}
 for x, y in str_ex_start, gene_ids:
     dict1[y] = x
@@ -197,7 +214,7 @@ print(dict1)
 #exon_start                        will be 'Start_location' in DB
 #exon_end                          will be 'End_location' in DB
 
-
+"""
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
                              'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
 coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
@@ -214,7 +231,7 @@ import mysql.connector
 from sqlalchemy import create_engine
 import admin
 pw = admin.password
-
+"""
 #engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
