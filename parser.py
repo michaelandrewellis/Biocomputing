@@ -103,14 +103,24 @@ for root, dirs, all_files in os.walk(indir):
         find_all_cds = list(re.findall(r"^\s{5}CDS\s+(.+?)\/", open_file.read(), re.MULTILINE | re.DOTALL))
         cds_grab.append(find_all_cds)
 
+#for number, letter in enumerate(cds_grab):
+    #print(number, letter)
+#for number, letter in enumerate(gene_ids):
+    #print(number, letter)
+
 # this removes the \n and whitespace from the strings in cds_grab:
 cds_ws_strip = []
 for list in cds_grab:
+    subL = []
     for item in list:
         stripped_item = re.sub(r"\n\s{21}", "", item)
-        subL = []
         subL.append(stripped_item)
     cds_ws_strip.append(subL)
+
+#for number, letter in enumerate(cds_ws_strip):
+    #print(number, letter)
+#for number, letter in enumerate(gene_ids):
+    #print(number, letter)
 
 # the following code strips off superfluous characters from items in cds_ws_strip:
 clean_boundaries = []
@@ -132,13 +142,15 @@ for list in cds_ws_strip:
 exons_into_lists = []
 for list in clean_boundaries:
     for item in list:
-        split_to_list = item.split(',') #THE SUBLIST IS A STRING
+        split_to_list = item.split(',')
         subL = []
         subL.append(split_to_list)
     exons_into_lists.append(subL)
-for x in exons_into_lists:
-    print(x)
 
+
+
+
+"""
 exon_across_genes_compiler = re.compile(r"[A-Z]{1,2}.+?\:")
 remove_spans = []
 phrase = 'exons span multiple genes'
@@ -164,7 +176,7 @@ exon_start = []
 exon_end = []
 exon_start_compiler = re.compile(r"^(\d+)\.")
 exon_end_compiler = re.compile(r"^\d+\.\.(\d+)")
-
+"""
 
 
 
@@ -184,7 +196,7 @@ for all in remove_spans:
             exon_start.append(start_matches)
 
 print(exon_start)
-"""
+
 # the following code grabs all the exon end positions for a particular and puts them into a sub-list
 # the sub-list is then appended to the main list:
 for list in remove_spans:
@@ -208,13 +220,13 @@ for list in exon_start:
 for list in exon_end:
     str_ex_end.append(str(list))
 
-"""
+
 dict1 = {}
 for x, y in str_ex_start, gene_ids:
     dict1[y] = x
 print(dict1)
-"""
-"""
+
+
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
