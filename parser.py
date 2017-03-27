@@ -108,7 +108,9 @@ for root, dirs, all_files in os.walk(indir):
 #for number, letter in enumerate(gene_ids):
     #print(number, letter)
 
-# this removes the \n and whitespace from the strings in cds_grab:
+# this removes the \n and whitespace from the strings in cds_grab
+# it leaves me with an overall list (cds_ws_strip), within which there are sub-lists
+# the items in the sub-lists are all the coding seqs for 1 gene
 cds_ws_strip = []
 for list in cds_grab:
     subL = []
@@ -125,6 +127,7 @@ for list in cds_grab:
 # the following code strips off superfluous characters from items in cds_ws_strip:
 clean_boundaries = []
 for list in cds_ws_strip:
+    subL = []
     for item in list:
         b_sub = re.sub(r"join\(", "", item)
         sub1 = re.sub(r"\<", "", b_sub)
@@ -132,34 +135,41 @@ for list in cds_ws_strip:
         sub3 = re.sub(r"\(", "", sub2)
         sub4 = re.sub(r"\)", "", sub3)
         sub5 = re.sub(r"complement", "", sub4)
-        subL = []
         subL.append(sub5)
     clean_boundaries.append(subL)
 
+#for number, letter in enumerate(clean_boundaries):
+    #print(number, letter)
+#161 ['104..149,437..517', '926..996']
 
-# the following code generates a list containing lists. Each sub list contains all the exon boundaries for one gene.
-# some lists just have one, whereas others have multiple exons, and so have lists containing multiple terms:
-exons_into_lists = []
+split_items = []
+character = ','
 for list in clean_boundaries:
+    subL = []
     for item in list:
-        split_to_list = item.split(',')
-        subL = []
-        subL.append(split_to_list)
-    exons_into_lists.append(subL)
+        if character in item:
+            break_items = item.split(',')
+            for component in break_items:
+                subL.append(component)
+        else:
+            subL.append(item)
+    split_items.append(subL)
 
+#for number, letter in enumerate(split_items):
+    #print(number, letter)
+#221 ['U59692.1:2089..2187', 'U59693.1:710..809', 'U59693.1:1858..2093', 'U59693.1:2465..4329', '344..1028']
 
-
-
-"""
+# the following code identifies any exons in the cds of loci which have labels from other loci - it then
+# appends 'exons span multiple genes' to the end of each loci's list to indicate this, and chops off all but
+# the last term, which is this phrase.
 exon_across_genes_compiler = re.compile(r"[A-Z]{1,2}.+?\:")
 remove_spans = []
 phrase = 'exons span multiple genes'
-for list in exons_into_lists:
-    for sublist in list:
-        for item in sublist:
-            match = exon_across_genes_compiler.search(item)
-            if match:
-                list.append(phrase)
+for list in split_items:
+    for item in list:
+        match = exon_across_genes_compiler.search(item)
+        if match:
+            list.append(phrase)
     if phrase in list:
         l = len(list)
         chop = l - 1
@@ -167,6 +177,13 @@ for list in exons_into_lists:
         remove_spans.append(new_list)
     else:
         remove_spans.append(list)
+
+#for number, letter in enumerate(remove_spans):
+    #print(number, letter)
+#233 ['1014..1226', '1379..1552', '2926..3022', '3152..3335', '5267..5404', '5478..5597',
+#     '5801..5923', '6053..6239', '6361..6444', '6940..7149', '7511..7633', '8015..8068',
+#     '8663..8781', '9056..9150', '9247..9370', '9610..9767', '9892..10014', '11372..11514']
+
 
 # --- separating the start and end positions of the exons into an exon start list and an exon end list --- #
 
@@ -176,26 +193,47 @@ exon_start = []
 exon_end = []
 exon_start_compiler = re.compile(r"^(\d+)\.")
 exon_end_compiler = re.compile(r"^\d+\.\.(\d+)")
+
+for list in remove_spans:
+    subL = []
+    if phrase in list:
+        exon_start.append(list)
+    else:
+        for item in list:
+            match = re.findall(r"^(\d+)\.", item)
+            if match:
+                for x in match:
+                    subL.append(x)
+            else:
+                subL.append('none')
+        exon_start.append(subL)
+
+#for number, letter in enumerate(exon_start):
+    #print(number, letter)
+
+
 """
+for list in exon_start:
+    print(list)
+print(len(exon_start))
+
+
+    if phrase in list:
+        exon_start.append(phrase)
+    else:
+        for item in list:
+            start_matches = []
+            match = exon_start_compiler.search(item)
+            if match:
+                start_matches.append(str(match.group(1)))
+    exon_start.append(start_matches)
+
+for list in exon_start:
+    print(list)
+print(len(exon_start))
 
 
 
-
-
-"""
-for all in remove_spans:
-    for list in all:
-        start_matches = []
-        if phrase in list:
-            exon_start.append(phrase)
-        else:
-            for item in list:
-                match = exon_start_compiler.search(item)
-                if match:
-                    start_matches.append(str(match.group(1)))
-            exon_start.append(start_matches)
-
-print(exon_start)
 
 # the following code grabs all the exon end positions for a particular and puts them into a sub-list
 # the sub-list is then appended to the main list:
