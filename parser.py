@@ -184,7 +184,6 @@ for list in split_items:
 #     '5801..5923', '6053..6239', '6361..6444', '6940..7149', '7511..7633', '8015..8068',
 #     '8663..8781', '9056..9150', '9247..9370', '9610..9767', '9892..10014', '11372..11514']
 
-
 # --- separating the start and end positions of the exons into an exon start list and an exon end list --- #
 
 # the following code grabs all the exon start positions for a particular and puts them into a sub-list
@@ -228,10 +227,9 @@ for list in remove_spans:
 #for number, letter in enumerate(exon_end):
     #print(number, letter)
 
-dict1 = {}
-for x, y in str_ex_start, gene_ids:
-    dict1[y] = x
-print(dict1)
+dictionary_ex_start = dict(zip(gene_ids, exon_start))
+dictionary_ex_end = dict(zip(gene_ids, exon_start))
+
 
 """
 # --------------------------------------------------------------------------------------------------
