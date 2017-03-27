@@ -227,9 +227,17 @@ for list in remove_spans:
 #for number, letter in enumerate(exon_end):
     #print(number, letter)
 
+# -- Generating dictionaries that store gene_ids and exon start and end points -- #
 dictionary_ex_start = dict(zip(gene_ids, exon_start))
 dictionary_ex_end = dict(zip(gene_ids, exon_start))
 
+endstart = zip(exon_start, exon_end)
+join = []
+for x,y in endstart:
+    a = str(zip(x,y))
+    join.append(a)
+
+print(join)
 
 """
 # --------------------------------------------------------------------------------------------------
