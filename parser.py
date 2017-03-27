@@ -191,8 +191,6 @@ for list in split_items:
 # the sub-list is then appended to the main list:
 exon_start = []
 exon_end = []
-exon_start_compiler = re.compile(r"^(\d+)\.")
-exon_end_compiler = re.compile(r"^\d+\.\.(\d+)")
 
 for list in remove_spans:
     subL = []
@@ -211,60 +209,31 @@ for list in remove_spans:
 #for number, letter in enumerate(exon_start):
     #print(number, letter)
 
-
-"""
-for list in exon_start:
-    print(list)
-print(len(exon_start))
-
-
+for list in remove_spans:
+    subL = []
     if phrase in list:
-        exon_start.append(phrase)
+        exon_end.append(list)
     else:
         for item in list:
-            start_matches = []
-            match = exon_start_compiler.search(item)
+            match = re.findall(r"^\d+\.\.(\d+)", item)
             if match:
-                start_matches.append(str(match.group(1)))
-    exon_start.append(start_matches)
+                for x in match:
+                    subL.append(x)
+            else:
+                subL.append('none')
+        exon_end.append(subL)
 
-for list in exon_start:
-    print(list)
-print(len(exon_start))
-
-
-
-
-# the following code grabs all the exon end positions for a particular and puts them into a sub-list
-# the sub-list is then appended to the main list:
-for list in remove_spans:
-    for sublist in list:
-        end_matches = []
-        if phrase in sublist:
-            exon_end.append(phrase)
-        else:
-            for items in sublist:
-                match = exon_end_compiler.search(items)
-                if match:
-                    end_matches.append(str(match.group(1)))
-            exon_end.append(end_matches)
-
-
-# the sql import doesn't like lists of lists, so converting sub-lists into strings
-str_ex_start = []                                                           # exon start positions
-str_ex_end = []                                                             # exon end positions
-for list in exon_start:
-    str_ex_start.append(str(list))
-for list in exon_end:
-    str_ex_end.append(str(list))
-
+#for number, letter in enumerate(exon_start):
+    #print(number, letter)
+#for number, letter in enumerate(exon_end):
+    #print(number, letter)
 
 dict1 = {}
 for x, y in str_ex_start, gene_ids:
     dict1[y] = x
 print(dict1)
 
-
+"""
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
