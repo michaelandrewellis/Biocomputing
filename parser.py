@@ -3,10 +3,11 @@
 import re
 import os
 import pandas as pd
+import mysql.connector
+from sqlalchemy import create_engine
+import admin
+pw = admin.password
 indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
-
-with open('chrom_CDS_15') as f:
-    original_file = f.read().splitlines()
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-------------------------------------------
@@ -228,18 +229,32 @@ for list in remove_spans:
     #print(number, letter)
 
 # -- Generating dictionaries that store gene_ids and exon start and end points -- #
-dictionary_ex_start = dict(zip(gene_ids, exon_start))
-dictionary_ex_end = dict(zip(gene_ids, exon_start))
+dic1 = dict(zip(gene_ids, exon_start))
+dic2 = dict(zip(gene_ids, exon_end))
+dic1_dic2_list = [dic1, dic2]
+dict_exon_boundaries = {}
 
-endstart = zip(exon_start, exon_end)
-join = []
-for x,y in endstart:
-    a = str(zip(x,y))
-    join.append(a)
+#building a dictionary of exon start and end points with their corresponding keys
+for key in (dic1.keys() | dic2.keys()):
+    if key in dic1: dict_exon_boundaries.setdefault(key, []).append(dic1[key])
+    if key in dic2: dict_exon_boundaries.setdefault(key, []).append(dic2[key])
+splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
 
-print(join)
+#removing splice variants
+no_splice_dict = {}
+for k,v in dict_exon_boundaries.items():
+    match = splice_variant_compiler.search(k)
+    if match:
+        pass
+    else:
+        no_splice_dict[k] = v
 
-"""
+#test
+#b = no_splice_dict["JN245913"]
+#spliced = no_splice_dict["AH008469S12"]
+#print(spliced)
+    #KeyError: 'AH008469S12'
+
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
@@ -253,36 +268,19 @@ print(join)
 #exon_start                        will be 'Start_location' in DB
 #exon_end                          will be 'End_location' in DB
 
-
+coding_region_df = pd.DataFrame.from_dict(no_splice_dict, orient='index', dtype=None)
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
                              'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
-                                index=gene_ids)
+#coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
+#                                index=gene_ids)
 
-coding_region_df.to_csv('/Users/ainefairbrother/PycharmProjects/BiocomputingII/codingregionDF')
-
-# filtering out splice variants:
-pattern = "[A-Z]+\d+S"
-filter = gene_info_df['Gene_ID'].str.contains(pattern)
-gene_info_df = gene_info_df[~filter]
-coding_region_df = coding_region_df[~filter]
-
-import pandas as pd2
-import mysql.connector
-from sqlalchemy import create_engine
-import admin
-pw = admin.password
-
-#engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
+engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
-# http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.from_dict.html
-# make the codon dataframe into a dictionary instead with the accession as the 'key' and the lists of exon
-# ends and starts as the 'value'
 
 
-
+"""
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
 
