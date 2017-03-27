@@ -80,3 +80,30 @@ for list in exons_into_lists:
         remove_spans.append(new_list)
     else:
         remove_spans.append(list)
+
+
+# the following code generates a list (exons into lists)
+# some lists just have one, whereas others have multiple exons, and so have lists containing multiple terms:
+exons_into_lists = []
+for list in split_items:
+    subL = []
+    for sublist in list:
+        split_to_list = item.split(',')
+        subL.append(split_to_list)
+    exons_into_lists.append(subL)
+print(exons_into_lists)
+for number, letter in enumerate(exons_into_lists):
+    print(number, letter)
+
+#to remove the dots
+remove_dots = []
+for list in remove_spans:
+    subL = []
+    if phrase not in list:
+        for item in list:
+            no_dot = re.sub(r"\.\.", " ",item)
+            subL.append(no_dot)
+    remove_dots.append(subL)
+
+for number, letter in enumerate(remove_dots):
+    print(number, letter)
