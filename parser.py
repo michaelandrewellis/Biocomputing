@@ -227,33 +227,6 @@ for list in remove_spans:
 #for number, letter in enumerate(exon_end):
     #print(number, letter)
 
-# -- Generating dictionaries that store gene_ids and exon start and end points -- #
-dic1 = dict(zip(gene_ids, str(exon_start)))
-dic2 = dict(zip(gene_ids, str(exon_end)))
-dic1_dic2_list = [dic1, dic2]
-dict_exon_boundaries = {}
-
-#building a dictionary of exon start and end points with their corresponding keys
-for key in (dic1.keys() | dic2.keys()):
-    if key in dic1: dict_exon_boundaries.setdefault(key, []).append(dic1[key])
-    if key in dic2: dict_exon_boundaries.setdefault(key, []).append(dic2[key])
-
-splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
-#removing splice variants
-no_splice_dict = {}
-for k,v in dict_exon_boundaries.items():
-    match = splice_variant_compiler.search(k)
-    if match:
-        pass
-    else:
-        no_splice_dict[k] = v
-
-#test
-#b = no_splice_dict["JN245913"]
-#spliced = no_splice_dict["AH008469S12"]
-#print(spliced)
-    #KeyError: 'AH008469S12'
-
 exon_start_ls_s = [' '.join(x) for x in exon_start] #generating lists of strings
 exon_end_ls_s = [' '.join(x) for x in exon_end]
 
@@ -270,13 +243,19 @@ exon_end_ls_s = [' '.join(x) for x in exon_end]
 #exon_start_ls_s                   will be 'Start_location' in DB
 #exon_end_str_ls_s                 will be 'End_location' in DB
 
-#converting exon lists into strings and cleaning them up
-
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
                         'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
 coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':exon_end_ls_s, 'Start_location':exon_start_ls_s}, index=gene_ids)
 pw = admin.password
-#print(coding_region_df[:3])
+
+# removing the splice variants
+splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
+for index, row in coding_region_df.iterrows():
+    match = splice_variant_compiler.search(index)
+    if match:
+        coding_region_df.drop(index, inplace=True)
+
+# creating the engine to allow connection to the db
 engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
 
 # Porting to the database:
@@ -285,14 +264,14 @@ coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', 
 
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
-"""
+
 #testing lists - all should be 241 to align correct data values:
 correct_length = 241
 list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
-                len(clean_protein_seq), len(gene_products), len(str_ex_start), len(str_ex_end)]
+                len(clean_protein_seq), len(gene_products), len(exon_start_ls_s), len(exon_end_ls_s)]
 for list in list_lengths:
     if list != correct_length:
         print('test fail')
     else:
         print('length:', list, '--', 'test successful')
-"""
+
