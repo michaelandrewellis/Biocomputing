@@ -6,7 +6,6 @@ import pandas as pd
 import mysql.connector
 from sqlalchemy import create_engine
 import admin
-pw = admin.password
 indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 
 # --------------------------------------------------------------------------------------------------
@@ -272,15 +271,15 @@ for k,v in dict_exon_boundaries.items():
 no_splice_df = pd.DataFrame.from_dict(no_splice_dict, orient='index', dtype=None)
 stacked_df = no_splice_df.stack()
 
-gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
-                            'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
+#gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
+ #                           'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
+coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':exon_end, 'Start_location':exon_start},
                                 index=gene_ids)
-
+pw = admin.password
 engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
 
 # Porting to the database:
-gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+no_splice_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
 # ---------------------------------------------------------------------------------------------------
