@@ -107,3 +107,30 @@ for list in remove_spans:
 
 for number, letter in enumerate(remove_dots):
     print(number, letter)
+
+# -- Generating dictionaries that store gene_ids and exon start and end points -- #
+dic1 = dict(zip(gene_ids, str(exon_start)))
+dic2 = dict(zip(gene_ids, str(exon_end)))
+dic1_dic2_list = [dic1, dic2]
+dict_exon_boundaries = {}
+
+#building a dictionary of exon start and end points with their corresponding keys
+for key in (dic1.keys() | dic2.keys()):
+    if key in dic1: dict_exon_boundaries.setdefault(key, []).append(dic1[key])
+    if key in dic2: dict_exon_boundaries.setdefault(key, []).append(dic2[key])
+
+splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
+#removing splice variants
+no_splice_dict = {}
+for k,v in dict_exon_boundaries.items():
+    match = splice_variant_compiler.search(k)
+    if match:
+        pass
+    else:
+        no_splice_dict[k] = v
+
+#test
+#b = no_splice_dict["JN245913"]
+#spliced = no_splice_dict["AH008469S12"]
+#print(spliced)
+    #KeyError: 'AH008469S12'
