@@ -238,8 +238,8 @@ dict_exon_boundaries = {}
 for key in (dic1.keys() | dic2.keys()):
     if key in dic1: dict_exon_boundaries.setdefault(key, []).append(dic1[key])
     if key in dic2: dict_exon_boundaries.setdefault(key, []).append(dic2[key])
-splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
 
+splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
 #removing splice variants
 no_splice_dict = {}
 for k,v in dict_exon_boundaries.items():
@@ -248,6 +248,7 @@ for k,v in dict_exon_boundaries.items():
         pass
     else:
         no_splice_dict[k] = v
+
 
 #test
 #b = no_splice_dict["JN245913"]
@@ -268,18 +269,21 @@ for k,v in dict_exon_boundaries.items():
 #exon_start                        will be 'Start_location' in DB
 #exon_end                          will be 'End_location' in DB
 
-coding_region_df = pd.DataFrame.from_dict(no_splice_dict, orient='index', dtype=None)
+no_splice_df = pd.DataFrame.from_dict(no_splice_dict, orient='index', dtype=None)
+stacked_df = no_splice_df.stack()
 
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
-                             'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-#coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
-#                                index=gene_ids)
+                            'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
+coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
+                                index=gene_ids)
 
-engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
+#engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
 
 
-new_df = coding_region_df.stack()
+"""
 
+
+#print(new_df)
 
 # col1: 0 - key (gene id)
 # col2: 1 - value (list)
@@ -291,7 +295,7 @@ new_df = coding_region_df.stack()
 
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
-"""
+
 #testing lists - all should be 241 to align correct data values:
 correct_length = 241
 list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
