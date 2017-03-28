@@ -228,8 +228,8 @@ for list in remove_spans:
     #print(number, letter)
 
 # -- Generating dictionaries that store gene_ids and exon start and end points -- #
-dic1 = dict(zip(gene_ids, exon_start))
-dic2 = dict(zip(gene_ids, exon_end))
+dic1 = dict(zip(gene_ids, str(exon_start)))
+dic2 = dict(zip(gene_ids, str(exon_end)))
 dic1_dic2_list = [dic1, dic2]
 dict_exon_boundaries = {}
 
@@ -248,12 +248,14 @@ for k,v in dict_exon_boundaries.items():
     else:
         no_splice_dict[k] = v
 
-
 #test
 #b = no_splice_dict["JN245913"]
 #spliced = no_splice_dict["AH008469S12"]
 #print(spliced)
     #KeyError: 'AH008469S12'
+
+exon_start_ls_s = [' '.join(x) for x in exon_start] #generating lists of strings
+exon_end_ls_s = [' '.join(x) for x in exon_end]
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
@@ -265,21 +267,20 @@ for k,v in dict_exon_boundaries.items():
 #clean_dna_seq                     will be 'DNA_sequence' in DB
 #clean_protein_seq                 will be 'Protein_sequence' in DB
 #gene_products                     will be 'Protein_product' in DB
-#exon_start                        will be 'Start_location' in DB
-#exon_end                          will be 'End_location' in DB
+#exon_start_str                    will be 'Start_location' in DB
+#exon_end_str                      will be 'End_location' in DB
 
-no_splice_df = pd.DataFrame.from_dict(no_splice_dict, orient='index', dtype=None)
-stacked_df = no_splice_df.stack()
+#converting exon lists into strings and cleaning them up
 
-#gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
- #                           'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':exon_end, 'Start_location':exon_start},
-                                index=gene_ids)
+gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
+                        'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
+coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':exon_end_ls_s, 'Start_location':exon_start_ls_s}, index=gene_ids)
 pw = admin.password
-engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
+#print(coding_region_df[:3])
+engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
 
 # Porting to the database:
-no_splice_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
 # ---------------------------------------------------------------------------------------------------
