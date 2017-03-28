@@ -267,8 +267,8 @@ exon_end_ls_s = [' '.join(x) for x in exon_end]
 #clean_dna_seq                     will be 'DNA_sequence' in DB
 #clean_protein_seq                 will be 'Protein_sequence' in DB
 #gene_products                     will be 'Protein_product' in DB
-#exon_start_str                    will be 'Start_location' in DB
-#exon_end_str                      will be 'End_location' in DB
+#exon_start_ls_s                   will be 'Start_location' in DB
+#exon_end_str_ls_s                 will be 'End_location' in DB
 
 #converting exon lists into strings and cleaning them up
 
