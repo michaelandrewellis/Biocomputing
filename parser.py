@@ -277,25 +277,15 @@ gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc,
 coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':str_ex_end, 'Start_location':str_ex_start},
                                 index=gene_ids)
 
-#engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
-
-
-"""
-
-
-#print(new_df)
-
-# col1: 0 - key (gene id)
-# col2: 1 - value (list)
-
+engine = create_engine('mysql+mysqlconnector://root:pw@localhost:3306/biocomp_project', echo=False)
 
 # Porting to the database:
-#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
-#coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
-
+"""
 #testing lists - all should be 241 to align correct data values:
 correct_length = 241
 list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
