@@ -57,15 +57,15 @@ def match_finder(list, compiler, else_statement = None):
 
 # --------------------------------------------------------------------------------------------------
 
-genbank_accessions = []                                                      ## genbank accessions
+genbank_accessions = []     #accession                            ## genbank accessions
 accession_compiler = re.compile(r"^ACCESSION\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(genbank_accessions, accession_compiler, else_statement='none')
 
-gene_ids = []                                                               ## gene IDs
+gene_ids = []                     #don't use this other than to identify splice variants      ## gene IDs
 id_compiler = re.compile(r"^LOCUS\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(gene_ids, id_compiler, else_statement='none')
 
-gene_name = []
+gene_name = []  #call this gene_identifier                                  ## gene name
 name_compiler = re.compile(r"^LOCUS\s.+\/gene\=\"(.+?)\".+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(gene_name, name_compiler, else_statement='none')
 
@@ -155,6 +155,7 @@ for list in clean_boundaries:
             subL.append(item)
     split_items.append(subL)
 
+
 #for number, letter in enumerate(split_items):
     #print(number, letter)
 #221 ['U59692.1:2089..2187', 'U59693.1:710..809', 'U59693.1:1858..2093', 'U59693.1:2465..4329', '344..1028']
@@ -191,45 +192,38 @@ for list in split_items:
 exon_start = []
 exon_end = []
 
+start_compiler = re.compile(r"^(\d+)\.")
+end_compiler = re.compile(r"^\d+\.\.(\d+)")
 for list in remove_spans:
     subL = []
-    if phrase in list:
-        exon_start.append(list)
-    else:
-        for item in list:
-            match = re.findall(r"^(\d+)\.", item)
-            if match:
-                for x in match:
-                    subL.append(x)
-            else:
-                subL.append('none')
-        exon_start.append(subL)
-
-#for number, letter in enumerate(exon_start):
-    #print(number, letter)
-
+    for item in list:
+        match = start_compiler.search(item)
+        if match:
+            subL.append(str(match.group(1)))
+    exon_start.append(subL)
 for list in remove_spans:
     subL = []
-    if phrase in list:
-        exon_end.append(list)
-    else:
-        for item in list:
-            match = re.findall(r"^\d+\.\.(\d+)", item)
-            if match:
-                for x in match:
-                    subL.append(x)
-            else:
-                subL.append('none')
-        exon_end.append(subL)
+    for item in list:
+        match = end_compiler.search(item)
+        if match:
+            subL.append(str(match.group(1)))
+    exon_end.append(subL)
 
-#for number, letter in enumerate(exon_start):
-    #print(number, letter)
-#for number, letter in enumerate(exon_end):
-    #print(number, letter)
 
-exon_start_ls_s = [' '.join(x) for x in exon_start] #generating lists of strings
-exon_end_ls_s = [' '.join(x) for x in exon_end]
+"""
+zipped_id_start_end = [(id, v1, v2) for id, val1, val2 in zip(gene_id, exon_start, exon_end)
+                       for v1, v2 in zip(val1, val2)]
+"""
+ls = []
+for list in exon_start:
+    subL = []
+    for item in list:
+        subL.append(item.split(' '))
+    ls.append(subL)
 
+
+
+"""
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
@@ -275,3 +269,4 @@ for list in list_lengths:
     else:
         print('length:', list, '--', 'test successful')
 
+"""
