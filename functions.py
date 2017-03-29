@@ -59,9 +59,9 @@ def codonSignificance(CDSlength, genePercent, chrPercent):
         #cdf = stats.binom.cdf(x,n,p)
         pval = stats.binom_test(x,n,p)
         #p = 1-abs(0.5-cdf)*2
-        pval = round(pval,3)
+        pval = round(pval,5)
         if pval<0.05/64: # Bonferroni correction
-            pval = str(pval)+'*'
+            pass
         pvalues.append(pval)
     return pvalues
 
