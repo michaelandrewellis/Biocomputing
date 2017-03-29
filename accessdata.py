@@ -15,7 +15,7 @@ def getDNAfromSQL(input, type, cursor):
 
 def getCDSfromSQL(input, type, cursor):
     query = "SELECT Start_location, End_location FROM Coding_region cr, Gene_info g " \
-            "WHERE cr.Gene_id = g.Gene_ID " \
+            "WHERE cr.Gene_ID = g.Gene_ID " \
             "AND g." + type + " = '" + input + "';"
     cursor.execute(query)
     CDSloc = cursor.fetchall()
