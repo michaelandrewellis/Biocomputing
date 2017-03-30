@@ -209,21 +209,21 @@ for list in remove_spans:
             subL.append(str(match.group(1)))
     exon_end.append(subL)
 
-
-"""
-zipped_id_start_end = [(id, v1, v2) for id, val1, val2 in zip(gene_id, exon_start, exon_end)
+#this code makes multiple ID values - so that each exon start and end is associated with it's ID
+zipped_id_start_end = [(id, v1, v2) for id, val1, val2 in zip(gene_ids, exon_start, exon_end)
                        for v1, v2 in zip(val1, val2)]
-"""
-ls = []
-for list in exon_start:
-    subL = []
-    for item in list:
-        subL.append(item.split(' '))
-    ls.append(subL)
 
+#removing splice variants by identifying indexes that match this regex
+splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
+splice_variant_indexes = []
+for i, j in enumerate(gene_ids):
+    match = splice_variant_compiler.search(j)
+    if match:
+        splice_variant_indexes.append(i)
 
+for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes gathered above
+    del zipped_id_start_end[index]
 
-"""
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
@@ -237,12 +237,12 @@ for list in exon_start:
 #exon_start_ls_s                   will be 'Start_location' in DB
 #exon_end_str_ls_s                 will be 'End_location' in DB
 
+coding_region_df = pd.DataFrame(zipped_id_start_end)
+
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
                         'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':exon_end_ls_s, 'Start_location':exon_start_ls_s}, index=gene_ids)
-pw = admin.password
 
-# removing the splice variants
+# removing the splice variants - NEED TO FIND ANOTHER WAY TO DO THIS, OR DO BEFORE PUTTING INTO DF.
 splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
 for index, row in coding_region_df.iterrows():
     match = splice_variant_compiler.search(index)
