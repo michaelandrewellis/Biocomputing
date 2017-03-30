@@ -209,7 +209,8 @@ for list in remove_spans:
             subL.append(str(match.group(1)))
     exon_end.append(subL)
 
-#this code makes multiple ID values - so that each exon start and end is associated with it's ID
+#this code makes duplicate ID values - so that each exon start and end is associated with it's ID in a separate row
+# in prep for the db
 zipped_id_start_end = [(id, v1, v2) for id, val1, val2 in zip(gene_ids, exon_start, exon_end)
                        for v1, v2 in zip(val1, val2)]
 
@@ -234,35 +235,45 @@ for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes 
 #clean_dna_seq                     will be 'DNA_sequence' in DB
 #clean_protein_seq                 will be 'Protein_sequence' in DB
 #gene_products                     will be 'Protein_product' in DB
-#exon_start_ls_s                   will be 'Start_location' in DB
-#exon_end_str_ls_s                 will be 'End_location' in DB
+#exon_start                        will be 'Start_location' in DB
+#exon_end_str                      will be 'End_location' in DB
 
 # Generating pandas dataframes
 #coding_region_df = pd.DataFrame(zipped_id_start_end)
-coding_region_df = pd.DataFrame(zipped_id_start_end, columns=['Gene_ID', 'Start_location', 'End_location'])
-gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
-                        'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
+#coding_region_df = pd.DataFrame(zipped_id_start_end, columns=['Gene_ID', 'Start_location', 'End_location'])
+#gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
+#                        'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
+
+#passw = admin.password()
 
 # creating the engine to allow connection to the db
-#engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
+#engine = create_engine('mysql+mysqlconnector://root:passw@localhost/biocomp_project', echo=False)
 
 # Porting to the database:
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 
-"""
+
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
 
 #testing lists - all should be 241 to align correct data values:
-correct_length = 241
-list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
-                len(clean_protein_seq), len(gene_products), len(exon_start_ls_s), len(exon_end_ls_s)]
-for list in list_lengths:
-    if list != correct_length:
-        print('test fail')
-    else:
-        print('length:', list, '--', 'test successful')
 
-"""
+def len_test(list):
+    """Takes in a list as a parameter, evaluates list length and prints 'test fail' 
+    if the list does not match the required length of 241"""
+    correct_length = 241
+    if len(list) == correct_length:
+        return(print('test passed'))
+    else:
+        return(print('test failed'))
+
+len_test(genbank_accessions)
+len_test(gene_ids)
+len_test(gene_name)
+len_test(dna_seq)
+len_test(gene_products)
+len_test(protein_seq)
+len_test(exon_start)
+len_test(exon_end)
