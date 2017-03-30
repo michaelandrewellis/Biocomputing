@@ -237,25 +237,21 @@ for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes 
 #exon_start_ls_s                   will be 'Start_location' in DB
 #exon_end_str_ls_s                 will be 'End_location' in DB
 
-coding_region_df = pd.DataFrame(zipped_id_start_end)
-
+# Generating pandas dataframes
+#coding_region_df = pd.DataFrame(zipped_id_start_end)
+coding_region_df = pd.DataFrame(zipped_id_start_end, columns=['Gene_ID', 'Start_location', 'End_location'])
 gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
                         'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
 
-# removing the splice variants - NEED TO FIND ANOTHER WAY TO DO THIS, OR DO BEFORE PUTTING INTO DF.
-splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
-for index, row in coding_region_df.iterrows():
-    match = splice_variant_compiler.search(index)
-    if match:
-        coding_region_df.drop(index, inplace=True)
-
 # creating the engine to allow connection to the db
-engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
+#engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
 
 # Porting to the database:
-gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
-coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+#coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
 
+#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+
+"""
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
 
