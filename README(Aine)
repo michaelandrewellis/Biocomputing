@@ -1,7 +1,8 @@
 README (tier 1 documentation)
 
-GenBank file parser and database
-================================
+GenBank file parser and database connection
+===========================================
+Files: parser.py, split_file.py
 
 Description of project
 ----------------------
@@ -12,12 +13,14 @@ Setup
 -----
 Some steps must be taken prior to use of the parser.
 Please see the 'Dependencies' section below for required imports.
-As well as these, before using the parser.py file, the split_file.py script must
-be run. This takes the raw GenBank file and splits it at the '//' entry separator.
+As well as these, before using the parser.py file, the split_file.py
+script must be run with a GenBank format file.
+This takes the raw GenBank file and splits it at the '//' entry separator.
 Thus, a separate file for each gene locus is generated.
-Ensure that these files are contained in a directory with nothing else in it.
-Once this step has been completed, set the 'indir' variable in the parser.py script
-as the path to this directory containing your split files.
+Ensure that these files are contained in a directory with nothing
+else in it.
+Once this step has been completed, set the 'indir' variable in the
+parser.py script to the directory containing your split files.
 
 Dependencies
 ------------
@@ -28,9 +31,83 @@ parser.py:
     import re
     import os
     import pandas as pd
+    import mysql.connector
+    from sqlalchemy import create_engine
 
-Explanation
------------
+Data extraction tier
+--------------------
+First core function: numerical_split
+Parameters:
+1. filename
+It then converts the string filename into an integer.
+This allows the match_finder function to iterate
+through the filenames in the correct numerical order.
+
+Second core function: match_finder
+Parameters:
+1. list - this is an empty list in which you want to store the
+   function output
+2. compiler - this is the regex compiler in the format:
+              compiler = re.compile(r" regex here ", re.MULTILINE|re.DOTALL)
+3. else_statement - this is the value that will be appended to the
+   list specified in parameter 1. if no value can be found by the
+   regex in the GenBank file.
+   DEFAULT = 'None'
+
+Third core function: findall_matcher
+Parameters:
+1. list_ - this is an empty list in which you want to store the
+   function output
+2. pattern - this is the findall regex pattern in the form r"pattern"
+
+The match_finder and findall_matcher functions search in each
+file in the indir directory for the pattern specified.
+The difference being that the match_finder function is useful when
+you require just one occurence of the defined pattern but the findall_matcher
+captures all of the occurences of the defined pattern in the file
+
+Implementation
+Here, the functions are used to extract useful parts of the GenBank file.
+Regular expressions have been designed to extract key data the match_finder
+function stores into the following lists:
+
+****************************************************************************************
+List name           |   Description                                                   |
+****************************************************************************************
+gene_ids            |   unique locus identifier                                       |
+genbank_accessions  |   unique genbank identifier                                     |
+gene_name           |   name of the gene                                              |
+dna_seq             |   nucleotide sequence of the gene                               |
+gene_products       |   this list contains the 1st protein product of the gene        |
+chr_loc             |   chromosomal location of the locus                             |
+protein_seq         |   amino acid sequence encoded by the coding sequence of the gene|
+exon_start          |
+exon_end            |
+****************************************************************************************
+
+Additional processes
+Some of the data requires additional post-population processing
+dna_seq:
+        cleaning of whitespaces and digits present in the GenBank file
+protein_seq:
+        cleaning of whitespaces
+cds_grab:
+        cds_grab is the inital list containing the raw strings
+        It then undergoes the following:
+        - Stripping of whitespaces, use of sublist in the for loop
+          as some loci have >1 /CDS (coding sequence entry).
+          The list then becomes the new list: cds_ws_strip.
+        - Extra characters are then stripped with re.sub() functions,
+          resulting in the list clean_boundaries.
+        - Then the items (now in the form '123..456') are split into
+          individual items. A separate sublist for each locus is maintained.
+        - After this, exons that span multiple genes are removed.
+          These can be identified by the fact that accession numbers referencing
+          other loci are embedded in the /CDS entry.
+        -
+
+
+
 
 
 
