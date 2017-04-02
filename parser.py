@@ -225,7 +225,7 @@ for list in remove_spans:
 # in prep for the db
 zipped_id_start_end = [(id, v1, v2) for id, val1, val2 in zip(gene_ids, exon_start, exon_end)
                        for v1, v2 in zip(val1, val2)]
-
+print(zipped_id_start_end)
 #removing splice variants by identifying indexes that match this regex
 splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
 splice_variant_indexes = []
@@ -236,6 +236,8 @@ for i, j in enumerate(gene_ids):
 
 for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes gathered above
     del zipped_id_start_end[index]
+
+
 
 # test: is HSSMAD3S08 gone from the zipped_id_start_end list?
 #print(zipped_id_start_end) - a simple text search of the result shows that the HSSMAD3S08 row has been removed
@@ -251,10 +253,9 @@ for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes 
 #clean_protein_seq                 will be 'Protein_sequence' in DB
 #gene_products                     will be 'Protein_product' in DB
 #exon_start                        will be 'Start_location' in DB
-#exon_end_str                      will be 'End_location' in DB
+#exon_end                          will be 'End_location' in DB
 
 # Generating pandas dataframes
-#coding_region_df = pd.DataFrame(zipped_id_start_end)
 #coding_region_df = pd.DataFrame(zipped_id_start_end, columns=['Gene_ID', 'Start_location', 'End_location'])
 #gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
 #                        'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
