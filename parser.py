@@ -11,28 +11,32 @@ indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-------------------------------------------
 
+
+# -----------------------------------Numerical split function---------------------------------------
+
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
 # thus allowing all lists to be generated in the same order (from gene 1 to 241)
     
-file_name_compiler = re.compile(r'(\d+)')
+
 def numerical_convert(value):
+    file_name_compiler = re.compile(r'(\d+)')
     """
     The main purpose of this function is to take a string containing digits and convert those digits into integers.
     It takes a string as the input. It splits the string into its 'digit' and 'other' components
     Taking every other item (starting with the second one, as the first is '') in the outcome of the split, the string
-    format digits are converted to integers using the map() and int() functions.
-    The numerical_convert function then returns any digits it found in 'value' in integer format.
+    format digits are converted to integers using the map() function to apply int() to each character in the name.
+    The numerical_convert function then returns the string 'value' as an integer.
     """
     split_value = file_name_compiler.split(value)
     split_value[1::2] = map(int, split_value[1::2])
-    return split_value
+    return(split_value)
 
 # the following code loops through all 241 files in the directory 'genes'
 # it then opens each one and searches between 'LOCUS' and '//' using the regexes
 # then appends matched groups to the relevant list
 # this is the method used for extracting all of the required data from the file
 
-# -----------------------------------Parser function------------------------------------------------
+# -----------------------------------Match finder functions-----------------------------------------
 
 def match_finder(list, compiler, else_statement = None):
     """
@@ -55,13 +59,21 @@ def match_finder(list, compiler, else_statement = None):
                 list.append(str(else_statement))
     return()
 
-# --------------------------------------------------------------------------------------------------
+def findall_matcher(list_, pattern):
+    for root, dirs, all_files in os.walk(indir):
+        for infile in sorted(all_files, key=numerical_convert):
+            open_file = open(os.path.join(root, infile), 'r')
+            find_all = list(re.findall(pattern, open_file.read(), re.MULTILINE | re.DOTALL))
+            list_.append(find_all)
+    return()
 
-genbank_accessions = []     #accession                            ## genbank accessions
+# -----------------------------------Implementation section-----------------------------------------
+
+genbank_accessions = []     #accession                                      ## genbank accessions
 accession_compiler = re.compile(r"^ACCESSION\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(genbank_accessions, accession_compiler, else_statement='none')
 
-gene_ids = []                     #don't use this other than to identify splice variants      ## gene IDs
+gene_ids = []    #don't use this other than to identify splice variants     ## gene IDs
 id_compiler = re.compile(r"^LOCUS\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(gene_ids, id_compiler, else_statement='none')
 
@@ -93,22 +105,20 @@ clean_protein_seq = []                                                      ## p
 for x in protein_seq:
     sub = re.sub(r"\W", "", x)
     clean_protein_seq.append(sub)
-            
-# --- extracting the coding seq of the gene in order to get the exon ranges --- #
 
-cds_grab = []
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_convert):
-        open_file = open(os.path.join(root, infile), 'r')
-        find_all_cds = list(re.findall(r"^\s{5}CDS\s+(.+?)\/", open_file.read(), re.MULTILINE | re.DOTALL))
-        cds_grab.append(find_all_cds)
+cds_grab = [] #extracting the coding seq of the gene in order to get the exon ranges
+pattern = r"^\s{5}CDS\s+(.+?)\/"
+findall_matcher(cds_grab, pattern)
 
+# -- Test -- #
+# This simple enumeration test ensures that the correct gene id will be associated with the correct
+# coding sequence once in the dataframe
+# for number, letter in enumerate(gene_ids):
+    # print(number, letter)
 #for number, letter in enumerate(cds_grab):
     #print(number, letter)
-#for number, letter in enumerate(gene_ids):
-    #print(number, letter)
 
-# this removes the \n and whitespace from the strings in cds_grab
+# the following code removes the \n and whitespace from the strings in cds_grab
 # it leaves me with an overall list (cds_ws_strip), within which there are sub-lists
 # the items in the sub-lists are all the coding seqs for 1 gene
 cds_ws_strip = []
@@ -119,6 +129,7 @@ for list in cds_grab:
         subL.append(stripped_item)
     cds_ws_strip.append(subL)
 
+# -- Test -- #
 #for number, letter in enumerate(cds_ws_strip):
     #print(number, letter)
 #for number, letter in enumerate(gene_ids):
@@ -138,6 +149,7 @@ for list in cds_ws_strip:
         subL.append(sub5)
     clean_boundaries.append(subL)
 
+# -- Test -- #
 #for number, letter in enumerate(clean_boundaries):
     #print(number, letter)
 #161 ['104..149,437..517', '926..996']
@@ -155,7 +167,7 @@ for list in clean_boundaries:
             subL.append(item)
     split_items.append(subL)
 
-
+# -- Test -- #
 #for number, letter in enumerate(split_items):
     #print(number, letter)
 #221 ['U59692.1:2089..2187', 'U59693.1:710..809', 'U59693.1:1858..2093', 'U59693.1:2465..4329', '344..1028']
@@ -225,6 +237,9 @@ for i, j in enumerate(gene_ids):
 for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes gathered above
     del zipped_id_start_end[index]
 
+# test: is HSSMAD3S08 gone from the zipped_id_start_end list?
+#print(zipped_id_start_end) - a simple text search of the result shows that the HSSMAD3S08 row has been removed
+
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
 
@@ -261,8 +276,8 @@ for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes 
 #testing lists - all should be 241 to align correct data values:
 
 def len_test(list):
-    """Takes in a list as a parameter, evaluates list length and prints 'test fail' 
-    if the list does not match the required length of 241"""
+    """Takes in a list as a parameter, evaluates list length and prints 'test failed' 
+    if the list does not match the required length of 241, or passed if it does."""
     correct_length = 241
     if len(list) == correct_length:
         return(print('test passed'))
@@ -277,3 +292,5 @@ len_test(gene_products)
 len_test(protein_seq)
 len_test(exon_start)
 len_test(exon_end)
+
+# ---------------------------------------------------------------------------------------------------
