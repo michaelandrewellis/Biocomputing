@@ -36,6 +36,10 @@ parser.py:
 
 Data extraction tier
 --------------------
+
+Functions
+#########
+
 First core function: numerical_split
 Parameters:
 1. filename
@@ -67,6 +71,8 @@ you require just one occurence of the defined pattern but the findall_matcher
 captures all of the occurences of the defined pattern in the file
 
 Implementation
+##############
+
 Here, the functions are used to extract useful parts of the GenBank file.
 Regular expressions have been designed to extract key data the match_finder
 function stores into the following lists:
@@ -81,11 +87,13 @@ dna_seq             |   nucleotide sequence of the gene                         
 gene_products       |   this list contains the 1st protein product of the gene        |
 chr_loc             |   chromosomal location of the locus                             |
 protein_seq         |   amino acid sequence encoded by the coding sequence of the gene|
-exon_start          |
-exon_end            |
+exon_start          |   contains sub-lists of exon start positions for each locus     |
+exon_end            |   contains sub-lists of exon end positions for each locus       |
 ****************************************************************************************
 
-Additional processes
+Data processing
+###############
+
 Some of the data requires additional post-population processing
 dna_seq:
         cleaning of whitespaces and digits present in the GenBank file
@@ -103,8 +111,51 @@ cds_grab:
           individual items. A separate sublist for each locus is maintained.
         - After this, exons that span multiple genes are removed.
           These can be identified by the fact that accession numbers referencing
-          other loci are embedded in the /CDS entry.
-        -
+          other loci are embedded in the /CDS entry. For these loci, the phrase
+          'exons span multiple genes' are appended to the list.
+        - The list is now called remove_spans
+        - Two more for loops then search for the first and last number
+          in the '123..456' format items using regexes
+        - These are stored in lists called exon_start and exon_end
+
+Preparing the data for database import
+######################################
+The tables of the database are fed the following data:-
+
+    Table 1
+    Coding_region:
+       - gene_ids as 'Gene_ID'
+       - exon start as 'Start_location'
+       - exon end as 'End_location'
+    Table 2
+    Gene_info
+       - gene_ids as 'Gene_ID'
+       - chr_loc as 'Chromosome_location'
+       - clean_dna_seq as DNA_sequence
+       - clean_protein_seq as Protein_sequence
+       - gene_products as Protein_product
+
+Preparing exon_start and exon_end:
+A zip object called zipped_id_start_end is created - it is a
+list of tuples.
+A list comprehension is utilised to go from lists of
+lists (exon_start, exon_end) to a list of tuples with repeating
+gene_ids i.e. any one gene_ids entry will be contained in n rows where
+n is the number of start positions and corresponding end positions.
+The code then searches for splice variants.
+An enumerating for loop identifies the gene_ids associated with
+these, and removes any splice variant tuples from the
+zipped_id_start_end list.
+
+Preparing the data for table 1:
+Using pandas (imported as pd), the zip object is converted to a DataFrame.
+Preparing the data for table 2:
+Using pandas (imported as pd), the five lists named under 'Table 2' are
+converted to a dataframe object.
+
+A connection to the database is generated using the sqlAlchemy function
+create_engine.
+mysql.connector is then used to port the dataframes into the database.
 
 
 
