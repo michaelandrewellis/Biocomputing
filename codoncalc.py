@@ -34,14 +34,9 @@ def overallCodonPercent():
 
 # CREATE SUMMARY TABLE FOR HOME PAGE
 def summary_html_table():
-    conn = accessdata.connectdb()
-    cursor = conn.cursor()
-    SQL = "SELECT * FROM Gene_info;"
-    cursor.execute(SQL)
-    rows = cursor.fetchall()
-    cursor.close()
-    df = pd.DataFrame(list(rows))
-    df.columns = ['A','B','C','D','E']
+    all_genes = accessdata.get_all_genes()
+    df = pd.DataFrame(list(all_genes))
+    df.columns = ['A', 'B', 'C', 'D', 'E']
     df = df[['A','B','E']]
     for col in df.columns:
         df[col] = df[col].apply(lambda x: '<a href=\"http://www.webcgiaddress.com/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format(col,x))  # Link to summary page

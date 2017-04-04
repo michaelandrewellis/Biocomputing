@@ -36,3 +36,13 @@ def get_DNA_and_CDS_from_SQL(input, type):
     cursor.close()
     conn.close()
     return [DNA,CDSloc]
+
+
+def get_all_genes():
+    conn = connectdb()
+    cursor = conn.cursor()
+    SQL = "SELECT * FROM Gene_info;"
+    cursor.execute(SQL)
+    rows = cursor.fetchall()
+    cursor.close()
+    return(rows)

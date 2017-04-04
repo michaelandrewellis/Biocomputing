@@ -52,6 +52,7 @@ def codonPercent(CDS):
 
 def codonSignificance(CDSlength, genePercent, chrPercent):
     pvalues = []
+    padj = []
     for i in range(0,64):
         n = CDSlength / 3
         x = genePercent[i]*n
@@ -59,19 +60,21 @@ def codonSignificance(CDSlength, genePercent, chrPercent):
         #cdf = stats.binom.cdf(x,n,p)
         pval = stats.binom_test(x,n,p)
         #p = 1-abs(0.5-cdf)*2
+        pvaladj = round(pval*64,5) # Bonferroni correction
         pval = round(pval,5)
         if pval<0.05/64: # Bonferroni correction
             pass
         pvalues.append(pval)
-    return pvalues
+        padj.append(pvaladj)
+    return pvalues, padj
 
 # returns table of codons, their frequencies and their relative frequences
 def getCodonTable(CDS):   # TURN INTO DATAFRAME?
     genePercent = codonPercent(CDS)
     chrPercent = codonTable[1]
     relFreq = [g/c for g,c in zip(genePercent, chrPercent)]
-    sig = codonSignificance(len(CDS),genePercent,chrPercent)
-    return [codons, AA, genePercent, chrPercent, relFreq, sig]
+    pval, padj = codonSignificance(len(CDS),genePercent,chrPercent)
+    return [codons, AA, genePercent, chrPercent, relFreq, pval, padj]
 
 
 # returns table with enyzmes and cutting locations
