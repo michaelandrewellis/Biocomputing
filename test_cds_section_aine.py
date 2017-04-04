@@ -142,7 +142,6 @@ ORIGIN
      1021 ctaga
 //''')
 
-
 find_all_cds = re.findall(r"^\s{5}CDS\s+(.+?)\/", string, re.MULTILINE|re.DOTALL)
 
 print(find_all_cds)

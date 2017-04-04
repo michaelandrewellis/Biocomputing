@@ -134,3 +134,49 @@ for k,v in dict_exon_boundaries.items():
 #spliced = no_splice_dict["AH008469S12"]
 #print(spliced)
     #KeyError: 'AH008469S12'
+
+
+
+
+
+"""
+for list in remove_spans:
+    subL = []
+    if phrase in list:
+        exon_start.append(list)
+    else:
+        for item in list:
+            match = re.findall(r"^(\d+)\.", item)
+            if match:
+                for x in match:
+                    subL.append(x)
+            else:
+                subL.append('none')
+        exon_start.append(subL)
+
+#for number, letter in enumerate(exon_start):
+    #print(number, letter)
+
+for list in remove_spans:
+    subL = []
+    if phrase in list:
+        exon_end.append(list)
+    else:
+        for item in list:
+            match = re.findall(r"^\d+\.\.(\d+)", item)
+            if match:
+                for x in match:
+                    subL.append(x)
+            else:
+                subL.append('none')
+        exon_end.append(subL)
+"""
+#for number, letter in enumerate(exon_start):
+    #print(number, letter)
+#for number, letter in enumerate(exon_end):
+    #print(number, letter)
+
+exon_start_ls_s = [' '.join(x) for x in exon_start] #generating lists of strings
+exon_end_ls_s = [' '.join(x) for x in exon_end]
+print(exon_start_ls_s[:5])
+print(exon_end_ls_s[:5])

@@ -11,28 +11,32 @@ indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-------------------------------------------
 
+
+# -----------------------------------Numerical split function---------------------------------------
+
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
 # thus allowing all lists to be generated in the same order (from gene 1 to 241)
     
-file_name_compiler = re.compile(r'(\d+)')
+
 def numerical_convert(value):
+    file_name_compiler = re.compile(r'(\d+)')
     """
     The main purpose of this function is to take a string containing digits and convert those digits into integers.
     It takes a string as the input. It splits the string into its 'digit' and 'other' components
     Taking every other item (starting with the second one, as the first is '') in the outcome of the split, the string
-    format digits are converted to integers using the map() and int() functions.
-    The numerical_convert function then returns any digits it found in 'value' in integer format.
+    format digits are converted to integers using the map() function to apply int() to each character in the name.
+    The numerical_convert function then returns the string 'value' as an integer.
     """
     split_value = file_name_compiler.split(value)
     split_value[1::2] = map(int, split_value[1::2])
-    return split_value
+    return(split_value)
 
 # the following code loops through all 241 files in the directory 'genes'
 # it then opens each one and searches between 'LOCUS' and '//' using the regexes
 # then appends matched groups to the relevant list
 # this is the method used for extracting all of the required data from the file
 
-# -----------------------------------Parser function------------------------------------------------
+# -----------------------------------Match finder functions-----------------------------------------
 
 def match_finder(list, compiler, else_statement = None):
     """
@@ -55,17 +59,25 @@ def match_finder(list, compiler, else_statement = None):
                 list.append(str(else_statement))
     return()
 
-# --------------------------------------------------------------------------------------------------
+def findall_matcher(list_, pattern):
+    for root, dirs, all_files in os.walk(indir):
+        for infile in sorted(all_files, key=numerical_convert):
+            open_file = open(os.path.join(root, infile), 'r')
+            find_all = list(re.findall(pattern, open_file.read(), re.MULTILINE | re.DOTALL))
+            list_.append(find_all)
+    return()
 
-genbank_accessions = []                                                      ## genbank accessions
+# -----------------------------------Implementation section-----------------------------------------
+
+genbank_accessions = []     #accession                                      ## genbank accessions
 accession_compiler = re.compile(r"^ACCESSION\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(genbank_accessions, accession_compiler, else_statement='none')
 
-gene_ids = []                                                               ## gene IDs
+gene_ids = []    #don't use this other than to identify splice variants     ## gene IDs
 id_compiler = re.compile(r"^LOCUS\s+(\w+).+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(gene_ids, id_compiler, else_statement='none')
 
-gene_name = []
+gene_name = []  #call this gene_identifier                                  ## gene name
 name_compiler = re.compile(r"^LOCUS\s.+\/gene\=\"(.+?)\".+\/\/", re.MULTILINE|re.DOTALL)
 match_finder(gene_name, name_compiler, else_statement='none')
 
@@ -93,22 +105,20 @@ clean_protein_seq = []                                                      ## p
 for x in protein_seq:
     sub = re.sub(r"\W", "", x)
     clean_protein_seq.append(sub)
-            
-# --- extracting the coding seq of the gene in order to get the exon ranges --- #
 
-cds_grab = []
-for root, dirs, all_files in os.walk(indir):
-    for infile in sorted(all_files, key=numerical_convert):
-        open_file = open(os.path.join(root, infile), 'r')
-        find_all_cds = list(re.findall(r"^\s{5}CDS\s+(.+?)\/", open_file.read(), re.MULTILINE | re.DOTALL))
-        cds_grab.append(find_all_cds)
+cds_grab = [] #extracting the coding seq of the gene in order to get the exon ranges
+pattern = r"^\s{5}CDS\s+(.+?)\/"
+findall_matcher(cds_grab, pattern)
 
+# -- Test -- #
+# This simple enumeration test ensures that the correct gene id will be associated with the correct
+# coding sequence once in the dataframe
+# for number, letter in enumerate(gene_ids):
+    # print(number, letter)
 #for number, letter in enumerate(cds_grab):
     #print(number, letter)
-#for number, letter in enumerate(gene_ids):
-    #print(number, letter)
 
-# this removes the \n and whitespace from the strings in cds_grab
+# the following code removes the \n and whitespace from the strings in cds_grab
 # it leaves me with an overall list (cds_ws_strip), within which there are sub-lists
 # the items in the sub-lists are all the coding seqs for 1 gene
 cds_ws_strip = []
@@ -119,6 +129,7 @@ for list in cds_grab:
         subL.append(stripped_item)
     cds_ws_strip.append(subL)
 
+# -- Test -- #
 #for number, letter in enumerate(cds_ws_strip):
     #print(number, letter)
 #for number, letter in enumerate(gene_ids):
@@ -138,6 +149,7 @@ for list in cds_ws_strip:
         subL.append(sub5)
     clean_boundaries.append(subL)
 
+# -- Test -- #
 #for number, letter in enumerate(clean_boundaries):
     #print(number, letter)
 #161 ['104..149,437..517', '926..996']
@@ -155,6 +167,7 @@ for list in clean_boundaries:
             subL.append(item)
     split_items.append(subL)
 
+# -- Test -- #
 #for number, letter in enumerate(split_items):
     #print(number, letter)
 #221 ['U59692.1:2089..2187', 'U59693.1:710..809', 'U59693.1:1858..2093', 'U59693.1:2465..4329', '344..1028']
@@ -191,44 +204,43 @@ for list in split_items:
 exon_start = []
 exon_end = []
 
+start_compiler = re.compile(r"^(\d+)\.")
+end_compiler = re.compile(r"^\d+\.\.(\d+)")
 for list in remove_spans:
     subL = []
-    if phrase in list:
-        exon_start.append(list)
-    else:
-        for item in list:
-            match = re.findall(r"^(\d+)\.", item)
-            if match:
-                for x in match:
-                    subL.append(x)
-            else:
-                subL.append('none')
-        exon_start.append(subL)
-
-#for number, letter in enumerate(exon_start):
-    #print(number, letter)
-
+    for item in list:
+        match = start_compiler.search(item)
+        if match:
+            subL.append(str(match.group(1)))
+    exon_start.append(subL)
 for list in remove_spans:
     subL = []
-    if phrase in list:
-        exon_end.append(list)
-    else:
-        for item in list:
-            match = re.findall(r"^\d+\.\.(\d+)", item)
-            if match:
-                for x in match:
-                    subL.append(x)
-            else:
-                subL.append('none')
-        exon_end.append(subL)
+    for item in list:
+        match = end_compiler.search(item)
+        if match:
+            subL.append(str(match.group(1)))
+    exon_end.append(subL)
 
-#for number, letter in enumerate(exon_start):
-    #print(number, letter)
-#for number, letter in enumerate(exon_end):
-    #print(number, letter)
+#this code makes duplicate ID values - so that each exon start and end is associated with it's ID in a separate row
+# in prep for the db
+zipped_id_start_end = [(id, v1, v2) for id, val1, val2 in zip(gene_ids, exon_start, exon_end)
+                       for v1, v2 in zip(val1, val2)]
+print(zipped_id_start_end)
+#removing splice variants by identifying indexes that match this regex
+splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
+splice_variant_indexes = []
+for i, j in enumerate(gene_ids):
+    match = splice_variant_compiler.search(j)
+    if match:
+        splice_variant_indexes.append(i)
 
-exon_start_ls_s = [' '.join(x) for x in exon_start] #generating lists of strings
-exon_end_ls_s = [' '.join(x) for x in exon_end]
+for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes gathered above
+    del zipped_id_start_end[index]
+
+
+
+# test: is HSSMAD3S08 gone from the zipped_id_start_end list?
+#print(zipped_id_start_end) - a simple text search of the result shows that the HSSMAD3S08 row has been removed
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Database connection tier---------------------------------------
@@ -240,38 +252,46 @@ exon_end_ls_s = [' '.join(x) for x in exon_end]
 #clean_dna_seq                     will be 'DNA_sequence' in DB
 #clean_protein_seq                 will be 'Protein_sequence' in DB
 #gene_products                     will be 'Protein_product' in DB
-#exon_start_ls_s                   will be 'Start_location' in DB
-#exon_end_str_ls_s                 will be 'End_location' in DB
+#exon_start                        will be 'Start_location' in DB
+#exon_end                          will be 'End_location' in DB
 
-gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
-                        'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
-coding_region_df = pd.DataFrame({'Gene_ID': gene_ids, 'End_location':exon_end_ls_s, 'Start_location':exon_start_ls_s}, index=gene_ids)
-pw = admin.password
+# Generating pandas dataframes
+#coding_region_df = pd.DataFrame(zipped_id_start_end, columns=['Gene_ID', 'Start_location', 'End_location'])
+#gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
+#                        'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
 
-# removing the splice variants
-splice_variant_compiler = re.compile(r"^.{7}S|.{8}S|.{9}S")
-for index, row in coding_region_df.iterrows():
-    match = splice_variant_compiler.search(index)
-    if match:
-        coding_region_df.drop(index, inplace=True)
+#passw = admin.password()
 
 # creating the engine to allow connection to the db
-engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
+#engine = create_engine('mysql+mysqlconnector://root:passw@localhost/biocomp_project', echo=False)
 
 # Porting to the database:
-gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
-coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+#coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+
+#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+
 
 # ---------------------------------------------------------------------------------------------------
 # -----------------------------------Testing tier----------------------------------------------------
 
 #testing lists - all should be 241 to align correct data values:
-correct_length = 241
-list_lengths = [len(genbank_accessions), len(gene_ids), len(clean_dna_seq), len(chr_loc),
-                len(clean_protein_seq), len(gene_products), len(exon_start_ls_s), len(exon_end_ls_s)]
-for list in list_lengths:
-    if list != correct_length:
-        print('test fail')
-    else:
-        print('length:', list, '--', 'test successful')
 
+def len_test(list):
+    """Takes in a list as a parameter, evaluates list length and prints 'test failed' 
+    if the list does not match the required length of 241, or passed if it does."""
+    correct_length = 241
+    if len(list) == correct_length:
+        return(print('test passed'))
+    else:
+        return(print('test failed'))
+
+len_test(genbank_accessions)
+len_test(gene_ids)
+len_test(gene_name)
+len_test(dna_seq)
+len_test(gene_products)
+len_test(protein_seq)
+len_test(exon_start)
+len_test(exon_end)
+
+# ---------------------------------------------------------------------------------------------------
