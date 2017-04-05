@@ -41,8 +41,8 @@ def codon_table_to_html(codon_table):
 
 codon_table_html = codon_table_to_html(codon_table)
 colours = ['blue','yellow','pink']
-enzyme_table = enzyme_table + [colours]
-enzyme_table_df = pd.DataFrame(enzyme_table).T
+enzyme_table_with_colour = enzyme_table + [colours]
+enzyme_table_df = pd.DataFrame(enzyme_table_with_colour).T
 enzyme_table_df.columns = ['Enzyme','Cutting Locations','Good or Bad', 'Colour']
 
 
@@ -57,7 +57,7 @@ for i in CDS_loc:
     j=i[1]+1
 tagged_DNA += DNA[j:]
 '''
-tagged_DNA = htmlfunctions.highlightCDS(DNA,CDS_loc)
+tagged_DNA = htmlfunctions.highlight_CDS(DNA,CDS_loc)
 DNA_html =  '<div class=\"DNA\"><code>'+tagged_DNA+'</code></div>'
 
 html += pd.DataFrame(CDS_loc,columns=['Start of coding region','End of coding region']).to_html(index=False)
