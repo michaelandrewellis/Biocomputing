@@ -38,7 +38,7 @@ AA = ['Phe','Phe','Leu','Leu',
 percent = [1/64]*64
 
 
-codonTable = [codons,percent]
+codon_table = [codons, percent]
 
 codons = ['TTT', 'TTC', 'TTA', 'TTG',
           'CTT', 'CTC', 'CTA', 'CTG',
@@ -57,6 +57,6 @@ codons = ['TTT', 'TTC', 'TTA', 'TTG',
           'AGT', 'AGC', 'AGA', 'AGG',
           'GGT', 'GGC', 'GGA', 'GGG']
 
-enzymeDict = {'EcoRI':'GAATC',
+enzyme_dict = {'EcoRI': 'GAATC',
               'BamHI':'GGATCC',
               'BsumMI':'CTCGAG'}

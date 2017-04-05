@@ -4,23 +4,24 @@
 </head>
 
 <body>
+<h1>Human Chromosome 15</h1>
 <!--action="/cgi-bin/cgiwrap/em001/cgi-script.py"-->
-<form
+<form class="searchform"
 action="cgi-bin/cgi-script.py"
 method='get'>
     <p>
-        <b>Search term:</b><br />
-        <input name='input' type='text' size='49' />
+        <h3>Search term:</h3>
+        <input class='searchbox' name='input' type='text' size='49' />
     </p>
 
-<h2>Input type:</h2>
+<h3>Input type:</h3>
     <input name='type' value='Gene_ID' type='radio' checked='checked' />Gene ID
     <input name='type' value='Protein_product' type='radio' />Protein Product
     <input name='type' value='Accession' type='radio' />Accession
     <input name='type' value='Chromosome_location' type='radio' />Chromosome Location
     <p>
-        <input type='submit' value='Submit' />
-        <input type='reset'  value='Clear form' />
+        <input class='button' type='submit' value='Submit' />
+        <input class='button' type='reset'  value='Clear form' />
     </p>
 </form>
 
