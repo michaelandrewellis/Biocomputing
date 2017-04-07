@@ -37,25 +37,7 @@ AA = ['Phe','Phe','Leu','Leu',
 
 percent = [1/64]*64
 
-
 codon_table = [codons, percent]
-
-codons = ['TTT', 'TTC', 'TTA', 'TTG',
-          'CTT', 'CTC', 'CTA', 'CTG',
-          'ATT', 'ATC', 'ATA', 'ATG',
-          'GTT', 'GTC', 'GTA', 'GTG',
-          'TCT', 'TCC', 'TCA', 'TCG',
-          'CCT', 'CCC', 'CCA', 'CCG',
-          'ACT', 'ACC', 'ACA', 'ACG',
-          'GCT', 'GCC', 'GCA', 'GCG',
-          'TAT', 'TAC', 'TAA', 'TAG',
-          'CAT', 'CAC', 'CAA', 'CAG',
-          'AAT', 'AAC', 'AAA', 'AAG',
-          'GAT', 'GAC', 'GAA', 'GAG',
-          'TGT', 'TGC', 'TGA', 'TGG',
-          'CGT', 'CGC', 'CGA', 'CGG',
-          'AGT', 'AGC', 'AGA', 'AGG',
-          'GGT', 'GGC', 'GGA', 'GGG']
 
 enzyme_dict = {'EcoRI': 'GAATC',
               'BamHI':'GGATCC',

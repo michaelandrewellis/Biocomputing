@@ -8,9 +8,9 @@ from PIL import Image, ImageDraw
 image_height=50
 image_width = 1000
 v_midpoint = image_height/2
-exon_height = 10
-intron_height = 10
-enzyme_marker_height = 30
+exon_height = 20
+intron_height = 5
+enzyme_marker_height = 40
 
 
 def draw_intron(start,end,draw):
@@ -25,7 +25,7 @@ def draw_intron(start,end,draw):
     y0 = v_midpoint-intron_height/2
     x1 = end
     y1 = v_midpoint + intron_height/2
-    draw.rectangle([x0,y0,x1,y1],fill='red',outline='black')
+    draw.rectangle([x0,y0,x1,y1],fill='mediumblue')
 
 
 def draw_exon(start,end,draw):
@@ -40,7 +40,7 @@ def draw_exon(start,end,draw):
     y0 = v_midpoint-exon_height/2
     x1 = end
     y1 = v_midpoint + exon_height/2
-    draw.rectangle([x0,y0,x1,y1],fill='green',outline='black')
+    draw.rectangle([x0,y0,x1,y1],fill='cornflowerblue')
 
 
 def draw_enzyme(location,colour,draw):
