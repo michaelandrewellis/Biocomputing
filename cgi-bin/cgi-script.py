@@ -74,8 +74,10 @@ html += '''
 <html>
 <head>
  <title>Summary Page</title>
+ <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+<h1>Summary Page for Gene</h1>
 '''
 
 

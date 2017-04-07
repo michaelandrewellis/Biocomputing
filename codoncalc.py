@@ -1,6 +1,7 @@
 import functions
 import accessdata
 import pandas as pd
+import ast
 
 ''' Script to calculate codon usage in the whole of Chromosome 15'''
 
@@ -8,19 +9,33 @@ def overallCodonUse():
     codonUse = [0]*64
     conn = accessdata.connectdb()
     cursor = conn.cursor()
-    SQL = "SELECT gene_id FROM gene"
+    SQL = "SELECT Gene_ID FROM Gene_info"
     cursor.execute(SQL)
     genes = cursor.fetchall()
-    cursor.close()
     for gene in genes:
-        SQL = "SELECT DNA FROM gene WHERE gene.gene_id='" + gene[0] +"';"
+        SQL = "SELECT DNA_sequence FROM Gene_info WHERE Gene_info.Gene_ID='" + gene[0] +"';"
         cursor.execute(SQL)
-        DNA = cursor.fetchone()
-        SQL = "SELECT start_loc, end_loc FROM coding_region cr WHERE cr.gene_id = '" + gene[0] + "';"
+        DNA = cursor.fetchone()[0]
+        DNA = DNA.upper()
+        SQL = "SELECT Start_location, End_location FROM Coding_region cr WHERE cr.gene_id = '" + gene[0] + "';"
         cursor.execute(SQL)
         CDSloc = cursor.fetchall()
+        ######################### EXTRA CODE TO DEAL WITH FORMAT
+        CDSloc = CDSloc[0]
+        if CDSloc[0] == 'exons span multiple genes':
+            continue
+        CDSloc = (ast.literal_eval(x) for x in CDSloc)
+        CDSloc = list(map(list, zip(*CDSloc)))
+        CDSloc = [[int(x) for x in i] for i in CDSloc]
+        ####################################
         CDS = functions.get_CDS_seq(DNA, CDSloc)
-        codonUse += functions.count_codon_usage(CDS)
+        ######################################
+        if len(CDS) % 3 != 0 or 'N' in CDS:
+            continue
+        #####################################
+        codonUse = [a + b for a, b in zip(codonUse, functions.count_codon_usage(CDS))]
+        #codonUse += functions.count_codon_usage(CDS)
+    cursor.close()
     return codonUse
 
 def overallCodonPercent():

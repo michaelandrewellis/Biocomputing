@@ -17,7 +17,7 @@ def get_CDS_seq(DNA, CDS_loc):
     :return: coding sequence  
     :rtype: str  
 
-    >>> get_CDS_seq('TTTAAA',[(3,5)])  
+    >>> get_CDS_seq('TTTAAA', [(3,5)])  
     'TAA'
     '''
     CDS = ""
@@ -35,7 +35,7 @@ def count_codon_usage(CDS):
     :return: codon frequencies
     :rtype: list
 
-    >>> count_codon_usage('TTT')[0]
+    >>> count_codon_usage('TTT')[0]  
     1
     '''
     codonCount = [0]*64
