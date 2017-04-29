@@ -1,5 +1,20 @@
 README (tier 1 documentation)
 
+
+Code documentation (1-2 pages per tier)
+Note that this should not simply be a re-printing of the code with the comments in bold (or something similar).
+In general:
+¥	Provide a description of the function of subroutines and programs. It should describe WHAT the functions do not HOW they do it (such comments should appear in the code).
+¥	Provide an explanation of the structure of the code - i.e. what calls what - describing (perhaps as a diagram) how separate pieces of code or subroutines (and HTML for the front end) interact with one another.
+¥	Explain how to install and run the software. For example, how are the programs run to populate the database? Are there other programs that must be run to calculate and store the information on chromosome codon usage before these are stored in the database? If so, how are these run?
+For specific layers, the documentation should:
+¥	Front-end provide a short end-user document, and explain what middle layer code was accessed and how the results were displayed in CGI scripts. You should document any semantic markup used.
+¥	Business logic define the API provided to the front end in such a way that another programmer could implement a front end with reference to your document.
+¥	Data access routines (which may be provided by the database programmer or the business logic programmer) define the API provided to the business logic in such a way that another programmer could implement the business logic with reference to your document.
+¥	Database provide table definitions and UML diagrams (or equivalent) detailing indexes, primary and foreign keys, and any constraints.
+
+
+
 GenBank file parser and database connection
 ===========================================
 Files: parser.py, split_file.py

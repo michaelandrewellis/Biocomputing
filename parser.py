@@ -11,8 +11,7 @@ indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier-------------------------------------------
 
-
-# -----------------------------------Numerical split function---------------------------------------
+# -----------------------------------Numerical convert function---------------------------------------
 
 # function to split the filenames so the directory iterator loop goes through the files in order from 1 to 241
 # thus allowing all lists to be generated in the same order (from gene 1 to 241)
@@ -38,6 +37,7 @@ def numerical_convert(value):
 
 # -----------------------------------Match finder functions-----------------------------------------
 
+#this match_finder finds a single match in a locus file
 def match_finder(list, compiler, else_statement = None):
     """
     This function essentially walks through a given directory taking the filenames, sorting by numerical name using
@@ -59,6 +59,7 @@ def match_finder(list, compiler, else_statement = None):
                 list.append(str(else_statement))
     return()
 
+#this findall_matcher finds all the matches present in a locus file
 def findall_matcher(list_, pattern):
     for root, dirs, all_files in os.walk(indir):
         for infile in sorted(all_files, key=numerical_convert):
@@ -267,7 +268,6 @@ for index in sorted(splice_variant_indexes, reverse=True): #deletes the indexes 
 
 # Porting to the database:
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
-
 #gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 
 
