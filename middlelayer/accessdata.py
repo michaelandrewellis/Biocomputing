@@ -1,6 +1,8 @@
-import pymysql
-from dbconfig import dbhost,dbuser,dbname,dbpass,dbport
 import ast
+
+import pymysql
+from middlelayer.dbconfig import dbhost,dbuser,dbname,dbpass,dbport
+
 
 def connectdb():
     conn = pymysql.connect(host=dbhost, port=dbport, user=dbuser, passwd = dbpass, db = dbname)

@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
-import functions
-import cgi
-import cgitb; cgitb.enable()
+import cgitb;
+
+from middlelayer import functions
+
+cgitb.enable()
 import pandas as pd
-import htmlfunctions
+from frontend import exondiagram
 
 """
 form = cgi.FieldStorage()
@@ -86,7 +88,8 @@ html += pd.DataFrame(CDS_locs, columns=['Start of coding region','End of coding 
 html += codon_table_to_html(codon_table)
 html += enzyme_table_to_html(enzyme_table_with_colour)
 
-htmlfunctions.draw_gene(DNA, CDS_locs, enzyme_table_with_colour)
+exondiagram.draw_gene(DNA, CDS_locs, enzyme_table_with_colour)
+
 html += "<img src='exons.png'/>"
 html += DNA_to_html(DNA, CDS_locs)
 html += "</body>"

@@ -1,9 +1,9 @@
 #! /usr/bin/env python3
 
-from config import codons, codon_table, AA, enzyme_dict
-import accessdata as ad
+import middlelayer.accessdata as ad
 import scipy.stats as stats
-import pandas as pd
+
+from middlelayer.config import codons, codon_table, AA, enzyme_dict
 
 
 def get_CDS_seq(DNA, CDS_loc):

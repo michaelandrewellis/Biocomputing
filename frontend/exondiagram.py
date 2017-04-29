@@ -78,21 +78,3 @@ def draw_gene(DNA,CDS_loc,enzyme_table_with_colour):
             draw_enzyme(location*scale,colour,draw)
     del draw
     im.save("exons.png")
-
-
-def highlight_CDS(DNA,CDS_loc):
-    '''
-    Add html tags to highlight the coding region of a DNA sequence
-    :param DNA: DNA sequence
-    :param CDS_loc: locations of starts and ends of coding regions
-    :return: DNA sequence with '<mark>' and '</mark>' tags either side of coding regions
-    '''
-    opening_tag = '<mark>'
-    closing_tag = '</mark>'
-    j = 0
-    tagged_DNA = ''
-    for i in CDS_loc:
-        tagged_DNA += DNA[j:i[0]] + opening_tag + DNA[i[0]:i[1] + 1] + closing_tag
-        j = i[1] + 1
-    tagged_DNA += DNA[j:]
-    return tagged_DNA

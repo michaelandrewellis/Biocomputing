@@ -1,7 +1,8 @@
-import functions
-import accessdata
-import pandas as pd
 import ast
+
+import middlelayer.accessdata as accessdata
+import middlelayer.functions as functions
+import pandas as pd
 
 ''' Script to calculate codon usage in the whole of Chromosome 15'''
 
@@ -53,8 +54,11 @@ def summary_html_table():
     df = pd.DataFrame(list(all_genes))
     df.columns = ['A', 'B', 'C', 'D', 'E']
     df = df[['A','B','E']]
-    for col in df.columns:
-        df[col] = df[col].apply(lambda x: '<a href=\"http://www.webcgiaddress.com/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format(col,x))  # Link to summary page
+    df['A'] = df['A'].apply(
+        lambda x: '<a href=\"http://www.webcgiaddress.com/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format('A',x))
+    
+    #for col in df.columns:
+        #df[col] = df[col].apply(lambda x: '<a href=\"http://www.webcgiaddress.com/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format(col,x))  # Link to summary page
     #df = df.set_index(['A'])
     pd.set_option('display.max_colwidth', 1000)
     df.to_html('summarytable.html',escape=False,index=False)
