@@ -1,15 +1,14 @@
 #! /usr/bin/env python3
 
-import re
 import os
-import pandas as pd
-import mysql.connector
-from sqlalchemy import create_engine
-import admin
-indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
+# Dependencies:
+import re
 
-# --------------------------------------------------------------------------------------------------
-# -----------------------------------Data extraction tier-------------------------------------------
+indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
+    #insert file path directing to the file in which to store the split chromosome data file - this is created
+
+# ----------------------------------------------------------------------------------------------------
+# -----------------------------------Data extraction tier---------------------------------------------
 
 # -----------------------------------Numerical convert function---------------------------------------
 
@@ -35,7 +34,7 @@ def numerical_convert(value):
 # then appends matched groups to the relevant list
 # this is the method used for extracting all of the required data from the file
 
-# -----------------------------------Match finder functions-----------------------------------------
+# -----------------------------------Match finder functions-------------------------------------------
 
 #this match_finder finds a single match in a locus file
 def match_finder(list, compiler, else_statement = None):
