@@ -11,9 +11,30 @@ from frontend import exondiagram
 """
 form = cgi.FieldStorage()
 
-input = form['input'].value
-type = form['type'].value"""
+input_value = form['input'].value
+input_type = form['type'].value"""
 
+'''
+if input_type == 'Chromosome_location':
+    df = pd.DataFrame.from_csv("../../middlelayer/summarytable.csv")
+    if 'p' in input_value:
+        arm = 'p'
+        position = input_value.replace('p','')
+    elif 'q' in input_value:
+        arm  = 'q'
+        position = input_value.replace('q', '')
+    df = df[df['Arm']==arm]
+    df = df[(df['Start']<= position) & (df['End'] >= position)]
+    html = df['Accession','Location','Protein Product'].to_html
+    
+if input_type == 'Protein Product':
+    df = pd.DataFrame.from_csv("../../middlelayer/summarytable.csv")
+    df = df[df['Protein Product']]==input_value
+    html = df['Accession','Location','Protein Product'].to_html
+    '''
+    
+
+# ADD MORE IF STATEMENTS FOR DIFFERENT INPUT TYPES
 
 [DNA,CDS_locs,codon_table,enzyme_table] = functions.get_data('AB024537', 'Gene_ID')
 colours = ['Red', 'Yellow', 'Pink']

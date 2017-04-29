@@ -22,9 +22,9 @@ def getCDSfromSQL(input, type, cursor):
     cursor.execute(query)
     CDSloc = cursor.fetchall()
     # Extra code to deal with database storing coding region locations as strings of lists of strings
-    CDSloc = CDSloc[0]
-    CDSloc = (ast.literal_eval(x) for x in CDSloc)
-    CDSloc = list(map(list, zip(*CDSloc)))
+    #CDSloc = CDSloc[0]
+    #CDSloc = (ast.literal_eval(x) for x in CDSloc)
+    #CDSloc = list(map(list, zip(*CDSloc)))
     CDSloc = [[int(x) for x in i] for i in CDSloc]
 
     return CDSloc
