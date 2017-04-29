@@ -90,6 +90,6 @@ def addLocationCols(df):
     return df
 
 summary_html_table()
-print(overallCodonPercent())
+overallCodonPercent()
 
 
