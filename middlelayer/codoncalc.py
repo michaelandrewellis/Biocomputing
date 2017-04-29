@@ -67,7 +67,7 @@ def summary_html_table():
     df = pd.DataFrame.from_csv('summarytable.csv')
     df = df[['Accession','Location','Protein Product']]
     df['Accession'] = df['Accession'].apply(
-        lambda x: '<a href=\"http://www.webcgiaddress.com/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format('Accession',x))
+        lambda x: '<a href=\"http://www.http://student.cryst.bbk.ac.uk/~em001/biocomputing/frontend/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format('Accession',x))
     
     #for col in df.columns:
         #df[col] = df[col].apply(lambda x: '<a href=\"http://www.webcgiaddress.com/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format(col,x))  # Link to summary page
