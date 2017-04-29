@@ -1,5 +1,5 @@
 dbname   = "genesdb"
 dbhost   = "localhost"
-dbuser   = "root"
-dbpass   = ""
+dbuser   = "fa001"
+dbpass   = "dwnody4bq"
 dbport     = 3306

@@ -8,9 +8,9 @@ from PIL import Image, ImageDraw
 image_height=50
 image_width = 1000
 v_midpoint = image_height/2
-exon_height = 10
-intron_height = 10
-enzyme_marker_height = 30
+exon_height = 20
+intron_height = 5
+enzyme_marker_height = 40
 
 
 def draw_intron(start,end,draw):
@@ -25,7 +25,7 @@ def draw_intron(start,end,draw):
     y0 = v_midpoint-intron_height/2
     x1 = end
     y1 = v_midpoint + intron_height/2
-    draw.rectangle([x0,y0,x1,y1],fill='red',outline='black')
+    draw.rectangle([x0,y0,x1,y1],fill='mediumblue')
 
 
 def draw_exon(start,end,draw):
@@ -40,7 +40,7 @@ def draw_exon(start,end,draw):
     y0 = v_midpoint-exon_height/2
     x1 = end
     y1 = v_midpoint + exon_height/2
-    draw.rectangle([x0,y0,x1,y1],fill='green',outline='black')
+    draw.rectangle([x0,y0,x1,y1],fill='cornflowerblue')
 
 
 def draw_enzyme(location,colour,draw):
@@ -78,21 +78,3 @@ def draw_gene(DNA,CDS_loc,enzyme_table_with_colour):
             draw_enzyme(location*scale,colour,draw)
     del draw
     im.save("exons.png")
-
-
-def highlight_CDS(DNA,CDS_loc):
-    '''
-    Add html tags to highlight the coding region of a DNA sequence
-    :param DNA: DNA sequence
-    :param CDS_loc: locations of starts and ends of coding regions
-    :return: DNA sequence with '<mark>' and '</mark>' tags either side of coding regions
-    '''
-    opening_tag = '<mark>'
-    closing_tag = '</mark>'
-    j = 0
-    tagged_DNA = ''
-    for i in CDS_loc:
-        tagged_DNA += DNA[j:i[0]] + opening_tag + DNA[i[0]:i[1] + 1] + closing_tag
-        j = i[1] + 1
-    tagged_DNA += DNA[j:]
-    return tagged_DNA
