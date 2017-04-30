@@ -4,11 +4,10 @@ import cgitb
 cgitb.enable()
 import cgi
 
-from middlelayer import functions
+import functions
 
 import pandas as pd
-from frontend import exondiagram
-
+import exondiagram
 
 form = cgi.FieldStorage()
 

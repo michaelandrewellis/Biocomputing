@@ -1,4 +1,4 @@
-dbname   = "biocomp_project"
+dbname   = "fa001"
 dbhost   = "localhost"
 dbuser   = "fa001"
 dbpass   = "dwnody4bq"
