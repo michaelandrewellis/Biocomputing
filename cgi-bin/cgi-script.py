@@ -3,6 +3,8 @@
 import cgitb
 cgitb.enable()
 import cgi
+import sys
+sys.path.append('/d/user6/em001/WWW/')
 
 import functions
 
