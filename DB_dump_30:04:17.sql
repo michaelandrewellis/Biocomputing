@@ -1,5 +1,5 @@
---CREATE DATABASE  IF NOT EXISTS `biocomp_project` /*!40100 DEFAULT CHARACTER SET latin1 */;
---USE `biocomp_project`;
+-- CREATE DATABASE  IF NOT EXISTS `biocomp_project` /*!40100 DEFAULT CHARACTER SET latin1 */;
+-- USE `biocomp_project`;
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
 -- Host: localhost    Database: biocomp_project
