@@ -1,10 +1,15 @@
+# -------------------This code is to run before the parser-------------------
+
+# Dependencies:
 import re
 
 # ---------------------------------------------------------------------------
 
-#This code splits the chromosome 15 file into 241 files - one for each locus.
+filename = 'chrom_CDS_15' #this is the GenBank format file that will be split
 
-with open('chrom_CDS_15','r') as f:
+#The following code splits the chromosome 15 file into separate files - one for each locus.
+
+with open(filename,'r') as f:
     data = f.read()
 found = re.findall(r'\n*(LOCUS.*?\n\/\/)\n*', data, re.M|re.S)
 #looks between the start of the file (at LOCUS) and the end of the file (at //)
