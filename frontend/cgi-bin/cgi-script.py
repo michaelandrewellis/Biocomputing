@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import cgitb;
+import cgi
 
 from middlelayer import functions
 
@@ -8,11 +9,11 @@ cgitb.enable()
 import pandas as pd
 from frontend import exondiagram
 
-"""
+
 form = cgi.FieldStorage()
 
 input_value = form['input'].value
-input_type = form['type'].value"""
+input_type = form['type'].value
 
 '''
 if input_type == 'Chromosome_location':
@@ -116,5 +117,5 @@ html += DNA_to_html(DNA, CDS_locs)
 html += "</body>"
 html += "</html>"
 
-with open('test.html','w') as f:
-    f.write(html)
+#with open('test.html','w') as f:
+ #   f.write(html)
