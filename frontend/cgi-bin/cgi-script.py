@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-import cgitb;
+import cgitb
+cgitb.enable()
 import cgi
 
 from middlelayer import functions
 
-cgitb.enable()
 import pandas as pd
 from frontend import exondiagram
 
@@ -116,6 +116,8 @@ html += "<img src='exons.png'/>"
 html += DNA_to_html(DNA, CDS_locs)
 html += "</body>"
 html += "</html>"
+
+print(html)
 
 #with open('test.html','w') as f:
  #   f.write(html)
