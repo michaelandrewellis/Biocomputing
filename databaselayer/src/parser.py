@@ -13,7 +13,11 @@ from sqlalchemy import create_engine
 
 indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 #file path of the file where the split files are stored
+# -----------------------------------Database access:-------------------------------------------------
 
+password = '' #database password here
+host_name = 'localhost' #name of host
+database_name = 'biocomp_project' #this is the db into which your data will go
 # ----------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier---------------------------------------------
 
@@ -304,11 +308,11 @@ gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Gene_name': gene_name,'Chromo
 gene_info_df = gene_info_df.drop(gene_info_df.index[splice_variant_indexes]) #gene_info_db with no splice variants
 
 # creating the engine to allow connection to the db
-engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
+engine = create_engine('mysql+mysqlconnector://root:password@host_name/database_name', echo=False)
 
 # Porting to the database:
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
-gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Length Tests --------------------------------------------------
