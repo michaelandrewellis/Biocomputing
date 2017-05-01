@@ -287,6 +287,7 @@ for index in sorted(splice_variant_indexes, reverse=True):
 # Using Pandas to generate dataframes from my lists
 
 #gene_ids                          will be 'Gene_ID' in DB
+#gene_name                         will be 'Gene_name' in DB
 #chr_loc                           will be 'Chromosome_location' in DB
 #clean_dna_seq                     will be 'DNA_sequence' in DB
 #clean_protein_seq                 will be 'Protein_sequence' in DB
@@ -296,19 +297,18 @@ for index in sorted(splice_variant_indexes, reverse=True):
 
 # Generating pandas dataframes
 coding_region_df = pd.DataFrame(zipped_id_start_end, columns=['Gene_ID', 'Start_location', 'End_location'])
-gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
+gene_info_df = pd.DataFrame({'Gene_ID': gene_ids, 'Gene_name': gene_name,'Chromosome_location':chr_loc, 'DNA_sequence':clean_dna_seq,
                         'Protein_sequence':clean_protein_seq, 'Protein_product':gene_products}, index=gene_ids)
 
 #removing splice variants from the gene_info_df dataframe:
-#gene_info_df = gene_info_df.drop(gene_info_df.index[splice_variant_indexes]) #gene_info_db with no splice variants
+gene_info_df = gene_info_df.drop(gene_info_df.index[splice_variant_indexes]) #gene_info_db with no splice variants
 
 # creating the engine to allow connection to the db
 engine = create_engine('mysql+mysqlconnector://root:Poppeta1995@localhost/biocomp_project', echo=False)
 
 # Porting to the database:
 #coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
-#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
-
+gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Length Tests --------------------------------------------------
