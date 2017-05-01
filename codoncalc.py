@@ -55,7 +55,7 @@ def overallCodonPercent():
 def summary_data_frame():
     all_genes = accessdata.get_all_genes()
     df = pd.DataFrame(list(all_genes))
-    df.columns = ['Accession', 'Location', 'DNA', 'Amino Acid Sequence', 'Protein Product']
+    df.columns = ['Accession', 'Location', 'DNA', 'Amino Acid Sequence', 'Protein Product', 'Gene Name']
     df = df[df.DNA.str.contains("n") == False]  # Remove DNA containing 'n'
     df = addLocationCols(df)
     df.to_csv('summarytable.csv')
@@ -64,13 +64,9 @@ def summary_data_frame():
 def summary_html_table():
     summary_data_frame()
     df = pd.DataFrame.from_csv('summarytable.csv')
-    df = df[['Accession','Location','Protein Product']]
+    df = df[['Accession','Location','Protein Product','Gene Name']]
     df['Accession'] = df['Accession'].apply(
-        lambda x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?input_type={0}&input_value={1}\">{1}</a>'.format('Accession',x))
-    
-    #for col in df.columns:
-        #df[col] = df[col].apply(lambda x: '<a href=\"http://www.webcgiaddress.com/cgi-bin/cgi-script?type={0}&input={1}\">{1}</a>'.format(col,x))  # Link to summary page
-    #df = df.set_index(['A'])
+        lambda x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?input_type={0}&input_value={1}\">{1}</a>'.format('Gene_ID',x))
     pd.set_option('display.max_colwidth', 1000)
     df.to_html('summarytable.html',escape=False,index=False)
     
