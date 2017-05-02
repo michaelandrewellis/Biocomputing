@@ -1,7 +1,7 @@
 
 HOW TO INSTALL AND RUN THE SOFTWARE
 
-All folders and files from /middlelayer/ and /frontend/ should be moved to a single folder to run properly.
+All folders and files from /middlelayer/ and /frontend/ should be moved to a single folder to run with certainty.
 Software has python module dependencies pymysql, pandas, pillow and scipy that must be installed.
 There are programs in codoncalc.py that must be run if the database is changed, in order to calculate the new
 codon usage and generate a new home page - this is not necessary if the database is unchanged.

@@ -1,5 +1,5 @@
 """
-Module of functions used to generate elements on summary page of gene.
+Module of functions used to generate elements for diagram of gene on summary page. 
 """
 
 from PIL import Image, ImageDraw

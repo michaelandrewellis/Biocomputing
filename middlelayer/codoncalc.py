@@ -89,7 +89,6 @@ def summary_html_table():
         html = f.read() + df.to_html(escape=False,index=False)
         with open('index.html','w') as g:
             g.write(html)
-    #df.to_html('summarytable.html',escape=False,index=False)
     
 def addLocationCols(df):
     """
