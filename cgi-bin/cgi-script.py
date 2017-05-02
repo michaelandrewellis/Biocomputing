@@ -11,7 +11,7 @@ sys.path.append('/d/user6/em001/WWW/')
 
 import functions
 
-import pandas as pd
+#import pandas as pd
 import exondiagram
 
 form = cgi.FieldStorage()

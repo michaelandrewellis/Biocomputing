@@ -7,6 +7,10 @@ import functions as functions
 
 
 def overallCodonUse():
+    """
+    
+    :return: 
+    """
     codonUse = [0]*64
     conn = accessdata.connectdb()
     cursor = conn.cursor()

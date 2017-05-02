@@ -132,7 +132,8 @@ def get_cutting_locs(enzyme_dict, DNA):
 
 def good_or_bad_enzyme(cutting_locs, CDS_locs):
     """
-    Labels an enzyme good if it only cuts before the first coding region and after the last. Otherwise, labels an enzyme bad.
+    Labels an enzyme "good" if it only cuts before the first coding region and after the last. Otherwise, labels an enzyme "bad".
+    
     :param cutting_locs: locations at which enzyme cuts
     :type cutting_locs: list of int
     :param CDS_locs: locations of starts and ends of coding regions
