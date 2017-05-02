@@ -13,11 +13,13 @@ from sqlalchemy import create_engine
 
 indir = '/Users/ainefairbrother/PycharmProjects/BiocomputingII/genes'
 #file path of the file where the split files are stored
-# -----------------------------------Database access:-------------------------------------------------
+
+# -----------------------------------Database access tier---------------------------------------------
 
 password = '' #database password here
 host_name = 'localhost' #name of host
 database_name = 'biocomp_project' #this is the db into which your data will go
+
 # ----------------------------------------------------------------------------------------------------
 # -----------------------------------Data extraction tier---------------------------------------------
 
@@ -28,10 +30,10 @@ database_name = 'biocomp_project' #this is the db into which your data will go
 
 def numerical_convert(value):
     """
-    The numerical_convert function returns the string 'value' as an integer.
+    numerical_convert returns the string-format argument as an integer.
     
-    It takes a string as the input (value) and splits it into its components
-    The list, split_value, then contains 3 items:
+    The argument is split it into its components.
+    A list, split_value, then contains 3 items:
     1. empty string
     2. number in string format
     3. empty string
@@ -95,7 +97,7 @@ def findall_matcher(list_, pattern):
             list_.append(find_all)
     return()
 
-# -----------------------------------Implementation section-----------------------------------------
+# -----------------------------------Implementing data extraction-------------------------------------
 
 #this section applies the defined functions to each piece of information we need to grab
 #from the split GenBank file
@@ -311,8 +313,8 @@ gene_info_df = gene_info_df.drop(gene_info_df.index[splice_variant_indexes]) #ge
 engine = create_engine('mysql+mysqlconnector://root:password@host_name/database_name', echo=False)
 
 # Porting to the database:
-#coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
-#gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
+coding_region_df.to_sql(name='Coding_region', con=engine, if_exists = 'append', index=False)
+gene_info_df.to_sql(name='Gene_info', con=engine, if_exists = 'append', index=False)
 
 # --------------------------------------------------------------------------------------------------
 # -----------------------------------Length Tests --------------------------------------------------
