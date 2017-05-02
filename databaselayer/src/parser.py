@@ -30,10 +30,10 @@ database_name = 'biocomp_project' #this is the db into which your data will go
 
 def numerical_convert(value):
     """
-    The numerical_convert function returns the string 'value' as an integer.
+    numerical_convert returns the string-format argument as an integer.
     
-    It takes a string as the input (value) and splits it into its components
-    The list, split_value, then contains 3 items:
+    The argument is split it into its components.
+    A list, split_value, then contains 3 items:
     1. empty string
     2. number in string format
     3. empty string
