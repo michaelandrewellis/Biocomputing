@@ -99,7 +99,7 @@ if input_type == 'Chromosome_location':
             x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?type={0}&input={1}\">{1}</a>'.format(
             'Gene_ID', x)) # Add links
     pd.set_option('display.max_colwidth', 1000)
-    html += df.to_html()
+    html += df.to_html(escape=False)
 elif input_type == 'Protein_product':
     df = pd.DataFrame.from_csv("../summarytable.csv")
     df = df[df['Protein Product']==input_value]
