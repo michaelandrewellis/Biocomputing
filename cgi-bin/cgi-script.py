@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+""" 
+Cgi script to generate either summary page for selected gene or a summary table of search matches
+"""
 
 import cgitb
 cgitb.enable()
