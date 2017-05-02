@@ -112,7 +112,7 @@ elif input_type == 'Gene_ID':
     
     exondiagram.draw_gene(DNA, CDS_locs, enzyme_table_with_colour)
     
-    html += "<img src='exons.png'/>"
+    html += "<img src='http://student.cryst.bbk.ac.uk/~em001/cgi-bin/exons.png'/>"
     html += DNA_to_html(DNA, CDS_locs)
     html += "</body>"
     html += "</html>"
