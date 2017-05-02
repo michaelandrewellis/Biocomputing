@@ -78,7 +78,7 @@ def summary_html_table():
     df = pd.DataFrame.from_csv('summarytable.csv')
     df = df[['Accession','Location','Protein Product','Gene Name']]
     df['Accession'] = df['Accession'].apply(
-        lambda x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?input_type={0}&input_value={1}\">{1}</a>'.format('Gene_ID',x))
+        lambda x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?type={0}&input={1}\">{1}</a>'.format('Gene_ID',x))
     pd.set_option('display.max_colwidth', 1000)
     with open('indexhead.html') as f:
         html = f.read() + df.to_html(escape=False,index=False)

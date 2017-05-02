@@ -73,36 +73,43 @@ def DNA_to_html(DNA, CDS_locs):
 
 html = "Content-Type: text/html\n"
 
-if input_type == 'Chromosome_location':
-    df = pd.DataFrame.from_csv("../summarytable.csv")
-    if 'p' in input_value:
-        arm = 'p'
-        position = input_value.replace('p','')
-    elif 'q' in input_value:
-        arm  = 'q'
-        position = input_value.replace('q', '')
-    df = df[df['Arm']==arm]
-    df = df[(df['Start']<= position) & (df['End'] >= position)]
-    html = df['Accession','Location','Protein Product'].to_html
-elif input_type == 'Protein_product':
-    df = pd.DataFrame.from_csv("../summarytable.csv")
-    df = df[df['Protein Product']]==input_value
-    html = df['Accession','Location','Protein Product','Gene Name'].to_html
-elif input_type == 'Gene_name':
-    df = pd.DataFrame.from_csv("../summarytable.csv")
-    df = df[df['Gene Name']] == input_value
-    html = df['Accession', 'Location', 'Protein Product', 'Gene Name'].to_html
-elif input_type == 'Gene_ID':
-    [DNA, CDS_locs, codon_table, enzyme_table] = functions.get_data(input_value, 'Gene_ID')
-    colours = ['Red', 'Yellow', 'Pink']
-    enzyme_table_with_colour = enzyme_table + [colours]
-    html += '''
-    <html>
+html += """
+<html>
     <head>
      <title>Summary Page</title>
      <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
+"""
+
+if input_type != 'Gene_ID':
+    df = pd.DataFrame.from_csv("../summarytable.csv")
+    if input_type == 'Chromosome_location':
+        if 'p' in input_value:
+            arm = 'p'
+            position = int(input_value.replace('p',''))
+        elif 'q' in input_value:
+            arm  = 'q'
+            position = int(input_value.replace('q', ''))
+        df = df[df['Arm']==arm]
+        df = df[df['Start'] <= position]
+        df = df[df['End'] >= position]
+    elif input_type == 'Protein_product':
+        df = df[df['Protein Product']==input_value]
+    elif input_type == 'Gene_name':
+        df = df[df['Gene Name'] == input_value]
+    df = df[['Accession', 'Location', 'Protein Product', 'Gene Name']]
+    df['Accession'] = df['Accession'].apply(
+        lambda
+            x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?type={0}&input={1}\">{1}</a>'.format(
+            'Gene_ID', x))  # Add links
+    pd.set_option('display.max_colwidth', 1000)
+    html += df.to_html(escape=False)
+elif input_type == 'Gene_ID':
+    [DNA, CDS_locs, codon_table, enzyme_table] = functions.get_data(input_value, 'Gene_ID')
+    colours = ['Red', 'Yellow', 'Pink']
+    enzyme_table_with_colour = enzyme_table + [colours]
+    html += '''
     <h1>Summary Page for Gene</h1>
     '''
     html += pd.DataFrame(CDS_locs, columns=['Start of coding region','End of coding region']).\
@@ -112,9 +119,9 @@ elif input_type == 'Gene_ID':
     
     exondiagram.draw_gene(DNA, CDS_locs, enzyme_table_with_colour)
     
-    html += "<img src='exons.png'/>"
+    html += "<img src='http://student.cryst.bbk.ac.uk/~em001/cgi-bin/exons.png'/>"
     html += DNA_to_html(DNA, CDS_locs)
-    html += "</body>"
-    html += "</html>"
+html += "</body>"
+html += "</html>"
 
 print(html)

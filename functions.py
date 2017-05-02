@@ -40,8 +40,9 @@ def count_codon_usage(CDS):
     '''
     codonCount = [0]*64
     for i in range(0,len(CDS),3):
-        codon = CDS[i:i+3]
-        codonCount[codons.index(codon)] += 1
+        if len(CDS)-i >= 2: # Lengths of some sequences are not multiples of 3
+            codon = CDS[i:i+3]
+            codonCount[codons.index(codon)] += 1
     return codonCount
 
 
@@ -56,7 +57,7 @@ def codon_percent(CDS):
     """
     count = count_codon_usage(CDS)
     total = sum(count)
-    percent = [c/total for c in count]
+    percent = [c/total for c in count] # Avoids a divide by zero error for entries that are missing a coding region
     return percent
 
 
@@ -149,10 +150,11 @@ def good_or_bad_enzyme(cutting_locs, CDS_locs):
 
 def get_enzyme_table(DNA, CDS_locs):
     """
+    Return a table containing restriction enzymes, where they cut and whether they are "good" or "bad"
 
-    :param DNA:  
-    :param CDS_locs:
-    :return:
+    :param DNA: DNA sequence
+    :param CDS_locs: Starts and ends of coding regions
+    :return: Enzyme table
     """
     enzymeTable = get_cutting_locs(enzyme_dict, DNA)
     enzymeQual = [good_or_bad_enzyme(cutting_locs, CDS_locs) for cutting_locs in enzymeTable[1]]
@@ -162,8 +164,10 @@ def get_enzyme_table(DNA, CDS_locs):
 
 def get_data(input, type):
     """
-    :param input:
-    :param type:
+    returns the summary data for a gene
+    
+    :param input: string
+    :param type: Either "Gene_ID", "Gene_name", "Protein_product" or "Chromosome_location"
     :return: list containing:
         - DNA
         - locations of exon boundaries
