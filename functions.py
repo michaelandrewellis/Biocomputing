@@ -5,6 +5,10 @@ from config import codons, codon_table, AA, enzyme_dict
 
 import accessdata as ad
 
+"""
+Module of functions to process data
+"""
+
 
 def get_CDS_seq(DNA, CDS_loc):
     '''
