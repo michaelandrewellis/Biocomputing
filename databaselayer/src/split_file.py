@@ -1,3 +1,5 @@
+# Aine Fairbrother-Browne, afairb01@mail.bbk.ac.uk
+
 # -------------------This code is to run before the parser-------------------
 
 # Dependencies:
