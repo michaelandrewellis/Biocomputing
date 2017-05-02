@@ -1,7 +1,11 @@
+
 HOW TO INSTALL AND RUN THE SOFTWARE
 
-Folders and files from /middlelayer/ and /frontend/ should be moved to top level folder to run properly.
+All folders and files from /middlelayer/ and /frontend/ should be moved to a single folder to run properly.
 Software has python module dependencies pymysql, pandas, pillow and scipy that must be installed.
+There are programs in codoncalc.py that must be run if the database is changed, in order to calculate the new
+codon usage and generate a new home page - this is not necessary if the database is unchanged.
+
 
 IMPORTANT NOTE
 
@@ -9,9 +13,87 @@ Divide by zero errors on the web page are common for entries that should have a 
 not have any listed in the database
 
 
-
-Diagram is included as documentationdiagram.pdf showing 
-function.py
+Below is documentation on how to use the APIs in each tier
 
 
 
+
+
+
+---------------DATA ACCESS TIER------------
+
+
+
+
+-------dbconfig.py-------
+
+This a configuration file containing host, user, password, database name and port number
+
+
+
+
+--------accessdata.py-------
+ 
+This contains the function "get_DNA_and_CDS_from_SQL(input, type)". 
+For the "type" argument this will take: "Gene_ID" (accession number), "Chromosome_location" (chromosome location), 
+"Gene_name" (gene identifier) or "Protein_product" (protein product) and a string as the associated input.
+
+e.g. get_DNA_and_CDS_from_SQL("AB024537", "Gene_ID")
+
+It returns the DNA sequence and locations of the coding regions for the first gene in the database matching the query.
+This output is in the form [DNA, CodingLocations], where DNA is a string and CodingLocations is in the form 
+"[[a1,b1],[a2,b2],...,[an,bn]]" where "an" and "bn" are the start and end of the nth coding region
+
+
+This also contains "get_all_genes()" which is used for the precalculated elements discuss in the "codoncalc.py" section
+
+
+
+-------------BUSINESS LOGIC TIER---------------
+
+
+
+-------config.py-------
+
+This contains a list of codons and their corresponding amino acids as well as precalculated values for codon usage
+with thin chromosome.
+
+
+
+-------functions.py------
+
+This contains the function "get_data(input, type)".
+For the "type" argument this will take: "Gene_ID" (accession number), "Chromosome_location" (chromosome location), 
+"Gene_name" (gene identifier) or "Protein_product" (protein product) and a string as the associated input.
+
+e.g get_data("AB024537", "Gene_ID")
+
+For the first gene in the database matching the query, it returns:
+ - DNA sequence
+ - locations of coding regions
+ - table of codon information
+ - table of enzyme information
+in a list in the form [DNA,codingLocations,codonTable,enzymeTable].
+where:
+ - DNA is a string
+ - CodingLocations is in the form "[[a1,b1],[a2,b2],...,[an,bn]]" where "an" and "bn" are the start and end of the nth coding region
+ - Codon table is a table where each row is 
+ [codon, amino acid, percent occurance in gene, percent occurence in chromosome, relative frequency, p-value, adjusted p-value]
+ - Enzyme table is a table where each row is [enzyme, cutting locations, good or bad]
+ 
+The file "documentationdiagram.pdf" shows the relationship between this function and the other functions that it calls
+in functions.py and accessdata.py
+
+
+-------codoncalc.py-------
+
+This contains functions used once when setting up the website.
+
+"overall_codon_percent()" uses "get_all_genes()" in the data access tier to calculate the overall codon percentage
+for the chromosome, it returns this as a list corresponding to the list of codons in the config.py file.
+
+
+"summary_data_frame()" uses "get_all_genes()" to produce a table of all genes, with their locations, accession numbers,
+names and protein products. It saves it as the csv file "summarytable.csv"
+
+"summary_html_table()" uses "summarytable.csv" to produce an table in html to be used in the home page of the web site.

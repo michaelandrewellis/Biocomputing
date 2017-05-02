@@ -12,8 +12,7 @@ Functions for one time use in the preparation of web site. Includes:
 
 def overallCodonUse():
     """
-    
-    :return: 
+    Counts overall codon use in the chromosome
     """
     codonUse = [0]*64
     conn = accessdata.connectdb()
@@ -53,6 +52,10 @@ def overallCodonUse():
     return codonUse
 
 def overallCodonPercent():
+    """
+    Calculates frequency of each codon in the chromosome as a percentage of all codons
+    :return: List of values
+    """
     count = overallCodonUse()
     total = sum(count)
     percent = [c/total for c in count]
@@ -61,6 +64,9 @@ def overallCodonPercent():
 ############################################################
 
 def summary_data_frame():
+    """
+    Creates a csv file containing information about each gene in the database
+    """
     all_genes = accessdata.get_all_genes()
     df = pd.DataFrame(list(all_genes))
     df.columns = ['Accession', 'Location', 'DNA', 'Amino Acid Sequence', 'Protein Product', 'Gene Name']
@@ -74,7 +80,6 @@ def summary_html_table():
     Creates html summary table from 'summarytable.csv' for home page and the home page itself. Uses 'indexhead.html' as top of home page
     and the summary table as the bottom. Writes output to 'index.html'.
     """
-    summary_data_frame()
     df = pd.DataFrame.from_csv('summarytable.csv')
     df = df[['Accession','Location','Protein Product','Gene Name']]
     df['Accession'] = df['Accession'].apply(
@@ -87,6 +92,9 @@ def summary_html_table():
     #df.to_html('summarytable.html',escape=False,index=False)
     
 def addLocationCols(df):
+    """
+    Processes the 'Location' column of the summary data frame to allow for searching by location. Return new dataframe.
+    """
     df = df[df['Location'] != '15']
     df = df[df['Location'] != 'q']
     df = df[df['Location'].str.contains("between") == False]
@@ -98,6 +106,8 @@ def addLocationCols(df):
     df['End'] = df['Location'].str.extract('\d\d.*(?P<end>\d\d).*', expand=True)
     df['End'] = df['End'].fillna(df['Start'])
     return df
+
+
 
 
 
