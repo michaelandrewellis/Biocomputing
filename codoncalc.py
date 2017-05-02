@@ -75,7 +75,7 @@ def summary_html_table():
     return df.to_html('summarytable.html',escape=False,index=False)
     
 def addLocationCols(df):
-    df = pd.DataFrame.from_csv('summarytable.csv')
+    #df = pd.DataFrame.from_csv('summarytable.csv')
     df = df[df['Location'] != '15']
     df = df[df['Location'] != 'q']
     df = df[df['Location'].str.contains("between") == False]
