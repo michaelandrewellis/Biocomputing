@@ -82,15 +82,16 @@ if input_type == 'Chromosome_location':
         arm  = 'q'
         position = input_value.replace('q', '')
     df = df[df['Arm']==arm]
-    df = df[(df['Start']<= position) & (df['End'] >= position)]
+    df = df[df['Start']<= position]
+    df = df[df['End'] >= position]
     html = df['Accession','Location','Protein Product'].to_html
 elif input_type == 'Protein_product':
     df = pd.DataFrame.from_csv("../summarytable.csv")
-    df = df[df['Protein Product']]==input_value
+    df = df[df['Protein Product']==input_value]
     html = df['Accession','Location','Protein Product','Gene Name'].to_html
 elif input_type == 'Gene_name':
     df = pd.DataFrame.from_csv("../summarytable.csv")
-    df = df[df['Gene Name']] == input_value
+    df = df[df['Gene Name'] == input_value]
     html = df['Accession', 'Location', 'Protein Product', 'Gene Name'].to_html
 elif input_type == 'Gene_ID':
     [DNA, CDS_locs, codon_table, enzyme_table] = functions.get_data(input_value, 'Gene_ID')
