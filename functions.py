@@ -57,7 +57,7 @@ def codon_percent(CDS):
     """
     count = count_codon_usage(CDS)
     total = sum(count)
-    percent = [c/total for c in count] # Avoids a divide by zero error for entries that are missing a coding region
+    percent = [c/total for c in count]
     return percent
 
 
