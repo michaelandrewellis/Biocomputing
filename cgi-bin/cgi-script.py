@@ -73,6 +73,15 @@ def DNA_to_html(DNA, CDS_locs):
 
 html = "Content-Type: text/html\n"
 
+html += """
+<html>
+    <head>
+     <title>Summary Page</title>
+     <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+"""
+
 if input_type == 'Chromosome_location':
     df = pd.DataFrame.from_csv("../summarytable.csv")
     if 'p' in input_value:
@@ -85,7 +94,7 @@ if input_type == 'Chromosome_location':
     df = df[df['Start'] <= position]
     df = df[df['End'] >= position]
     df = df[['Accession','Location','Protein Product','Gene Name']]
-    html = df.to_html
+    html += df.to_html
 elif input_type == 'Protein_product':
     df = pd.DataFrame.from_csv("../summarytable.csv")
     df = df[df['Protein Product']==input_value]
@@ -99,12 +108,6 @@ elif input_type == 'Gene_ID':
     colours = ['Red', 'Yellow', 'Pink']
     enzyme_table_with_colour = enzyme_table + [colours]
     html += '''
-    <html>
-    <head>
-     <title>Summary Page</title>
-     <link rel="stylesheet" href="stylesheet.css">
-    </head>
-    <body>
     <h1>Summary Page for Gene</h1>
     '''
     html += pd.DataFrame(CDS_locs, columns=['Start of coding region','End of coding region']).\
@@ -116,7 +119,7 @@ elif input_type == 'Gene_ID':
     
     html += "<img src='http://student.cryst.bbk.ac.uk/~em001/cgi-bin/exons.png'/>"
     html += DNA_to_html(DNA, CDS_locs)
-    html += "</body>"
-    html += "</html>"
+html += "</body>"
+html += "</html>"
 
 print(html)
