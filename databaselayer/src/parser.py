@@ -1,3 +1,4 @@
+# Aine Fairbrother-Browne, afairb01@mail.bbk.ac.uk
 #! /usr/bin/env python3
 
 #Before the parser can be run, the split_file.py code must be run in order to split
