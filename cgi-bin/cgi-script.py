@@ -80,9 +80,9 @@ if input_type == 'Chromosome_location':
         position = input_value.replace('p','')
     elif 'q' in input_value:
         arm  = 'q'
-        position = input_value.replace('q', '')
+        position = int(input_value.replace('q', ''))
     df = df[df['Arm']==arm]
-    df = df[df.Start <= position]
+    df = df[df['Start'] <= position]
     df = df[df['End'] >= position]
     html = df[['Accession','Location','Protein Product']].to_html
 elif input_type == 'Protein_product':
