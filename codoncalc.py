@@ -3,7 +3,11 @@ import pandas as pd
 
 import functions as functions
 
-''' Script to calculate codon usage in the whole of Chromosome 15'''
+"""
+Functions for one time use in the preparation of web site. Includes:
+- Functions to calculate codon usage in the whole of Chromosome 15 
+- Functions to create the home page including summary table
+"""
 
 
 def overallCodonUse():
@@ -66,6 +70,10 @@ def summary_data_frame():
 
 # CREATE SUMMARY TABLE FOR HOME PAGE
 def summary_html_table():
+    """
+    Creates html summary table from 'summarytable.csv' for home page and the home page itself. Uses 'indexhead.html' as top of home page
+    and the summary table as the bottom. Writes output to 'index.html'.
+    """
     summary_data_frame()
     df = pd.DataFrame.from_csv('summarytable.csv')
     df = df[['Accession','Location','Protein Product','Gene Name']]
@@ -74,12 +82,11 @@ def summary_html_table():
     pd.set_option('display.max_colwidth', 1000)
     with open('indexhead.html') as f:
         html = f.read() + df.to_html(escape=False,index=False)
-        with open('index2.html','w') as g:
+        with open('index.html','w') as g:
             g.write(html)
     df.to_html('summarytable.html',escape=False,index=False)
     
 def addLocationCols(df):
-    #df = pd.DataFrame.from_csv('summarytable.csv')
     df = df[df['Location'] != '15']
     df = df[df['Location'] != 'q']
     df = df[df['Location'].str.contains("between") == False]
