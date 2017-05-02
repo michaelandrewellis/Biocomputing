@@ -6,10 +6,12 @@ Cgi script to generate either summary page for selected gene or a summary table 
 import cgitb
 cgitb.enable()
 import cgi
+import pandas as pd
+
+import sys
+sys.path.append('/d/user6/em001/WWW/')
 
 import functions
-
-import pandas as pd
 import exondiagram
 
 form = cgi.FieldStorage()
