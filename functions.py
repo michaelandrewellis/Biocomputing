@@ -40,8 +40,9 @@ def count_codon_usage(CDS):
     '''
     codonCount = [0]*64
     for i in range(0,len(CDS),3):
-        codon = CDS[i:i+3]
-        codonCount[codons.index(codon)] += 1
+        if len(CDS)-i >= 2: # lengths of some sequences are not multiples of 3
+            codon = CDS[i:i+3]
+            codonCount[codons.index(codon)] += 1
     return codonCount
 
 
