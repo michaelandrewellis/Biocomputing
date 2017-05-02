@@ -82,34 +82,29 @@ html += """
     <body>
 """
 
-if input_type == 'Chromosome_location':
+if input_type != 'Gene_ID':
     df = pd.DataFrame.from_csv("../summarytable.csv")
-    if 'p' in input_value:
-        arm = 'p'
-        position = int(input_value.replace('p',''))
-    elif 'q' in input_value:
-        arm  = 'q'
-        position = int(input_value.replace('q', ''))
-    df = df[df['Arm']==arm]
-    df = df[df['Start'] <= position]
-    df = df[df['End'] >= position]
-    df = df[['Accession','Location','Protein Product','Gene Name']]
+    if input_type == 'Chromosome_location':
+        if 'p' in input_value:
+            arm = 'p'
+            position = int(input_value.replace('p',''))
+        elif 'q' in input_value:
+            arm  = 'q'
+            position = int(input_value.replace('q', ''))
+        df = df[df['Arm']==arm]
+        df = df[df['Start'] <= position]
+        df = df[df['End'] >= position]
+    elif input_type == 'Protein_product':
+        df = df[df['Protein Product']==input_value]
+    elif input_type == 'Gene_name':
+        df = df[df['Gene Name'] == input_value]
+    df = df[['Accession', 'Location', 'Protein Product', 'Gene Name']]
     df['Accession'] = df['Accession'].apply(
         lambda
             x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?type={0}&input={1}\">{1}</a>'.format(
-            'Gene_ID', x)) # Add links
+            'Gene_ID', x))  # Add links
     pd.set_option('display.max_colwidth', 1000)
     html += df.to_html(escape=False)
-elif input_type == 'Protein_product':
-    df = pd.DataFrame.from_csv("../summarytable.csv")
-    df = df[df['Protein Product']==input_value]
-    df = df[['Accession', 'Location', 'Protein Product', 'Gene Name']]
-    html += df.to_html()
-elif input_type == 'Gene_name':
-    df = pd.DataFrame.from_csv("../summarytable.csv")
-    df = df[df['Gene Name'] == input_value]
-    df = df[['Accession', 'Location', 'Protein Product', 'Gene Name']]
-    html += df.to_html()
 elif input_type == 'Gene_ID':
     [DNA, CDS_locs, codon_table, enzyme_table] = functions.get_data(input_value, 'Gene_ID')
     colours = ['Red', 'Yellow', 'Pink']

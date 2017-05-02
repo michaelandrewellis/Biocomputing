@@ -3,6 +3,13 @@ HOW TO INSTALL AND RUN THE SOFTWARE
 Folders and files from /middlelayer/ and /frontend/ should be moved to top level folder to run properly.
 Software has python module dependencies pymysql, pandas, pillow and scipy that must be installed.
 
+IMPORTANT NOTE
+
+Divide by zero errors on the web page are common for entries that should have a coding region but for some reason do
+not have any listed in the database
+
+
+
 Diagram is included as documentationdiagram.pdf showing 
 function.py
 
