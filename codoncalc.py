@@ -72,7 +72,7 @@ def summary_html_table():
     df['Accession'] = df['Accession'].apply(
         lambda x: '<a href=\"http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/em001/cgi-script.py?input_type={0}&input_value={1}\">{1}</a>'.format('Gene_ID',x))
     pd.set_option('display.max_colwidth', 1000)
-    df.to_html('summarytable.html',escape=False,index=False)
+    return df.to_html('summarytable.html',escape=False,index=False)
     
 def addLocationCols(df):
     df = pd.DataFrame.from_csv('summarytable.csv')
@@ -88,7 +88,5 @@ def addLocationCols(df):
     df['End'] = df['End'].fillna(df['Start'])
     return df
 
-summary_html_table()
-overallCodonPercent()
 
 
