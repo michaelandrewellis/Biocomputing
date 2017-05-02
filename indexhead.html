@@ -1,0 +1,28 @@
+<html>
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Home Page</title>
+</head>
+
+<body>
+<h1>Human Chromosome 15</h1>
+<!--action="http://student.cryst.bbk.ac.uk/~em001/cgi-bin/cgiwrap/em001/cgi-script.py"-->
+<form class="searchform"
+action="/cgi-bin/cgiwrap/em001/cgi-script.py"
+method='get'>
+    <p>
+        <h3>Search term:</h3>
+    (Please enter locations in the form 'q23')<br/>
+        <input class='searchbox' name='input' type='text' size='49' />
+    </p>
+
+<h3>Input type:</h3>
+    <input name='type' value='Gene_name' type='radio' checked='checked' />Gene Name
+    <input name='type' value='Protein_product' type='radio' />Protein Product
+    <input name='type' value='Gene_ID' type='radio' />Accession
+    <input name='type' value='Chromosome_location' type='radio' />Chromosome Location
+    <p>
+        <input class='button' type='submit' value='Submit' />
+        <input class='button' type='reset'  value='Clear form' />
+    </p>
+</form>
